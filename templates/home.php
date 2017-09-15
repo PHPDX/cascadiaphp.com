@@ -29,5 +29,5 @@ $this->layout('layout', ['title' => 'PDXPHP Usergroup']);
 </div>
 <div class="footer-floater center">
     Copyright &copy; <?= $this->e(date('Y')); ?> PHPDX &nbsp;
-    Version: <span><?= $this->e(strtoupper(substr(getenv('hash'), 0, 8))); ?></span>
+    Version: <?= $this->e(substr(getenv('VERSION'), 0, 8)); ?>
 </div>

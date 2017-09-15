@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/vendor/autoload.php';
+require_once __DIR__ . '/bootstrap/autoload.php';
 
 // Create a new container
 $app = require __DIR__ . '/bootstrap/app.php';

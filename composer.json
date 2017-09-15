@@ -12,6 +12,7 @@
         "middlewares/utils": "^0.11.1",
         "middlewares/fast-route": "^0.7.0",
         "middlewares/request-handler": "^0.2.0",
-        "league/container": "^2.4"
+        "league/container": "^2.4",
+        "vlucas/phpdotenv": "^2.4"
     }
 }
