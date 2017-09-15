@@ -1,6 +1,8 @@
 <?php
 /** @var \League\Plates\Template\Template $this */
 $this->layout('layout', ['title' => 'PDXPHP Usergroup']);
+
+$commit = $this->e(substr(getenv('VERSION'), 0, 8));
 ?>
 
 <div class="row">
@@ -29,5 +31,5 @@ $this->layout('layout', ['title' => 'PDXPHP Usergroup']);
 </div>
 <div class="footer-floater center">
     Copyright &copy; <?= $this->e(date('Y')); ?> PHPDX &nbsp;
-    Version: <?= $this->e(substr(getenv('VERSION'), 0, 8)); ?>
+    Commit: <a href="https://github.com/buttress/phpdx.org/commit/<?= $commit ?>/"><?= $commit ?></a>
 </div>
