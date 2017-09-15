@@ -1,0 +1,11 @@
+.footer-floater {
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    height:20px;
+    line-height:20px;
+    font-size:9px;
+    background-color:#000;
+    color: white;
+}
