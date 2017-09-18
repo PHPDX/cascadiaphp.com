@@ -13,6 +13,8 @@
         "middlewares/fast-route": "^0.7.0",
         "middlewares/request-handler": "^0.2.0",
         "league/container": "^2.4",
-        "vlucas/phpdotenv": "^2.4"
+        "vlucas/phpdotenv": "^2.4",
+        "dms/meetup-api-client": "^2.3",
+        "cache/filesystem-adapter": "^1.0"
     }
 }

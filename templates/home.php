@@ -1,8 +1,9 @@
 <?php
 /** @var \League\Plates\Template\Template $this */
-$this->layout('layout', ['title' => 'PDXPHP Usergroup']);
-
-$commit = $this->e(substr(getenv('VERSION'), 0, 8));
+$this->layout('layout', [
+    'title' => 'PDXPHP Usergroup',
+    'header' => false
+]);
 ?>
 
 <div class="row">
@@ -16,7 +17,7 @@ $commit = $this->e(substr(getenv('VERSION'), 0, 8));
         </p>
     </div>
 </div>
-<div class="row spacer" style="min-height:100px"></div>
+<div class="row spacer" style="min-height:50px"></div>
 <div class="row center">
     <div class="col-3-sm"></div>
     <div class="col-2-sm">
@@ -29,7 +30,13 @@ $commit = $this->e(substr(getenv('VERSION'), 0, 8));
         <a href="https://php.ug/slackinvite">Slack <strong>#phpdx</strong></a>
     </div>
 </div>
-<div class="footer-floater center">
-    Copyright &copy; <?= $this->e(date('Y')); ?> PHPDX &nbsp;
-    Commit: <a href="https://github.com/buttress/phpdx.org/commit/<?= $commit ?>/"><?= $commit ?></a>
+<div class="row spacer" style="min-height:50px"></div>
+
+<div class="center">
+    <h3>Next Event</h3>
 </div>
+<?php
+$this->insert('events/list', [
+    'eventList' => $eventList,
+    'limit' => 1
+]);

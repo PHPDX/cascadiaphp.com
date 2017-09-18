@@ -2,9 +2,8 @@
 // Composer autoload
 require_once __DIR__ . '/vendor/autoload.php';
 
-$app = new \League\Container\Container();
+$app = new \League\Container\Container(new \PHPDX\Site\ProviderAggregate);
 $app->delegate(new \League\Container\ReflectionContainer());
-$app->addServiceProvider(\PHPDX\Site\ServiceProvider::class);
 
 $server = $app->get(\Zend\Diactoros\Server::class);
 

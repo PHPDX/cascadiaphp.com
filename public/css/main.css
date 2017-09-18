@@ -1,5 +1,20 @@
+.main-header {
+    background-color:#fafafa;
+}
+.header-logo {
+    max-height:50px;
+}
+.link-list {
+    list-style:none;
+}
+.link-list > li {
+    float:left;
+}
+.link-list > li > a {
+    padding: 10px 20px;
+}
 .footer-floater {
-    position:absolute;
+    position:fixed;
     left:0;
     right:0;
     bottom:0;
@@ -12,4 +27,7 @@
 .footer-floater > a {
     color: #fafafa;
     text-decoration: none;
+}
+.main-content {
+    padding-bottom:30px;
 }
