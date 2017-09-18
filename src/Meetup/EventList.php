@@ -24,6 +24,9 @@ class EventList
         $this->meetup = $client;
     }
 
+    /**
+     * @return \Generator|Event[]
+     */
     public function events()
     {
         $events = $this->cache->get('events', $this);
@@ -36,6 +39,15 @@ class EventList
 
         foreach ($events as $event) {
             yield $this->factory->fromResponse($event);
+        }
+    }
+
+    public function announced()
+    {
+        foreach ($this->events() as $event) {
+            if ($event->isAnnounced()) {
+                yield $event;
+            }
         }
     }
 

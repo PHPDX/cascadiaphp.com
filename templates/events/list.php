@@ -5,11 +5,10 @@
  * @var int $limit
  */
 $limit = $limit ?? 100;
-foreach ($eventList->events() as $event) {
+foreach ($eventList->announced() as $event) {
     if (!$limit--) {
         break;
     }
-    if ($event->isAnnounced()) {
-        $this->insert('events/event', ['event' => $event]);
-    }
+
+    $this->insert('events/event', ['event' => $event]);
 }
