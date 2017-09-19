@@ -36,7 +36,6 @@
     color: #fafafa;
 }
 .footer-floater > a {
-    color: #fafafa;
     text-decoration: none;
 }
 .main-content {
@@ -47,4 +46,10 @@
 }
 .tagline > p {
     font-size: 11px;
+}
+em,i,a,a>strong {
+    color: #418fde;
+}
+h1,h2,h3,h4,h5,strong {
+    color: #046a38;
 }
