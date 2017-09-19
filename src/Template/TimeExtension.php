@@ -33,13 +33,23 @@ class TimeExtension implements ExtensionInterface
     {
         $now = new DateTime('now', new DateTimeZone('PST'));
         $diff = $now->diff($when, true);
+        $noun = null;
 
         // Handle today and tomorrow
         switch ($diff->days) {
             case 0:
-                return 'Today at ' . $when->format('g:i A');
+                $noun = 'Today';
+                if ($when->format('G') > 16) {
+                    $noun = 'Tonight';
+                }
+                break;
             case 1:
-                return 'Tomorrow at ' . $when->format('g:i A');
+                $noun = 'Tomorrow';
+        }
+
+        // If we have a noun to use
+        if ($noun) {
+            return $noun . ' at ' . $when->format('g:i A');
         }
 
         // Return a simple format
