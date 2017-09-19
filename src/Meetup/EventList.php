@@ -34,8 +34,7 @@ class EventList
         $events = $this->cache->get('events', $this);
 
         // If we get the default value back
-        if ($events === $this) {
-            $events = iterator_to_array($this->resolveEvents());
+        if ($events === $this && $events = iterator_to_array($this->resolveEvents())) {
             $this->cache->set('events', $events, $this->ttl);
         }
 
