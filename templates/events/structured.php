@@ -16,6 +16,7 @@
         "endDate" => $event->getTime()->modify('+2 hours')->format(DATE_ATOM),
         "url" => $event->getUrl(),
         "image" => 'https://phpdx.org/images/logo.svg',
+        "isAccessibleForFree" => true,
         "location" => [
             "@type" => "Place",
             "name" => "PHPDX Venue",
