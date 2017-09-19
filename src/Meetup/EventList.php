@@ -3,6 +3,7 @@
 namespace PHPDX\Site\Meetup;
 
 use DMS\Service\Meetup\AbstractMeetupClient;
+use Guzzle\Common\Exception\RuntimeException;
 use Psr\SimpleCache\CacheInterface;
 
 class EventList
@@ -12,7 +13,7 @@ class EventList
     protected $eventCacheKey = 'events';
 
     /** @var int The cache ttl */
-    protected $ttl = 500;
+    protected $ttl = 1800;
 
     /** @var \Psr\SimpleCache\CacheInterface */
     protected $cache;
@@ -66,12 +67,7 @@ class EventList
      */
     private function resolveEvents()
     {
-        try {
-            $events = $this->getEventsFromMeetup();
-        } catch (\Exception $e) {
-            $events = [];
-        }
-
+        $events = $this->retry([$this, 'getEventsFromMeetup'], 10) ?: [];
         foreach ($events as $event) {
             yield $event;
         }
@@ -87,6 +83,21 @@ class EventList
         return $this->meetup->getEvents([
             'group_urlname' => 'pdx-php'
         ]);
+    }
+
+    protected function retry(callable $callable, $times = 10, callable $filter = null)
+    {
+        try {
+            retry:
+            return $callable();
+        } catch (\Exception $e) {
+            if (!$filter || $filter($e)) {
+                if ($times--) {
+                    goto retry;
+                }
+            }
+        }
+
     }
 
 }
