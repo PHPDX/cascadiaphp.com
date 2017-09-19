@@ -16,10 +16,10 @@
             <?php
             $location = $event->getVenue();
             ?>
-            <span class="address"><?= $this->e($location['address_1' ?? 'Unkown Address']) ?></span>,
-            <span class="city"><?= $this->e($location['city' ?? 'Unkown Address']) ?></span>
-            <span class="state"><?= $this->e($location['state' ?? 'Unkown Address']) ?></span>,
-            <span class="country"><?= $this->e($location['localized_country_name' ?? 'Unkown Address']) ?></span>
+            <span class="address"><?= $this->e($location['address_1'] ?? 'Unkown Address') ?></span>,
+            <span class="city"><?= $this->e($location['city'] ?? 'Unkown Address') ?></span>
+            <span class="state"><?= $this->e($location['state'] ?? 'Unkown Address') ?></span>,
+            <span class="country"><?= $this->e($location['localized_country_name'] ?? 'Unkown Address') ?></span>
         </div>
         <div class="col-4 right when">
             <span class="time"><?= $this->e($event->getTime()->format('F jS Y \a\t g:i A')) ?></span>
@@ -45,3 +45,4 @@
         </div>
     </div>
 </div>
+<?= $this->insert('events/structured', $this->data());
