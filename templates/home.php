@@ -16,7 +16,7 @@ $this->layout('layout', [
     </div>
 </div>
 </div>
-<h2 class="center">Our Sponsors</h2>
+<div class="center"><em>Brought to you by volunteers and contributions from</em></div>
 <div class="sponsorband">
     <?= $this->markdown('sponsors') ?>
 </div>
