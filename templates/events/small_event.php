@@ -7,8 +7,8 @@
 
 <div class="small-event-box">
     <div class="row meta">
-        <div class="col-6 name"><a href="<?= $event->getUrl() ?>"><?= $this->e($event->getName()) ?></a></div>
-        <div class="col-6 time right"><?= $this->e($this->time()->when($event->getTime())) ?></span></div>
+        <div class="col-6-sm name"><a href="<?= $event->getUrl() ?>"><?= $this->e($event->getName()) ?></a></div>
+        <div class="col-6-sm time right"><?= $this->e($this->time()->when($event->getTime())) ?></span></div>
     </div>
     <div class="row where">
         <div class="col-12">

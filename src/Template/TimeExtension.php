@@ -45,6 +45,10 @@ class TimeExtension implements ExtensionInterface
                 break;
             case 1:
                 $noun = 'Tomorrow';
+                if ($when->format('G') > 16) {
+                    $noun .= ' Night';
+                }
+                break;
         }
 
         // If we have a noun to use
