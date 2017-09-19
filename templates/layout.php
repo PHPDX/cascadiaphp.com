@@ -3,9 +3,11 @@
 ?>
 <html>
 <head>
-    <title><?=$this->e($title ?? 'Untitled')?></title>
-    <link href="css/main.css" rel="stylesheet" />
-    <link href="css/simplegrid.css" rel="stylesheet" />
+    <title><?= $this->e($title ?? 'Untitled') ?></title>
+    <style>
+        <?php include __DIR__ . '/../public/css/main.css' ?>
+        <?php include __DIR__ . '/../public/css/simplegrid.css' ?>
+    </style>
 </head>
 <body>
 
@@ -19,9 +21,8 @@ if ($header ?? true) {
 ?>
 
 <div class="main-content container">
-    <?=$this->section('content')?>
+    <?= $this->section('content') ?>
 </div>
-
 
 <?php
 if ($footer ?? true) {
