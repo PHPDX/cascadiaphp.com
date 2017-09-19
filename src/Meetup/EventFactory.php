@@ -38,7 +38,7 @@ class EventFactory
     {
         $date = new \DateTime('now');
         $date->setTimestamp($param / 1000);
-        $date->setTimezone(new \DateTimeZone('PST'));
+        $date->setTimezone(new \DateTimeZone('america/los_angeles'));
         return $date;
     }
 }
