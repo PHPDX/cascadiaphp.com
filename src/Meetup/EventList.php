@@ -8,7 +8,7 @@ use Psr\SimpleCache\CacheInterface;
 class EventList
 {
 
-    private $ttl = 3600;
+    private $ttl = 500;
 
     /** @var \Psr\SimpleCache\CacheInterface */
     private $cache;
@@ -44,11 +44,10 @@ class EventList
         }
     }
 
-    public function pastEvents()
-    {
-
-    }
-
+    /**
+     * Announced events
+     * @return \Generator|\PHPDX\Site\Meetup\Event[]
+     */
     public function announced()
     {
         foreach ($this->events() as $event) {
@@ -58,6 +57,9 @@ class EventList
         }
     }
 
+    /**
+     * @return \Generator|array[]
+     */
     private function resolveEvents()
     {
         try {
