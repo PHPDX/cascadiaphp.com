@@ -8,6 +8,9 @@
 .main-content .logo {
     height: 230px;
 }
+.main-content .logo > img {
+    max-width: 100%;
+}
 .nav > ul {
     list-style:none;
 }
