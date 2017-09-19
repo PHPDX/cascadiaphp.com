@@ -1,5 +1,8 @@
 <?php
-/** @var \PHPDX\Site\Meetup\Event $event */
+/**
+ * @var \PHPDX\Site\Meetup\Event $event
+ * @var \PHPDX\Site\Template\Template $this
+ */
 ?>
 <script type="application/ld+json">
 <?php
@@ -11,6 +14,8 @@
         "description" => $event->getDescription(),
         "startDate" => $event->getTime()->format(DATE_ATOM),
         "endDate" => $event->getTime()->modify('+2 hours')->format(DATE_ATOM),
+        "url" => $event->getUrl(),
+        "image" => 'https://phpdx.org/images/logo.svg',
         "location" => [
             "@type" => "Place",
             "name" => "PHPDX Venue",
