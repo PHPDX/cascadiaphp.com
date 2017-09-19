@@ -1,8 +1,9 @@
 <?php
-/** @var \League\Plates\Template\Template $this */
+/** @var \PHPDX\Site\Template\Template $this */
 $this->layout('layout', [
     'title' => 'PDXPHP Usergroup',
-    'header' => false
+    'nologo' => true,
+    'active' => '/'
 ]);
 ?>
 
@@ -11,26 +12,9 @@ $this->layout('layout', [
         <div class="logo img center">
             <img src="/images/logo.svg">
         </div>
-        <p>
-            PHPDX is a <strong>Portland Oregon</strong> based PHP user group that has been running since at least 2010. <br>
-            We meet <strong>twice every month</strong> and host a <strong>PHP conference</strong> every year.
-        </p>
+        <p><?= $this->markdown('mission') ?></p>
     </div>
 </div>
-<div class="row spacer" style="min-height:50px"></div>
-<div class="row center">
-    <div class="col-3-sm"></div>
-    <div class="col-2-sm">
-        <a href="https://www.meetup.com/PDX-PHP/">Meetup</a>
-    </div>
-    <div class="col-2-sm">
-        <a href="https://twitter.com/phpdx">Twitter</a>
-    </div>
-    <div class="col-2-sm">
-        <a href="https://php.ug/slackinvite">Slack <strong>#phpdx</strong></a>
-    </div>
-</div>
-<div class="row spacer" style="min-height:50px"></div>
 
 <div class="center">
     <h3>Next Event</h3>
@@ -40,3 +24,4 @@ $this->insert('events/list', [
     'eventList' => $eventList,
     'limit' => 1
 ]);
+?>

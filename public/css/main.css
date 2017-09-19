@@ -1,17 +1,22 @@
 .main-header {
     background-color:#fafafa;
+    min-height: 65px;
 }
 .header-logo {
     max-height:50px;
 }
-.link-list {
+.nav > ul {
     list-style:none;
 }
-.link-list > li {
-    float:left;
+.nav > ul > li {
+    display:inline-block;
 }
-.link-list > li > a {
+.nav > ul > li > a {
     padding: 10px 20px;
+    text-decoration: none;
+}
+.nav > ul > li > a:hover, .nav > ul > li > a.active {
+    background-color: rgba(200, 200, 200, 0.1);
 }
 .footer-floater {
     position:fixed;
@@ -30,4 +35,10 @@
 }
 .main-content {
     padding-bottom:30px;
+}
+.directions {
+    background: #f3f3f3;
+}
+.tagline > p {
+    font-size: 11px;
 }

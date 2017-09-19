@@ -1,6 +1,6 @@
 <?php
 /**
- * @var \League\Plates\Template\Template $this
+ * @var \PHPDX\Site\Template\Template $this
  * @var \PHPDX\Site\Meetup\EventList $eventList
  * @var int $limit
  */

@@ -1,14 +1,16 @@
 <?php
 /**
  * @var \PHPDX\Site\Meetup\Event $event
- * @var \League\Plates\Template\Template $this
+ * @var \PHPDX\Site\Template\Template $this
  */
 ?>
 
 <div class="event-box">
     <div class="row meta">
         <div class="col-3 name">
+            <a href="<?= $event->getUrl() ?>">
             <?= $this->e($event->getName()) ?>
+            </a>
         </div>
         <div class="col-5 center where">
             <?php
@@ -23,6 +25,17 @@
             <span class="time"><?= $this->e($event->getTime()->format('F jS Y \a\t g:i A')) ?></span>
         </div>
     </div>
+    <?php
+    if ($directions = $event->getDirections()) {
+        ?>
+        <div class="row center">
+            <div class="col-12 directions">
+                <?= $this->e($event->getDirections()) ?>
+            </div>
+        </div>
+        <?php
+    }
+    ?>
 
     <div class="row">
         <div class="col-12 what">

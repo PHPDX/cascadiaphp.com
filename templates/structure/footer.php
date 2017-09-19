@@ -1,5 +1,5 @@
 <?php
-/** @var \League\Plates\Template\Template $this */
+/** @var \PHPDX\Site\Template\Template $this */
 $commit = $this->e(substr(getenv('VERSION'), 0, 8));
 ?>
 

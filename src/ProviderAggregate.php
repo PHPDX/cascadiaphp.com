@@ -2,10 +2,10 @@
 
 namespace PHPDX\Site;
 
-use League\Container\ContainerInterface;
 use League\Container\ServiceProvider\ServiceProviderAggregate;
 use PHPDX\Site\Controller\ServiceProvider as ControllerProvider;
 use PHPDX\Site\Meetup\ServiceProvider as MeetupProvider;
+use PHPDX\Site\Template\ServiceProvider as TemplateProvider;
 
 class ProviderAggregate extends ServiceProviderAggregate
 {
@@ -13,7 +13,8 @@ class ProviderAggregate extends ServiceProviderAggregate
     protected $customProviders = [
         ServiceProvider::class,
         MeetupProvider::class,
-        ControllerProvider::class
+        ControllerProvider::class,
+        TemplateProvider::class
     ];
 
     protected $booted = false;
@@ -27,7 +28,7 @@ class ProviderAggregate extends ServiceProviderAggregate
     public function register($service)
     {
         $this->boot();
-        return parent::register($service);
+        parent::register($service);
     }
 
     private function boot()

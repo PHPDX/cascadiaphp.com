@@ -1,33 +1,4 @@
 <?php
-/**
- * array (size=18)
-'utc_offset' => int -25200000
-'headcount' => int 0
-'visibility' => string 'public' (length=6)
-'waitlist_count' => int 0
-'created' => int 1491809943000
-'maybe_rsvp_count' => int 0
-'description' => string '<p>There will be food and participation, so bring a computer!</p> <p>PHP TestFest seeks to create more PHP core contributors by introducing PHP programmers to the PHP language test suite, teaching them how to write phpttests. From September through December, 2017, groups worldwide will meet physically or virtually to learn how to write and contribute phpt tests. You don’t have to be a C genius—in fact, you don’t need to know C at all to contribute.<a href="https://phptestfest.org/start/#fn:phpcore'... (length=1046)
-'how_to_find_us' => string 'If you can't get in, please call/message 928-486-5172' (length=53)
-'event_url' => string 'https://www.meetup.com/PDX-PHP/events/242705275/' (length=48)
-'yes_rsvp_count' => int 11
-'announced' => boolean true
-'name' => string 'PHP TestFest!' (length=13)
-'id' => string 'bdbmwmywmbzb' (length=12)
-'time' => int 1505871000000
-'updated' => int 1505758775000
-'group' =>
-array (size=8)
-'join_mode' => string 'open' (length=4)
-'created' => int 1366411187000
-'name' => string 'PHPDX' (length=5)
-'group_lon' => float -122.69000244141
-'id' => int 8138812
-'urlname' => string 'PDX-PHP' (length=7)
-'group_lat' => float 45.5
-'who' => string 'Developers' (length=10)
-'status' => string 'upcoming' (length=8)
- */
 
 namespace PHPDX\Site\Meetup;
 

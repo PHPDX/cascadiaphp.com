@@ -8,13 +8,15 @@ use Psr\SimpleCache\CacheInterface;
 class EventList
 {
 
-    /** @var \Psr\SimpleCache\CacheInterface  */
+    private $ttl = 3600;
+
+    /** @var \Psr\SimpleCache\CacheInterface */
     private $cache;
 
-    /** @var \PHPDX\Site\Meetup\EventFactory  */
+    /** @var \PHPDX\Site\Meetup\EventFactory */
     private $factory;
 
-    /** @var \DMS\Service\Meetup\AbstractMeetupClient  */
+    /** @var \DMS\Service\Meetup\AbstractMeetupClient */
     private $meetup;
 
     public function __construct(CacheInterface $cache, EventFactory $factory, AbstractMeetupClient $client)
@@ -34,12 +36,17 @@ class EventList
         // If we get the default value back
         if ($events === $this) {
             $events = iterator_to_array($this->resolveEvents());
-            $this->cache->set('events', $events, 60);
+            $this->cache->set('events', $events, $this->ttl);
         }
 
         foreach ($events as $event) {
             yield $this->factory->fromResponse($event);
         }
+    }
+
+    public function pastEvents()
+    {
+
     }
 
     public function announced()
@@ -53,12 +60,20 @@ class EventList
 
     private function resolveEvents()
     {
-        $meetup = $this->meetup->getGroup(['urlname' => 'PDX-PHP']);
-        $id = $meetup->getData()['id'];
+        try {
+            $meetup = $this->cache->get('events', $this);
+            if ($meetup === $this) {
+                $meetup = $this->meetup->getGroup(['urlname' => 'PDX-PHP']);
+                $this->cache->set('meetup', $meetup, $this->ttl);
+            }
+            $id = $meetup->getData()['id'];
 
-        $events = $this->meetup->getEvents([
-            'group_id' => $id
-        ]);
+            $events = $this->meetup->getEvents([
+                'group_id' => $id
+            ]);
+        } catch (\Exception $e) {
+            $events = [];
+        }
 
         foreach ($events as $event) {
             yield $event;

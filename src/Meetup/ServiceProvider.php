@@ -22,7 +22,7 @@ class ServiceProvider extends AbstractServiceProvider
      */
     public function register()
     {
-        $this->container->add(AbstractMeetupClient::class, function() {
+        $this->container->add(AbstractMeetupClient::class, function () {
             return MeetupKeyAuthClient::factory([
                 'key' => getenv('MEETUP_API_KEY')
             ]);

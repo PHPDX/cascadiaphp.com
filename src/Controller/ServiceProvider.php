@@ -44,40 +44,34 @@ class ServiceProvider extends AbstractServiceProvider
         $this->container->share(ContainerInterface::class, $this->container);
 
         // Add a factory for the build handler
-        $this->container->add(RequestHandler::class, function() {
+        $this->container->add(RequestHandler::class, function () {
             return $this->requestHandlerFactory();
         });
 
-        // Set up templating
-        $this->container->share(Engine::class, function() {
-            $engine = new Engine(__DIR__ . '/../../templates');
-            $engine->addData([
-                'container' => $this->container
-            ]);
-            return $engine;
-        });
-
         // Set up the server
-        $this->container->share(Server::class, function() {
+        $this->container->share(Server::class, function () {
             return $this->diactorosFactory();
         });
 
         // Set up Request resolution
-        $this->container->share(ServerRequestInterface::class, function() {
+        $this->container->share(ServerRequestInterface::class, function () {
             return ServerRequestFactory::fromGlobals();
         });
 
         // Set up the router
-        $this->container->share(Dispatcher::class, function() {
+        $this->container->share(Dispatcher::class, function () {
             return require __DIR__ . '/../../bootstrap/router.php';
         });
 
-        // Set up cache
-        $this->container->share(CacheInterface::class, function() {
+        // Set up filesystem
+        $this->container->share(Filesystem::class, function () {
             $filesystemAdapter = new Local(__DIR__ . '/../../cache/');
-            $filesystem = new Filesystem($filesystemAdapter);
+            return new Filesystem($filesystemAdapter);
+        });
 
-            return new FilesystemCachePool($filesystem);
+        // Set up cache
+        $this->container->share(CacheInterface::class, function () {
+            return $this->container->get(FilesystemCachePool::class);
         });
     }
 
@@ -106,7 +100,7 @@ class ServiceProvider extends AbstractServiceProvider
         $request = $this->container->get(ServerRequestInterface::class);
 
         // Create a new diactoros server
-        return Server::createServerFromRequest(function($request) use ($middleware) {
+        return Server::createServerFromRequest(function ($request) use ($middleware) {
             return $middleware->dispatch($request);
         }, $request);
     }

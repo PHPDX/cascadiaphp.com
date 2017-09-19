@@ -1,5 +1,5 @@
 <?php
-/** @var \League\Plates\Template\Template $this */
+/** @var \PHPDX\Site\Template\Template $this */
 ?>
 <html>
 <head>
@@ -11,7 +11,10 @@
 
 <?php
 if ($header ?? true) {
-    $this->insert('structure/header');
+    $this->insert('structure/header', [
+        'nologo' => $nologo ?? false,
+        'active' => $active ?? ''
+    ]);
 }
 ?>
 
