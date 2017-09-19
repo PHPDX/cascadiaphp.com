@@ -72,3 +72,23 @@ h1,h2,h3,h4,h5,strong {
     min-height:30px;
     line-height:30px;
 }
+.sponsorband {
+    box-shadow: inset 0 0 20px #f0f0f0;
+    width: 100%;
+    overflow:hidden;
+}
+.sponsorband > ul > li {
+    display:inline;
+    -webkit-box-flex: 1;
+    flex-direction:row;
+    margin: auto;
+    max-height: 100px;
+}
+.sponsorband ul > li img {
+    height: 40px;
+}
+.sponsorband ul {
+    list-style: none;
+    display:flex;
+    padding: 0;
+}
