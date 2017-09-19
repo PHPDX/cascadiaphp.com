@@ -5,6 +5,9 @@
 .header-logo {
     max-height:50px;
 }
+.main-content .logo {
+    height: 230px;
+}
 .nav > ul {
     list-style:none;
 }
