@@ -83,6 +83,7 @@ h1,h2,h3,h4,h5,strong {
     flex-direction:row;
     margin: auto;
     max-height: 100px;
+    overflow:hidden;
 }
 .sponsorband ul > li img {
     height: 40px;
