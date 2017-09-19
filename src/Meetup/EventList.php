@@ -8,16 +8,20 @@ use Psr\SimpleCache\CacheInterface;
 class EventList
 {
 
-    private $ttl = 500;
+    /** @var string Cache keys */
+    protected $eventCacheKey = 'events';
+
+    /** @var int The cache ttl */
+    protected $ttl = 500;
 
     /** @var \Psr\SimpleCache\CacheInterface */
-    private $cache;
+    protected $cache;
 
     /** @var \PHPDX\Site\Meetup\EventFactory */
-    private $factory;
+    protected $factory;
 
     /** @var \DMS\Service\Meetup\AbstractMeetupClient */
-    private $meetup;
+    protected $meetup;
 
     public function __construct(CacheInterface $cache, EventFactory $factory, AbstractMeetupClient $client)
     {
@@ -31,11 +35,11 @@ class EventList
      */
     public function events()
     {
-        $events = $this->cache->get('events', $this);
+        $events = $this->cache->get($this->eventCacheKey, $this);
 
         // If we get the default value back
         if ($events === $this && $events = iterator_to_array($this->resolveEvents())) {
-            $this->cache->set('events', $events, $this->ttl);
+            $this->cache->set($this->eventCacheKey, $events, $this->ttl);
         }
 
         foreach ($events as $event) {
@@ -58,20 +62,12 @@ class EventList
 
     /**
      * @return \Generator|array[]
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      */
     private function resolveEvents()
     {
         try {
-            $meetup = $this->cache->get('events', $this);
-            if ($meetup === $this) {
-                $meetup = $this->meetup->getGroup(['urlname' => 'PDX-PHP']);
-                $this->cache->set('meetup', $meetup, $this->ttl);
-            }
-            $id = $meetup->getData()['id'];
-
-            $events = $this->meetup->getEvents([
-                'group_id' => $id
-            ]);
+            $events = $this->getEventsFromMeetup();
         } catch (\Exception $e) {
             $events = [];
         }
@@ -79,6 +75,18 @@ class EventList
         foreach ($events as $event) {
             yield $event;
         }
+    }
+
+    /**
+     * Get the meetup event list
+     * @param $groupId
+     * @return \DMS\Service\Meetup\Response\MultiResultResponse
+     */
+    protected function getEventsFromMeetup()
+    {
+        return $this->meetup->getEvents([
+            'group_urlname' => 'pdx-php'
+        ]);
     }
 
 }

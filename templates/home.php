@@ -16,12 +16,26 @@ $this->layout('layout', [
     </div>
 </div>
 
-<div class="center">
-    <h3>Next Event</h3>
+
+<div class="row">
+    <div class="col-6">
+        <h3 class="center">Next Event</h3>
+        <?php
+        $this->insert('events/list', [
+            'eventList' => $eventList,
+            'limit' => 1,
+            'small' => true
+        ]);
+        ?>
+    </div>
+    <div class="col-6">
+        <h3 class="center">Last Event</h3>
+        <?php
+        $this->insert('events/list', [
+            'eventList' => $pastEventList,
+            'limit' => 1,
+            'small' => true
+        ]);
+        ?>
+    </div>
 </div>
-<?php
-$this->insert('events/list', [
-    'eventList' => $eventList,
-    'limit' => 1
-]);
-?>

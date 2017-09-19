@@ -1,3 +1,9 @@
+.pull-right {
+    float:right;
+}
+.pull-left {
+    float:left
+}
 .main-header {
     background-color:#fafafa;
     min-height: 65px;
@@ -52,4 +58,17 @@ em,i,a,a>strong {
 }
 h1,h2,h3,h4,h5,strong {
     color: #046a38;
+}
+.small-event-box {
+    box-shadow: 0 0 20px -5px #e0e0e0;
+    border: solid 1px #e0e0e0;
+}
+.small-event-box > .description, .small-event-box > .description > div, .small-event-box .name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.small-event-box > .direction-spacer, .small-event-box .directions {
+    min-height:30px;
+    line-height:30px;
 }

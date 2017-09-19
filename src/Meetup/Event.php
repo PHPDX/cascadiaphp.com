@@ -292,4 +292,9 @@ class Event
         $this->url = $url;
         return $this;
     }
+
+    public function getAttendees()
+    {
+        return $this->headcount ? $this->headcount : $this->getYesCount() + $this->getMaybeCount();
+    }
 }

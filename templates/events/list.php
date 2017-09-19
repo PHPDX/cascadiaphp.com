@@ -10,5 +10,5 @@ foreach ($eventList->announced() as $event) {
         break;
     }
 
-    $this->insert('events/event', ['event' => $event]);
+    $this->insert('events/' . ($small ?? false ? 'small_event' : 'event'), ['event' => $event]);
 }

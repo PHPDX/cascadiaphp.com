@@ -12,7 +12,7 @@
             <?= $this->e($event->getName()) ?>
             </a>
         </div>
-        <div class="col-5 center where">
+        <div class="col-6 center where">
             <?php
             $location = $event->getVenue();
             ?>
@@ -21,8 +21,8 @@
             <span class="state"><?= $this->e($location['state'] ?? 'Unkown Address') ?></span>,
             <span class="country"><?= $this->e($location['localized_country_name'] ?? 'Unkown Address') ?></span>
         </div>
-        <div class="col-4 right when">
-            <span class="time"><?= $this->e($event->getTime()->format('F jS Y \a\t g:i A')) ?></span>
+        <div class="col-6 center when">
+            <span class="time"><?= $this->e($this->time()->when($event->getTime())) ?></span>
         </div>
     </div>
     <?php

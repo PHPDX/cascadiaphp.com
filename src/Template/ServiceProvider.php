@@ -41,6 +41,7 @@ class ServiceProvider extends AbstractServiceProvider
             'container' => $this->container
         ]);
         $engine->loadExtension($this->container->get(MarkdownExtension::class));
+        $engine->loadExtension($this->container->get(TimeExtension::class));
 
         return $engine;
     }
