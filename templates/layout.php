@@ -8,6 +8,8 @@
         <?php include __DIR__ . '/../public/css/main.css' ?>
         <?php include __DIR__ . '/../public/css/simplegrid.css' ?>
     </style>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
 </head>
 <body>
 
