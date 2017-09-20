@@ -15,32 +15,27 @@ $this->layout('layout', [
         <p><?= $this->markdown('mission') ?></p>
     </div>
 </div>
-</div>
-<div class="center"><em>Brought to you by volunteers and contributions from</em></div>
-<div class="sponsorband">
-    <?= $this->markdown('sponsors') ?>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-6">
-            <h3 class="center">Next Event</h3>
-            <?php
-            $this->insert('events/list', [
-                'eventList' => $eventList,
-                'limit' => 1,
-                'small' => true
-            ]);
-            ?>
-        </div>
-        <div class="col-6">
-            <h3 class="center">Last Event</h3>
-            <?php
-            $this->insert('events/list', [
-                'eventList' => $pastEventList,
-                'limit' => 1,
-                'small' => true
-            ]);
-            ?>
-        </div>
+
+<div class="row">
+    <div class="col-6">
+        <h3 class="center">Next Event</h3>
+        <?php
+        $this->insert('events/list', [
+            'eventList' => $eventList,
+            'limit' => 1,
+            'small' => true
+        ]);
+        ?>
     </div>
-    <div class="spacer" style="height:50px"></div>
+    <div class="col-6">
+        <h3 class="center">Last Event</h3>
+        <?php
+        $this->insert('events/list', [
+            'eventList' => $pastEventList,
+            'limit' => 1,
+            'small' => true
+        ]);
+        ?>
+    </div>
+</div>
+<div class="spacer" style="height:50px"></div>
