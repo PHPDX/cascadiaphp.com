@@ -5,6 +5,7 @@ namespace PHPDX\Site;
 use League\Container\ServiceProvider\ServiceProviderAggregate;
 use PHPDX\Site\Controller\ServiceProvider as ControllerProvider;
 use PHPDX\Site\Meetup\ServiceProvider as MeetupProvider;
+use PHPDX\Site\Router\ServiceProvider as RouterProvider;
 use PHPDX\Site\Template\ServiceProvider as TemplateProvider;
 
 class ProviderAggregate extends ServiceProviderAggregate
@@ -14,7 +15,8 @@ class ProviderAggregate extends ServiceProviderAggregate
         ServiceProvider::class,
         MeetupProvider::class,
         ControllerProvider::class,
-        TemplateProvider::class
+        TemplateProvider::class,
+        RouterProvider::class
     ];
 
     protected $booted = false;

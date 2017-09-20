@@ -3,7 +3,6 @@
 namespace PHPDX\Site\Controller;
 
 use Cache\Adapter\Filesystem\FilesystemCachePool;
-use FastRoute\Dispatcher;
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use League\Flysystem\Adapter\Local;
 use League\Flysystem\Filesystem;
@@ -27,7 +26,6 @@ class ServiceProvider extends AbstractServiceProvider
         ContainerInterface::class,
         Server::class,
         Engine::class,
-        Dispatcher::class,
         CacheInterface::class
     ];
 
@@ -56,11 +54,6 @@ class ServiceProvider extends AbstractServiceProvider
         // Set up Request resolution
         $this->container->share(ServerRequestInterface::class, function () {
             return ServerRequestFactory::fromGlobals();
-        });
-
-        // Set up the router
-        $this->container->share(Dispatcher::class, function () {
-            return require __DIR__ . '/../../bootstrap/router.php';
         });
 
         // Set up filesystem

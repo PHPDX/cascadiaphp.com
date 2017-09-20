@@ -3,7 +3,6 @@
 namespace PHPDX\Site\Template;
 
 use DateTime;
-use DateTimeZone;
 use League\Plates\Engine;
 use League\Plates\Extension\ExtensionInterface;
 
