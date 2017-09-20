@@ -31,31 +31,6 @@ class TimeExtension implements ExtensionInterface
      */
     public function when(DateTime $when)
     {
-        $now = new DateTime('now', new DateTimeZone('PST'));
-        $diff = $now->diff($when, true);
-        $noun = null;
-
-        // Handle today and tomorrow
-        switch ($diff->days) {
-            case 0:
-                $noun = 'Today';
-                if ($when->format('G') > 16) {
-                    $noun = 'Tonight';
-                }
-                break;
-            case 1:
-                $noun = 'Tomorrow';
-                if ($when->format('G') > 16) {
-                    $noun .= ' Night';
-                }
-                break;
-        }
-
-        // If we have a noun to use
-        if ($noun) {
-            return $noun . ' at ' . $when->format('g:i A');
-        }
-
         // Return a simple format
         return $this->format($when);
     }
