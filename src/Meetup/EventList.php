@@ -87,17 +87,15 @@ class EventList
 
     protected function retry(callable $callable, $times = 10, callable $filter = null)
     {
-        try {
-            retry:
-            return $callable();
-        } catch (\Exception $e) {
-            if (!$filter || $filter($e)) {
-                if ($times--) {
-                    goto retry;
+        while ($times--) {
+            try {
+                return $callable();
+            } catch (\Throwable $e) {
+                if ($filter && $filter($e)) {
+                    break;
                 }
             }
         }
-
     }
 
 }
