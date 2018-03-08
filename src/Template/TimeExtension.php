@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPDX\Site\Template;
+namespace CascadiaPHP\Site\Template;
 
 use DateTime;
 use League\Plates\Engine;
@@ -16,7 +16,7 @@ class TimeExtension implements ExtensionInterface
 
     /**
      * Return an instance of this class
-     * @return \PHPDX\Site\Template\TimeExtension
+     * @return \CascadiaPHP\Site\Template\TimeExtension
      */
     public function instance(): TimeExtension
     {

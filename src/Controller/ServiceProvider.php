@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPDX\Site\Controller;
+namespace CascadiaPHP\Site\Controller;
 
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Container\ServiceProvider\AbstractServiceProvider;

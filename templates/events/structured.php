@@ -1,7 +1,7 @@
 <?php
 /**
- * @var \PHPDX\Site\Meetup\Event $event
- * @var \PHPDX\Site\Template\Template $this
+ * @var \CascadiaPHP\Site\Meetup\Event $event
+ * @var \CascadiaPHP\Site\Template\Template $this
  */
 ?>
 <script type="application/ld+json">

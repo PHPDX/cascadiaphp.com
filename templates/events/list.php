@@ -1,7 +1,7 @@
 <?php
 /**
- * @var \PHPDX\Site\Template\Template $this
- * @var \PHPDX\Site\Meetup\EventList $eventList
+ * @var \CascadiaPHP\Site\Template\Template $this
+ * @var \CascadiaPHP\Site\Meetup\EventList $eventList
  * @var int $limit
  */
 $limit = $limit ?? 100;

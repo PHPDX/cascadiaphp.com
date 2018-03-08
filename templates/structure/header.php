@@ -1,5 +1,6 @@
 <?php
-/** @var \PHPDX\Site\Template\Template $this */
+/** @var \CascadiaPHP\Site\Template\Template $this */
+return;
 ?>
     <header class="main-header row">
         <div class="col-2 col-12-sm">

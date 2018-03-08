@@ -1,19 +1,18 @@
 <?php
 
-namespace PHPDX\Site;
+namespace CascadiaPHP\Site;
 
 use League\Container\ServiceProvider\ServiceProviderAggregate;
-use PHPDX\Site\Controller\ServiceProvider as ControllerProvider;
-use PHPDX\Site\Meetup\ServiceProvider as MeetupProvider;
-use PHPDX\Site\Router\ServiceProvider as RouterProvider;
-use PHPDX\Site\Template\ServiceProvider as TemplateProvider;
+use CascadiaPHP\Site\Controller\ServiceProvider as ControllerProvider;
+use CascadiaPHP\Site\Meetup\ServiceProvider as MeetupProvider;
+use CascadiaPHP\Site\Router\ServiceProvider as RouterProvider;
+use CascadiaPHP\Site\Template\ServiceProvider as TemplateProvider;
 
 class ProviderAggregate extends ServiceProviderAggregate
 {
 
     protected $customProviders = [
         ServiceProvider::class,
-        MeetupProvider::class,
         ControllerProvider::class,
         TemplateProvider::class,
         RouterProvider::class

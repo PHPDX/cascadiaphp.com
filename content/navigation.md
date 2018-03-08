@@ -1,5 +1,0 @@
-* [Home](/)
-* [Events](/events)
-* [Twitter](https://twitter.com/phpdx/)
-* [Meetup](https://www.meetup.com/PDX-PHP/)
-* [Slack **#pdxphp**](https://php.ug/slackinvite/)

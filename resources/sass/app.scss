@@ -1,0 +1,112 @@
+/* HSL */
+$color1: hsla(6%, 71%, 44%, 1);
+$color2: hsla(240%, 100%, 98%, 1);
+$color3: hsla(34%, 75%, 80%, 1);
+$color4: hsla(222%, 16%, 39%, 1);
+$color5: hsla(161%, 35%, 38%, 1);
+
+/* RGB */
+$color1: rgba(192, 50, 33, 1);
+$color2: rgba(247, 247, 255, 1);
+$color3: rgba(242, 208, 164, 1);
+$color4: rgba(84, 94, 117, 1);
+$color5: rgba(63, 130, 109, 1);
+
+/* Fonts */
+$font1: 'Raleway', sans-serif;
+$font2: 'Lobster', cursive;
+
+@import url('https://fonts.googleapis.com/css?family=Lobster|Raleway');
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  background-color: $color2;
+  color: $color5;
+  font-family: $font1;
+}
+
+h1, h2, h3{
+  font-family: $font1;
+}
+h4, h5 {
+  font-family: $font2;
+}
+
+.cta-container {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+
+  align-items: center;
+}
+section.main-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  h1 {
+    color: $color5;
+    font-size: 40pt;
+  }
+
+  h4 {
+    color: $color4;
+    font-size:25pt;
+  }
+
+  .item {
+    max-width: 75%;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all 200ms ease-in-out;
+    display: inline-block;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .main-item {
+    border: solid 3px $color3;
+    padding: 30px;
+    background-color: $color2;
+    box-shadow: 0 0 30px -10px $color4;
+  }
+
+  .item-top {
+    align-self: flex-start;
+  }
+
+  .item-bottom {
+    align-self: flex-end;
+  }
+
+}
+
+div.footer {
+  color: $color3;
+  background-color: $color4;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5px 0;
+
+  a {
+    color: $color5;
+  }
+}
+
+div {
+  font-weight:bold;
+}

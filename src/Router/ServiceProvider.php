@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPDX\Site\Router;
+namespace CascadiaPHP\Site\Router;
 
 use FastRoute\Dispatcher;
 use FastRoute\RouteCollector;
@@ -32,7 +32,7 @@ class ServiceProvider extends AbstractServiceProvider
 
     protected function routes(RouteCollector $r)
     {
-        $r->get('/', '\PHPDX\Site\Controller\HomeController::home');
-        $r->get('/events', '\PHPDX\Site\Controller\EventsController::events');
+        $r->get('/', '\CascadiaPHP\Site\Controller\PrototypeController::home');
+        $r->get('/subscribe', '\CascadiaPHP\Site\Controller\PrototypeController::subscribe');
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPDX\Site\Template;
+namespace CascadiaPHP\Site\Template;
 
 /**
  * This class is only used for highlighting

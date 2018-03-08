@@ -1,7 +1,7 @@
 <?php
 /**
- * @var \PHPDX\Site\Template\Template $this
- * @var \PHPDX\Site\Meetup\Event[] $events
+ * @var \CascadiaPHP\Site\Template\Template $this
+ * @var \CascadiaPHP\Site\Meetup\Event[] $events
  */
 $this->layout('layout', [
     'title' => 'Upcoming Events',

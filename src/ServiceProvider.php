@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPDX\Site;
+namespace CascadiaPHP\Site;
 
 use Dotenv\Dotenv;
 use Interop\Container\ContainerInterface;
@@ -26,6 +26,13 @@ class ServiceProvider extends AbstractServiceProvider implements BootableService
      */
     public function boot()
     {
+        // Load in error handling
+        if (class_exists(\Whoops\Run::class, true)) {
+            $whoops = new \Whoops\Run();
+            $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+            $whoops->register();
+        }
+
         // Load in .env
         try {
             // Load in additional version stuff

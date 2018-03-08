@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPDX\Site\Template;
+namespace CascadiaPHP\Site\Template;
 
 use League\Plates\Engine;
 use League\Plates\Extension\ExtensionInterface;

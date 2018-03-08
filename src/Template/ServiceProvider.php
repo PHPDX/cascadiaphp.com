@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPDX\Site\Template;
+namespace CascadiaPHP\Site\Template;
 
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use League\Plates\Engine;
@@ -10,7 +10,8 @@ class ServiceProvider extends AbstractServiceProvider
 
     protected $provides = [
         Engine::class,
-        MarkdownExtension::class
+        MarkdownExtension::class,
+        AssetExtension::class
     ];
 
     /**
@@ -32,6 +33,11 @@ class ServiceProvider extends AbstractServiceProvider
             $parsedown = $this->container->get(\Parsedown::class);
             return new MarkdownExtension($parsedown, __DIR__ . '/../../content');
         });
+
+        // Set up extensions
+        $this->container->add(AssetExtension::class, function () {
+            return new AssetExtension( __DIR__ . '/../../');
+        });
     }
 
     private function getTemplateEngine()
@@ -42,6 +48,7 @@ class ServiceProvider extends AbstractServiceProvider
         ]);
         $engine->loadExtension($this->container->get(MarkdownExtension::class));
         $engine->loadExtension($this->container->get(TimeExtension::class));
+        $engine->loadExtension($this->container->get(AssetExtension::class));
 
         return $engine;
     }
