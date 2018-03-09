@@ -4,7 +4,8 @@
 <html>
 <head>
     <title><?= $this->e($title ?? 'Untitled') ?></title>
-    <link rel="stylesheet" href="<?= $this->asset('/css/app.css') ?>" />
+    <link rel="stylesheet" href="<?= $this->asset('/css/vendor.css') ?>" async />
+    <link rel="stylesheet" href="<?= $this->asset('/css/small.css') ?>" />
     <meta name=viewport content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
     <!-- Global site tag (gtag.js) - Google Analytics -->
