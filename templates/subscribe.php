@@ -10,6 +10,8 @@ $this->layout('layout', [
     <section class="main-cta">
         <div class="item item-top"></div>
         <div class="item text-center main-item">
+            <a href="/" class="go-back">&lt; Go Back</a>
+
             <form action="https://cascadiaphp.us12.list-manage.com/subscribe/post?u=96f7d4c53c8572ecc4280e249&amp;id=60fb4ba7b8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate pure-form" target="_blank" novalidate>
                 <div id="mc_embed_signup_scroll">
                     <?= $this->markdown('subscribe') ?>
@@ -19,7 +21,7 @@ $this->layout('layout', [
                     <div class="input-group mb-3">
                         <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="Email Address" required>
                         <div class="input-group-append">
-                            <button class="btn btn-secondary" name="subscribe" type="submit">Subscribe</button>
+                            <button class="btn btn-outline-secondary" name="subscribe" type="submit">Subscribe</button>
                         </div>
                     </div>
                 </div>

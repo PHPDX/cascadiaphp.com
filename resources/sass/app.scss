@@ -31,7 +31,6 @@ h1, h2, h3{
 }
 h4, h5 {
   font-family: $font2;
-  color: $color4;
 }
 
 .cta-container {
@@ -87,6 +86,15 @@ section.main-cta {
     padding: 30px;
     background-color: $color2;
     box-shadow: 0 0 30px -10px $color4;
+
+    > .go-back {
+      display: block;
+      position: absolute;
+      margin-top: -65px;
+      margin-left: -25px;
+      color: $color2;
+      text-decoration: none;
+    }
   }
 
   .item-top {
