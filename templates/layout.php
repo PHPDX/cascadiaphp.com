@@ -49,6 +49,6 @@ if ($footer ?? true) {
 }
 ?>
 
-<link rel="stylesheet" href="<?= $this->asset('/css/vendor.css') ?>" async />
+<link rel="stylesheet" href="<?= $this->asset('/css/vendor.css') ?>" defer />
 </body>
 </html>
