@@ -4,6 +4,7 @@ namespace CascadiaPHP\Site\Template;
 
 use League\Plates\Engine;
 use League\Plates\Extension\ExtensionInterface;
+use Zend\Diactoros\Uri;
 
 class AssetExtension implements ExtensionInterface
 {
@@ -23,6 +24,7 @@ class AssetExtension implements ExtensionInterface
     public function register(Engine $engine)
     {
         $engine->registerFunction('asset', [$this, 'file']);
+        $engine->registerFunction('inline', [$this, 'inline']);
     }
 
     /**
@@ -39,6 +41,19 @@ class AssetExtension implements ExtensionInterface
         }
 
         return $file;
+    }
+
+    public function inline(string $file): string
+    {
+        $file = $this->resolvePath($file);
+        $uri = new Uri($file);
+        $path = $this->pathToPublic . $uri->getPath();
+
+        if (!file_exists($path)) {
+            throw new \InvalidArgumentException('Invalid asset, cannot include inline.');
+        }
+
+        return file_get_contents($path);
     }
 
     private function resolvePath($file)

@@ -5,11 +5,22 @@
 <head>
     <title><?= $this->e($title ?? 'Untitled') ?></title>
     <link rel="stylesheet" href="<?= $this->asset('/css/vendor.css') ?>" async />
-    <link rel="stylesheet" href="<?= $this->asset('/css/small.css') ?>" />
+    <?php
+    if (getenv('ENVIRONMENT') === 'live') {
+        ?>
+        <style><?= $this->inline('/css/small.css'); ?></style>
+        <?php
+    } else {
+        ?>
+        <link rel="stylesheet" href="<?= $this->asset('/css/small.css'); ?>" />
+        <?php
+    }
+
+    ?>
     <meta name=viewport content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115467305-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115467305-1"></style>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
