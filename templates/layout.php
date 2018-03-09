@@ -4,7 +4,6 @@
 <html>
 <head>
     <title><?= $this->e($title ?? 'Untitled') ?></title>
-    <link rel="stylesheet" href="<?= $this->asset('/css/vendor.css') ?>" async />
     <?php
     if (getenv('ENVIRONMENT') === 'live') {
         ?>
@@ -29,7 +28,7 @@
         gtag('config', 'UA-115467305-1');
     </script>
 </head>
-<body>
+<body class="cascadiaphp">
 
 <?php
 if ($header ?? true) {
@@ -50,5 +49,6 @@ if ($footer ?? true) {
 }
 ?>
 
+<link rel="stylesheet" href="<?= $this->asset('/css/vendor.css') ?>" async />
 </body>
 </html>

@@ -1,7 +1,7 @@
 <?php
 /** @var \CascadiaPHP\Site\Template\Template $this */
 $this->layout('layout', [
-    'title' => 'Cascadia PHP',
+    'title' => 'Subscribe to our Mailing List',
     'active' => '/'
 ]);
 ?>
