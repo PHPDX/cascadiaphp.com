@@ -10,7 +10,9 @@ $this->layout('layout', [
     <section class="main-cta">
         <div class="item item-top"></div>
         <div class="item text-center main-item">
-            <?= $this->markdown('comingsoon') ?>
+            <div class="hidden-sm">
+                <?= $this->markdown('comingsoon') ?>
+            </div>
         </div>
         <div class="item item-bottom"></div>
     </section>

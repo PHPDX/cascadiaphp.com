@@ -1,6 +1,6 @@
 @import "variables";
-@import url('https://fonts.googleapis.com/css?family=Lobster|Raleway');
 @import '~bootstrap/scss/bootstrap';
+
 
 .cascadiaphp {
   * {
@@ -128,5 +128,14 @@
 
   div {
     font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .cascadiaphp {
+    .item {
+      max-width: 100% !important;
+    }
   }
 }
