@@ -13,7 +13,6 @@ mix.setPublicPath('./public');
  |
  */
 
-mix.sass('resources/sass/small.scss', 'public/css');
-mix.sass('resources/sass/vendor.scss', 'public/css');
+mix.sass('resources/sass/app.scss', 'public/css');
 
 mix.version();

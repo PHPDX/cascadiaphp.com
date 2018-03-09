@@ -1,15 +1,39 @@
 @import "variables";
+@import url('https://fonts.googleapis.com/css?family=Lobster|Raleway');
+@import '~bootstrap/scss/bootstrap';
+
 .cascadiaphp {
+  * {
+    box-sizing: border-box;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
   background-color: $color5;
   color: $color4;
   font-family: $font1;
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+    margin-top: 0;
+  }
 
   h1, h2, h3 {
     font-family: $font1;
     color: $color4;
   }
 
-  h4, h5 {
+  h4, h5, h6 {
     font-family: $font2;
   }
 
