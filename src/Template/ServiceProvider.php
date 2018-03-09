@@ -36,7 +36,7 @@ class ServiceProvider extends AbstractServiceProvider
 
         // Set up extensions
         $this->container->add(AssetExtension::class, function () {
-            return new AssetExtension( __DIR__ . '/../../');
+            return new AssetExtension( __DIR__ . '/../../public');
         });
     }
 

@@ -20,16 +20,18 @@ $font2: 'Lobster', cursive;
 @import '~bootstrap/scss/bootstrap';
 
 body {
-  background-color: $color2;
-  color: $color5;
+  background: $color5;
+  color: $color4;
   font-family: $font1;
 }
 
 h1, h2, h3{
   font-family: $font1;
+  color: $color4;
 }
 h4, h5 {
   font-family: $font2;
+  color: $color4;
 }
 
 .cta-container {
@@ -50,8 +52,12 @@ section.main-cta {
   height: 100%;
 
   h1 {
-    color: $color5;
+    color: $color4;
     font-size: 40pt;
+  }
+
+  h2 {
+    color: $color5;
   }
 
   h4 {

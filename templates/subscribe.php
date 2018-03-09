@@ -9,7 +9,7 @@ $this->layout('layout', [
 <div class="container main">
     <section class="main-cta">
         <div class="item item-top"></div>
-        <div class="item text-center">
+        <div class="item text-center main-item">
             <form action="https://cascadiaphp.us12.list-manage.com/subscribe/post?u=96f7d4c53c8572ecc4280e249&amp;id=60fb4ba7b8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate pure-form" target="_blank" novalidate>
                 <div id="mc_embed_signup_scroll">
                     <?= $this->markdown('subscribe') ?>

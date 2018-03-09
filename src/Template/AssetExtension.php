@@ -35,7 +35,7 @@ class AssetExtension implements ExtensionInterface
     {
         $file = $this->resolvePath($file);
         if (file_exists($this->pathToPublic . '/hot')) {
-            return file_get_contents($this->pathToPublic . '/hot') . $file;
+            return rtrim(file_get_contents($this->pathToPublic . '/hot'), '/') . $file;
         }
 
         return $file;
