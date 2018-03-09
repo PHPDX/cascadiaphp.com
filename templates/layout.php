@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="<?= $this->asset('/css/app.css') ?>" />
     <meta name=viewport content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115467305-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115467305-1');
+    </script>
 </head>
 <body>
 
