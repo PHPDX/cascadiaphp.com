@@ -15,7 +15,6 @@
         <?php
     }
     ?>
-    <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet" lazyload>
     <meta name=viewport content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -48,5 +47,6 @@ if ($footer ?? true) {
     $this->insert('structure/footer');
 }
 ?>
+<link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet" defer async>
 </body>
 </html>
