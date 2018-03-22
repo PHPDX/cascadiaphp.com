@@ -1,8 +1,9 @@
 @import "variables";
-@import '~bootstrap/scss/bootstrap';
-
 
 .cascadiaphp {
+
+  @import "form";
+
   * {
     box-sizing: border-box;
   }
@@ -129,13 +130,18 @@
   div {
     font-weight: bold;
   }
+
+  .hideaway {
+    position: absolute;
+    left: -5000px;
+  }
 }
 
 @media screen and (max-width: 768px) {
 
   .cascadiaphp {
     .item {
-      max-width: 100% !important;
+      max-width: 100%;
     }
   }
 }

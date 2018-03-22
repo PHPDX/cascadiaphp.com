@@ -3,6 +3,8 @@
 namespace CascadiaPHP\Site;
 
 use Dotenv\Dotenv;
+use GuzzleHttp\Client;
+use GuzzleHttp\ClientInterface;
 use Interop\Container\ContainerInterface;
 use League\Container\ContainerInterface as LeagueContainerInterface;
 use League\Container\ServiceProvider\AbstractServiceProvider;
@@ -15,7 +17,7 @@ class ServiceProvider extends AbstractServiceProvider implements BootableService
     protected $provides = [
         LeagueContainerInterface::class,
         ContainerInterface::class,
-        PSRContainerInterface::class
+        PSRContainerInterface::class,
     ];
 
     /**

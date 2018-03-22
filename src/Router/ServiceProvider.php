@@ -34,5 +34,6 @@ class ServiceProvider extends AbstractServiceProvider
     {
         $r->get('/', '\CascadiaPHP\Site\Controller\PrototypeController::home');
         $r->get('/subscribe', '\CascadiaPHP\Site\Controller\PrototypeController::subscribe');
+        $r->post('/actually/subscribe', '\CascadiaPHP\Site\Controller\PrototypeController::handleSubscription');
     }
 }

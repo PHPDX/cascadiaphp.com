@@ -2,16 +2,28 @@
 
 namespace CascadiaPHP\Site\Template;
 
+use League\Container\ContainerAwareInterface;
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use League\Plates\Engine;
+use Psr\Http\Message\ServerRequestInterface;
+use Zend\Diactoros\Uri;
 
 class ServiceProvider extends AbstractServiceProvider
 {
 
+    // Classes this provider provides
     protected $provides = [
         Engine::class,
         MarkdownExtension::class,
         AssetExtension::class
+    ];
+
+    // Plates extensions we load
+    protected $extensions = [
+        MarkdownExtension::class,
+        TimeExtension::class,
+        AssetExtension::class,
+        UriExtension::class
     ];
 
     /**
@@ -43,12 +55,23 @@ class ServiceProvider extends AbstractServiceProvider
     private function getTemplateEngine()
     {
         $engine = new Engine(__DIR__ . '/../../templates');
+
+        // Make sure 'container' is available in all templates
         $engine->addData([
             'container' => $this->container
         ]);
-        $engine->loadExtension($this->container->get(MarkdownExtension::class));
-        $engine->loadExtension($this->container->get(TimeExtension::class));
-        $engine->loadExtension($this->container->get(AssetExtension::class));
+
+        // Load up our declared extensions
+        foreach ($this->extensions as $extension) {
+            $extension = $this->getContainer()->get($extension);
+
+            // Handle container awareness
+            if ($extension instanceof ContainerAwareInterface) {
+                $extension->setContainer($this->getContainer());
+            }
+
+            $engine->loadExtension($extension);
+        }
 
         return $engine;
     }
