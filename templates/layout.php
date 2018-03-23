@@ -29,6 +29,7 @@
 
     <?= $this->section('components') ?>
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
 </head>
 <body class="cascadiaphp">
 

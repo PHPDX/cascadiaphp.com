@@ -4,15 +4,15 @@
 
 /* Fonts */
 
+html,
+body {
+  background-color: #3f826d;
+}
+
 .cascadiaphp {
   background-color: #3f826d;
   color: #545e75;
   font-family: "Raleway", sans-serif;
-}
-
-.cascadiaphp * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .cascadiaphp .text-center {
@@ -70,6 +70,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
+  min-height: calc(100vh - 29px);
 }
 
 .cascadiaphp section.main-cta h1 {
@@ -137,10 +138,6 @@
   background-color: #264e42;
   -webkit-box-shadow: 0 0 30px -10px #545e75;
           box-shadow: 0 0 30px -10px #545e75;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
   padding: 5px 0;
 }
 
