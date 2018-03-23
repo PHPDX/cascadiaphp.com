@@ -1,19 +1,21 @@
 @import "variables";
 
+@import "~basscss/css/basscss.css";
+@import "~purecss/build/buttons.css";
+@import "~purecss/build/forms.css";
+
 html, body {
   background-color: $color5;
 }
 
 .cascadiaphp {
 
-  @import "form";
-
   .text-center {
     text-align: center;
   }
 
-  background-color: $color5;
-  color: $color4;
+  background-color: $mainBackground;
+  color: $fontColor;
   font-family: $font1;
 
   h2 {
@@ -31,7 +33,7 @@ html, body {
 
   h1, h2, h3 {
     font-family: $font1;
-    color: $color4;
+    color: $color1;
   }
 
   h4, h5, h6 {

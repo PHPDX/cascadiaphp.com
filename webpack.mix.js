@@ -1,4 +1,5 @@
-let mix = require('laravel-mix');
+let mix = require('laravel-mix'),
+    replaceImportant = require('replace-important')
 
 mix.setPublicPath('./public');
 
@@ -13,6 +14,7 @@ mix.setPublicPath('./public');
  |
  */
 
-mix.sass('resources/sass/app.scss', 'public/css');
+mix
+    .sass('resources/sass/app.scss', 'public/css')
+    .sass('resources/sass/pages/subscribe.scss', 'public/css/pages');
 
-mix.version();

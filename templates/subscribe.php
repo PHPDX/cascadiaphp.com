@@ -12,20 +12,17 @@ $this->layout('layout', [
 <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
 <?php $this->end() ?>
 
-
 <?php $this->start('css') ?>
-body {
-    background: red;
-}
+<?= $this->inline('/css/pages/subscribe.css') ?>
 <?php $this->end() ?>
 
 <div class="container main">
     <section class="main-cta">
         <div class="item item-top"></div>
-        <div class="item text-center main-item">
+        <div class="item text-center main-item align-middle">
             <a href="/" class="go-back">&lt; Go Back</a>
 
-            <form action-xhr="<?= $this->formUri('/actually/subscribe') ?>" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate pure-form" target="_blank" novalidate>
+            <form action-xhr="<?= $this->formUri('/actually/subscribe') ?>" method="post" target="_top" class="validate">
                 <div id="mc_embed_signup_scroll">
                     <?= $this->markdown('subscribe') ?>
 
@@ -34,10 +31,8 @@ body {
                     </div>
 
                     <div class="input-group">
-                        <input type="email" value="" name="email" class="email form-control" id="mce-EMAIL" placeholder="Email Address" required>
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-secondary" name="subscribe" type="submit">Subscribe</button>
-                        </div>
+                        <input type="email" value="" name="email" class="email border rounded" placeholder="Email Address" required>
+                        <button class="pure-button pure-button" name="subscribe" type="submit">Subscribe</button>
                     </div>
                 </div>
                 <div submit-success>
@@ -49,8 +44,7 @@ body {
                     <template type="amp-mustache">
                         {{#error}}
                         Subscription failed! Please reach out to <a href="mailto:leadership@cascadiaphp.com">leadership@cascadiaphp.com</a>
-                        {{/error}}
-                        {{message}}
+                        {{/error}}{{message}}
                     </template>
                 </div>
             </form>

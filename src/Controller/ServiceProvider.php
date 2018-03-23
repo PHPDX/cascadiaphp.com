@@ -3,6 +3,7 @@
 namespace CascadiaPHP\Site\Controller;
 
 use Cache\Adapter\Filesystem\FilesystemCachePool;
+use CascadiaPHP\Site\Middleware\AmpMiddleware;
 use CascadiaPHP\Site\Middleware\Dispatcher as MiddlewareDispatcher;
 use CascadiaPHP\Site\Router\RouteHandlerResolver;
 use League\Container\ServiceProvider\AbstractServiceProvider;
@@ -30,8 +31,9 @@ class ServiceProvider extends AbstractServiceProvider
     ];
 
     protected $middlewares = [
+        AmpMiddleware::class,
         FastRoute::class,
-        RequestHandler::class
+        RequestHandler::class // This handler is our route dispatcher, it must be last.
     ];
 
     /**

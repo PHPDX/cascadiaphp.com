@@ -1,11 +1,10 @@
 div.footer {
-  color: lighten($color5, 15%);
-  background-color: darken($color5, 15%);
-  box-shadow: 0 0 30px -10px $color4;
+  color: $fontColor;
+  background-color: $secondaryBackground;
   padding: 5px 0;
 
   a {
-    color: $color5;
+    color: $fontAccentColor;
   }
 }
 

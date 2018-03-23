@@ -4,6 +4,7 @@ namespace CascadiaPHP\Site\Controller;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\RequestOptions;
 use League\Plates\Engine;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
@@ -39,10 +40,7 @@ class PrototypeController
         if (!isset($params['my_name']) || !$params['my_name']) {
             if (($error = $this->processRequest($request, $client)) !== null) {
                 // Output the error if there was one
-                return (new JsonResponse(['message' => $error], 400))
-                    ->withAddedHeader('access-control-expose-headers', 'AMP-Access-Control-Allow-Source-Origin')
-                    ->withAddedHeader('AMP-Access-Control-Allow-Source-Origin', 'http://cascadiaphp.test')
-                    ;
+                return new JsonResponse(['message' => $error], 400);
             }
         }
 
@@ -81,18 +79,18 @@ class PrototypeController
 
         try {
             // Forward the signup request
-            $result = $client->post($uri->withPath('/3.0/lists/60fb4ba7b8/members'), [
-                'email_address' => $email,
-                'status' => 'subscribed'
-            ]);
+            /*$result = $client->post($uri->withPath('/3.0/lists/60fb4ba7b8/members'), [
+                RequestOptions::JSON => [
+                    'email_address' => $email,
+                    'status' => 'subscribed'
+                ]
+            ]);*/
         } catch (ClientException $e) {
             if ($e->getCode() === 400) {
-                dd($e->getResponse()->getBody());
+                return $e->getResponse()->getBody()->getContents();
                 return 'This email address doesn\'t look valid, please try again with a different one.';
             }
         }
-
-        dd($result);
 
         return null;
     }
