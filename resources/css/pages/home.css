@@ -1019,6 +1019,11 @@ section.what .bridge {
   background-image: url(https://jannah.tielabs.com/traveling/wp-content/themes/jannah/images/patterns/body-bg1.png);
 }
 
+section.what .bridge amp-video video {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 section.what .bridge .flex > div {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -1189,5 +1194,14 @@ section.where > div {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.what.v2 .main-cta {
+  position: relative;
+}
+
+.what.v2 .main-cta > .flex {
+  border-radius: 100px;
+  border-color: #009b72;
 }
 

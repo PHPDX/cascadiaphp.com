@@ -23,9 +23,15 @@ class PrototypeController
         $this->templates = $templates;
     }
 
-    public function home()
+    public function home(ServerRequestInterface $request)
     {
-        return $this->templates->render('home');
+        $variation = $request->getQueryParams()['v'] ?? '';
+
+        try {
+            return $this->templates->render('home' . $variation);
+        } catch (\Exception $e) {
+            return new Response\RedirectResponse('/');
+        }
     }
 
     public function subscribe(ServerRequestInterface $request)
