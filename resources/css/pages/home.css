@@ -929,8 +929,8 @@ section.what .third-cta amp-video > video {
      object-fit: cover;
 }
 
-section.what .third-cta .video-cover {
-  background-image: url(https://jannah.tielabs.com/traveling/wp-content/themes/jannah/images/patterns/body-bg10.png);
+section.what .video-cover {
+  background-image: url(https://jannah.tielabs.com/traveling/wp-content/themes/jannah/images/patterns/body-bg21.png);
   top: 0;
   left: 0;
   right: 0;
@@ -1203,5 +1203,7 @@ section.where > div {
 .what.v2 .main-cta > .flex {
   border-radius: 100px;
   border-color: #009b72;
+  border-width: 5px;
+  padding: 50px;
 }
 

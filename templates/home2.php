@@ -40,7 +40,7 @@ $this->layout('layout', [
 <section class="what v2">
     <div class="main-animation relative">
         <div class="bridge">
-            <amp-video src="<?= $this->formUri('/videos/portland-demo2.mov') ?>" layout="fill" height="100px" width="100px" autoplay="true" loop="true"></amp-video>
+            <amp-video src="<?= $this->formUri('/videos/portland-demo2.mov') ?>" layout="fill" height="100px" width="100px" autoplay loop></amp-video>
             <div class="video-cover absolute"></div>
             <div class="flex flex-row">
                 <div class="left-upright relative">
@@ -54,7 +54,7 @@ $this->layout('layout', [
                                               layout="responsive"
                                               min-font-size="24px"
                                               class="xs-hide">
-                                    <span class="month">September</span><br><span class="days">15th-16th</span>
+                                    <span class="month">September</span><br><span class=" green">15th-16th</span>
                                 </amp-fit-text>
 
                                 <amp-fit-text width="200"
@@ -62,11 +62,11 @@ $this->layout('layout', [
                                               layout="responsive"
                                               min-font-size="24px"
                                               class="sm-hide md-hide lg-hide xl-hide">
-                                    <span class="month">September</span><br><span class="days">15th-16th</span>
+                                    <span class="month">September</span><br><span class=" green">15th-16th</span>
                                 </amp-fit-text>
                             </div>
                             <div class="register center p2">
-                                <a href="/register" class="btn btn-primary inverted big fancy">Register</a>
+                                <a href="/register" class="btn btn-secondary inverted big fancy">Register</a>
                             </div>
                         </div>
                     </div>
