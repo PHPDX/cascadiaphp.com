@@ -54,7 +54,7 @@ $this->layout('layout', [
                                               layout="responsive"
                                               min-font-size="24px"
                                               class="xs-hide">
-                                    <span class="month">September</span><br><span class=" green">15th-16th</span>
+                                    <span class="month light">September</span><br><span class=" green">15th-16th</span>
                                 </amp-fit-text>
 
                                 <amp-fit-text width="200"
@@ -62,7 +62,7 @@ $this->layout('layout', [
                                               layout="responsive"
                                               min-font-size="24px"
                                               class="sm-hide md-hide lg-hide xl-hide">
-                                    <span class="month">September</span><br><span class=" green">15th-16th</span>
+                                    <span class="month light">September</span><br><span class=" green">15th-16th</span>
                                 </amp-fit-text>
                             </div>
                             <div class="register center p2">
