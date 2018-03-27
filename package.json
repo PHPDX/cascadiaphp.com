@@ -22,6 +22,9 @@
   },
   "dependencies": {
     "basscss": "^8.0.4",
+    "basscss-background-colors": "^2.1.0",
+    "basscss-btn": "^1.1.1",
+    "basscss-colors": "^2.2.0",
     "purecss": "^1.0.0"
   }
 }

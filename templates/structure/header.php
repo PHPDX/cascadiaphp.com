@@ -1,30 +1,23 @@
 <?php
 /** @var \CascadiaPHP\Site\Template\Template $this */
-return;
 ?>
-    <header class="main-header row">
-        <div class="col-2 col-12-sm">
-            <?php
-            if (!isset($nologo) || !$nologo) {
-                ?>
-                <img class='header-logo' src="/images/logo.svg">
-                <?php
-            }
-            ?>
+
+<div id="header" class="bg-dark">
+    <nav class="flex mx-auto flex-row">
+        <div class="logo row">
+            <div class="image col col-2 p1 align-right">
+                <amp-img src="/images/logo/svg/logo-badge.svg" height=1 width=1 layout="responsive"></amp-img>
+            </div>
+            <div class="text relative col col-10 light xs-hide font2">
+                <amp-fit-text width="100px" height="10px" layout="responsive">Cascadia PHP</amp-fit-text>
+            </div>
         </div>
-        <div class="col-9 col-12-sm nav">
-            <?= $this->markdown('navigation') ?>
+        <div id="nav_container" class="right flex-auto">
         </div>
-        <script>
-            (function() {
-                var anchors = document.querySelectorAll('.nav > ul > li > a'), i, link;
-                for (i in anchors) {
-                    link = anchors[i];
-                    if (link.pathname === document.location.pathname) {
-                        link.className = 'active';
-                    }
-                }
-            }());
-        </script>
-    </header>
-<?php
+        <a class="relative hamburger-icon md-hide lg-hide flex-auto light right-align m3" on="tap:sidebar.toggle">
+            <amp-fit-text layout="fill">
+                <i class="mbri-menu"></i>
+            </amp-fit-text>
+        </a>
+    </nav>
+</div>

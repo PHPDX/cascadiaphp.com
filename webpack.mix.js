@@ -1,7 +1,6 @@
 let mix = require('laravel-mix'),
-    replaceImportant = require('replace-important')
-
-mix.setPublicPath('./public');
+    replaceImportant = require('replace-important'),
+    fs = require('fs')
 
 /*
  |--------------------------------------------------------------------------
@@ -15,6 +14,14 @@ mix.setPublicPath('./public');
  */
 
 mix
-    .sass('resources/sass/app.scss', 'public/css')
-    .sass('resources/sass/pages/subscribe.scss', 'public/css/pages');
+    .sass('resources/sass/app.sass', 'resources/css')
+    .sass('resources/sass/basscss.sass', 'resources/css')
+    .sass('resources/sass/pages/subscribe.sass', 'resources/css/pages')
+    .sass('resources/sass/pages/home.sass', 'resources/css/pages');;
 
+
+mix.then(function() {
+    fs.readFile('resources/css/basscss.css', function(error, contents) {
+        fs.writeFile('resources/css/basscss.css', replaceImportant(contents));
+    })
+});

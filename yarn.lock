@@ -840,9 +840,25 @@ basscss-align@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/basscss-align/-/basscss-align-1.0.2.tgz#294aa689d6f99da86e4af4c5c2892870855c1c37"
 
+basscss-background-colors@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/basscss-background-colors/-/basscss-background-colors-2.1.0.tgz#e29eae329096d6b924050fef40e33a7d38416d67"
+  dependencies:
+    colors.css "^3.0.0"
+
 basscss-border@^4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/basscss-border/-/basscss-border-4.0.2.tgz#14b4506329b90cb14abe5f4d3473e9fe9202df2e"
+
+basscss-btn@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/basscss-btn/-/basscss-btn-1.1.1.tgz#c42157f201bd95db9a251568c542e740b2a3d7bf"
+
+basscss-colors@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/basscss-colors/-/basscss-colors-2.2.0.tgz#dccb773e272efe45df4a480962c8bd88b6a6b3e1"
+  dependencies:
+    colors.css "^3.0.0"
 
 basscss-flexbox@^1.0.2:
   version "1.0.2"
@@ -1484,6 +1500,10 @@ colormin@^1.0.5:
     color "^0.11.0"
     css-color-names "0.0.4"
     has "^1.0.1"
+
+colors.css@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/colors.css/-/colors.css-3.0.0.tgz#511cf42fb8a7199a8cbef49c88a4ea4f1d8f9efc"
 
 colors@1.1.2, colors@~1.1.2:
   version "1.1.2"

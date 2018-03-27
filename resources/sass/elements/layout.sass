@@ -1,0 +1,142 @@
+@import "../util/_all"
+
+html, body
+  background: white
+
+html
+  margin-top: $headerHeight
+  position: relative
+  background-color: $color2
+
+amp-sidebar .header-nav
+  display: none
+
+*
+  font-family: $font1
+
+.blue
+  color: $color-blue
+
+.purple
+  color: $color-purple
+
+.green
+  color: $color-green
+
+.dark
+  color: $color-dark
+
+.light
+  color: $color-light
+
+.bg-blue
+  background-color: $color-blue
+
+.bg-purple
+  background-color: $color-purple
+
+.bg-green
+  background-color: $color-green
+
+.bg-dark
+  background-color: $color-dark
+
+.bg-light
+  background-color: $color-light
+
+.font1
+  font-family: $font1
+  *
+    font-family: $font1
+
+.font2
+  font-family: $font2
+  *
+    font-family: $font2
+
+
+
+#header
+  position: fixed
+  top: calc(0vh)
+  z-index: 20000
+  width: 100%
+  border-bottom: solid 1px darken($color-dark, 20%)
+
+  > nav
+    width: 1600px
+    max-width: calc(100vw)
+    align-self: center
+    height: $headerHeight
+    transition: height .3s ease-in-out
+
+    nav
+      height: 100%
+
+  .logo
+    min-width: 50%
+
+  .image, amp-img, .text, amp-fit-text, .inner
+    height: 100%
+
+  .inner
+    height: 100%
+    justify-content: flex-end
+    align-content: center
+    align-items: center
+
+    a
+      text-decoration: none
+
+      &:hover
+        color: white
+
+  .hamburger-icon
+    width: 50px
+
+.sidebar-ul
+  .btn
+    width: 200px
+
+  li
+    list-style-type: none
+
+.sidebar-logo
+  height: 50px
+
+section.main-content
+  min-height: calc(100vh - #{$headerHeight + $footerHeight})
+
+section.footer
+  height: $footerHeight
+
+div.main-structure
+  display: flex
+  flex-direction: column
+
+@media (max-width: 40em)
+  /* XS */
+  #header
+    .logo
+      min-width: 200px
+
+@media (min-width: 40em) and (max-width: 52em)
+  /* SM */
+  #header
+    justify-content: normal
+
+    .logo
+      max-width: 200px
+
+    > nav
+      width: 100%
+
+
+@media (min-width: 52em) and (max-width: 64em)
+  /* MD */
+  #header > nav
+    width: 960px
+
+
+@media (min-width: 64em)
+  /* LG */
