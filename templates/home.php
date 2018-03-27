@@ -42,7 +42,7 @@ $this->layout('layout', [
         <div class="bridge">
             <div class="flex flex-row">
                 <div class="left-upright relative">
-                    <amp-img src="/images/scenes/what/bridge/svg/right-upright.svg" width="259px" height="85px"
+                    <amp-img src="/images/scenes/what/bridge/SVG/right-upright.svg" width="259px" height="85px"
                              layout="fill"></amp-img>
                 </div>
                 <div class="bridge-deck relative">
@@ -72,7 +72,7 @@ $this->layout('layout', [
                     </div>
                 </div>
                 <div class="right-upright relative">
-                    <amp-img src="/images/scenes/what/bridge/svg/right-upright.svg" width="259px" height="85px" layout="fill"></amp-img>
+                    <amp-img src="/images/scenes/what/bridge/SVG/right-upright.svg" width="259px" height="85px" layout="fill"></amp-img>
                 </div>
             </div>
         </div>

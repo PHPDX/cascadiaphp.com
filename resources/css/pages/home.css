@@ -994,7 +994,7 @@ section.what .knoll {
   bottom: 0;
   height: calc(10vh);
   width: calc(15vw);
-  background: no-repeat bottom url("/images/scenes/what/bridge/svg/knoll.svg");
+  background: no-repeat bottom url("/images/scenes/what/bridge/SVG/knoll.svg");
   z-index: 200;
 }
 
