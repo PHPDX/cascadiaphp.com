@@ -1,0 +1,15 @@
+@import "../elements/layout"
+@import "../util/_all"
+
+.textiles
+  min-height: 50px
+
+@media (max-width: 64em)
+  .textiles
+    & > div
+      flex: 1 33.333%
+
+@media (max-width: 52em)
+  .textiles
+    & > div
+      flex: 1 50%

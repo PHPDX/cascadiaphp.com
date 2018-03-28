@@ -20,9 +20,10 @@
     <link rel="canonical" href="<?= $this->fullUri($url ?? '') ?>" />
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
 
+    <?= $this->section('schema', '<!-- No Schema -->') ?>
+
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-    <style amp-custom><?= $this->inline('/css/basscss.css') . $this->inline('/css/app.css') . $this->section('css') ?></style>
-    <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet" async>
+    <style amp-custom><?= $this->section('css') ?></style>
 
     <?= $this->section('components') ?>
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
@@ -56,22 +57,22 @@
         </div>
     </div>
 
-    <nav toolbar="(min-width: 52em)" toolbar-target="nav_container" class="header-nav">
+    <nav toolbar="(min-width: 52em)" toolbar-target="nav_container" class="header-nav flex">
         <ul class="inner flex justify-end">
-            <li class="m1">
-                <a href="#" class="light">News</a>
+            <li class="flex-auto flex flex-column justify-center">
+                <a href="#" class="py1 px2">News</a>
             </li>
-            <li class="m1">
-                <a href="#" class="light">Schedule</a>
+            <li class="flex flex-column justify-center">
+                <a href="#" class="py1 px2">Schedule</a>
             </li>
-            <li class="m1">
-                <a href="#" class="light">Speakers</a>
+            <li class="flex flex-column justify-center">
+                <a href="#" class="py1 px2">Speakers</a>
             </li>
-            <li class="m1">
-                <a href="#" class="light">Venue</a>
+            <li class="flex flex-column justify-center">
+                <a href="#" class="py1 px2">Venue</a>
             </li>
-            <li class="m1">
-                <a href="#" class="light">Sponsors</a>
+            <li class="flex flex-column justify-center">
+                <a href="#" class="py1 px2">Sponsors</a>
             </li>
         </ul>
     </nav>
@@ -93,7 +94,7 @@
     </script>
 </amp-analytics>
 
-<div class="main-structure">
+<div class="main-structure mx-auto relative flex flex-column justify-between">
     <?php
     if ($header ?? true) {
         $this->insert('structure/header', [

@@ -1,0 +1,57 @@
+@import "colors"
+@import "fonts"
+
+@mixin button-style($bg-color, $font-color)
+  background-color: $bg-color
+  border-radius: 2px
+  color: $font-color
+  &:hover
+    background-color: darken($bg-color, 5%)
+  &:active
+    background-color: darken($bg-color, 10%)
+  &.inverted
+    background-color: white
+    border-radius: 2px
+    color: $bg-color
+    border: solid 1px $bg-color
+    &:hover
+      background-color: darken(white, 5%)
+    &:active
+      background-color: darken(white, 10%)
+
+.btn
+  color: $font-color-dark
+  font-family: $font1
+  font-weight: 400
+
+  &.btn-gold
+    @include button-style($gold, #111)
+    &.inverted
+      color: darken($gold, 15%)
+
+  &.btn-darkblue
+    @include button-style($dark-blue, $font-color-light)
+
+  &.btn-blue
+    @include button-style($blue, darken($font-color-dark, 10%))
+    &.inverted
+      color: darken($blue, 15%)
+
+  &.btn-lightblue
+    @include button-style($light-blue, $font-color-dark)
+    &.inverted
+      color: darken($blue, 15%)
+
+  &.btn-slate
+    @include button-style($slate, #fff)
+
+  &.btn-gravel
+    @include button-style($gravel, $font-color-dark)
+    &.inverted
+      color: darken($blue, 15%)
+
+  &.btn-dark
+    @extend .btn.btn-darkblue
+
+  &.btn-light
+    @extend .btn.btn-gravel

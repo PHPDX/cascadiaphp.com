@@ -1,142 +1,86 @@
 @import "../util/_all"
 
 html, body
-  background: white
+  background: $gravel
+  font-size: 18px
 
 html
-  margin-top: $headerHeight
   position: relative
-  background-color: $color2
 
 amp-sidebar .header-nav
   display: none
 
 *
   font-family: $font1
+  font-weight: 400
 
-.blue
-  color: $color-blue
+h1, .h1
+  font-size: 64px
+  background-color: $dark-blue
+  color: $gravel
 
-.purple
-  color: $color-purple
+h2, .h2
+  font-size: 52px
+  background-color: $gold
+  color: $dark-blue
 
-.green
-  color: $color-green
+h3, .h3
+  font-size: 40px
 
-.dark
-  color: $color-dark
+h4, .h4
+  font-size: 28px
 
-.light
-  color: $color-light
+h5, .h5
+  font-size: 16px
 
-.bg-blue
-  background-color: $color-blue
+h6, .h6
+  font-size: 8px
 
-.bg-purple
-  background-color: $color-purple
-
-.bg-green
-  background-color: $color-green
-
-.bg-dark
-  background-color: $color-dark
-
-.bg-light
-  background-color: $color-light
+h2, h3, h4, h5, h6
+  color: $dark-blue
 
 .font1
   font-family: $font1
   *
     font-family: $font1
 
-.font2
-  font-family: $font2
-  *
-    font-family: $font2
-
-
+.main-structure
+  width: 100%
+  background-color: #fff
+  min-height: 100vh
 
 #header
-  position: fixed
-  top: calc(0vh)
-  z-index: 20000
-  width: 100%
-  border-bottom: solid 1px darken($color-dark, 20%)
+  height: $headerHeight
+  > div > amp-img
+    > img
+      object-fit: contain
+      object-position: left
+  a
+    text-decoration: none
+    border-radius: 1em
+    &:hover
+      background-color: darken(#fff, 5%)
+    &:active
+      background-color: darken(#fff, 15%)
 
-  > nav
-    width: 1600px
-    max-width: calc(100vw)
-    align-self: center
-    height: $headerHeight
-    transition: height .3s ease-in-out
+#footer
+  min-height: 150px
 
-    nav
-      height: 100%
+a, .dark a
+  color: darken($slate, 0%)
+  font-weight: 500
+  &:hover
+    color: darken($slate, 15%)
+  &:active
+    color: darken($slate, 25%)
 
-  .logo
-    min-width: 50%
+.light a
+  color: lighten($gravel, 0%)
+  &:hover
+    color: darken($gravel, 15%)
+  &:active
+    color: darken($gravel, 25%)
 
-  .image, amp-img, .text, amp-fit-text, .inner
-    height: 100%
-
-  .inner
-    height: 100%
-    justify-content: flex-end
-    align-content: center
-    align-items: center
-
-    a
-      text-decoration: none
-
-      &:hover
-        color: white
-
-  .hamburger-icon
-    width: 50px
-
-.sidebar-ul
-  .btn
-    width: 200px
-
-  li
-    list-style-type: none
-
-.sidebar-logo
-  height: 50px
-
-section.main-content
-  min-height: calc(100vh - #{$headerHeight + $footerHeight})
-
-section.footer
-  height: $footerHeight
-
-div.main-structure
-  display: flex
-  flex-direction: column
-
-@media (max-width: 40em)
-  /* XS */
-  #header
-    .logo
-      min-width: 200px
-
-@media (min-width: 40em) and (max-width: 52em)
-  /* SM */
-  #header
-    justify-content: normal
-
-    .logo
-      max-width: 200px
-
-    > nav
-      width: 100%
-
-
-@media (min-width: 52em) and (max-width: 64em)
-  /* MD */
-  #header > nav
-    width: 960px
-
-
-@media (min-width: 64em)
-  /* LG */
+@media (min-width: 1440px)
+  .main-structure
+    width: 1440px

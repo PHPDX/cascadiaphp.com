@@ -14,14 +14,18 @@ let mix = require('laravel-mix'),
  */
 
 mix
-    .sass('resources/sass/app.sass', 'resources/css')
-    .sass('resources/sass/basscss.sass', 'resources/css')
-    .sass('resources/sass/pages/subscribe.sass', 'resources/css/pages')
-    .sass('resources/sass/pages/home.sass', 'resources/css/pages');;
+    .sass('resources/sass/pages/brand.sass', 'resources/css/pages')
+    .sass('resources/sass/pages/home.sass', 'resources/css/pages');
 
 
+// Post process css with replaceimportant
 mix.then(function() {
-    fs.readFile('resources/css/basscss.css', function(error, contents) {
-        fs.writeFile('resources/css/basscss.css', replaceImportant(contents));
-    })
+
+    fs.readdir('resources/css/pages', function(error, pages) {
+        pages.forEach(function(page) {
+            fs.readFile('resources/css/pages/' + page, function(error, contents) {
+                fs.writeFile('resources/css/pages/' + page, replaceImportant(contents));
+            })
+        })
+    });
 });

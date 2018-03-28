@@ -22,6 +22,8 @@
         "erusev/parsedown": "^1.6",
         "filp/whoops": "^2.1",
         "artesaos/seotools": "^0.11.1",
-        "guzzlehttp/guzzle": "^6.3"
+        "guzzlehttp/guzzle": "^6.3",
+        "spatie/schema-org": "^1.4",
+        "joshtronic/php-loremipsum": "^1.0"
     }
 }

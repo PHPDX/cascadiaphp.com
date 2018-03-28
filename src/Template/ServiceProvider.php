@@ -23,7 +23,9 @@ class ServiceProvider extends AbstractServiceProvider
         MarkdownExtension::class,
         TimeExtension::class,
         AssetExtension::class,
-        UriExtension::class
+        UriExtension::class,
+        SchemaExtension::class,
+        LipsumExtension::class
     ];
 
     /**
