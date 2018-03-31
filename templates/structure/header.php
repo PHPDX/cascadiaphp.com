@@ -19,19 +19,19 @@
     </div>
     <div class="sidebar-ul flex flex-column center m2">
         <div class="m1">
-            <a href="#" class="btn btn-lightblue block">News</a>
+            <a href="#" class="btn btn-darkblue inverted block">News</a>
         </div>
         <div class="m1">
-            <a href="#" class="btn btn-lightblue block">Schedule</a>
+            <a href="#" class="btn btn-darkblue inverted block">Schedule</a>
         </div>
         <div class="m1">
-            <a href="#" class="btn btn-lightblue block">Speakers</a>
+            <a href="#" class="btn btn-darkblue inverted block">Speakers</a>
         </div>
         <div class="m1">
-            <a href="#" class="btn btn-lightblue block">Venue</a>
+            <a href="#" class="btn btn-darkblue inverted block">Venue</a>
         </div>
         <div class="m1">
-            <a href="#" class="btn btn-lightblue block">Sponsors</a>
+            <a href="#" class="btn btn-darkblue inverted block">Sponsors</a>
         </div>
     </div>
 

@@ -35,49 +35,6 @@
 
 <?= $this->section('header') ?>
 
-<amp-sidebar id="sidebar" layout="nodisplay" side="right">
-    <div class="center p2">
-        <amp-fit-text width="100" height="20px" layout="responsive" class="flex-auto">Cascadia PHP</amp-fit-text>
-    </div>
-    <div class="sidebar-ul flex flex-column center m2">
-        <div class="m1">
-            <a href="#" class="btn btn-dark inverted">News</a>
-        </div>
-        <div class="m1">
-            <a href="#" class="btn btn-dark inverted">Schedule</a>
-        </div>
-        <div class="m1">
-            <a href="#" class="btn btn-dark inverted">Speakers</a>
-        </div>
-        <div class="m1">
-            <a href="#" class="btn btn-dark inverted">Venue</a>
-        </div>
-        <div class="m1">
-            <a href="#" class="btn btn-dark inverted">Sponsors</a>
-        </div>
-    </div>
-
-    <nav toolbar="(min-width: 52em)" toolbar-target="nav_container" class="header-nav flex">
-        <ul class="inner flex justify-end">
-            <li class="flex-auto flex flex-column justify-center">
-                <a href="#" class="py1 px2">News</a>
-            </li>
-            <li class="flex flex-column justify-center">
-                <a href="#" class="py1 px2">Schedule</a>
-            </li>
-            <li class="flex flex-column justify-center">
-                <a href="#" class="py1 px2">Speakers</a>
-            </li>
-            <li class="flex flex-column justify-center">
-                <a href="#" class="py1 px2">Venue</a>
-            </li>
-            <li class="flex flex-column justify-center">
-                <a href="#" class="py1 px2">Sponsors</a>
-            </li>
-        </ul>
-    </nav>
-</amp-sidebar>
-
 <amp-analytics type="googleanalytics">
     <script type="application/json">
         {
