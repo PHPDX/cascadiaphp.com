@@ -16,14 +16,25 @@ $this->stop();
 
 
 <?php
-function textile($class) {
-    $colors = ['black', 'gold', 'darkblue', 'blue', 'lightblue', 'slate', 'gravel', 'white'];
+$colors = ['black', 'gold', 'darkblue', 'blue', 'lightblue', 'slate', 'gravel', 'white'];
+
+$textile = function($class) use ($colors) {
     echo '<h3>' . ucfirst(str_replace('-', ' ', $class)) . '</h3><div class="flex textiles flex-wrap">';
     foreach ($colors as $color) {
         echo '<div class="flex-auto"><amp-layout layout="responsive" width="1" height="1" class="bg-' . $color . ' ' . $class . '"></amp-layout></div>';
     }
     echo "</div>";
-}
+};
+
+$colorList = function(array $exclude) use ($colors) {
+    foreach ($colors as $color) {
+        if (in_array($color, $exclude)) {
+            continue;
+        }
+
+        yield $color;
+    }
+};
 
 function buttons(array $buttons) {
     foreach ($buttons as $type) {
@@ -33,7 +44,7 @@ function buttons(array $buttons) {
 }
 ?>
 
-<h1 class="px3">Basic Elements</h1>
+<h1 class="px3 m0">Basic Elements</h1>
 <h1 class="flex-auto px3">Header 1</h1>
 <h2 class="flex-auto px3">Header 2</h2>
 <h3 class="flex-auto px3">Header 3</h3>
@@ -41,47 +52,14 @@ function buttons(array $buttons) {
 <h5 class="flex-auto px3">Header 5</h5>
 <h6 class="flex-auto px3">Header 6</h6>
 
-<div class="p3">
-    <p>This is an <a href="#">example</a> of a long string that has a link in it.</p>
-    <p><?= $this->lipsum(1) ?></p>
-    <p><?= $this->lipsum(1) ?></p>
-</div>
-
-<div class="p3 bg-gold dark">
-    <p>This is an <a href="#">example</a> of a long string that has a link in it.</p>
-    <p><?= $this->lipsum(1) ?></p>
-    <p><?= $this->lipsum(1) ?></p>
-</div>
-
-<div class="p3 bg-darkblue light">
-    <p>This is an <a href="#">example</a> of a long string that has a link in it.</p>
-    <p><?= $this->lipsum(1) ?></p>
-    <p><?= $this->lipsum(1) ?></p>
-</div>
-
-<div class="p3 bg-blue dark">
-    <p>This is an <a href="#">example</a> of a long string that has a link in it.</p>
-    <p><?= $this->lipsum(1) ?></p>
-    <p><?= $this->lipsum(1) ?></p>
-</div>
-
-<div class="p3 bg-lightblue dark">
-    <p>This is an <a href="#">example</a> of a long string that has a link in it.</p>
-    <p><?= $this->lipsum(1) ?></p>
-    <p><?= $this->lipsum(1) ?></p>
-</div>
-
-<div class="p3 bg-slate light">
-    <p>This is an <a href="#">example</a> of a long string that has a link in it.</p>
-    <p><?= $this->lipsum(1) ?></p>
-    <p><?= $this->lipsum(1) ?></p>
-</div>
-
-<div class="p3 bg-gravel dark">
-    <p>This is an <a href="#">example</a> of a long string that has a link in it.</p>
-    <p><?= $this->lipsum(1) ?></p>
-    <p><?= $this->lipsum(1) ?></p>
-</div>
+<?php foreach($colorList([]) as $background): ?>
+    <div class="p3 bg-<?= $background ?>">
+        <?php foreach ($colorList([$background]) as $color): ?>
+            <p class="<?= $color ?>">This is an <a href="#">example</a> of a long string that has a link in it.</p>
+            <p class="<?= $color ?>"><?= $this->lipsum(1) ?></p>
+        <?php endforeach; ?>
+    </div>
+<?php endforeach; ?>
 
 <h1 class="px3">Buttons</h1>
 <div class="px3 flex flex-column">
@@ -106,26 +84,26 @@ function buttons(array $buttons) {
 <h1 class="px3">Textiles</h1>
 <div class="px3">
     <h3>Fabrics</h3>
-    <?= textile('cloth') ?>
-    <?= textile('fabric-light') ?>
-    <?= textile('fabric-dark') ?>
-    <?= textile('felt-dark') ?>
-    <?= textile('felt-light') ?>
-    <?= textile('denim-dark') ?>
-    <?= textile('canvas') ?>
-    <?= textile('woven-dark') ?>
-    <?= textile('woven-light') ?>
+    <?= $textile('cloth') ?>
+    <?= $textile('fabric-light') ?>
+    <?= $textile('fabric-dark') ?>
+    <?= $textile('felt-dark') ?>
+    <?= $textile('felt-light') ?>
+    <?= $textile('denim-dark') ?>
+    <?= $textile('canvas') ?>
+    <?= $textile('woven-dark') ?>
+    <?= $textile('woven-light') ?>
     <h3>Wood</h3>
-    <?= textile('bark') ?>
-    <?= textile('wood') ?>
+    <?= $textile('bark') ?>
+    <?= $textile('wood') ?>
     <h3>Geometric</h3>
-    <?= textile('cubes') ?>
-    <?= textile('triangles') ?>
-    <?= textile('hexabump') ?>
+    <?= $textile('cubes') ?>
+    <?= $textile('triangles') ?>
+    <?= $textile('hexabump') ?>
     <h3>Materials</h3>
-    <?= textile('concrete') ?>
-    <?= textile('eggshell') ?>
-    <?= textile('noisy') ?>
-    <?= textile('shattered') ?>
+    <?= $textile('concrete') ?>
+    <?= $textile('eggshell') ?>
+    <?= $textile('noisy') ?>
+    <?= $textile('shattered') ?>
 </div>
 
