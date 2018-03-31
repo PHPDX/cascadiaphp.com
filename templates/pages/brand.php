@@ -26,7 +26,7 @@ $textile = function($class) use ($colors) {
     echo "</div>";
 };
 
-$colorList = function(array $exclude) use ($colors) {
+$colorList = function(array $exclude = []) use ($colors) {
     foreach ($colors as $color) {
         if (in_array($color, $exclude)) {
             continue;
@@ -45,6 +45,16 @@ function buttons(array $buttons) {
 ?>
 
 <h1 class="px3 m0">Basic Elements</h1>
+<h2>Logo Treatment</h2>
+
+<div class="flex flex-wrap row">
+<?php foreach($colorList() as $color): ?>
+<div class="md-col-3 sm-col-4 col-6 bg-<?= $color ?>">
+    <amp-img class="m3" width="1" height="1" src="/images/logo.svg" layout="responsive"></amp-img>
+</div>
+<?php endforeach; ?>
+</div>
+
 <h1 class="flex-auto px3">Header 1</h1>
 <h2 class="flex-auto px3">Header 2</h2>
 <h3 class="flex-auto px3">Header 3</h3>

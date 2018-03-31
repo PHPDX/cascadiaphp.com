@@ -18,7 +18,7 @@ class LipsumExtension implements ExtensionInterface
 
     public function placeholder(int $width, int $height)
     {
-        return 'https://via.placeholder.com/' . (string) $width . 'x' . (string) $height;
+        return 'https://picsum.photos/' . (string) $width . '/' . (string) $height;
     }
 
     public function lipsum(int $paragraphs = 1, bool $tags = false)
