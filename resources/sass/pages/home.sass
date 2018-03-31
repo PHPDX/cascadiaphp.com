@@ -11,7 +11,7 @@ $hero-stripe-width: -5vw
 
     amp-img
       img
-        object-position: center
+        object-position: top right
         object-fit: cover
 
     .cover
@@ -19,7 +19,7 @@ $hero-stripe-width: -5vw
       height: 0
       top: 0
       left: 0
-      border-top: calc(100vh - #{$headerHeight} - #{$hero-stripe-width}) solid transparentize($light-blue, 0.3)
+      border-top: calc(100vh - #{$headerHeight} - #{$hero-stripe-width}) solid transparentize($light-blue, 0.5)
       border-right: calc(1440px - #{$hero-stripe-width}) solid transparent
 
     .cover-bottom
@@ -27,7 +27,7 @@ $hero-stripe-width: -5vw
       height: 0
       bottom: 0
       right: 0
-      border-bottom: calc(100vh - #{$headerHeight} - #{$hero-stripe-width}) solid transparentize($dark-blue, 0.3)
+      border-bottom: calc(100vh - #{$headerHeight} - #{$hero-stripe-width}) solid transparentize($dark-blue, 0.5)
       border-left: calc(1440px - #{$hero-stripe-width}) solid transparent
 
 .main-cta > div

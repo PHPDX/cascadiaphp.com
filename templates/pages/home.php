@@ -10,7 +10,7 @@
 <section class="what flex flex-column">
     <div class="flex-auto hero relative flex content-center justify-center items-center">
         <div id="hero-images">
-            <amp-img src="/images/pages/home/portland-fog.jpeg" width="1000" height="667" layout="fill"></amp-img>
+            <amp-img src="/images/scenes/where/mthood.jpg" width="1000" height="667" layout="fill"></amp-img>
         </div>
 
         <div class="cover absolute b-gold"></div>
@@ -32,21 +32,21 @@
     </div>
     <div class="flex fold-cta bg-white darkblue justify-center">
         <div class="col md-col-4 sm-col-6 xs-hide my4 px3 border-right b-gravel b3 relative">
-            <amp-fit-text max-font-size="50px" height="80px" layout="flex-item" class="flex-auto center">
+            <amp-fit-text max-font-size="40px" height="80px" layout="flex-item" class="flex-auto center">
                 <span class="bold">2</span> days
             </amp-fit-text>
-            <amp-fit-text max-font-size="50px" height="80px" layout="flex-item" class="flex-auto center md-hide lg-hide">
+            <amp-fit-text max-font-size="40px" height="80px" layout="flex-item" class="flex-auto center md-hide lg-hide">
                 <span class="bold">250+</span> tickets
             </amp-fit-text>
         </div>
         <div class="col col-4 sm-hide xs-hide my4 px3 border-right b-gravel b3 relative">
-            <amp-fit-text max-font-size="50px" height="80px" layout="flex-item" class="flex-auto center">
+            <amp-fit-text max-font-size="40px" height="80px" layout="flex-item" class="flex-auto center">
                 <span class="bold">250+</span> tickets
             </amp-fit-text>
         </div>
         <div class="col col-12 sm-col-6 sm-col-4 my4 px3 center flex flex-column justify-center">
             <a href="#" class="btn btn-cta large relative">
-                <amp-fit-text max-font-size="50px" layout="fixed-height" height="50px"><strong>Register Now</strong></amp-fit-text>
+                <amp-fit-text max-font-size="40px" layout="fixed-height" height="50px"><strong>Register Now</strong></amp-fit-text>
             </a>
         </div>
     </div>
