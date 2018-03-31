@@ -19,7 +19,7 @@
             <amp-layout layout="responsive" width="4" height="3" class="bg-white main-cta" sizes="(min-width: 450px) 450px, 100vw">
                 <amp-fit-text max-font-size="50px" layout="flex-item" class="bg-darkblue white flex-auto center">
                     <div class="mx3">
-                        September <span class="bold lightblue py2">15th</span> - <span class="bold lightblue">16th</span>
+                        September <span class="bold lightblue py2">14th</span> - <span class="bold lightblue">15th</span>
                     </div>
                 </amp-fit-text>
                 <amp-fit-text max-font-size="50px" layout="flex-item" class="flex-auto center darkblue">
