@@ -17,7 +17,7 @@ $this->stop();
 
 <?php
 function textile($class) {
-    $colors = ['gold', 'darkblue', 'blue', 'lightblue', 'slate', 'gravel'];
+    $colors = ['black', 'gold', 'darkblue', 'blue', 'lightblue', 'slate', 'gravel', 'white'];
     echo '<h3>' . ucfirst(str_replace('-', ' ', $class)) . '</h3><div class="flex textiles flex-wrap">';
     foreach ($colors as $color) {
         echo '<div class="flex-auto"><amp-layout layout="responsive" width="1" height="1" class="bg-' . $color . ' ' . $class . '"></amp-layout></div>';
