@@ -1,6 +1,7 @@
 <?php
 /** @var \CascadiaPHP\Site\Template\Template $this */
 ?>
+<div id="top-marker" class="absolute"></div>
 <div id="header" class="flex bg-light relative">
     <div class="flex-auto relative my1 ml3">
         <amp-img src="/images/logo.svg" height=263 width=705 layout="fill" noloading></amp-img>
@@ -55,3 +56,51 @@
         </ul>
     </nav>
 </amp-sidebar>
+
+<div id="marker" class="absolute z0">
+    <amp-position-observer on="enter:hideBackToTop.start; exit:showBackToTop.start"
+                           layout="nodisplay">
+    </amp-position-observer>
+</div>
+
+<button class="back-to-top btn btn-gold fixed z4"
+        on="tap:top-marker.scrollTo(duration=200)">
+    <amp-fit-text layout="responsive" width="1" height="1"><i class="mbri-arrow-up" alt="Back to top"></i></amp-fit-text>
+</button>
+
+<amp-animation id="hideBackToTop"
+               layout="nodisplay">
+    <script type="application/json">
+        {
+            "duration": "200ms",
+            "fill": "both",
+            "iterations": "1",
+            "direction": "alternate",
+            "animations": [{
+                "selector": ".back-to-top",
+                "keyframes": [{
+                    "opacity": "0",
+                    "visibility": "hidden"
+                }]
+            }]
+        }
+    </script>
+</amp-animation>
+<amp-animation id="showBackToTop"
+               layout="nodisplay">
+    <script type="application/json">
+        {
+            "duration": "200ms",
+            "fill": "both",
+            "iterations": "1",
+            "direction": "alternate",
+            "animations": [{
+                "selector": ".back-to-top",
+                "keyframes": [{
+                    "opacity": "1",
+                    "visibility": "visible"
+                }]
+            }]
+        }
+    </script>
+</amp-animation>
