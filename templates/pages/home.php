@@ -30,18 +30,18 @@
             </amp-layout>
         </div>
     </div>
-    <div class="flex fold-cta bg-lightblue fabric-light black justify-center">
+    <div class="flex fold-cta bg-white darkblue justify-center">
         <div class="col md-col-4 sm-col-6 xs-hide my4 px3 border-right b-gold b3 relative">
             <amp-fit-text max-font-size="50px" height="80px" layout="flex-item" class="flex-auto center">
-                <span class="white bold">2</span> days
+                <span class="bold">2</span> days
             </amp-fit-text>
             <amp-fit-text max-font-size="50px" height="80px" layout="flex-item" class="flex-auto center md-hide lg-hide">
-                <span class="white bold">250+</span> tickets
+                <span class="bold">250+</span> tickets
             </amp-fit-text>
         </div>
         <div class="col col-4 sm-hide xs-hide my4 px3 border-right b-gold b3 relative">
             <amp-fit-text max-font-size="50px" height="80px" layout="flex-item" class="flex-auto center">
-                <span class="white bold">250+</span> tickets
+                <span class="bold">250+</span> tickets
             </amp-fit-text>
         </div>
         <div class="col col-12 sm-col-6 sm-col-4 my4 px3 center flex flex-column justify-center">
