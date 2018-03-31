@@ -17,12 +17,12 @@
         <div class="cover-bottom absolute"></div>
         <div>
             <amp-layout layout="responsive" width="4" height="3" class="bg-white main-cta" sizes="(min-width: 450px) 450px, 100vw">
-                <amp-fit-text layout="flex-item" class="bg-darkblue white flex-auto center">
+                <amp-fit-text max-font-size="50px" layout="flex-item" class="bg-darkblue white flex-auto center">
                     <div class="mx3">
                         September <span class="bold lightblue py2">15th</span> - <span class="bold lightblue">16th</span>
                     </div>
                 </amp-fit-text>
-                <amp-fit-text layout="flex-item" class="flex-auto center darkblue">
+                <amp-fit-text max-font-size="50px" layout="flex-item" class="flex-auto center darkblue">
                     <div class="mx3">
                         In the <span class="gold">❤</span> of <span class="bold">PDX Oregon</span>
                     </div>
