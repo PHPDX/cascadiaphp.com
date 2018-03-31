@@ -16,9 +16,9 @@ class LipsumExtension implements ExtensionInterface
         $engine->registerFunction('placeholder', [$this, 'placeholder']);
     }
 
-    public function placeholder(int $width, int $height)
+    public function placeholder(int $width, int $height, $grayscale = false)
     {
-        return 'https://picsum.photos/' . (string) $width . '/' . (string) $height;
+        return 'https://picsum.photos/' . ($grayscale ? 'g/' : '') . (string) $width . '/' . (string) $height;
     }
 
     public function lipsum(int $paragraphs = 1, bool $tags = false)

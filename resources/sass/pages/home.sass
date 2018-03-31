@@ -1,2 +1,45 @@
 @import "../elements/layout"
 @import "../util/_all"
+
+$hero-stripe-width: -5vw
+
+.what
+  min-height: calc(100vh - #{$headerHeight})
+
+  .hero
+    overflow: hidden
+
+    amp-img
+      img
+        object-position: center
+        object-fit: cover
+
+    .cover
+      width: 0
+      height: 0
+      top: 0
+      left: 0
+      border-top: calc(100vh - #{$headerHeight} - #{$hero-stripe-width}) solid transparentize($gold, 0.3)
+      border-right: calc(1440px - #{$hero-stripe-width}) solid transparent
+
+    .cover-bottom
+      width: 0
+      height: 0
+      bottom: 0
+      right: 0
+      border-bottom: calc(100vh - #{$headerHeight} - #{$hero-stripe-width}) solid transparentize($dark-blue, 0.3)
+      border-left: calc(1440px - #{$hero-stripe-width}) solid transparent
+
+.main-cta > div
+  display: -ms-flexbox
+  display: flex
+  -ms-flex-direction: column
+  flex-direction: column
+
+
+@media (max-width: 1440px)
+  .what .hero
+    .cover
+      border-right: 100vw solid transparent
+    .cover-bottom
+      border-left: 100vw solid transparent

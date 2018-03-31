@@ -22,10 +22,17 @@
 .btn
   color: $font-color-dark
   font-family: $font1
-  font-weight: 400
+
+  &.large
+    font-weight: 600
+    line-height: 2.25rem
+    padding: 1rem 2rem
+
+  &.btn-cta
+    @include button-style($gold, $white)
 
   &.btn-gold
-    @include button-style($gold, #111)
+    @include button-style($gold, $black)
     &.inverted
       color: darken($gold, 15%)
 
@@ -43,7 +50,7 @@
       color: darken($blue, 15%)
 
   &.btn-slate
-    @include button-style($slate, #fff)
+    @include button-style($slate, $white)
 
   &.btn-gravel
     @include button-style($gravel, $font-color-dark)
