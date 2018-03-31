@@ -1,3 +1,4 @@
+![](/public/images/logo.svg)
 # Welcome to the repository for Cascadia PHP's :mountain: website!
 
 ### Quick Reference:
