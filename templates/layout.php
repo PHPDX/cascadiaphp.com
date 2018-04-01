@@ -6,7 +6,7 @@
  */
 ?>
 <!doctype html>
-<html amp>
+<html amp class="bg-lightblue">
 <head>
     <?php /** Enable AMP */ ?>
     <meta charset="utf-8">
@@ -15,7 +15,7 @@
     <?= $this->section('metatags') ?>
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
-    <title><?= $this->e($title ?? 'Untitled') ?></title>
+    <title><?= $this->e($title ?? 'Cascadia PHP 2018') ?></title>
 
     <link rel="canonical" href="<?= $this->fullUri($url ?? '') ?>" />
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
@@ -32,6 +32,10 @@
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
     <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
     <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
+    <amp-install-serviceworker
+            src="<?= $this->formUri('/js/serviceworker.js') ?>"
+            layout="nodisplay">
+    </amp-install-serviceworker>
 </head>
 <body class="cascadiaphp">
 
