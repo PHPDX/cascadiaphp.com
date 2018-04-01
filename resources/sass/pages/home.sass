@@ -4,14 +4,15 @@
 $hero-stripe-width: -5vw
 
 .what
-  min-height: calc(100vh - #{$headerHeight})
+  height: calc(100vh - #{$headerHeight})
+  max-height: 1200px
 
   .hero
     overflow: hidden
 
     amp-img
       img
-        object-position: top right
+        object-position: top left
         object-fit: cover
 
     .cover
