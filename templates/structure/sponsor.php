@@ -1,7 +1,7 @@
 <?php declare(strict_types=1) ?>
 <?php /** @var \CascadiaPHP\Site\Template\Template $this */ ?>
 
-<div class="flex p2">
+<div class="flex p2 sm-col-12 center">
     <amp-layout layout="responsive" width="1" height="1" sizes="200px" class="circle b-<?= $borderColor ?? 'black' ?> bg-<?= $backgroundColor ?? 'white' ?>">
         <amp-img class="object-cover object-contain m3"
                  src="<?= $logo ?>"

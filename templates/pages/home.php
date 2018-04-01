@@ -45,7 +45,7 @@
             </amp-fit-text>
         </div>
         <div class="col col-12 sm-col-6 sm-col-4 my4 px3 center flex flex-column justify-center">
-            <a href="#" class="btn btn-cta large relative">
+            <a href="/register" class="btn btn-cta large relative">
                 <amp-fit-text max-font-size="40px" layout="fixed-height" height="50px"><strong>Register Now</strong></amp-fit-text>
             </a>
         </div>
@@ -73,7 +73,7 @@
             </p>
         </div>
 
-        <div class="p3 center flex-auto items-center justify-center flex flex-column darkblue bg-white">
+        <div class="p3 center flex-auto items-center justify-center flex flex-column darkblue bg-gravel">
             <p>
             The Pacific Northwest (also known as Cascadia) is a magical land covered in Rain Forests, Deserts, Coasts,
             Mountains, Rivers, and People. It's expansive forests have traditional powered the industries in this area,

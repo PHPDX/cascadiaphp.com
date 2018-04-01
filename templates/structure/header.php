@@ -46,9 +46,9 @@
                 Sponsors
             </a>
         </div>
-        <li class="flex flex-column justify-center">
-            <a href="/register" class="btn btn-cta">Register</a>
-        </li>
+        <div class="m1 mt3">
+            <a href="/register" class="btn btn-cta block">Register</a>
+        </div>
     </div>
 
     <nav toolbar="(min-width: 52em)" toolbar-target="nav_container" class="header-nav flex">
@@ -81,7 +81,7 @@
                 </a>
             </li>
             <li class="flex flex-column justify-center">
-                <a href="/register" class="btn btn-cta">Register</a>
+                <a href="/register" class="py1 px2 btn btn-cta">Register</a>
             </li>
         </ul>
     </nav>
