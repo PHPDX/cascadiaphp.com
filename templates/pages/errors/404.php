@@ -13,12 +13,6 @@ echo $this->inline('/css/pages/brand.css');
 // Stop the css section
 $this->stop();
 ?>
-<h3 class="p3 center">
-    We aren't quite ready to announce our venue!
-</h3>
 
-<h4 class="p3 center">
-    <span>
-        Please <a href="/register">Join our Mailing List</a> for updates!
-    </span>
-</h4>
+<h1 class="center bold p3 m0">404</h1>
+<h2 class="center m0 p3">Hmm, it looks like you reached a 404..<br>Check the Navigation or the footer for links.</h2>

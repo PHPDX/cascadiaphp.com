@@ -6,6 +6,8 @@ use Interop\Http\ServerMiddleware\DelegateInterface;
 use Interop\Http\ServerMiddleware\MiddlewareInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
+use Zend\Diactoros\Response\TextResponse;
+use Zend\Diactoros\Uri;
 
 class AmpMiddleware implements MiddlewareInterface
 {
@@ -21,6 +23,11 @@ class AmpMiddleware implements MiddlewareInterface
      */
     public function process(ServerRequestInterface $request, DelegateInterface $delegate)
     {
+        // Validate origin
+        if (!$this->validOrigin($request)) {
+            return new TextResponse('Unauthorized', 403);
+        }
+
         // Resolve the response
         $response = $delegate->process($request);
 
@@ -33,12 +40,81 @@ class AmpMiddleware implements MiddlewareInterface
 
     private function addHeaders(ServerRequestInterface $request, ResponseInterface $response)
     {
-        return $response
-            ->withAddedHeader(
-                'access-control-expose-headers',
-                'AMP-Access-Control-Allow-Source-Origin')
-            ->withAddedHeader(
-                'AMP-Access-Control-Allow-Source-Origin',
-                (string) $request->getUri()->withPath('')->withQuery('')->withFragment(''));
+        $origin = $this->getOrigin($request);
+        $sourceOrigin = getenv('URI') ?? $this->getSourceOrigin($request);
+
+        if ($origin) {
+            $headers = [
+                'Access-Control-Expose-Headers' => 'AMP-Access-Control-Allow-Source-Origin',
+                'AMP-Access-Control-Allow-Source-Origin' => $sourceOrigin,
+                'Access-Control-Allow-Origin' => $origin
+            ];
+
+            foreach ($headers as $key => $value) {
+                $response = $response->withHeader($key, $value);
+            }
+        }
+
+        return $response;
+    }
+
+    private function getOrigin(ServerRequestInterface $request)
+    {
+        if (!$request->hasHeader('origin')) {
+            null;
+        }
+
+        return $request->getHeader('origin')[0] ?? null;
+    }
+
+    private function getSourceOrigin(ServerRequestInterface $request)
+    {
+        return $request->getQueryParams['__amp_source_origin'] ?? null;
+    }
+
+    private function validOrigin(ServerRequestInterface $request): bool
+    {
+        $origin = $this->getOrigin($request);
+        $sourceOrigin = $this->getSourceOrigin($request);
+        $sourceUri = getenv('URI');
+
+        if ($sourceOrigin) {
+            $normalizedSourceOrigin = new Uri($sourceOrigin);
+            $normalizedUri = new Uri($sourceUri);
+
+            if ((string) $normalizedSourceOrigin !== (string) $normalizedUri) {
+                return false;
+            }
+        }
+
+
+        if (!$origin && $request->getHeader('amp-same-origin') === true) {
+            return true;
+        }
+
+        if (!$origin && $request->getMethod() === 'POST') {
+            // All post requests should have a valid origin.
+            return false;
+        }
+
+        if ($origin) {
+            if ($sourceUri && strtolower($origin) === strtolower($sourceUri)) {
+                return $sourceUri;
+            }
+
+            $allowedOrigins = [
+                '/.*\.cdn\.ampproject\.org/',
+                '/.+\.amp\.cloudflare\.com/',
+                '/www\.cascadiaphp\.com/'
+            ];
+
+            foreach ($allowedOrigins as $originPattern) {
+                if (preg_match($originPattern, $origin)) {
+                    return true;
+                }
+            }
+        }
+
+        return true;
     }
 }

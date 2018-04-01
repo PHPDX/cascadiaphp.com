@@ -3,6 +3,7 @@ namespace CascadiaPHP\Site\Controller;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\RequestOptions;
 use League\Plates\Engine;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
@@ -60,7 +61,6 @@ class RegisterController
 
         // If we get this far, we got a 404 from the member check
         // Sign up the user
-
         try {
             // Forward the signup request
             $result = $client->post($uri->withPath('/3.0/lists/60fb4ba7b8/members'), [
@@ -69,6 +69,9 @@ class RegisterController
                     'status' => 'subscribed'
                 ]
             ]);
+            if ($result->getStatusCode() !== 200) {
+                return 'We recieved an unexpected response code from our mail provider, please reach out to leadership@cascadiaphp.com and complain.';
+            }
         } catch (ClientException $e) {
             if ($e->getCode() === 400) {
                 return 'This email address doesn\'t look valid, please try again with a different one.';
