@@ -3,7 +3,8 @@
 <?php
 // Set the template
 $this->layout('layout', [
-    'active' => '/sponsors'
+    'active' => '/sponsors',
+    'title' => 'Sponsors that made Cascadia PHP happen - Portland Oregon Conference - Cascadia PHP'
 ]);
 
 // Start the css section

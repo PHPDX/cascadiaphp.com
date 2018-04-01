@@ -2,7 +2,10 @@
 <?php /** @var \CascadiaPHP\Site\Template\Template $this */ ?>
 <?php
 // Set the template
-$this->layout('layout');
+$this->layout('layout', [
+    'active' => '/venue',
+    'title' => 'Venue for the event - Portland Oregon Conference - Cascadia PHP'
+]);
 
 // Start the css section
 $this->start('css');

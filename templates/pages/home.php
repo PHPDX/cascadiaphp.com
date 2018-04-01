@@ -1,7 +1,10 @@
 <?php declare(strict_types=1) ?>
 <?php /** @var \CascadiaPHP\Site\Template\Template $this */ ?>
 
-<?php $this->layout('layout') ?>
+<?php $this->layout('layout', [
+    'page' => '/home',
+    'title' => 'Cascadia PHP Conference in Portland Oregon - Cascadia PHP'
+]) ?>
 
 <?php $this->start('components') ?>
 <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>

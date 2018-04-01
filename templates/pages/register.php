@@ -3,7 +3,8 @@
 <?php
 // Set the template
 $this->layout('layout', [
-    'active' => '/register'
+    'active' => '/register',
+    'title' => 'Register for more info about Cascadia PHP - Portland Oregon Conference - Cascadia PHP'
 ]);
 
 // Start the css section

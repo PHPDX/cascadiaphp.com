@@ -3,7 +3,8 @@
 <?php
 // Set the template
 $this->layout('layout', [
-    'active' => '/speakers'
+    'active' => '/speakers',
+    'title' => 'The Speaker Lineup - Portland Oregon Conference - Cascadia PHP'
 ]);
 
 // Start the css section
