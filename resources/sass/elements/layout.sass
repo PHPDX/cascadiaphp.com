@@ -62,7 +62,7 @@ h2, h3, h4, h5, h6
     border-radius: 1em
     &:hover
       background-color: darken(#fff, 5%)
-    &:active
+    &:active, &.active
       background-color: darken(#fff, 15%)
 
 #marker
@@ -78,7 +78,17 @@ h2, h3, h4, h5, h6
 
 #footer
   min-height: 150px
+  background: linear-gradient(to bottom, transparentize($light-blue, 0.8), $white 5%)
 
+amp-img.object-cover > img, .object-cover
+  object-fit: cover
+
+amp-img.object-contain > img, .object-contain
+  object-fit: contain
+
+amp-img.object-center > img, .object-center
+  object-position: center
+  
 a, .dark a
   color: darken($slate, 0%)
   font-weight: 500
