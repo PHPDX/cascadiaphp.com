@@ -35,6 +35,8 @@ class RegisterController
 
     public function handleSignup(ServerRequestInterface $request, Client $client): ?string
     {
+        $listId = getenv('MAILCHIMP_LIST_ID');
+
         // Set up the default mailchimp api url with simple auth
         $uri = new Uri('https://user:' . getenv('MAILCHIMP_API_KEY') . '@us12.api.mailchimp.com');
 
@@ -48,7 +50,7 @@ class RegisterController
 
         // Check user signup status
         try {
-            $status = $client->get($uri->withPath('/3.0/lists/60fb4ba7b8/members/' . md5($email)));
+            $status = $client->get($uri->withPath('/3.0/lists/' . $listId . '/members/' . md5($email)));
 
             if ($status->getStatusCode() === 200) {
                 return 'No worries, looks like you were already subscribed!';
@@ -63,7 +65,7 @@ class RegisterController
         // Sign up the user
         try {
             // Forward the signup request
-            $result = $client->post($uri->withPath('/3.0/lists/60fb4ba7b8/members'), [
+            $result = $client->post($uri->withPath('/3.0/lists/' . $listId . '/members'), [
                 RequestOptions::JSON => [
                     'email_address' => $email,
                     'status' => 'subscribed'

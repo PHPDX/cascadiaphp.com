@@ -44,6 +44,12 @@ class ServiceProvider extends AbstractServiceProvider implements BootableService
             // Load in the .env
             $env = new Dotenv(__DIR__ . '/../');
             $env->load();
+            $env->required([
+                'MAILCHIMP_LIST_ID',
+                'MAILCHIMP_API_KEY',
+                'URI',
+                'DEBUG'
+            ]);
         } catch (\Exception $e) {
         }
     }
