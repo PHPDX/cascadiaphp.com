@@ -1,9 +1,13 @@
 <?php
 /**
+ * @var \Psr\Container\ContainerInterface $container
  * @var \CascadiaPHP\Site\Template\Template $this
  * @var string|null $title
  * @var string|null $url
  */
+
+use CascadiaPHP\Site\SEO\SEOTools;
+
 ?>
 <!doctype html>
 <html amp class="bg-lightblue">
@@ -12,7 +16,8 @@
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
 
-    <?= $this->section('metatags') ?>
+    <?= $this->section('metatags', $container->get(SEOTools::class)->generate()) ?>
+
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
     <title><?= $this->e($title ?? 'Cascadia PHP 2018') ?></title>
@@ -20,7 +25,7 @@
     <link rel="canonical" href="<?= $this->fullUri($url ?? '') ?>" />
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
 
-    <?= $this->section('schema', '<!-- No Schema -->') ?>
+    <?= $this->section('schema', $container->get('schema')) ?>
 
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <style amp-custom><?= $this->section('css') ?></style>

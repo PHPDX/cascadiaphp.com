@@ -3,30 +3,27 @@
 namespace CascadiaPHP\Site;
 
 use League\Container\ServiceProvider\ServiceProviderAggregate;
-use CascadiaPHP\Site\Controller\ServiceProvider as ControllerProvider;
-use CascadiaPHP\Site\Meetup\ServiceProvider as MeetupProvider;
-use CascadiaPHP\Site\Router\ServiceProvider as RouterProvider;
-use CascadiaPHP\Site\Template\ServiceProvider as TemplateProvider;
 
 class ProviderAggregate extends ServiceProviderAggregate
 {
 
     protected $customProviders = [
         ServiceProvider::class,
-        ControllerProvider::class,
-        TemplateProvider::class,
-        RouterProvider::class
+        Controller\ServiceProvider::class,
+        Template\ServiceProvider::class,
+        Router\ServiceProvider::class,
+        SEO\ServiceProvider::class
     ];
 
     protected $booted = false;
 
-    public function provides($service)
+    public function provides($service = null)
     {
         $this->boot();
         return parent::provides($service);
     }
 
-    public function register($service)
+    public function register($service = null)
     {
         $this->boot();
         parent::register($service);
