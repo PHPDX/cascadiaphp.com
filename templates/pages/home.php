@@ -19,15 +19,16 @@
         <div class="cover absolute b-gold"></div>
         <div class="cover-bottom absolute"></div>
         <div>
-            <amp-layout layout="responsive" width="4" height="3" class="bg-white main-cta" sizes="(min-width: 450px) 450px, 100vw">
-                <amp-fit-text max-font-size="50px" layout="flex-item" class="bg-darkblue white flex-auto center">
-                    <div class="mx3">
-                        September<br><span class="bold lightblue py2">14th</span> - <span class="bold lightblue">15th</span>
+            <amp-layout layout="responsive" width="276.02" height="191.15" class="main-cta relative" sizes="(min-width: 600px) 600px, 100vw">
+                <amp-img src="/images/scenes/what/oregon.svg" layout="fill" width="276.02" height="191.15"></amp-img>
+                <amp-fit-text max-font-size="50px" layout="responsive" width="216.79" height="65.75" class="white center">
+                    <div class="mx3 py2 px2">
+                        <span class="sm-col sm-col-12">September</span> <span class="bold lightblue py2">14th</span> - <span class="bold lightblue">15th</span>
                     </div>
                 </amp-fit-text>
-                <amp-fit-text max-font-size="50px" layout="flex-item" class="flex-auto center darkblue">
-                    <div class="mx3">
-                        In the <span class="gold">❤</span> of <br><span class="bold">PDX Oregon</span>
+                <amp-fit-text max-font-size="50px" layout="responsive" width="216.79" height="65.75" class="center darkblue">
+                    <div class="mx3 py2 px2">
+                        <span class="sm-col sm-col-12">In the <span class="gold">❤</span> of</span> <span class="bold">PDX Oregon</span>
                     </div>
                 </amp-fit-text>
             </amp-layout>
