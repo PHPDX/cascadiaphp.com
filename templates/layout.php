@@ -23,7 +23,6 @@ use CascadiaPHP\Site\SEO\SEOTools;
     <title><?= $this->e($title ?? 'Cascadia PHP 2018') ?></title>
 
     <link rel="canonical" href="<?= $this->fullUri($url ?? '') ?>" />
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
 
     <?= $this->section('schema', $container->get('schema')) ?>
 
