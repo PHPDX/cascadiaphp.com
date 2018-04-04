@@ -3,7 +3,7 @@
 $commit = $this->e(substr(getenv('VERSION'), 0, 8));
 ?>
 
-<div class="footer text-center">
-    Copyright &copy; <?= $this->e(date('Y')); ?> Cascadia PHP &nbsp;
-    Commit: <a href="https://github.com/phpdx/cascadiaphp.com/commit/<?= $commit ?>/"><?= $commit ?></a>
-</div>
+<section id="footer" class="text-center flex flex-column justify-center content-center dark bg-gravel white">
+    <div class="center white">Copyright &copy; <?= $this->e(date('Y')); ?> Cascadia PHP &nbsp;</div>
+    <div class="center white">Commit: <a href="https://github.com/phpdx/cascadiaphp.com/commit/<?= $commit ?>/"><?= $commit ?></a></div>
+</section>

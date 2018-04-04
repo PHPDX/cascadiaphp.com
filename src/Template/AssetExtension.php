@@ -50,7 +50,7 @@ class AssetExtension implements ExtensionInterface
         $path = $this->pathToPublic . $uri->getPath();
 
         if (!file_exists($path)) {
-            throw new \InvalidArgumentException('Invalid asset, cannot include inline.');
+            throw new \InvalidArgumentException('Invalid asset "' . $path . '", cannot include inline.');
         }
 
         return file_get_contents($path);

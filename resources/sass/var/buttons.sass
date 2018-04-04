@@ -1,0 +1,17 @@
+@mixin button-style($bg-color, $font-color)
+  background-color: $bg-color
+  border-radius: 2px
+  color: $font-color
+  &:hover
+    background-color: darken($bg-color, 5%)
+  &:active
+    background-color: darken($bg-color, 10%)
+  &.inverted
+    background-color: white
+    border-radius: 2px
+    color: $bg-color
+    border: solid 1px $bg-color
+    &:hover
+      background-color: darken(white, 5%)
+    &:active
+      background-color: darken(white, 10%)

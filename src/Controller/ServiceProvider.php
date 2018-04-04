@@ -3,14 +3,16 @@
 namespace CascadiaPHP\Site\Controller;
 
 use Cache\Adapter\Filesystem\FilesystemCachePool;
+use CascadiaPHP\Site\Middleware\AmpMiddleware;
+use CascadiaPHP\Site\Middleware\Dispatcher as MiddlewareDispatcher;
+use CascadiaPHP\Site\Middleware\ErrorDecoratorMiddleware;
+use CascadiaPHP\Site\Router\RouteHandlerResolver;
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use League\Flysystem\Adapter\Local;
 use League\Flysystem\Filesystem;
 use League\Plates\Engine;
 use Middlewares\FastRoute;
 use Middlewares\RequestHandler;
-use Middlewares\Utils\CallableResolver\ContainerResolver;
-use Middlewares\Utils\Dispatcher as MiddlewareDispatcher;
 use Psr\Container\ContainerInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\SimpleCache\CacheInterface;
@@ -27,6 +29,13 @@ class ServiceProvider extends AbstractServiceProvider
         Server::class,
         Engine::class,
         CacheInterface::class
+    ];
+
+    protected $middlewares = [
+        ErrorDecoratorMiddleware::class, // This handler catches errors, it should be first
+        AmpMiddleware::class,
+        FastRoute::class,
+        RequestHandler::class // This handler is our route dispatcher, it must be last.
     ];
 
     /**
@@ -71,29 +80,31 @@ class ServiceProvider extends AbstractServiceProvider
     /**
      * Build the request handler middleware
      * @return RequestHandler
+     * @throws \Psr\Container\ContainerExceptionInterface
+     * @throws \Psr\Container\NotFoundExceptionInterface
      */
     protected function requestHandlerFactory()
     {
-        $resolver = new ContainerResolver($this->container);
+        $resolver = $this->container->get(RouteHandlerResolver::class);
         return new RequestHandler($resolver);
     }
 
     /**
      * Build the server
      * @return Server
+     * @throws \Psr\Container\ContainerExceptionInterface
+     * @throws \Psr\Container\NotFoundExceptionInterface
      */
     protected function diactorosFactory()
     {
         // Get the middleware stack
-        $middleware = new MiddlewareDispatcher([
-            $this->container->get(FastRoute::class),
-            $this->container->get(RequestHandler::class)
-        ]);
+        $middleware = $this->container->get(MiddlewareDispatcher::class, ['stack' => $this->middlewares]);
 
+        // Get the initial request to dispatch
         $request = $this->container->get(ServerRequestInterface::class);
 
         // Create a new diactoros server
-        return Server::createServerFromRequest(function ($request) use ($middleware) {
+        return Server::createServerFromRequest(function (ServerRequestInterface $request) use ($middleware) {
             return $middleware->dispatch($request);
         }, $request);
     }

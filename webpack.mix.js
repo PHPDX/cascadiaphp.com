@@ -1,6 +1,6 @@
-let mix = require('laravel-mix');
-
-mix.setPublicPath('./public');
+let mix = require('laravel-mix'),
+    replaceImportant = require('replace-important'),
+    fs = require('fs')
 
 /*
  |--------------------------------------------------------------------------
@@ -13,6 +13,21 @@ mix.setPublicPath('./public');
  |
  */
 
-mix.sass('resources/sass/app.scss', 'public/css');
 
-mix.version();
+mix
+    .sass('resources/sass/pages/brand.sass', 'resources/css/pages')
+    .sass('resources/sass/pages/home.sass', 'resources/css/pages')
+    .sass('resources/sass/pages/sponsors.sass', 'resources/css/pages')
+    .sass('resources/sass/pages/register.sass', 'resources/css/pages')
+
+
+// Post process css with replaceimportant
+mix.then(function() {
+    fs.readdir('resources/css/pages', function(error, pages) {
+        pages.forEach(function(page) {
+            fs.readFile('resources/css/pages/' + page, function(error, contents) {
+                fs.writeFile('resources/css/pages/' + page, replaceImportant(contents));
+            })
+        })
+    });
+});

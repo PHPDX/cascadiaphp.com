@@ -5,3 +5,5 @@ composer.lock
 cache
 node_modules
 public/hot
+yarn-error.log
+build

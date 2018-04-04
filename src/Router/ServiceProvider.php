@@ -30,9 +30,12 @@ class ServiceProvider extends AbstractServiceProvider
         });
     }
 
+    /**
+     * Load the routes from the bootstrap file
+     */
     protected function routes(RouteCollector $r)
     {
-        $r->get('/', '\CascadiaPHP\Site\Controller\PrototypeController::home');
-        $r->get('/subscribe', '\CascadiaPHP\Site\Controller\PrototypeController::subscribe');
+        $container = $this->container;
+        include dirname(__DIR__, 2) . '/bootstrap/routes.php';
     }
 }
