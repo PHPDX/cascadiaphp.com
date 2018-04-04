@@ -23,7 +23,7 @@
 
             </amp-img>
         </div>
- g
+
         <div class="cover absolute"></div>
         <div class="cover-bottom absolute"></div>
         <div>
