@@ -52,12 +52,14 @@
         </div>
         <div class="center md-col-6 lg-col-5 md-col-right lg-col-right center">
             <div class="flex btn-group">
+                <?php /*
                 <a href="/register" class="btn btn-darkblue b-gold large relative">
                     <amp-fit-text max-font-size="60px" min-font-size="20px" layout="fixed-height" height="50px" sizes="80px">
                         <strong class="bold-text white nowrap">$ TBA</strong>
                     </amp-fit-text>
                 </a>
-                <a href="/register" class="btn btn-cta large relative flex-auto">
+ */ ?>
+                <a href="/register" class="btn btn-cta large relative flex-auto rounded">
                     <amp-fit-text max-font-size="60px" min-font-size="20px" layout="fixed-height" height="50px">
                         <strong class="light-text">register now</strong>
                     </amp-fit-text>
