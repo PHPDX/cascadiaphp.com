@@ -7,7 +7,6 @@
 ]) ?>
 
 <?php $this->start('components') ?>
-<script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
 <?php $this->stop() ?>
 
 <section class="what flex flex-column">
@@ -73,20 +72,40 @@
         <span class="nowrap bold-text">Cascadia PHP 2018</span><br>
         <span class="nowrap light-text">Portland, Oregon</span>
     </amp-fit-text>
-    <div class="flex">
-        <div class="col col-4 pt3">
-            <p>
-                Portland Oregon is the most amazing mix of People, Technology, Nature, Architecture and Art. You will find it
-                challenging to walk down the street without the opportunity to meet someone awesome. Portland is a booming tech
-                town with PHP at its heart.
-            </p>
-            <p>
-                We have come together to form a non profit organization to run this conference and bring the PHP community to
-                the Portland community, and to expose our community to some of the local businesses powered by PHP.
-            </p>
+    <div class="md-flex where-row">
+        <div class="md-col md-col-6 lg-col-4 col-12 flex flex-column image-grid">
+            <amp-fit-text layout="fixed-height" height="50px" class="center" max-font-size="30px">
+                <span class="nowrap light-text center">keep portland <strike>weird</strike> php<strong class="gold">*</strong></span>
+            </amp-fit-text>
+            <div class="flex relative flex-auto">
+                <div class="flex-auto relative mr1">
+                    <amp-img class="object-center object-cover rounded bg-gravel" layout="fill" width="1000" height="668" src="/images/scenes/where/portland-sign.jpeg"></amp-img>
+                </div>
+                <div class="flex-auto flex flex-column">
+                    <div class="flex-auto relative mb1">
+                        <amp-img class="object-center object-cover rounded bg-gravel" layout="fill" width="4" height="3" src="/images/scenes/where/pipes.gif"></amp-img>
+                    </div>
+                    <div class="flex-auto relative">
+                        <amp-img class="object-center object-cover rounded bg-gravel" layout="fill" width="4" height="3" src="/images/scenes/where/portland-pano.jpeg"></amp-img>
+                    </div>
+                </div>
+            </div>
+            <div class="flex relative flex-auto mt1">
+                <div class="flex-auto flex flex-column">
+                    <div class="flex-auto relative mb1">
+                        <amp-img class="object-center object-cover rounded bg-gravel" layout="fill" width="4" height="3" src="/images/scenes/where/portland-convention-center.jpeg"></amp-img>
+                    </div>
+                    <div class="flex-auto relative">
+                        <amp-img class="object-center object-cover rounded bg-gravel" layout="fill" width="4" height="3" src="/images/scenes/where/portland-mthood.jpeg"></amp-img>
+                    </div>
+                </div>
+                <div class="flex-auto relative ml1">
+                    <amp-img class="object-center object-cover rounded bg-gravel" layout="fill" width="1" height="1" src="images/scenes/where/portland-falls.jpeg"></amp-img>
+                </div>
+            </div>
         </div>
 
-        <div class="col col-4 pt3 pl3">
+        <div class="lg-col md-hide lg-col-4 col-12 pt3 mr3 xs-m0 sm-m0 md-m0">
             <p>
                 The Pacific Northwest (also known as Cascadia) is a magical land covered in Rain Forests, Deserts, Coasts,
                 Mountains, Rivers, and People. It's expansive forests have traditional powered the industries in this area,
@@ -96,6 +115,28 @@
                 Businesses in this area embraced the web when it was in its infancy, and has a huge community of PHP users
                 because of it.
             </p>
+        </div>
+        <div class="lg-col md-col md-col-6 lg-col-4 col-12 pt3 mr3 xs-m0 sm-m0 md-m0">
+            <p>
+                Portland Oregon is the most amazing mix of People, Technology, Nature, Architecture and Art. You will find it
+                challenging to walk down the street without the opportunity to meet someone awesome. Portland is a booming tech
+                town with PHP at its heart.
+            </p>
+            <p>
+                We have come together to form a non profit organization to run this conference and bring the PHP community to
+                the Portland community, and to expose our community to some of the local businesses powered by PHP.
+            </p>
+            <div class="lg-hide">
+                <p>
+                    The Pacific Northwest (also known as Cascadia) is a magical land covered in Rain Forests, Deserts, Coasts,
+                    Mountains, Rivers, and People. It's expansive forests have traditional powered the industries in this area,
+                    but with the last century, more and more it has had a focus on Tech.
+                </p>
+                <p>
+                    Businesses in this area embraced the web when it was in its infancy, and has a huge community of PHP users
+                    because of it.
+                </p>
+            </div>
         </div>
 <!--
         <div class="col col-4 flex flex-column">

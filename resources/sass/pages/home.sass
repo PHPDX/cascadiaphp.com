@@ -38,6 +38,8 @@ $hero-stripe-width: -5vw
   flex-direction: column
   justify-content: flex-end
 
+.where-row
+  flex-direction: row-reverse
 
 @media (max-width: 1440px)
   .what .hero
@@ -45,3 +47,22 @@ $hero-stripe-width: -5vw
       border-right: 100vw solid transparent
     .cover-bottom
       border-left: 100vw solid transparent
+
+@media (max-width: 40em)
+  // xs
+  .xs-m0
+    margin: 0
+  .image-grid
+    min-height: 50vh
+
+@media (min-width: 40em) and (max-width: 52em)
+  // sm
+  .sm-m0
+    margin: 0
+  .image-grid
+    min-height: 300px
+
+@media (min-width: 52em) and (max-width: 64em)
+  // md
+  .md-m0
+    margin: 0

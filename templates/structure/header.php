@@ -92,8 +92,8 @@
     </amp-position-observer>
 </div>
 
-<button class="back-to-top btn btn-gold fixed z4" on="tap:top-marker.scrollTo(duration=200)">
-    <amp-fit-text layout="responsive" width="1" height="1"><i class="mbri-arrow-up" alt="Back to top"></i></amp-fit-text>
+<button class="back-to-top btn btn-blue fixed z4" on="tap:top-marker.scrollTo(duration=200)">
+    <amp-fit-text layout="responsive" width="1" height="1"><i class="mbri-arrow-up bold-text" alt="Back to top"></i></amp-fit-text>
 </button>
 
 <amp-animation id="hideBackToTop" layout="nodisplay">
