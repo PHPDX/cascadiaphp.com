@@ -17,7 +17,7 @@ echo $this->inline('/css/pages/brand.css');
 $this->stop();
 ?>
 <h3 class="p3 center">
-    We aren't quite ready to announce our venue!
+    We've secured a venue, but we're not ready to announce details.
 </h3>
 
 <h4 class="p3 center">

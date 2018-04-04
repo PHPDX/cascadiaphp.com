@@ -43,7 +43,7 @@
         </div>
     </div>
 
-    <div class="fold-cta bg-darkblue white justify-between px3 py4 mt2">
+    <div class="fold-cta bg-darkblue white justify-between px3 py4 mt2 sm-m0 xs-m0">
         <div class="flex flex-column md-col-6 lg-col-7 md-col pr3 lg-col">
             <amp-fit-text layout="fixed-height" max-font-size="40px" class="center" height="80px">
                 <strong class="gold bold-text">2</strong> <span class="light-text">days &</span>
@@ -66,46 +66,56 @@
         </div>
     </div>
 </section>
-<section class="where bg-slate white mt2 p3 relative">
+<section class="where bg-slate white mt2 mb2 sm-m0 xs-m0 p3 relative">
     <amp-img src="/images/scenes/where/bridge-partial.svg" layout="fill" class="object-left object-contain" alt="A semitransparent logo image"></amp-img>
     <amp-fit-text layout="fixed-height" height="160px" class="my3">
         <span class="nowrap bold-text">Cascadia PHP 2018</span><br>
         <span class="nowrap light-text">Portland, Oregon</span>
     </amp-fit-text>
     <div class="md-flex where-row">
-        <div class="md-col md-col-6 lg-col-4 col-12 flex flex-column image-grid">
+        <div class="md-col md-col-6 lg-col-4 col-12 flex flex-column image-grid ml3 xs-m0 sm-m0">
             <amp-fit-text layout="fixed-height" height="50px" class="center" max-font-size="30px">
                 <span class="nowrap light-text center">keep portland <strike>weird</strike> php<strong class="gold">*</strong></span>
             </amp-fit-text>
+            <?php
+            $srcset = function($source, $suffix = '.jpg') {
+                $set = ['1x' => '@1x', '0.75x' => '@0,75x', '0.5x' => '@0,5x', '0.25x' => '@0,25x'];
+                $items = [];
+                foreach ($set as $size => $img) {
+                    $items[] = $source . $img . $suffix . ' ' . $size;
+                }
+                return implode(',', $items);
+            }
+            ?>
             <div class="flex relative flex-auto">
                 <div class="flex-auto relative mr1">
-                    <amp-img class="object-center object-cover rounded bg-gravel" layout="fill" width="1000" height="668" src="/images/scenes/where/portland-sign.jpeg"></amp-img>
+                    <amp-img class="object-center object-cover rounded bg-gravel" layout="fill" width="1000" height="668" srcset="<?= $srcset('/images/scenes/where/portland-sign') ?>"></amp-img>
                 </div>
                 <div class="flex-auto flex flex-column">
                     <div class="flex-auto relative mb1">
                         <amp-img class="object-center object-cover rounded bg-gravel" layout="fill" width="4" height="3" src="/images/scenes/where/pipes.gif"></amp-img>
                     </div>
                     <div class="flex-auto relative">
-                        <amp-img class="object-center object-cover rounded bg-gravel" layout="fill" width="4" height="3" src="/images/scenes/where/portland-pano.jpeg"></amp-img>
+                        <amp-img class="object-center object-cover rounded bg-gravel" layout="fill" width="4" height="3" srcset="<?= $srcset('/images/scenes/where/portland-ohsu') ?>"></amp-img>
                     </div>
                 </div>
             </div>
             <div class="flex relative flex-auto mt1">
                 <div class="flex-auto flex flex-column">
                     <div class="flex-auto relative mb1">
-                        <amp-img class="object-center object-cover rounded bg-gravel" layout="fill" width="4" height="3" src="/images/scenes/where/portland-convention-center.jpeg"></amp-img>
+                        <amp-img class="object-center object-cover rounded bg-gravel" layout="fill" width="4" height="3" srcset="<?= $srcset('/images/scenes/where/portland-convention-center') ?>"></amp-img>
                     </div>
                     <div class="flex-auto relative">
-                        <amp-img class="object-center object-cover rounded bg-gravel" layout="fill" width="4" height="3" src="/images/scenes/where/portland-mthood.jpeg"></amp-img>
+                        <amp-img class="object-top object-cover rounded bg-gravel" layout="fill" width="4" height="3" srcset="<?= $srcset('/images/scenes/where/portland-mthood') ?>"></amp-img>
                     </div>
                 </div>
                 <div class="flex-auto relative ml1">
-                    <amp-img class="object-center object-cover rounded bg-gravel" layout="fill" width="1" height="1" src="images/scenes/where/portland-falls.jpeg"></amp-img>
+                    <amp-img class="object-center object-cover rounded bg-gravel" layout="fill" width="1" height="1" srcset="<?= $srcset('/images/scenes/where/portland-falls') ?>"></amp-img>
                 </div>
             </div>
         </div>
 
-        <div class="lg-col md-hide lg-col-4 col-12 pt3 mr3 xs-m0 sm-m0 md-m0">
+        <div class="lg-col md-hide lg-col-4 col-12 pt3 ml3 xs-m0 sm-m0">
             <p>
                 The Pacific Northwest (also known as Cascadia) is a magical land covered in Rain Forests, Deserts, Coasts,
                 Mountains, Rivers, and People. It's expansive forests have traditional powered the industries in this area,
@@ -116,7 +126,7 @@
                 because of it.
             </p>
         </div>
-        <div class="lg-col md-col md-col-6 lg-col-4 col-12 pt3 mr3 xs-m0 sm-m0 md-m0">
+        <div class="lg-col lg-col-4 md-col md-col-6 col-12 pt3">
             <p>
                 Portland Oregon is the most amazing mix of People, Technology, Nature, Architecture and Art. You will find it
                 challenging to walk down the street without the opportunity to meet someone awesome. Portland is a booming tech

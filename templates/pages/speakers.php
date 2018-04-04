@@ -17,7 +17,8 @@ echo $this->inline('/css/pages/brand.css');
 $this->stop();
 ?>
 <h3 class="p3 center">
-    We aren't quite ready to announce our speakers!
+    We aren't ready to put out our list of speakers. If you're interested in speaking, follow our social media accounts and
+    our <a href="/register">Join our Mailing List</a> and you'll be the first to know about our CFP.
 </h3>
 
 <h4 class="p3 center">
@@ -25,3 +26,4 @@ $this->stop();
         Please <a href="/register">Join our Mailing List</a> for updates!
     </span>
 </h4>
+
