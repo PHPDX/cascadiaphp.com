@@ -35,6 +35,8 @@ use CascadiaPHP\Site\SEO\SEOTools;
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
     <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
     <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700">
 </head>
 <body class="cascadiaphp">
 
@@ -55,6 +57,13 @@ use CascadiaPHP\Site\SEO\SEOTools;
         }
     </script>
 </amp-analytics>
+
+<?php
+$this->insert('structure/sidebar', [
+    'active' => $active ?? ''
+]);
+
+?>
 
 <div class="main-structure mx-auto relative flex flex-column justify-between">
     <?php

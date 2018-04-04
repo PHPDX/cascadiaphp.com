@@ -72,7 +72,6 @@ $this->stop();
             */
             ?>
             <h4 class="px2 center col-12">We don't have any <span class="gravel">Silver</span> level Sponsors yet!</h4>
-            <p
         </div>
     </div>
     <div class="Bronze">
