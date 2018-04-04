@@ -120,7 +120,7 @@
         <div class="lg-col md-hide lg-col-4 col-12 pt3 ml3 xs-m0 sm-m0">
             <p>
                 The Pacific Northwest (also known as Cascadia) is a magical land covered in Rain Forests, Deserts, Coasts,
-                Mountains, Rivers, and People. It's expansive forests have traditional powered the industries in this area,
+                Mountains, Rivers, and People. It's expansive forests have traditionally powered the industries in this area,
                 but with the last century, more and more it has had a focus on Tech.
             </p>
             <p>
@@ -141,7 +141,7 @@
             <div class="lg-hide">
                 <p>
                     The Pacific Northwest (also known as Cascadia) is a magical land covered in Rain Forests, Deserts, Coasts,
-                    Mountains, Rivers, and People. It's expansive forests have traditional powered the industries in this area,
+                    Mountains, Rivers, and People. It's expansive forests have traditionally powered the industries in this area,
                     but with the last century, more and more it has had a focus on Tech.
                 </p>
                 <p>
