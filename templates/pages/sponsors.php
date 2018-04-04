@@ -101,7 +101,7 @@ $this->stop();
         <div class="mx2 flex flex-wrap">
             <?php
             $this->insert('structure/sponsor', [
-                'logo' => 'http://www.concrete5.org/packages/concrete5_theme/themes/concrete5/images/logo.png',
+                'logo' => 'https://www.concrete5.org/packages/concrete5_theme/themes/concrete5/images/logo.png',
                 'borderColor' => 'slate'
             ]);
             $this->insert('structure/sponsor', [

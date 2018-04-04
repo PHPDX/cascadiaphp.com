@@ -10,6 +10,7 @@ use League\Container\ContainerInterface as LeagueContainerInterface;
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use League\Container\ServiceProvider\BootableServiceProviderInterface;
 use Psr\Container\ContainerInterface as PSRContainerInterface;
+use Whoops\Handler\CallbackHandler;
 
 class ServiceProvider extends AbstractServiceProvider implements BootableServiceProviderInterface
 {
@@ -31,7 +32,9 @@ class ServiceProvider extends AbstractServiceProvider implements BootableService
         // Load in error handling
         if (class_exists(\Whoops\Run::class, true)) {
             $whoops = new \Whoops\Run();
-            $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+            if (getenv('ENVIRONMENT') !== 'live') {
+                $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+            }
             $whoops->register();
         }
 
