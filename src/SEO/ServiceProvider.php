@@ -36,8 +36,6 @@ class ServiceProvider extends AbstractServiceProvider implements BootableService
         $this->container->share(SEOTools::class, function() {
             return new SEOTools($this->container);
         });
-
-        $this->container->add('schema', '');
     }
 
     /**
@@ -50,5 +48,6 @@ class ServiceProvider extends AbstractServiceProvider implements BootableService
     {
         // Oh god, I'm so sorry, but I want to use this library
         class_alias(SEOMetaConfig::class, 'Illuminate\Config\Repository');
+        $this->container->add('schema', '');
     }
 }
