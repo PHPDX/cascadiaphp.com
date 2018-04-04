@@ -77,7 +77,7 @@
     <div class="md-flex where-row">
         <div class="md-col md-col-6 lg-col-4 col-12 flex flex-column image-grid ml3 xs-m0 sm-m0">
             <amp-fit-text layout="fixed-height" height="50px" class="center" max-font-size="30px">
-                <span class="nowrap light-text center">keep portland <strike>weird</strike> php<strong class="gold">*</strong></span>
+                <span class="nowrap light-text center">keep portland <strike class="light-text">weird</strike> php<strong class="gold">*</strong></span>
             </amp-fit-text>
             <?php
             $srcset = function($source, $suffix = '.jpg') {
