@@ -43,7 +43,7 @@
         </div>
     </div>
 
-    <div class="fold-cta bg-darkblue white justify-between px3 py4 mt2 sm-m0 xs-m0 md-py1 sm-py1 xs-py1">
+    <div class="fold-cta bg-darkblue white justify-between px3 py4 sm-m0 xs-m0 md-py1 sm-py1 xs-py1">
         <div class="flex flex-column md-col-6 lg-col-7 md-col lg-col">
             <amp-fit-text layout="fixed-height" class="mr3 sm-m0 xs-m0 center" max-font-size="40px" height="80px">
                 <strong class="gold bold-text">2</strong> <span class="light-text">days &</span>
@@ -68,7 +68,7 @@
         </div>
     </div>
 </section>
-<section class="where bg-slate white mt2 mb2 sm-m0 xs-m0 p3 relative">
+<section class="where bg-slate white sm-m0 xs-m0 p3 relative">
     <amp-img src="/images/scenes/where/bridge-partial.svg" layout="fill" class="object-left object-contain" alt="A semitransparent logo image"></amp-img>
     <amp-fit-text layout="fixed-height" height="160px" class="my3">
         <span class="nowrap bold-text">Cascadia PHP 2018</span><br>
