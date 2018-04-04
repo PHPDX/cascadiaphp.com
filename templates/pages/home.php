@@ -42,7 +42,7 @@
         </div>
     </div>
 
-    <div class="fold-cta bg-darkblue white justify-between px3 py4 sm-m0 xs-m0 md-py1 sm-py1 xs-py1">
+    <div class="fold-cta bg-darkblue white justify-between px3 py4 mt2 sm-m0 xs-m0 md-py1 sm-py1 xs-py1">
         <div class="flex flex-column md-col-6 lg-col-7 md-col lg-col">
             <amp-fit-text layout="fixed-height" class="mr3 sm-m0 xs-m0 center" max-font-size="40px" height="80px">
                 <strong class="gold bold-text">2</strong> <span class="light-text">days &</span>
@@ -57,12 +57,35 @@
                         <strong class="bold-text white nowrap">$ TBA</strong>
                     </amp-fit-text>
                 </a>
- */ ?>
                 <a href="/register" class="btn btn-cta large relative flex-auto rounded">
                     <amp-fit-text max-font-size="60px" min-font-size="20px" layout="fixed-height" height="50px">
                         <strong class="light-text">register now</strong>
                     </amp-fit-text>
                 </a>
+                   */ ?>
+
+
+        <form action-xhr="<?= $this->formUri('/actually/register') ?>" method="post" target="_top" class="validate col-12 cta-form">
+            <div submit-success>
+                <template type="amp-mustache">
+                    Thanks for signing up! We'll reach out once we have more to tell! {{message}}
+                </template>
+            </div>
+            <div submit-error>
+                <template type="amp-mustache">
+                    Error: {{message}}
+                </template>
+            </div>
+            <div id="mc_embed_signup_scroll">
+                <div class="hideaway absolute" aria-hidden="true">
+                    <input type="text" name="my_name" tabindex="-1" value="">
+                </div>
+                <div class="input-group flex">
+                    <input type="email" value="" name="email" class="email b1 rounded px2 flex-auto" placeholder="Email Address" required>
+                    <button class="btn btn-cta large h3" name="subscribe" type="submit"><span class="light-text">Subscribe</span></button>
+                </div>
+            </div>
+        </form>
             </div>
         </div>
     </div>
