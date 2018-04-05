@@ -10,7 +10,7 @@ use CascadiaPHP\Site\SEO\SEOTools;
 
 ?>
 <!doctype html>
-<html amp class="bg-lightblue">
+<html amp class="bg-white">
 <head>
     <?php /** Enable AMP */ ?>
     <meta charset="utf-8">

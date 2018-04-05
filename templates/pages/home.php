@@ -11,7 +11,7 @@
 <?php $this->stop() ?>
 
 <section class="what flex flex-column">
-    <div class="flex-auto hero relative flex content-center justify-center items-center">
+    <div class="flex-auto hero relative flex content-center justify-center items-center mt2">
         <div id="hero-images">
             <amp-img width="1000" height="667" layout="fill"
                      srcset="/images/scenes/what/mthood.jpg 2000w,
@@ -35,23 +35,26 @@
                         <span class="sm-col sm-col-12">September</span> <span class="bold lightblue py2">14th</span> - <span class="bold lightblue">15th</span>
                     </div>
                 </amp-fit-text>
-                <amp-fit-text max-font-size="50px" layout="responsive" width="216.79" height="65.75" class="center darkblue">
-                    <div class="mx3 py2 px2">
-                        <span class="sm-col sm-col-12">In the <span class="gold">❤</span> of</span> <span class="bold">PDX Oregon</span>
+                <amp-fit-text max-font-size="36px" layout="responsive" width="216.79" height="65.75" class="center darkblue">
+                    <div class="mx3 py1 px2">
+                        <span class="gold bold">2</span> <span class="slate">days</span>
+                        &nbsp;
+                        <span class="gold bold">25+</span> <span class="slate">speakers</span>
+                    </div>
+                    <div class="mx3 py1 px2">
+                        <span class="gold">❤</span> <span class="bold">PDX Oregon</span>
                     </div>
                 </amp-fit-text>
             </amp-layout>
         </div>
     </div>
 
-    <div class="fold-cta bg-darkblue white justify-between px3 py4 mt2 sm-m0 xs-m0 md-py1 sm-py1 xs-py1">
-        <div class="flex flex-column md-col-6 lg-col-7 md-col lg-col">
-            <amp-fit-text layout="fixed-height" class="mr3 sm-m0 xs-m0 center" max-font-size="40px" height="80px">
-                <strong class="gold bold-text">2</strong> <span class="light-text">days &</span>
-                <span class="nowrap"><strong class="gold bold-text">25+</strong> <span class="light-text">speakers</span></span>
-            </amp-fit-text>
-        </div>
-        <div class="center md-col-6 lg-col-5 md-col-right lg-col-right center">
+    <div class="fold-cta bg-gold white justify-between px3 py4 mt2 sm-m0 xs-m0 md-py1 sm-py1 xs-py1">
+
+        <div class="md-col-8 lg-col-8">
+
+            <h1 class="white mb1 mt0 bg-gold">Thinking of Going?</h1>
+
             <div class="flex btn-group">
                 <?php /*
                 <a href="/register" class="btn btn-darkblue b-gold large relative">
@@ -83,8 +86,8 @@
                     <input type="text" name="my_name" tabindex="-1" value="">
                 </div>
                 <div class="input-group flex">
-                    <input type="email" value="" name="email" class="email b1 rounded px2 flex-auto" placeholder="Email Address" required>
-                    <button class="btn btn-cta large h3" name="subscribe" type="submit"><span class="light-text">Subscribe</span></button>
+                    <input type="email" value="" name="email" class="email b0 rounded px2 flex-auto" placeholder="Email Address" required>
+                    <button class="btn btn-cta large h4" name="subscribe" type="submit"><span class="light-text">Stay Informed!</span></button>
                 </div>
             </div>
         </form>
@@ -92,9 +95,9 @@
         </div>
     </div>
 </section>
-<section class="where bg-slate white mt2 mb2 sm-m0 xs-m0 p3 relative">
+<section class="where bg-slate white mt2 mb2 sm-m0 xs-m0 p4 relative">
     <amp-img src="/images/scenes/where/bridge-partial.svg" layout="fill" class="object-left object-contain" alt="A semitransparent logo image"></amp-img>
-    <amp-fit-text layout="fixed-height" height="160px" class="my3">
+    <amp-fit-text layout="fixed-height" height="160px">
         <span class="nowrap bold-text">Cascadia PHP 2018</span><br>
         <span class="nowrap light-text">Portland, Oregon</span>
     </amp-fit-text>
@@ -142,33 +145,33 @@
         </div>
 
         <div class="lg-col md-hide lg-col-4 col-12 pt3 ml3 xs-m0 sm-m0">
-            <p>
+            <p class="lh2">
                 The Pacific Northwest (also known as Cascadia) is a magical land covered in Rain Forests, Deserts, Coasts,
                 Mountains, Rivers, and People. It's expansive forests have traditionally powered the industries in this area,
                 but with the last century, more and more it has had a focus on Tech.
             </p>
-            <p>
+            <p class="lh2">
                 Businesses in this area embraced the web when it was in its infancy, and has a huge community of PHP users
                 because of it.
             </p>
         </div>
         <div class="lg-col lg-col-4 md-col md-col-6 col-12 pt3">
-            <p>
-                Portland Oregon is the most amazing mix of People, Technology, Nature, Architecture and Art. You will find it
+            <p class="lh2">
+                Portland, Oregon is the most amazing mix of People, Technology, Nature, Architecture and Art. You will find it
                 challenging to walk down the street without the opportunity to meet someone awesome. Portland is a booming tech
                 town with PHP at its heart.
             </p>
-            <p>
+            <p class="lh2">
                 We have come together to form a non profit organization to run this conference and bring the PHP community to
                 the Portland community, and to expose our community to some of the local businesses powered by PHP.
             </p>
             <div class="lg-hide">
-                <p>
+                <p class="lh2">
                     The Pacific Northwest (also known as Cascadia) is a magical land covered in Rain Forests, Deserts, Coasts,
                     Mountains, Rivers, and People. It's expansive forests have traditionally powered the industries in this area,
                     but with the last century, more and more it has had a focus on Tech.
                 </p>
-                <p>
+                <p class="lh2">
                     Businesses in this area embraced the web when it was in its infancy, and has a huge community of PHP users
                     because of it.
                 </p>
