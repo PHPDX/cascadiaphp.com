@@ -9,7 +9,7 @@
 This repository is powered by a [PSR-15](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-11-container.md) implemented with [league/container](http://packagist.org/package/league/container).
 
 - Set up a container that has autowiring enabled and is loaded with `\CascadiaPHP\Site\ProviderAggregate` which does essentially all of our bootstrapping.
-- Create a [PSR-7](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-7-http-message.md) HTTP server powered by zend diactoros
+- Create a [PSR-7](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-7-http-message.md) HTTP server powered by [zend diactoros](https://zendframework.github.io/zend-diactoros/)
 
 Once we have everything bootstrapped, we call `$diactorosServer->listen()` which does the following:
 
@@ -128,7 +128,7 @@ And you're ready to begin working on the new page!
 
 
 ## Compiled Assets
-We are using AMP which restricts us from using Javascript really at all beyond predefined [AMP components](https://www.ampproject.org/docs/reference/components). Luckily there is complete coverage of components and they are implemented with performance in mind. And that frees us from ever needing to touch Javascript beyond our build routine.
+We are using AMP which restricts us from using JavaScript beyond predefined [AMP components](https://www.ampproject.org/docs/reference/components). Luckily there is complete coverage of components and they are implemented with performance in mind. This frees us from ever needing to touch JavaScript beyond our build routine.
 
 That said, we still need to manage CSS. AMP requires that any css used on a page be:
 - Included inline in a `<style>` tag in the `<head>` of the page
