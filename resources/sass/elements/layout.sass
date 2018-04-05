@@ -61,9 +61,11 @@ h2, h3, h4, h5, h6
     text-decoration: none
     border-radius: 1em
     &:hover
-      background-color: darken(#fff, 5%)
+      background-color: darken($blue, 5%)
+      color: #ffffff
     &:active, &.active
-      background-color: darken(#fff, 15%)
+      background-color: darken($blue, 15%)
+      color: #ffffff
 
 #marker
   top: 0
@@ -112,11 +114,23 @@ a, .dark a
     color: darken($slate, 25%)
 
 .light a
-  color: lighten($gravel, 0%)
+  color: lighten($light-blue, 0%)
   &:hover
-    color: darken($gravel, 15%)
+    color: darken($light-blue, 15%)
   &:active
-    color: darken($gravel, 25%)
+    color: darken($light-blue, 25%)
+
+.lh1
+  line-height: normal
+
+.lh2
+  line-height: 1.5rem
+
+.lh3
+  line-height: 1.75rem
+
+.lh4
+  line-height: 2rem
 
 @media (min-width: 1440px)
   .main-structure

@@ -39,7 +39,7 @@
     </div>
 
     <nav toolbar="(min-width: 52em)" toolbar-target="nav_container" class="header-nav flex">
-        <ul class="inner flex justify-end">
+        <ul class="inner flex justify-end light">
             <?php /*
             <li class="flex-auto md-hide flex flex-column justify-center">
                 <a href="/news" class="py1 px2 <?= $active === '/news' ? 'active' : '' ?>">
