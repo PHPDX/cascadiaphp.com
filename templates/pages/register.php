@@ -21,6 +21,36 @@ $this->start('components'); ?>
 <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js"></script>
 <?php $this->stop() ?>
 
+<?php $this->start('header') ?>
+<amp-analytics type="googleanalytics">
+    <script type="application/json">
+        {
+            "vars": {
+                "account": "UA-115467305-1"
+            },
+            "triggers": {
+                "formSubmitSuccess": {
+                    "on": "amp-form-submit-success",
+                    "request": "event",
+                    "vars": {
+                        "eventCategory": "subscribe",
+                        "eventAction": "subscribe-success"
+                    }
+                },
+                "formSubmitError": {
+                    "on": "amp-form-submit-error",
+                    "request": "subscribe",
+                    "vars": {
+                        "eventCategory": "subscribe",
+                        "eventAction": "subscribe-error"
+                    }
+                }
+            }
+        }
+    </script>
+</amp-analytics>
+<?php $this->stop() ?>
+
 <div class="center">
     <h3 class="mb0">We aren't quite ready to sell tickets yet.</h3>
     <h4 class="mt1">Sign up below or follow us on <a href="https://twitter.com/cascadiaphp">Twitter</a> for announcements</h4>
