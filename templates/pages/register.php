@@ -39,7 +39,7 @@ $this->start('components'); ?>
                 },
                 "formSubmitError": {
                     "on": "amp-form-submit-error",
-                    "request": "subscribe",
+                    "request": "event",
                     "vars": {
                         "eventCategory": "subscribe",
                         "eventAction": "subscribe-error"
