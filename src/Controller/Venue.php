@@ -12,6 +12,11 @@ class Venue extends Controller
 
     public function view(): Template
     {
+        $this->seo()
+            ->setTitle('Venue and Hotel for Cascadia PHP 2018 in Portland Oregon')
+            ->setDescription('Cascadia PHP will be held in Portland Oregon in a conference center that doubles ' .
+                'as our hotel. Check back here for directions and instructions for reaching the conference.');
+
         return $this->render('/pages/venue');
     }
 }

@@ -3,8 +3,7 @@
 <?php
 // Set the template
 $this->layout('layout', [
-    'active' => '/schedule',
-    'title' => 'What\'s happening when? - Portland Oregon Conference - Cascadia PHP'
+    'active' => '/schedule'
 ]);
 
 // Start the css section

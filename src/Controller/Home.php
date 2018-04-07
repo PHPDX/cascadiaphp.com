@@ -2,6 +2,7 @@
 
 namespace CascadiaPHP\Site\Controller;
 
+use CascadiaPHP\Site\Uri\UriResolver;
 use League\Plates\Template\Template;
 use Spatie\SchemaOrg\Schema;
 
@@ -13,14 +14,27 @@ class Home extends Controller
     /**
      * The main entry point for viewing the homepage
      */
-    public function view(): Template
+    public function view(UriResolver $uri): Template
     {
-        $this
-            ->setSchema($this->schema())
-            ->seo()
-            ->setTitle('Cascadia PHP')
-            ->setDescription('A PHP focused conference run in Portland Oregon.')
-            ->metatags()
+        // Handle setting the schema
+        $this->setSchema($this->schema());
+
+        // Set general SEO stuff
+        $this->seo()
+            ->addImages($uri->relativeSchemaTo('/images/opengraph/main-banner.png'))
+            ->setTitle('Cascadia PHP Conference held in Portland Oregon 2018')
+            ->setDescription('Cascadia PHP is a non-profit community driven conference in the Pacific Northwest that ' .
+                'is focused on PHP. In September 2018 it will be held in Portland Oregon, and will host dozens of ' .
+                'speakers from around the world!');
+
+        // Set opengraph specific stuff
+        $this->seo()->opengraph()
+            ->setUrl($uri->to('/'))
+            ->setType('website')
+            ->setSiteName('Cascadia PHP');
+
+        // Set metatag specific stuff
+        $this->seo()->metatags()
             ->setKeywords([
                 'portland',
                 'portland or',

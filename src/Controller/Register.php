@@ -17,15 +17,8 @@ class Register extends Controller
     public function view(): Template
     {
         $this->seo()
-            ->setTitle('Cascadia PHP Registration')
-            ->setDescription('A PHP focused conference run in Portland Oregon.');
-
-        $this->seo()->metatags()
-            ->setKeywords([
-                'portland', 'portland or', 'portland usa',
-                'php conference', 'php 2018', 'php conference 2018', 'php developer',
-                'web developer', 'wordpress developer', 'concrete5 developer', 'drupal developer', 'joomla developer'
-            ]);
+            ->setTitle('Register for Cascadia PHP in Portland Oregon')
+            ->setDescription('Register for our 2 day long PHP Conference in Portland Oregon in September 2018');
 
         return $this->render('pages/register');
     }
