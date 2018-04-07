@@ -3,8 +3,7 @@
 <?php
 // Set the template
 $this->layout('layout', [
-    'active' => '/venue',
-    'title' => 'Venue for the event - Portland Oregon Conference - Cascadia PHP'
+    'active' => '/venue'
 ]);
 
 // Start the css section

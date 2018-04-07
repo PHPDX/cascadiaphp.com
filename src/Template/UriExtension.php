@@ -2,11 +2,11 @@
 
 namespace CascadiaPHP\Site\Template;
 
+use CascadiaPHP\Site\Uri\UriResolver;
 use League\Container\ContainerAwareInterface;
 use League\Container\ContainerAwareTrait;
 use League\Plates\Engine;
 use League\Plates\Extension\ExtensionInterface;
-use Psr\Http\Message\ServerRequestInterface;
 use Zend\Diactoros\Uri;
 
 class UriExtension implements ExtensionInterface, ContainerAwareInterface
@@ -23,21 +23,11 @@ class UriExtension implements ExtensionInterface, ContainerAwareInterface
 
     public function fullUri(string $path): Uri
     {
-        $request = $this->getContainer()->get(ServerRequestInterface::class);
-        return $request->getUri()
-            ->withQuery('')
-            ->withFragment('')
-            ->withPath($path);
+        return $this->container->get(UriResolver::class)->to($path);
     }
 
     public function formUri(string $path): string
     {
-        $uri = (string) $this->fullUri($path);
-
-        if (0 === strpos($uri, 'http:')) {
-            return substr($uri, 5);
-        }
-
-        return $uri;
+        return $this->container->get(UriResolver::class)->relativeSchemaTo($path);
     }
 }

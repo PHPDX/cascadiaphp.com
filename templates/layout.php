@@ -20,8 +20,6 @@ use CascadiaPHP\Site\SEO\SEOTools;
 
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
-    <title><?= $this->e($title ?? 'Cascadia PHP 2018') ?></title>
-
     <link rel="canonical" href="<?= $this->fullUri($url ?? '') ?>" />
 
     <?= $this->section('schema', $container->get('schema')) ?>

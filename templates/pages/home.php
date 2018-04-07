@@ -2,8 +2,7 @@
 <?php /** @var \CascadiaPHP\Site\Template\Template $this */ ?>
 
 <?php $this->layout('layout', [
-    'page' => '/home',
-    'title' => 'Cascadia PHP Conference in Portland Oregon - Cascadia PHP'
+    'page' => '/home'
 ]) ?>
 
 <?php $this->start('components') ?>
