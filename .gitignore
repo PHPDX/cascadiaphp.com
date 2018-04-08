@@ -1,6 +1,5 @@
 .idea
 vendor
-composer.lock
 .env
 cache
 node_modules

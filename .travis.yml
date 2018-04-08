@@ -9,7 +9,7 @@ cache:
     - $HOME/.composer/cache
 before_script:
   - composer self-update
-  - composer update --prefer-lowest --prefer-stable
+  - composer update
 script:
   - ./vendor/bin/phpunit --coverage-clover=coverage.clover
 after_script:
