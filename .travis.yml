@@ -1,0 +1,21 @@
+language: php
+sudo: false
+dist: trusty
+php:
+  - 7.2
+cache:
+  directories:
+    - vendor
+    - node_modules
+    - $HOME/.composer/cache
+    - $HOME/.npm
+before_script:
+  - npm i -g yarn
+  - yarn install
+  - yarn prod
+  - composer self-update
+  - composer update
+script:
+  - ./vendor/bin/phpunit --coverage-clover=coverage.clover
+after_script:
+  - wget https://scrutinizer-ci.com/ocular.phar && php ocular.phar code-coverage:upload --format=php-clover coverage.clover

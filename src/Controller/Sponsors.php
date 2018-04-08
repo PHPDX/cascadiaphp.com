@@ -2,15 +2,14 @@
 
 namespace CascadiaPHP\Site\Controller;
 
-use League\Plates\Template\Template;
-use Spatie\SchemaOrg\Schema;
+use Psr\Http\Message\ResponseInterface;
 
 class Sponsors extends Controller
 {
 
     protected $cssPath = '/css/pages/brand.css';
 
-    public function view(): Template
+    public function view(): ResponseInterface
     {
         $this->seo()
             ->setTitle('Companies that helped make Cascadia PHP 2018 happen')

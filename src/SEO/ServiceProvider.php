@@ -47,7 +47,9 @@ class ServiceProvider extends AbstractServiceProvider implements BootableService
     public function boot()
     {
         // Oh god, I'm so sorry, but I want to use this library
-        class_alias(SEOMetaConfig::class, 'Illuminate\Config\Repository');
+        if (!class_exists(\Illuminate\Config\Repository::class)) {
+            class_alias(SEOMetaConfig::class, \Illuminate\Config\Repository::class);
+        }
         $this->container->add('schema', '');
     }
 }

@@ -6,9 +6,9 @@ use CascadiaPHP\Site\SEO\SEOTools;
 use League\Container\ContainerAwareInterface;
 use League\Container\ContainerAwareTrait;
 use League\Plates\Engine;
-use League\Plates\Template\Template;
 use Psr\Container\ContainerInterface;
 use Spatie\SchemaOrg\Thing;
+use Zend\Diactoros\Response\HtmlResponse;
 
 abstract class Controller implements ContainerAwareInterface
 {
@@ -28,7 +28,7 @@ abstract class Controller implements ContainerAwareInterface
         $this->setContainer($container);
     }
 
-    public function render(string $path): Template
+    public function render(string $path, array $data = []): HtmlResponse
     {
         /** @var \CascadiaPHP\Site\Template\Template $template */
         $template = $this->engine->make($path);
@@ -43,7 +43,11 @@ abstract class Controller implements ContainerAwareInterface
             $template->stop();
         }
 
-        return $template;
+        // Render the HTML
+        $html = $template->render($data);
+
+        // Build and return a new response
+        return new HtmlResponse($html);
     }
 
     /**
