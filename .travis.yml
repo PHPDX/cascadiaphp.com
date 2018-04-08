@@ -6,8 +6,12 @@ php:
 cache:
   directories:
     - vendor
+    - node_modules
     - $HOME/.composer/cache
+    - $HOME/.npm
 before_script:
+  - npm i -g yarn
+  - yarn install
   - composer self-update
   - composer update
 script:
