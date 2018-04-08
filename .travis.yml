@@ -12,6 +12,7 @@ cache:
 before_script:
   - npm i -g yarn
   - yarn install
+  - yarn prod
   - composer self-update
   - composer update
 script:
