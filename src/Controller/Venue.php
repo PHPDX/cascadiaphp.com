@@ -3,6 +3,7 @@
 namespace CascadiaPHP\Site\Controller;
 
 use League\Plates\Template\Template;
+use Psr\Http\Message\ResponseInterface;
 use Spatie\SchemaOrg\Schema;
 
 class Venue extends Controller
@@ -10,7 +11,7 @@ class Venue extends Controller
 
     protected $cssPath = '/css/pages/brand.css';
 
-    public function view(): Template
+    public function view(): ResponseInterface
     {
         $this->seo()
             ->setTitle('Venue and Hotel for Cascadia PHP 2018 in Portland Oregon')

@@ -1,11 +1,10 @@
 <?php
+
 namespace CascadiaPHP\Site\Controller;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\RequestOptions;
-use League\Plates\Engine;
-use League\Plates\Template\Template;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Zend\Diactoros\Response\JsonResponse;
@@ -14,7 +13,7 @@ use Zend\Diactoros\Uri;
 class Register extends Controller
 {
 
-    public function view(): Template
+    public function view(): ResponseInterface
     {
         $this->seo()
             ->setTitle('Register for Cascadia PHP in Portland Oregon')

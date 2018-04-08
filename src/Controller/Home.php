@@ -4,6 +4,7 @@ namespace CascadiaPHP\Site\Controller;
 
 use CascadiaPHP\Site\Uri\UriResolver;
 use League\Plates\Template\Template;
+use Psr\Http\Message\ResponseInterface;
 use Spatie\SchemaOrg\Schema;
 
 class Home extends Controller
@@ -13,11 +14,15 @@ class Home extends Controller
 
     /**
      * The main entry point for viewing the homepage
+     * @param \CascadiaPHP\Site\Uri\UriResolver $uri
+     * @return ResponseInterface
+     * @throws \Psr\Container\ContainerExceptionInterface
+     * @throws \Psr\Container\NotFoundExceptionInterface
      */
-    public function view(UriResolver $uri): Template
+    public function view(UriResolver $uri): ResponseInterface
     {
         // Handle setting the schema
-        $this->setSchema($this->schema());
+        $this->setSchema($this->schema($uri));
 
         // Set general SEO stuff
         $this->seo()
@@ -53,7 +58,7 @@ class Home extends Controller
         return $this->render('/pages/home');
     }
 
-    protected function schema()
+    protected function schema(UriResolver $uri)
     {
         $timezone = new \DateTimeZone('PST');
         $startDate = new \DateTime('September 14th 2018', $timezone);
@@ -66,7 +71,7 @@ class Home extends Controller
         /** The default site schema */
         return Schema::educationEvent()
             ->name('Cascadia PHP')
-            ->image('/images/logo.svg')
+            ->image($uri->relativeSchemaTo('/images/opengraph/main-banner.png'))
             ->description(
                 'A PHP conference in the heart of Portland Oregon'
             )
