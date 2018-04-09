@@ -46,7 +46,7 @@ class Dispatcher
      */
     private function resolve($index)
     {
-        return new Delegate(function (ServerRequestInterface $request) use ($index) {
+        return new Delegate(function(ServerRequestInterface $request) use ($index) {
             // Make the container aware of our current request, the request may change between middlewares
             $this->container->share(ServerRequestInterface::class, $request);
 

@@ -51,28 +51,28 @@ class ServiceProvider extends AbstractServiceProvider
         $this->container->share(ContainerInterface::class, $this->container);
 
         // Add a factory for the build handler
-        $this->container->add(RequestHandler::class, function () {
+        $this->container->add(RequestHandler::class, function() {
             return $this->requestHandlerFactory();
         });
 
         // Set up the server
-        $this->container->share(Server::class, function () {
+        $this->container->share(Server::class, function() {
             return $this->diactorosFactory();
         });
 
         // Set up Request resolution
-        $this->container->share(ServerRequestInterface::class, function () {
+        $this->container->share(ServerRequestInterface::class, function() {
             return ServerRequestFactory::fromGlobals();
         });
 
         // Set up filesystem
-        $this->container->share(Filesystem::class, function () {
+        $this->container->share(Filesystem::class, function() {
             $filesystemAdapter = new Local(__DIR__ . '/../../cache/');
             return new Filesystem($filesystemAdapter);
         });
 
         // Set up cache
-        $this->container->share(CacheInterface::class, function () {
+        $this->container->share(CacheInterface::class, function() {
             return $this->container->get(FilesystemCachePool::class);
         });
     }
@@ -104,7 +104,7 @@ class ServiceProvider extends AbstractServiceProvider
         $request = $this->container->get(ServerRequestInterface::class);
 
         // Create a new diactoros server
-        return Server::createServerFromRequest(function (ServerRequestInterface $request) use ($middleware) {
+        return Server::createServerFromRequest(function(ServerRequestInterface $request) use ($middleware) {
             return $middleware->dispatch($request);
         }, $request);
     }

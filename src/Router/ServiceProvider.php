@@ -23,7 +23,7 @@ class ServiceProvider extends AbstractServiceProvider
     public function register()
     {
         // Set up the router
-        $this->container->share(Dispatcher::class, function () {
+        $this->container->share(Dispatcher::class, function() {
             return \FastRoute\simpleDispatcher(function(RouteCollector $routeCollector) {
                 return $this->routes($routeCollector);
             });
