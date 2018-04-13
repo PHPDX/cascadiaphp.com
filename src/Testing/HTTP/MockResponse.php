@@ -67,8 +67,39 @@ class MockResponse extends HtmlResponse
     {
         return $this->assert(function() use ($selector) {
             return $this->getCrawler()->filter($selector)->count() === 0;
-        }, $message ?: sprintf('The response should not contain the "%s" selector, but we noticed some', $selector));
+        }, $message ?: sprintf('The response should NOT contain the "%s" selector, but we noticed some', $selector));
     }
+
+    public function shouldContain(string $string, bool $caseSensitive = false, string $message = ''): MockResponse
+    {
+        $html = $this->html;
+        $testString = $string;
+
+        if (!$caseSensitive) {
+            $html = strtolower($html);
+            $testString = strtolower($testString);
+        }
+
+        return $this->assert(function() use ($testString, $html) {
+            return strpos($html, $testString) !== false;
+        }, $message ?: sprintf('The response should contain "%s", but we couldn\'t find it.', $string));
+    }
+
+    public function shouldNotContain(string $string, bool $caseSensitive = false,  string $message = ''): MockResponse
+    {
+        $html = $this->html;
+        $testString = $string;
+
+        if (!$caseSensitive) {
+            $html = strtolower($html);
+            $testString = strtolower($testString);
+        }
+
+        return $this->assert(function() use ($testString, $html) {
+            return strpos($html, $testString) === false;
+        }, $message ?: sprintf('The response should NOT contain "%s", but we found it in the response.', $string));
+    }
+
 
     public function shouldBeAMP()
     {

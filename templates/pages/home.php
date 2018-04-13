@@ -8,7 +8,7 @@
 <?php $this->start('components') ?>
 <?php $this->stop() ?>
 
-<section class="what flex flex-column">
+<section class="what flex flex-column mx2">
     <div class="flex-auto hero relative flex content-center justify-center items-center">
         <div id="hero-images">
             <amp-img width="1000" height="667" layout="fill"
@@ -19,7 +19,6 @@
                              /images/scenes/what/mthood-smallest.jpg 440w"
                      alt="A super far away picture of mount hood with the mountain centered. This image lays in the background behind the shape of oregon"
             >
-
             </amp-img>
         </div>
 
@@ -30,12 +29,12 @@
                 <amp-img src="/images/scenes/what/oregon.svg" layout="fill" width="276.02" height="191.15" alt="The shape of oregon, the top half is blue and the bottom half is white"></amp-img>
                 <amp-fit-text max-font-size="50px" layout="responsive" width="216.79" height="65.75" class="white center">
                     <div class="mx3 py2 px2">
-                        <span class="sm-col sm-col-12">September</span> <span class="bold lightblue py2">14th</span> - <span class="bold lightblue">15th</span>
+                        <span class="sm-col sm-col-12 text-shadow">September</span> <span class="bold lightblue py2 text-shadow">14th</span> - <span class="bold lightblue text-shadow">15th</span>
                     </div>
                 </amp-fit-text>
                 <amp-fit-text max-font-size="50px" layout="responsive" width="216.79" height="65.75" class="center darkblue">
                     <div class="mx3 py2 px2">
-                        <span class="sm-col sm-col-12">In the <span class="gold">❤</span> of</span> <span class="bold">PDX Oregon</span>
+                        <span class="sm-col sm-col-12 text-shadow">In the <span class="gold">❤</span> of</span> <span class="bold text-shadow">PDX Oregon</span>
                     </div>
                 </amp-fit-text>
             </amp-layout>
@@ -45,8 +44,8 @@
     <div class="fold-cta bg-darkblue white justify-between px3 py4 mt2 sm-m0 xs-m0 md-py1 sm-py1 xs-py1">
         <div class="flex flex-column md-col-6 lg-col-7 md-col lg-col">
             <amp-fit-text layout="fixed-height" class="mr3 sm-m0 xs-m0 center" max-font-size="40px" height="80px">
-                <strong class="gold bold-text">2</strong> <span class="light-text">days &</span>
-                <span class="nowrap"><strong class="gold bold-text">25+</strong> <span class="light-text">speakers</span></span>
+                <strong class="gold bold-text text-shadow">2</strong> <span class="light-text">days &</span>
+                <span class="nowrap"><strong class="gold bold-text text-shadow">25+</strong> <span class="light-text">speakers</span></span>
             </amp-fit-text>
         </div>
         <div class="center md-col-6 lg-col-5 md-col-right lg-col-right center">
@@ -67,11 +66,39 @@
         </div>
     </div>
 </section>
-<section class="where bg-slate white mt2 mb2 sm-m0 xs-m0 p3 relative">
+<section class="who bg-gravel shattered p3 my2 mx2 white">
+    <amp-fit-text layout="fixed-height" height="75px" class="text-shadow-md center white">Who is Cascadia PHP?</amp-fit-text>
+    <div class="contributors mx1 my1">
+        <?php $this->insert('structure/organizer', ['name' => 'Alena Holligan', 'role' => 'President', 'image' => 'alena.jpg', 'twitter' => '@sketchings']) ?>
+        <?php $this->insert('structure/organizer', ['name' => 'Kevin DeCapite', 'role' => 'Vice President', 'image' => 'kevin.jpg', 'twitter' => '@kevindecapite']) ?>
+        <?php $this->insert('structure/organizer', ['name' => 'Melinda Serven', 'role' => 'Treasurer', 'image' => 'melinda.jpg', 'twitter' => '@melindaserven']) ?>
+        <?php $this->insert('structure/organizer', ['name' => 'Korvin Szanto', 'role' => 'Secretary', 'image' => 'korvin.jpg', 'twitter' => '@korvinszanto']) ?>
+        <?php $this->insert('structure/organizer', ['name' => 'Danielle Grillenzoni', 'image' => 'daniele.jpg', 'twitter' => '@theMadness']) ?>
+        <?php $this->insert('structure/organizer', ['name' => 'Kurtis Holsapple', 'image' => 'kurtis.jpg', 'twitter' => '@lapubell']) ?>
+        <div class="clearfix"></div>
+    </div>
+    <div>
+        <div class="lg-col-4 lg-col pr2 lg-p0">
+            <amp-fit-text layout="fixed-height" class="bold-text center white text-shadow" height="40px">Non-Profit</amp-fit-text>
+            <?= $this->markdown('who/non-profit') ?>
+        </div>
+        <div class="lg-col-4 lg-col px1 lg-p0">
+            <amp-fit-text layout="fixed-height" class="bold-text center white text-shadow" height="40px">Our Mission Is To</amp-fit-text>
+            <?= $this->markdown('who/mission') ?>
+        </div>
+        <div class="lg-col-4 lg-col pl2 lg-p0">
+            <amp-fit-text layout="fixed-height" class="bold-text center white text-shadow" height="40px">History</amp-fit-text>
+            <?= $this->markdown('who/history') ?>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</section>
+
+<section class="where bg-slate white mt2 mb2 p3 relative mx2">
     <amp-img src="/images/scenes/where/bridge-partial.svg" layout="fill" class="object-left object-contain" alt="A semitransparent logo image"></amp-img>
     <amp-fit-text layout="fixed-height" height="160px" class="my3">
-        <span class="nowrap bold-text">Cascadia PHP 2018</span><br>
-        <span class="nowrap light-text">Portland, Oregon</span>
+        <span class="nowrap bold-text text-shadow">Cascadia PHP 2018</span><br>
+        <span class="nowrap light-text text-shadow">Portland, Oregon</span>
     </amp-fit-text>
     <div class="md-flex where-row">
         <div class="md-col md-col-6 lg-col-4 col-12 flex flex-column image-grid ml3 xs-m0 sm-m0">
