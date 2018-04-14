@@ -1,6 +1,10 @@
 ![](/public/images/logo.svg)
 # Welcome to the repository for Cascadia PHP's :mountain: website!
 
+[![Build Status][ico-travis]][link-travis]
+[![Coverage Status][ico-scrutinizer]][link-scrutinizer]
+[![Quality Score][ico-code-quality]][link-code-quality]
+
 ### Quick Reference:
 
 ### Request Flow
@@ -148,3 +152,11 @@ We use [Laravel Mix](https://laravel.com/docs/mix) to compile our assets which m
 | Controllers | Custom | [./src/Controller](./src/Controller) | There is no defined structure to controllers |
 | Container | [league/container](http://packagist.org/package/league/container) | Created in [./dispatcher.php](./dispatcher.php) | `$container->get($binding)` |
 | Cache | [cache/filesystem-adapter](http://packagist.org/package/cache/filesystem-adapter) | N/a | PSR-16: `$container->get(\Psr\SimpleCache\CacheInterface::class)` |
+
+[ico-travis]: https://img.shields.io/travis/PHPDX/cascadiaphp.com/develop.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/PHPDX/cascadiaphp.com.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/PHPDX/cascadiaphp.com.svg?style=flat-square
+
+[link-travis]: https://travis-ci.org/PHPDX/cascadiaphp.com
+[link-scrutinizer]: https://scrutinizer-ci.com/g/PHPDX/cascadiaphp.com/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/PHPDX/cascadiaphp.com
