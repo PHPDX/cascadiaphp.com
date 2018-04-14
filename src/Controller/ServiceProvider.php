@@ -6,6 +6,7 @@ use Cache\Adapter\Filesystem\FilesystemCachePool;
 use CascadiaPHP\Site\Middleware\AmpMiddleware;
 use CascadiaPHP\Site\Middleware\Dispatcher as MiddlewareDispatcher;
 use CascadiaPHP\Site\Middleware\ErrorDecoratorMiddleware;
+use CascadiaPHP\Site\Middleware\StaticFilesHandler;
 use CascadiaPHP\Site\Router\RouteHandlerResolver;
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use League\Flysystem\Adapter\Local;
@@ -37,6 +38,13 @@ class ServiceProvider extends AbstractServiceProvider
         FastRoute::class,
         RequestHandler::class // This handler is our route dispatcher, it must be last.
     ];
+
+    public function __construct()
+    {
+        if(filter_var(getenv('SERVE_STATIC') ?: 'false', FILTER_VALIDATE_BOOLEAN)) {
+            array_unshift($this->middlewares, StaticFilesHandler::class);
+        }
+    }
 
     /**
      * Use the register method to register items with the container via the
