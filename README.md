@@ -2,8 +2,8 @@
 # Welcome to the repository for Cascadia PHP's :mountain: website!
 
 [![Build Status][ico-travis]][link-travis]
-[![Coverage Status][ico-scrutinizer]][link-scrutinizer]
 [![Quality Score][ico-code-quality]][link-code-quality]
+[![Coverage Status][ico-scrutinizer]][link-scrutinizer]
 
 ### Quick Reference:
 
