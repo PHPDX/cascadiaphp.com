@@ -13,24 +13,43 @@ To run this site, you need a few things:
 - [Yarn](https://yarnpkg.com/en/docs/install) (This is optional, you can use npm in place of yarn.)
 - PHP 7.2
 
-## 1. Setup your `.env` file
+## Using the makefile
+
+The make file will manage pulling down all dependencies for you and will prepare the repository to serve requests.
+You can see the available make targets by running `make list`
+
+### Run the development server
+
+    make run
+    make stop
+
+### Run tests
+
+    make test
+    
+### Setup the repository
+
+    make setup
+
+## Running manually
+### 1. Setup your `.env` file
 Copy .env.dist out to .env and update the values if needed
 
-## 2 Install dependencies
+### 2 Install dependencies
 We use Yarn / NPM for our JS / CSS dependencies, and Composer for our PHP dependencies:
 
 ```bash
 yarn && composer install
 ```
 
-## 3. Build assets
+### 3. Build assets
 You can use NPM to run these commands by swapping `yarn` with `npm run`
 
 - For dev assets: `yarn dev`
 - For prod assets: `yarn prod`
 - To continuously compile while you work: `yarn watch`
 
-## 4. Point a webroot (or run the built in server)
+### 4. Point a webroot (or run the built in server)
 Point a webroot at the `/public` directory to get started, or you can use the built in server for development:
 
 ```bash
