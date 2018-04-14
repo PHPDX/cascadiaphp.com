@@ -5,6 +5,40 @@
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Coverage Status][ico-scrutinizer]][link-scrutinizer]
 
+# Setting up a local copy
+
+To run this site, you need a few things:
+- [Composer](https://getcomposer.org/download/)
+- [NPM](https://www.npmjs.com/get-npm)
+- [Yarn](https://yarnpkg.com/en/docs/install) (This is optional, you can use npm in place of yarn.)
+- PHP 7.2
+
+## 1. Setup your `.env` file
+Copy .env.dist out to .env and update the values if needed
+
+## 2 Install dependencies
+We use Yarn / NPM for our JS / CSS dependencies, and Composer for our PHP dependencies:
+
+```bash
+yarn && composer install
+```
+
+## 3. Build assets
+You can use NPM to run these commands by swapping `yarn` with `npm run`
+
+- For dev assets: `yarn dev`
+- For prod assets: `yarn prod`
+- To continuously compile while you work: `yarn watch`
+
+## 4. Point a webroot (or run the built in server)
+Point a webroot at the `/public` directory to get started, or you can use the built in server for development:
+
+```bash
+php -S localhost:8080 bin/server.php
+```
+
+now you can visit `http://localhost:8080/` and play with the code, have fun! :-)
+
 ### Quick Reference:
 
 ### Request Flow
@@ -152,22 +186,6 @@ We use [Laravel Mix](https://laravel.com/docs/mix) to compile our assets which m
 | Controllers | Custom | [./src/Controller](./src/Controller) | There is no defined structure to controllers |
 | Container | [league/container](http://packagist.org/package/league/container) | Created in [./dispatcher.php](./dispatcher.php) | `$container->get($binding)` |
 | Cache | [cache/filesystem-adapter](http://packagist.org/package/cache/filesystem-adapter) | N/a | PSR-16: `$container->get(\Psr\SimpleCache\CacheInterface::class)` |
-
-# Running local copy
-
-## Frontend assets
-Ensure you have npm and yarn running, if you miss npm you're better off looking up installations instructions for your own platform, to install yarn globally (once you procured npm) simply run `npm install --global yarn`.
-
-To install the local dependencies then run `yarn`.
-
-To get the assets built as you work on them, `yarn watch` will set up a continuous task that compiles sass files and possibly other assets.
-
-## PHP dependencies
-Assuming you have composer installed, simply run `composer install`.
-
-## Local server
-If you want to run a simple local server on your machine to review your contributions before merging them, create a copy of the `.env.dist` file called `.env`, then edit your personal `.env` file and update the configuration to say `SERVE_STATIC=true`.
-Then run `php -S localhost:8080 public/index.php`, now you can visit `http://localhost:8080/` and play with the code, have fun! :-)
 
 =======
 [ico-travis]: https://img.shields.io/travis/PHPDX/cascadiaphp.com/develop.svg?style=flat-square
