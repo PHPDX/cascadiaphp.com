@@ -39,7 +39,7 @@ clean_vendor:
 	test ! -e vendor || rm -r vendor
 
 .PHONY: setup
-setup: vendor/autoload.php node_modules .env
+setup: vendor/autoload.php node_modules .env resources/css/pages/home.css
 
 # task to explicitly update the dependencies
 .PHONY: deps_update
@@ -76,9 +76,13 @@ vendor/autoload.php: composer.lock
 node_modules:
 	$(YARN_BIN)
 
-# Make sure yarn installs
+# Make sure .env file exists
 .env:
 	cp .env.dist .env
+
+# Make sure .env file exists
+resources/css/pages/home.css:
+	yarn dev
 
 
 .PHONY: run
