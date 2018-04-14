@@ -6,6 +6,7 @@ use Cache\Adapter\Filesystem\FilesystemCachePool;
 use CascadiaPHP\Site\Middleware\AmpMiddleware;
 use CascadiaPHP\Site\Middleware\Dispatcher as MiddlewareDispatcher;
 use CascadiaPHP\Site\Middleware\ErrorDecoratorMiddleware;
+use CascadiaPHP\Site\Middleware\StaticFilesHandler;
 use CascadiaPHP\Site\Router\RouteHandlerResolver;
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use League\Flysystem\Adapter\Local;

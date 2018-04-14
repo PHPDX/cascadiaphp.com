@@ -120,7 +120,7 @@ class MockResponse extends HtmlResponse
 
                 // Write to a test file and validate using amp-validator
                 file_put_contents('./build/response.html', $this->html);
-                exec('./node_modules/amphtml-validator/index.js build/response.html', $output, $result);
+                exec('node ./node_modules/amphtml-validator/index.js build/response.html', $output, $result);
 
                 // Clean up
                 unlink('./build/response.html');

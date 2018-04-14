@@ -18,7 +18,7 @@ class Dispatcher
     private $stack;
 
     /**
-     * @param MiddlewareInterface[] $stack middleware stack (with at least one middleware component)
+     * @param MiddlewareInterface[]|string[] $stack middleware stack (with at least one middleware component)
      */
     public function __construct(array $stack, ContainerInterface $container)
     {
@@ -37,6 +37,24 @@ class Dispatcher
     {
         $resolved = $this->resolve(0);
         return $resolved->process($request);
+    }
+
+    /**
+     * @return array|\Interop\Http\ServerMiddleware\MiddlewareInterface[]
+     */
+    public function getStack()
+    {
+        return $this->stack;
+    }
+
+    /**
+     * @param array|\Interop\Http\ServerMiddleware\MiddlewareInterface[] $stack
+     * @return Dispatcher
+     */
+    public function setStack($stack)
+    {
+        $this->stack = $stack;
+        return $this;
     }
 
     /**

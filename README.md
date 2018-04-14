@@ -2,8 +2,61 @@
 # Welcome to the repository for Cascadia PHP's :mountain: website!
 
 [![Build Status][ico-travis]][link-travis]
-[![Coverage Status][ico-scrutinizer]][link-scrutinizer]
 [![Quality Score][ico-code-quality]][link-code-quality]
+[![Coverage Status][ico-scrutinizer]][link-scrutinizer]
+
+# Setting up a local copy
+
+To run this site, you need a few things:
+- [Composer](https://getcomposer.org/download/)
+- [NPM](https://www.npmjs.com/get-npm)
+- [Yarn](https://yarnpkg.com/en/docs/install) (This is optional, you can use npm in place of yarn.)
+- PHP 7.2
+
+## Using the makefile
+
+The make file will manage pulling down all dependencies for you and will prepare the repository to serve requests.
+You can see the available make targets by running `make list`
+
+### Run the development server
+
+    make run
+    make stop
+
+### Run tests
+
+    make test
+    
+### Setup the repository
+
+    make setup
+
+## Running manually
+### 1. Setup your `.env` file
+Copy .env.dist out to .env and update the values if needed
+
+### 2 Install dependencies
+We use Yarn / NPM for our JS / CSS dependencies, and Composer for our PHP dependencies:
+
+```bash
+yarn && composer install
+```
+
+### 3. Build assets
+You can use NPM to run these commands by swapping `yarn` with `npm run`
+
+- For dev assets: `yarn dev`
+- For prod assets: `yarn prod`
+- To continuously compile while you work: `yarn watch`
+
+### 4. Point a webroot (or run the built in server)
+Point a webroot at the `/public` directory to get started, or you can use the built in server for development:
+
+```bash
+php -S localhost:8080 bin/server.php
+```
+
+now you can visit `http://localhost:8080/` and play with the code, have fun! :-)
 
 ### Quick Reference:
 
@@ -153,6 +206,7 @@ We use [Laravel Mix](https://laravel.com/docs/mix) to compile our assets which m
 | Container | [league/container](http://packagist.org/package/league/container) | Created in [./dispatcher.php](./dispatcher.php) | `$container->get($binding)` |
 | Cache | [cache/filesystem-adapter](http://packagist.org/package/cache/filesystem-adapter) | N/a | PSR-16: `$container->get(\Psr\SimpleCache\CacheInterface::class)` |
 
+=======
 [ico-travis]: https://img.shields.io/travis/PHPDX/cascadiaphp.com/develop.svg?style=flat-square
 [ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/PHPDX/cascadiaphp.com/develop.svg?style=flat-square
 [ico-code-quality]: https://img.shields.io/scrutinizer/g/PHPDX/cascadiaphp.com.svg?style=flat-square
