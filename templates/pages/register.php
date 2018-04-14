@@ -18,6 +18,7 @@ $this->stop();
 $this->start('components'); ?>
 <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
 <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js"></script>
+<script async custom-template="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
 <?php $this->stop() ?>
 
 <?php $this->start('header') ?>
@@ -50,8 +51,25 @@ $this->start('components'); ?>
 </amp-analytics>
 <?php $this->stop() ?>
 
-<div class="center">
-    <h3 class="mb0">We aren't quite ready to sell tickets yet.</h3>
+<div>
+    <h1 class="m0 px3">Cascadia PHP</h1>
+    <p class="px3">
+        September 14th - 15th 2018<br>
+        Portland Oregon
+    </p>
+    <amp-iframe
+            sandbox="allow-scripts"
+            height="500"
+            layout="fixed-height"
+            src="https://www.picatic.com/events/widget/203031?width=std"
+            frameborder="0">
+        <amp-fit-text layout="responsive" width="5" height="1" class="lightblue center" max-font-size="50px" placeholder></amp-fit-text>
+    </amp-iframe>
+</div>
+
+<div class="flex-auto"></div>
+
+<div class="center mb3">
     <h4 class="mt1">Sign up below or follow us on <a href="https://twitter.com/cascadiaphp">Twitter</a> for announcements</h4>
     <form action-xhr="<?= $this->formUri('/actually/register') ?>" method="post" target="_top" class="validate">
         <div submit-success>
