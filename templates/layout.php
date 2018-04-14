@@ -8,8 +8,7 @@
 
 use CascadiaPHP\Site\SEO\SEOTools;
 
-?>
-<!doctype html>
+?><!doctype html>
 <html amp class="bg-lightblue">
 <head>
     <?php /** Enable AMP */ ?>
@@ -70,7 +69,7 @@ $this->insert('structure/sidebar', [
 
 ?>
 
-<div class="main-structure mx-auto relative flex flex-column justify-between">
+<div class="main-structure mx-auto relative flex flex-column justify-between shadow">
     <?php
     if ($header ?? true) {
         $this->insert('structure/header', [
