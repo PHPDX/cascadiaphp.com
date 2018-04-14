@@ -26,7 +26,7 @@ class StaticFilesHandler implements MiddlewareInterface
     public function process(ServerRequestInterface $request, DelegateInterface $delegate)
     {
         // Get the path to the public file
-        $filepath = './public' . urldecode($request->getUri()->getPath());
+        $filepath = dirname(__DIR__, 2) . '/public' . urldecode($request->getUri()->getPath());
 
         // Sanitize the path, we do not want traversal
         if (strpos($filepath, '/../') !== false || strpos($filepath, '\\..\\') !== false) {
@@ -51,10 +51,11 @@ class StaticFilesHandler implements MiddlewareInterface
     /**
      * Get a mimetype for a fileinfo object
      *
+     * @param \Psr\Http\Message\ServerRequestInterface $request
      * @param \SplFileInfo $file
      * @return string
      */
-    protected function getMimetype(SplFileInfo $file): string
+    protected function getMimetype(ServerRequestInterface $request, SplFileInfo $file): string
     {
         // Determine the system reported file type
         $mimeType = \mime_content_type($file->getPathname());

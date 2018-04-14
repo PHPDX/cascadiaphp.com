@@ -39,13 +39,6 @@ class ServiceProvider extends AbstractServiceProvider
         RequestHandler::class // This handler is our route dispatcher, it must be last.
     ];
 
-    public function __construct()
-    {
-        if(filter_var(getenv('SERVE_STATIC') ?: 'false', FILTER_VALIDATE_BOOLEAN)) {
-            array_unshift($this->middlewares, StaticFilesHandler::class);
-        }
-    }
-
     /**
      * Use the register method to register items with the container via the
      * protected $this->container property or the `getContainer` method
