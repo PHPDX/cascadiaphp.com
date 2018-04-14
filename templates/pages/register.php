@@ -58,7 +58,7 @@ $this->start('components'); ?>
         Portland Oregon
     </p>
     <amp-iframe
-            sandbox="allow-scripts"
+            sandbox="allow-scripts allow-forms"
             height="500"
             layout="fixed-height"
             src="https://www.picatic.com/events/widget/203031?width=std"
