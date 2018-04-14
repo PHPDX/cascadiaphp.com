@@ -1,5 +1,5 @@
 - Build the Pacific Northwest into a PHP community powerhouse  
 
-- Connect the greater community with the Pacific Northwest, and vice-versa
+- Connect the the Pacific Northwest with the greater PHP community
 
-- Bring individuals and companies who share a passion for PHP together
+- Bring together individuals and companies who share a passion for PHP
