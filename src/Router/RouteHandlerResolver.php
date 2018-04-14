@@ -43,7 +43,7 @@ class RouteHandlerResolver implements CallableResolverInterface, ContainerAwareI
     public function resolve($callable, array $args = [])
     {
         // Pipe the callable through the container resolver
-        return function () use ($callable, $args) {
+        return function() use ($callable, $args) {
             return $this->container->call($this->resolver->resolve($callable, $args));
         };
     }

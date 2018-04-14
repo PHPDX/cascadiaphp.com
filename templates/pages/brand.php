@@ -1,4 +1,4 @@
-<?php declare(strict_types=1) ?>
+<?php declare(strict_types = 1) ?>
 <?php /** @var \CascadiaPHP\Site\Template\Template $this */ ?>
 <?php
 // Set the template
@@ -48,7 +48,7 @@ function buttons(array $buttons) {
 <h2>Logo Treatment</h2>
 
 <div class="flex flex-wrap row">
-<?php foreach($colorList() as $color): ?>
+<?php foreach ($colorList() as $color): ?>
 <div class="md-col-3 sm-col-4 col-6 bg-<?= $color ?>">
     <amp-img class="m3" width="1" height="1" src="/images/logo.svg" layout="responsive"></amp-img>
 </div>
@@ -62,7 +62,7 @@ function buttons(array $buttons) {
 <h5 class="flex-auto px3">Header 5</h5>
 <h6 class="flex-auto px3">Header 6</h6>
 
-<?php foreach($colorList([]) as $background): ?>
+<?php foreach ($colorList([]) as $background): ?>
     <div class="p3 bg-<?= $background ?>">
         <?php foreach ($colorList([$background]) as $color): ?>
             <p class="<?= $color ?>">This is an <a href="#">example</a> of a long string that has a link in it.</p>

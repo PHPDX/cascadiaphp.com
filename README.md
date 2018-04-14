@@ -1,6 +1,10 @@
 ![](/public/images/logo.svg)
 # Welcome to the repository for Cascadia PHP's :mountain: website!
 
+[![Build Status][ico-travis]][link-travis]
+[![Coverage Status][ico-scrutinizer]][link-scrutinizer]
+[![Quality Score][ico-code-quality]][link-code-quality]
+
 ### Quick Reference:
 
 ### Request Flow
@@ -164,3 +168,12 @@ Assuming you have composer installed, simply run `composer install`.
 ## Local server
 If you want to run a simple local server on your machine to review your contributions before merging them, create a copy of the `.env.dist` file called `.env`, then edit your personal `.env` file and update the configuration to say `SERVE_STATIC=true`.
 Then run `php -S localhost:8080 public/index.php`, now you can visit `http://localhost:8080/` and play with the code, have fun! :-)
+
+=======
+[ico-travis]: https://img.shields.io/travis/PHPDX/cascadiaphp.com/develop.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/PHPDX/cascadiaphp.com/develop.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/PHPDX/cascadiaphp.com.svg?style=flat-square
+
+[link-travis]: https://travis-ci.org/PHPDX/cascadiaphp.com
+[link-scrutinizer]: https://scrutinizer-ci.com/g/PHPDX/cascadiaphp.com/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/PHPDX/cascadiaphp.com

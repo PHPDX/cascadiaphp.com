@@ -33,6 +33,7 @@
         "php-http/mock-client": "^1.1",
         "mockery/mockery": "^1.0",
         "symfony/dom-crawler": "^4.0",
-        "symfony/css-selector": "^4.0"
+        "symfony/css-selector": "^4.0",
+        "phpstan/phpstan": "^0.9.2"
     }
 }

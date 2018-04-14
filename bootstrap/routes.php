@@ -4,7 +4,7 @@
  * @var \FastRoute\RouteCollector $r
  */
 
-$r->get('/',  'CascadiaPHP\Site\Controller\Home::view');
+$r->get('/', 'CascadiaPHP\Site\Controller\Home::view');
 $r->get('/news', 'CascadiaPHP\Site\Controller\News::view');
 $r->get('/schedule', 'CascadiaPHP\Site\Controller\Schedule::view');
 $r->get('/speakers', 'CascadiaPHP\Site\Controller\Speakers::view');
