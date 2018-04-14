@@ -11,7 +11,7 @@
 <section class="what flex flex-column mx2">
     <div class="flex-auto hero relative flex content-center justify-center items-center">
         <div id="hero-images">
-            <amp-img width="1000" height="667" layout="fill"
+            <amp-img width="1000" height="667" layout="fill" class="object-cover"
                      srcset="/images/scenes/what/mthood.jpg 2000w,
                              /images/scenes/what/mthood-large.jpg 1440w,
                              /images/scenes/what/mthood-medium.jpg 900w,
@@ -22,11 +22,11 @@
             </amp-img>
         </div>
 
-        <div class="cover absolute"></div>
+        <div class="cover absolute shadow"></div>
         <div class="cover-bottom absolute"></div>
-        <div>
-            <amp-layout layout="responsive" width="276.02" height="191.15" class="main-cta relative" sizes="(min-width: 600px) 600px, 100vw">
-                <amp-img src="/images/scenes/what/oregon.svg" layout="fill" width="276.02" height="191.15" alt="The shape of oregon, the top half is blue and the bottom half is white"></amp-img>
+        <amp-layout layout="responsive" width="276.02" height="191.15" class="main-cta flex-auto">
+            <div class="flex flex-column justify-bottom relative flex-auto justify-end">
+                <amp-img src="/images/scenes/what/oregon.svg" layout="fill" class="object-contain" width="276.02" height="191.15" alt="The shape of oregon, the top half is blue and the bottom half is white"></amp-img>
                 <amp-fit-text max-font-size="50px" layout="responsive" width="216.79" height="65.75" class="white center">
                     <div class="mx3 py2 px2">
                         <span class="sm-col sm-col-12 text-shadow">September</span> <span class="bold lightblue py2 text-shadow">14th</span> - <span class="bold lightblue text-shadow">15th</span>
@@ -37,8 +37,8 @@
                         <span class="sm-col sm-col-12 text-shadow">In the <span class="gold">❤</span> of</span> <span class="bold text-shadow">PDX Oregon</span>
                     </div>
                 </amp-fit-text>
-            </amp-layout>
-        </div>
+            </div>
+        </amp-layout>
     </div>
 
     <div class="fold-cta bg-darkblue white justify-between px3 py4 mt2 sm-m0 xs-m0 md-py1 sm-py1 xs-py1">

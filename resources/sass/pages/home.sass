@@ -13,14 +13,10 @@ $hero-stripe-width: -5vw
 .what
   height: calc(100vh - #{$headerHeight})
   max-height: 1200px
+  min-height: 60vw
 
   .hero
     overflow: hidden
-
-    amp-img
-      img
-        object-position: top center
-        object-fit: cover
 
     .cover
       width: 0
@@ -38,19 +34,18 @@ $hero-stripe-width: -5vw
       border-bottom: calc(100vh - #{$headerHeight} - #{$hero-stripe-width}) solid transparentize($dark-blue, 0.5)
       border-left: calc(1440px - #{$hero-stripe-width}) solid transparent
 
+  .main-cta
+    max-width: 600px
+    > div
+      display: flex
+      flex-direction: column
+
 .organizer
   text-decoration: none
   transition: transform 150ms ease-in-out
 
   &:hover
     transform: scale(1.05)
-
-.main-cta > div
-  display: -ms-flexbox
-  display: flex
-  -ms-flex-direction: column
-  flex-direction: column
-  justify-content: flex-end
 
 .where-row
   flex-direction: row-reverse
