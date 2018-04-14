@@ -38,19 +38,19 @@ class ServiceProvider extends AbstractServiceProvider
     public function register()
     {
         // Set up templating
-        $this->container->share(Engine::class, function () {
+        $this->container->share(Engine::class, function() {
             return $this->getTemplateEngine();
         });
 
         // Set up extensions
-        $this->container->add(MarkdownExtension::class, function () {
+        $this->container->add(MarkdownExtension::class, function() {
             $parsedown = $this->container->get(\Parsedown::class);
             return new MarkdownExtension($parsedown, __DIR__ . '/../../content');
         });
 
         // Set up extensions
-        $this->container->add(AssetExtension::class, function () {
-            return new AssetExtension( __DIR__ . '/../../resources');
+        $this->container->add(AssetExtension::class, function() {
+            return new AssetExtension(__DIR__ . '/../../resources');
         });
     }
 
