@@ -95,7 +95,7 @@
 </section>
 
 <section class="where bg-slate white mt2 mb2 p3 relative mx2">
-    <amp-img src="/images/scenes/where/bridge-partial.svg" layout="fill" class="object-left object-contain" alt="A semitransparent logo image"></amp-img>
+    <amp-img src="/images/scenes/where/bridge-partial.svg" layout="fill" class="object-left object-contain bridge-partial" alt="A semitransparent logo image"></amp-img>
     <amp-fit-text layout="fixed-height" height="160px" class="my3">
         <span class="nowrap bold-text text-shadow">Cascadia PHP 2018</span><br>
         <span class="nowrap light-text text-shadow">Portland, Oregon</span>
@@ -143,7 +143,7 @@
             </div>
         </div>
 
-        <div class="lg-col md-hide lg-col-4 col-12 pt3 ml3 xs-m0 sm-m0">
+        <div class="lg-col md-hide lg-col-4 col-12 pt3 ml3 xs-m0 sm-m0 z2">
             <p>
                 The Pacific Northwest (also known as Cascadia) is a magical land covered in Rain Forests, Deserts, Coasts,
                 Mountains, Rivers, and People. It's expansive forests have traditionally powered the industries in this area,
@@ -154,7 +154,7 @@
                 because of it.
             </p>
         </div>
-        <div class="lg-col lg-col-4 md-col md-col-6 col-12 pt3">
+        <div class="lg-col lg-col-4 md-col md-col-6 col-12 pt3 z2">
             <p>
                 Portland Oregon is the most amazing mix of People, Technology, Nature, Architecture and Art. You will find it
                 challenging to walk down the street without the opportunity to meet someone awesome. Portland is a booming tech
@@ -176,28 +176,6 @@
                 </p>
             </div>
         </div>
-<!--
-        <div class="col col-4 flex flex-column">
-            <span>Keep Portland Weird</span>
-            <amp-layout width="4" height="3" layout="responsive">
-                <div class="flex">
-                    <amp-layout width="4" height="4" layout="responsive">
-                    </amp-layout>
-                    <div class="flex flex-column">
-
-                        <amp-layout width="4" height="3" layout="responsive" class="bg-gravel">
-                        </amp-layout>
-
-                        <amp-layout width="4" height="3" layout="responsive" class="bg-gravel">
-                        </amp-layout>
-                    </div>
-                </div>
-            </amp-layout>
-            <amp-layout width="4" height="3" layout="responsive">
-                <amp-img width="1" height="1" src="<?= $this->placeholder(100, 100) ?>"></amp-img>
-            </amp-layout>
-        </div>
-        -->
         <div class="clearfix"></div>
     </div>
 </section>
