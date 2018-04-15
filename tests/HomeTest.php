@@ -36,7 +36,7 @@ class HomeTest extends PageTestCase
      *
      * @return \CascadiaPHP\Site\Testing\HTTP\MockResponse
      */
-    protected function requestPage(): MockResponse
+    protected function requestPage(): ?MockResponse
     {
         return $this->get('/');
     }

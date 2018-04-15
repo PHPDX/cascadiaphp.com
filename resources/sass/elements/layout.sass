@@ -78,8 +78,17 @@ h2, h3, h4, h5, h6
 
 #footer
   min-height: 150px
+  padding-left: 4em
+  padding-right: 4em
+  color: darken($gravel, 25%)
   a
-    color: $dark-blue
+    color: darken($gravel, 25%)
+    svg
+      fill: darken($gravel, 25%)
+    &:hover
+      color: darken($gravel, 45%)
+      svg
+        fill: darken($gravel, 45%)
 
 amp-img.object-cover > img, .object-cover
   object-fit: cover
@@ -121,3 +130,21 @@ a, .dark a
 @media (min-width: 1440px)
   .main-structure
     width: 1440px
+
+@media (max-width: 52em)
+  #footer > div > div
+    text-align: center
+    &.legal
+      margin-bottom: .25em
+      flex-direction: row
+      & > a
+        margin: .5em
+
+@media (min-width: 52em)
+  // md
+  #footer > div
+    flex-direction: row-reverse
+    > div
+      margin-left: .5em
+      margin-right: .5em
+

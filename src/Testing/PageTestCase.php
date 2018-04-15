@@ -19,9 +19,9 @@ abstract class PageTestCase extends TestCase
      *
      * @return \CascadiaPHP\Site\Testing\HTTP\MockResponse
      */
-    abstract protected function requestPage(): MockResponse;
+    abstract protected function requestPage(): ?MockResponse;
 
-    public function getResponse(): MockResponse
+    public function getResponse(): ?MockResponse
     {
         return static::$response;
     }

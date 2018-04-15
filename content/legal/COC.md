@@ -71,7 +71,9 @@ event. We value your attendance.
 
 - Local Domestic & Sexual Violence resources: [https://www.ocadsv.org/find-help](https://www.ocadsv.org/find-help)
 
-- Broardway Cab (Though Lyft is an option): [503-333-3333](tel:5033333333)
+- Broadway Cab (Though Lyft is an option): [503-333-3333](tel:5033333333)
+
+- Cascadia PHP Terms &amp; Conditions: [https://www.cascadiaphp.com/legal/terms](/legal/terms)
 
 ### Disclaimer
 While the entire *Cascadia PHP* staff of event organizers and volunteers will make every effort to

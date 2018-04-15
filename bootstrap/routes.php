@@ -21,3 +21,6 @@ $r->get('/brand', function(\League\Plates\Engine $plates) {
 // Legal
 $r->get('/legal/terms', '\CascadiaPHP\Site\Controller\Legal::terms');
 $r->get('/legal/coc', '\CascadiaPHP\Site\Controller\Legal::codeOfConduct');
+$r->get('/legal', function() {
+    return new \Zend\Diactoros\Response\RedirectResponse('/legal/terms', 301);
+});
