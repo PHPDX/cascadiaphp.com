@@ -54,8 +54,22 @@ $this->start('components'); ?>
 <div>
     <h1 class="m0 px3">Cascadia PHP</h1>
     <p class="px3">
-        September 14th - 15th 2018<br>
+        September 14th - 15th 2018
         Portland Oregon
+    </p>
+    <p class="px3">
+        Grab a blind bird ticket today and save <strong class="bold-text darkblue">$100 off general admission!</strong>
+    </p>
+    <p class="px3">
+        PLEASE KEEP IN MIND: All attendees are subject to our <a href="/legal/coc">Code of Conduct</a> and our <a href="/legal/terms">Terms & Conditions</a>
+    </p>
+    <p class="px3">
+        <strong class="bold-text darkblue">
+            Refund Policy:
+        </strong>
+        All refunds made prior to <strong class="bold-text darkblue">July 14th</strong> are subject to a fee covering the cost of
+        the transaction. <strong class="bold-text darkblue">After that date all sales are final.</strong>
+        <br>
     </p>
     <amp-iframe
             sandbox="allow-scripts allow-forms allow-top-navigation-by-user-activation"
