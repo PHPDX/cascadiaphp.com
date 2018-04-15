@@ -17,3 +17,10 @@ $r->post('/actually/register', '\CascadiaPHP\Site\Controller\Register::subscribe
 $r->get('/brand', function(\League\Plates\Engine $plates) {
     return $plates->make('pages/brand');
 });
+
+// Legal
+$r->get('/legal/terms', '\CascadiaPHP\Site\Controller\Legal::terms');
+$r->get('/legal/coc', '\CascadiaPHP\Site\Controller\Legal::codeOfConduct');
+$r->get('/legal', function() {
+    return new \Zend\Diactoros\Response\RedirectResponse('/legal/terms', 301);
+});
