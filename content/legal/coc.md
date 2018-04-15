@@ -63,9 +63,9 @@ event. We value your attendance.
 
 - Contact leadership: [leadership@cascadiaphp.com](leadership@cascadiaphp.com)
 
-- Contact Cascadia PHP Security: [###-###-####](tel:5555555555)
+- Contact Cascadia PHP Security: (Number not yet released)
 
-- Contact Hotel Security: [###-###-####](tel:5555555555)
+- Contact Hotel Security: (Number not yet released)
 
 - Local Law enforcement: [911](tel:911) (non-emergency [503-823-3333](tel:5038233333))
 
@@ -82,7 +82,8 @@ responsibility for any harassment or inappropriate behavior that we are not made
 during the conference.
 Furthermore, any participant who feels that their physical safety is being threatened should go
 directly to the proper authorities immediately, even before alerting *Cascadia PHP* staff persons.
-Policy License
+
+### Policy License
 This policy is licensed under the Creative Commons Zero license.
 This anti-harassment policy is based on the example policy from [the Geek Feminism wiki](
 http://geekfeminism.wikia.com/wiki/Conference_anti-harassment),
