@@ -54,14 +54,28 @@ $this->start('components'); ?>
 <div>
     <h1 class="m0 px3">Cascadia PHP</h1>
     <p class="px3">
-        September 14th - 15th 2018<br>
+        September 14th - 15th 2018
         Portland Oregon
+    </p>
+    <p class="px3">
+        Grab a blind bird ticket today and save <strong class="bold-text gold">$100</strong> <strong class="bold-text darkblue">off general admission!</strong>
+    </p>
+    <p class="px3">
+        PLEASE KEEP IN MIND: All attendees are subject to our <a href="/legal/coc">Code of Conduct</a> and our <a href="/legal/terms">Terms & Conditions</a>
+    </p>
+    <p class="px3">
+        <strong class="bold-text darkblue">
+            Refund Policy:
+        </strong>
+        All refunds made prior to July 14th are subject to a fee covering the cost of
+        the transaction. <strong class="italic">After that date all sales are final.</strong>
+        <br>
     </p>
     <amp-iframe
             sandbox="allow-scripts allow-forms allow-top-navigation-by-user-activation"
             height="500"
             layout="fixed-height"
-            src="https://www.picatic.com/events/widget/203031?width=std"
+            src="https://www.picatic.com/events/widget/203031?width=std&ticket_description=true"
             frameborder="0">
         <amp-fit-text layout="responsive" width="5" height="1" class="lightblue center" max-font-size="50px" placeholder></amp-fit-text>
     </amp-iframe>

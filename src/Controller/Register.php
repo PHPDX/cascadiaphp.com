@@ -2,6 +2,8 @@
 
 namespace CascadiaPHP\Site\Controller;
 
+use CascadiaPHP\Site\Schema\EventSchema;
+use CascadiaPHP\Site\Uri\UriResolver;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\RequestOptions;
@@ -13,8 +15,10 @@ use Zend\Diactoros\Uri;
 class Register extends Controller
 {
 
-    public function view(): ResponseInterface
+    public function view(UriResolver $resolver): ResponseInterface
     {
+        $this->setSchema($this->schema($resolver));
+
         $this->seo()
             ->setTitle('Register for Cascadia PHP in Portland Oregon')
             ->setDescription('Register for our 2 day long PHP Conference in Portland Oregon in September 2018');
@@ -87,4 +91,8 @@ class Register extends Controller
         return null;
     }
 
+    protected function schema(UriResolver $uri)
+    {
+        return EventSchema::create($uri);
+    }
 }
