@@ -1,0 +1,16 @@
+@import "../util/_all"
+@import "../elements/layout"
+
+h1, h2, h3, h4, h5, h6
+  background: transparent
+  color: $dark-blue
+  margin: 0.25em 0 0
+
+strong
+  @extend .bold-text, .text-shadow, .darkblue
+
+.legal a
+  @extend .bold-text, .slate
+
+.main-content
+  flex: 1
