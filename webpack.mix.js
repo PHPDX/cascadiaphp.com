@@ -19,6 +19,7 @@ mix
     .sass('resources/sass/pages/home.sass', 'resources/css/pages')
     .sass('resources/sass/pages/sponsors.sass', 'resources/css/pages')
     .sass('resources/sass/pages/register.sass', 'resources/css/pages')
+    .sass('resources/sass/pages/legal.sass', 'resources/css/pages')
 
 
 // Post process css with replaceimportant

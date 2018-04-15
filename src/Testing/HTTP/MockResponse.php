@@ -56,6 +56,39 @@ class MockResponse extends HtmlResponse
         }, sprintf('Response value should be a fail code, got "%d"', $this->getStatusCode()));
     }
 
+    public function shouldHaveCode(int $code): MockResponse
+    {
+        return $this->assert(function() use ($code) {
+            return $this->getStatusCode() === $code;
+        }, sprintf('Response value should be a fail code, got "%d"', $this->getStatusCode()));
+    }
+
+    public function shouldContainHeader(string $header, string $search, string $message = ''): MockResponse
+    {
+        return $this->assert(function() use ($header, $search) {
+            foreach ($this->getHeader($header) as $value) {
+                if ($value === $search) {
+                    return true;
+                }
+            }
+
+            return false;
+        }, $message ?: sprintf('The response should have the "%s" value for the "%s" header, but it wasn\'t found', $header, $search));
+    }
+
+    public function shouldNotContainHeader(string $header, string $search, string $message = ''): MockResponse
+    {
+        return $this->assert(function() use ($header, $search) {
+            foreach ($this->getHeader($header) as $value) {
+                if ($value === $search) {
+                    return false;
+                }
+            }
+
+            return true;
+        }, $message ?: sprintf('The response should NOT have the "%s" value for the "%s" header, but it wasn\'t found', $header, $search));
+    }
+
     public function shouldContainSelector(string $selector, string $message = ''): MockResponse
     {
         return $this->assert(function() use ($selector) {
