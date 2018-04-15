@@ -66,33 +66,6 @@
         </div>
     </div>
 </section>
-<section class="who bg-gravel shattered p3 my2 mx2 white">
-    <amp-fit-text layout="fixed-height" height="75px" class="text-shadow-md center white">Who is Cascadia PHP?</amp-fit-text>
-    <div class="contributors mx1 my1">
-        <?php $this->insert('structure/organizer', ['name' => 'Alena Holligan', 'role' => 'President', 'image' => 'alena.jpg', 'twitter' => '@sketchings']) ?>
-        <?php $this->insert('structure/organizer', ['name' => 'Kevin DeCapite', 'role' => 'Vice President', 'image' => 'kevin.jpg', 'twitter' => '@kevindecapite']) ?>
-        <?php $this->insert('structure/organizer', ['name' => 'Melinda Serven', 'role' => 'Treasurer', 'image' => 'melinda.jpg', 'twitter' => '@melindaserven']) ?>
-        <?php $this->insert('structure/organizer', ['name' => 'Korvin Szanto', 'role' => 'Secretary', 'image' => 'korvin.jpg', 'twitter' => '@korvinszanto']) ?>
-        <?php $this->insert('structure/organizer', ['name' => 'Danielle Grillenzoni', 'image' => 'daniele.jpg', 'twitter' => '@theMadness']) ?>
-        <?php $this->insert('structure/organizer', ['name' => 'Kurtis Holsapple', 'image' => 'kurtis.jpg', 'twitter' => '@lapubell']) ?>
-        <div class="clearfix"></div>
-    </div>
-    <div>
-        <div class="lg-col-4 lg-col pr2 lg-p0">
-            <amp-fit-text layout="fixed-height" class="bold-text center white text-shadow" height="40px">Non-Profit</amp-fit-text>
-            <?= $this->markdown('who/non-profit') ?>
-        </div>
-        <div class="lg-col-4 lg-col px1 lg-p0">
-            <amp-fit-text layout="fixed-height" class="bold-text center white text-shadow" height="40px">Our Mission Is To</amp-fit-text>
-            <?= $this->markdown('who/mission') ?>
-        </div>
-        <div class="lg-col-4 lg-col pl2 lg-p0">
-            <amp-fit-text layout="fixed-height" class="bold-text center white text-shadow" height="40px">History</amp-fit-text>
-            <?= $this->markdown('who/history') ?>
-        </div>
-        <div class="clearfix"></div>
-    </div>
-</section>
 
 <section class="where bg-slate white mt2 mb2 p3 relative mx2">
     <amp-img src="/images/scenes/where/bridge-partial.svg" layout="fill" class="object-left object-contain bridge-partial" alt="A semitransparent logo image"></amp-img>
@@ -156,13 +129,14 @@
         </div>
         <div class="lg-col lg-col-4 md-col md-col-6 col-12 pt3 z2">
             <p>
-                Portland Oregon is the most amazing mix of People, Technology, Nature, Architecture and Art. You will find it
-                challenging to walk down the street without the opportunity to meet someone awesome. Portland is a booming tech
-                town with PHP at its heart.
+                Join us at Cascadia PHP for Developers by Developers.
+                Exceptional speakers. Actionable tactics. Learning for all.
+                Join us for a two-day, three-track conference full of forward-thinking, tactical sessions in PHP,
+                Security, API’s, Dev Ops, web technologies, and more.
             </p>
             <p>
-                We have come together to form a non profit organization to run this conference and bring the PHP community to
-                the Portland community, and to expose our community to some of the local businesses powered by PHP.
+                At Cascadia PHP you'll connect with our amazing
+                community of industry leaders, chat with the speakers and staff, and pick up some cool swag.
             </p>
             <div class="lg-hide">
                 <p>
@@ -175,6 +149,33 @@
                     because of it.
                 </p>
             </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</section>
+<section class="who bg-gravel shattered p3 my2 mx2 white">
+    <amp-fit-text layout="fixed-height" height="75px" class="text-shadow-md center white">Who is Cascadia PHP?</amp-fit-text>
+    <div class="contributors mx1 my1">
+        <?php $this->insert('structure/organizer', ['name' => 'Alena Holligan', 'role' => 'President', 'image' => 'alena.jpg', 'twitter' => '@sketchings']) ?>
+        <?php $this->insert('structure/organizer', ['name' => 'Kevin DeCapite', 'role' => 'Vice President', 'image' => 'kevin.jpg', 'twitter' => '@kevindecapite']) ?>
+        <?php $this->insert('structure/organizer', ['name' => 'Melinda Serven', 'role' => 'Treasurer', 'image' => 'melinda.jpg', 'twitter' => '@melindaserven']) ?>
+        <?php $this->insert('structure/organizer', ['name' => 'Korvin Szanto', 'role' => 'Secretary', 'image' => 'korvin.jpg', 'twitter' => '@korvinszanto']) ?>
+        <?php $this->insert('structure/organizer', ['name' => 'Danielle Grillenzoni', 'image' => 'daniele.jpg', 'twitter' => '@theMadness']) ?>
+        <?php $this->insert('structure/organizer', ['name' => 'Kurtis Holsapple', 'image' => 'kurtis.jpg', 'twitter' => '@lapubell']) ?>
+        <div class="clearfix"></div>
+    </div>
+    <div>
+        <div class="lg-col-4 lg-col pr2 lg-p0">
+            <amp-fit-text layout="fixed-height" class="bold-text center white text-shadow" height="40px">Non-Profit</amp-fit-text>
+            <?= $this->markdown('who/non-profit') ?>
+        </div>
+        <div class="lg-col-4 lg-col px1 lg-p0">
+            <amp-fit-text layout="fixed-height" class="bold-text center white text-shadow" height="40px">Our Mission Is To</amp-fit-text>
+            <?= $this->markdown('who/mission') ?>
+        </div>
+        <div class="lg-col-4 lg-col pl2 lg-p0">
+            <amp-fit-text layout="fixed-height" class="bold-text center white text-shadow" height="40px">History</amp-fit-text>
+            <?= $this->markdown('who/history') ?>
         </div>
         <div class="clearfix"></div>
     </div>
