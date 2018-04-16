@@ -18,6 +18,6 @@ class Venue extends Controller
             ->setDescription('Cascadia PHP will be held in Portland Oregon in a conference center that doubles ' .
                 'as our hotel. Check back here for directions and instructions for reaching the conference.');
 
-        return $this->render('/pages/venue');
+        return $this->render('/pages/venue', '/venue');
     }
 }

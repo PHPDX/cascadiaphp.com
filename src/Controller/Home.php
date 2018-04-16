@@ -56,7 +56,7 @@ class Home extends Controller
                 'joomla developer'
             ]);
 
-        return $this->render('/pages/home');
+        return $this->render('/pages/home', '/');
     }
 
     protected function schema(UriResolver $uri)

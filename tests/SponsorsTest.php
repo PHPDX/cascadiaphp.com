@@ -11,6 +11,7 @@ class SponsorsTest extends PageTestCase
     {
         $this->getResponse()
             ->shouldSucceed()
+            ->shouldHaveCanonicalUrl('/sponsors')
             ->shouldContainSelector('.btn-cta');
     }
 

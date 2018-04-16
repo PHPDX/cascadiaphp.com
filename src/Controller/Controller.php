@@ -28,13 +28,23 @@ abstract class Controller implements ContainerAwareInterface
         $this->setContainer($container);
     }
 
-    public function render(string $path, array $data = []): HtmlResponse
+    /**
+     * Render a template into a response
+     *
+     * @param string $path The path to the template, this is usually something like `/pages/home'
+     * @param string $actionPath The canonical path to this action ie "/" for home "/register" for register
+     * @param array $data The data to pass to the template
+     * @return \Zend\Diactoros\Response\HtmlResponse
+     * @throws \Exception
+     * @throws \Throwable
+     */
+    public function render(string $path, string $actionPath, array $data = []): HtmlResponse
     {
         /** @var \CascadiaPHP\Site\Template\Template $template */
         $template = $this->engine->make($path);
 
         // Set the layout
-        $template->layout('layout');
+        $template->layout('layout', ['active' => $actionPath]);
 
         // Pass in any css
         if ($this->cssPath) {

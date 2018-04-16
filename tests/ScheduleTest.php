@@ -11,6 +11,7 @@ class ScheduleTest extends PageTestCase
     {
         $this->getResponse()
             ->shouldSucceed()
+            ->shouldHaveCanonicalUrl('/schedule')
             ->shouldContainSelector('.btn-cta');
     }
 
@@ -28,6 +29,6 @@ class ScheduleTest extends PageTestCase
      */
     protected function requestPage(): MockResponse
     {
-        return $this->get('/speakers');
+        return $this->get('/schedule');
     }
 }
