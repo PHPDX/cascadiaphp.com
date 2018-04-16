@@ -17,6 +17,6 @@ class Sponsors extends Controller
                 'to help keep costs down for locals and to help elevate this event to something truly special. ' .
                 'If you enjoyed the conference, make sure to give them some love!');
 
-        return $this->render('/pages/sponsors');
+        return $this->render('/pages/sponsors', '/sponsors');
     }
 }

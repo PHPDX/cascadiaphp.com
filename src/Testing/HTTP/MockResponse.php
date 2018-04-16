@@ -8,6 +8,7 @@ use PHPUnit\Framework\SkippedTestError;
 use Psr\Http\Message\ServerRequestInterface;
 use Symfony\Component\DomCrawler\Crawler;
 use Zend\Diactoros\Response\HtmlResponse;
+use Zend\Diactoros\Uri;
 
 class MockResponse extends HtmlResponse
 {
@@ -133,6 +134,17 @@ class MockResponse extends HtmlResponse
         }, $message ?: sprintf('The response should NOT contain "%s", but we found it in the response.', $string));
     }
 
+    public function shouldHaveCanonicalUrl(string $path = null, string $message = null)
+    {
+        return $this
+            ->assert(function() {
+                return $this->getCrawler()->filter('link[rel="canonical"]')->count();
+            }, $message ?: sprintf('The response should have a canonical tag, but none was found'))
+            ->assert(function() use ($path) {
+                $canonicalUrl = $this->getCrawler()->filter('link[rel="canonical"]');
+                return (new Uri($canonicalUrl->attr('href')))->getPath() === $path;
+            }, $message ?: sprintf('The canonical tag should point to "%s", but it does not', $path));
+    }
 
     public function shouldBeAMP()
     {

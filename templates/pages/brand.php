@@ -1,8 +1,6 @@
 <?php declare(strict_types = 1) ?>
 <?php /** @var \CascadiaPHP\Site\Template\Template $this */ ?>
 <?php
-// Set the template
-$this->layout('layout');
 
 // Start the css section
 $this->start('css');

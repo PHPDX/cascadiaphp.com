@@ -12,6 +12,6 @@ class News extends Controller
 
     public function view(): Template
     {
-        return $this->render('/pages/news');
+        return $this->render('/pages/news', '/news');
     }
 }

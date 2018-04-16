@@ -16,6 +16,6 @@ class Schedule extends Controller
             ->setDescription('Cascadia PHP is two full days of speakers. Here you\'ll find the schedule for each day ' .
                 'as well as information for any after parties.');
 
-        return $this->render('/pages/schedule');
+        return $this->render('/pages/schedule', '/schedule');
     }
 }

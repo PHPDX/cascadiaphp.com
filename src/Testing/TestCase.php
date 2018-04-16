@@ -8,6 +8,8 @@ use PHPUnit\Framework\Constraint\IsTrue;
 use PHPUnit\Framework\TestCase as PHPUnitTestCase;
 use Psr\Http\Message\ServerRequestInterface;
 use Zend\Diactoros\ServerRequest;
+use Zend\Diactoros\ServerRequestFactory;
+use Zend\Diactoros\Uri;
 
 class TestCase extends PHPUnitTestCase
 {
@@ -33,19 +35,17 @@ class TestCase extends PHPUnitTestCase
         if (!\in_array($method, ['GET', 'POST'], true)) {
             throw new \InvalidArgumentException('Only "get" and "post" requests are allowed.');
         }
-
-        // Build a generic request
-        $request = new ServerRequest(
-            $_SERVER,
-            [],
-            "https://test.com/{$path}",
-            $method,
-            'php://memory',
-            [],
-            [],
+        $request = ServerRequestFactory::fromGlobals(
+            [
+                'SERVER_NAME' => 'test.com',
+                'SERVER_PORT' => 443,
+                'HTTPS' => 'on',
+                'REQUEST_URI' => '/' . ltrim($path, '/')
+            ],
             $method === 'GET' ? $data : [],
-            $method === 'POST' ? $data : null
-        );
+            $method === 'POST' ? $data : null,
+            [],
+            []);
 
         // Send that request
         return $this->sendRequest($request);

@@ -12,12 +12,12 @@ use League\Container\ContainerAwareInterface;
 use League\Container\ContainerAwareTrait;
 use Middlewares\FastRoute;
 use Middlewares\RequestHandler;
+use Psr\Container\ContainerInterface;
 use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ServerRequestInterface;
 
-class MockClient extends Client implements ContainerAwareInterface
+class MockClient extends Client
 {
-
-    use ContainerAwareTrait;
 
     protected $middlewares = [
         'full' => [
@@ -33,10 +33,16 @@ class MockClient extends Client implements ContainerAwareInterface
 
     protected $middlewareStacks = [];
 
+    /** @var ContainerInterface */
+    protected static $container;
+
     public function sendRequest(RequestInterface $request, TestCase $testCase = null, $withMiddleware = true)
     {
         // Get a new middleware stack
         $stack = $this->getMiddlewareStack($withMiddleware);
+
+        // Set the request on the container
+        $this->getContainer()->share(ServerRequestInterface::class, $request);
 
         // Send the request through the stack to get a response
         $response = $stack->dispatch($request);
@@ -70,15 +76,16 @@ class MockClient extends Client implements ContainerAwareInterface
 
     public function getContainer()
     {
-        if ($this->container) {
-            return $this->container;
+        if (static::$container) {
+            return static::$container;
         }
 
         $container = new Container(new ProviderAggregate());
         $container->delegate(new \League\Container\ReflectionContainer());
-        $this->setContainer($container);
+        $container->share(ContainerInterface::class, $container);
+        static::$container = $container;
 
-        return $container;
+        return static::$container;
     }
 
 }

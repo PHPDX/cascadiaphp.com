@@ -11,6 +11,7 @@ class SpeakersTest extends PageTestCase
     {
         $this->getResponse()
             ->shouldSucceed()
+            ->shouldHaveCanonicalUrl('/speakers')
             ->shouldContainSelector('.btn-cta');
     }
 

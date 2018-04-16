@@ -21,6 +21,7 @@ class LegalTest extends PageTestCase
         $this->get('/legal/coc')
             ->shouldBeAMP()
             ->shouldSucceed()
+            ->shouldHaveCanonicalUrl('/legal/coc')
             ->shouldContainSelector('.main-content a[href="/legal/terms"]', 'COC should link to the terms');
     }
 
@@ -29,6 +30,7 @@ class LegalTest extends PageTestCase
         $this->get('/legal/terms')
             ->shouldBeAMP()
             ->shouldSucceed()
+            ->shouldHaveCanonicalUrl('/legal/terms')
             ->shouldContainSelector('.main-content a[href="/legal/coc"]', 'Terms should link to the CoC');
     }
 

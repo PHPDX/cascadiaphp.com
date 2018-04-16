@@ -9,12 +9,12 @@ class Legal extends Controller
 
     public function terms()
     {
-        return $this->render('pages/legal', ['content' => 'legal/terms']);
+        return $this->render('pages/legal', '/legal/terms', ['content' => 'legal/terms']);
     }
 
     public function codeOfConduct()
     {
-        return $this->render('pages/legal', ['content' => 'legal/coc']);
+        return $this->render('pages/legal', '/legal/coc', ['content' => 'legal/coc']);
     }
 
 }

@@ -21,6 +21,7 @@ class HomeTest extends PageTestCase
             ->shouldContain('non-profit')
             ->shouldContain('history')
             ->shouldContain('our mission')
+            ->shouldHaveCanonicalUrl('/')
             ->shouldContain('&copy; ' . date('Y'), 'The site should have a copyright with the active year');
     }
 

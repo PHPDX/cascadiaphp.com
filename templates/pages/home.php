@@ -1,13 +1,7 @@
 <?php declare(strict_types = 1) ?>
 <?php /** @var \CascadiaPHP\Site\Template\Template $this */ ?>
-
-<?php $this->layout('layout', [
-    'page' => '/home'
-]) ?>
-
 <?php $this->start('components') ?>
 <?php $this->stop() ?>
-
 <section class="what flex flex-column mx2">
     <div class="flex-auto hero relative flex content-center justify-center items-center">
         <div id="hero-images">

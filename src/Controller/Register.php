@@ -32,7 +32,7 @@ class Register extends Controller
             ->setType('website')
             ->setSiteName('Cascadia PHP 2018 Conference Registration');
 
-        return $this->render('pages/register');
+        return $this->render('pages/register', '/register');
     }
 
     public function subscribe(ServerRequestInterface $request, Client $client): ResponseInterface

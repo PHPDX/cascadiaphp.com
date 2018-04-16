@@ -19,7 +19,9 @@ use CascadiaPHP\Site\SEO\SEOTools;
 
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
-    <link rel="canonical" href="<?= $this->fullUri($url ?? '') ?>" />
+    <?php if (isset($active)): ?>
+        <link rel="canonical" href="<?= $this->fullUri($active) ?>" />
+    <?php endif; ?>
 
     <?= $this->section('schema', $container->get('schema')) ?>
 
@@ -51,7 +53,7 @@ use CascadiaPHP\Site\SEO\SEOTools;
     <script type="application/json">
         {
             "vars": {
-                "account": "UA-115467305-1"
+                "account": "<?= getenv('ENVIRONMENT') === 'live' ? 'UA-115467305-1' : '' ?>"
             },
             "triggers": {
                 "trackPageview": {

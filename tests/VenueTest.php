@@ -11,7 +11,8 @@ class VenueTest extends PageTestCase
     {
         $this->getResponse()
             ->shouldSucceed()
-            ->shouldContainSelector('.btn-cta');
+            ->shouldContainSelector('.btn-cta')
+            ->shouldHaveCanonicalUrl('/venue');
     }
 
     public function testPageIsValidAmp(): void
@@ -28,6 +29,6 @@ class VenueTest extends PageTestCase
      */
     protected function requestPage(): MockResponse
     {
-        return $this->get('/speakers');
+        return $this->get('/venue');
     }
 }
