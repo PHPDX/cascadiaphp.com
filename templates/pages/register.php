@@ -73,9 +73,9 @@ $this->start('components'); ?>
     </p>
     <amp-iframe
             sandbox="allow-scripts allow-forms allow-top-navigation-by-user-activation"
-            height="500"
+            height="450px"
             layout="fixed-height"
-            src="https://www.picatic.com/events/widget/203031?width=std&ticket_description=true"
+            src="https://www.picatic.com/events/widget/203031?width=std"
             frameborder="0">
         <amp-fit-text layout="responsive" width="5" height="1" class="lightblue center" max-font-size="50px" placeholder></amp-fit-text>
     </amp-iframe>
