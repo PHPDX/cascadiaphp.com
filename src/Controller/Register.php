@@ -20,8 +20,17 @@ class Register extends Controller
         $this->setSchema($this->schema($resolver));
 
         $this->seo()
-            ->setTitle('Register for Cascadia PHP in Portland Oregon')
-            ->setDescription('Register for our 2 day long PHP Conference in Portland Oregon in September 2018');
+            ->setTitle('Register for Cascadia PHP 2018 in Portland Oregon')
+            ->setDescription('Join us at Cascadia PHP for Developers by Developers. ' .
+                'Exceptional speakers. Actionable tactics. Learning for all. ' .
+                'Join us for a two-day, three-track conference full of forward-thinking, tactical sessions in PHP, ' .
+                'Security, API’s, Dev Ops, web technologies, and more.')
+            ->addImages($resolver->relativeSchemaTo('/images/opengraph/main-banner.png'));
+
+        $this->seo()->opengraph()
+            ->setUrl($resolver->relativeSchemaTo('/register'))
+            ->setType('website')
+            ->setSiteName('Cascadia PHP 2018 Conference Registration');
 
         return $this->render('pages/register');
     }
