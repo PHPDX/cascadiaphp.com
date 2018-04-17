@@ -48,7 +48,7 @@ use CascadiaPHP\Site\SEO\SEOTools;
 
 <?= $this->section('header') ?>
 
-<!--<amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-K3ZSMBF&gtm.url=<?= urlencode($this->formUri($active ?? '')) ?>" data-credentials="include"></amp-analytics>-->
+<amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-K3ZSMBF&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
 <amp-analytics type="googleanalytics">
     <script type="application/json">
         {
@@ -69,7 +69,6 @@ use CascadiaPHP\Site\SEO\SEOTools;
 $this->insert('structure/sidebar', [
     'active' => $active ?? ''
 ]);
-
 ?>
 
 <div class="main-structure mx-auto relative flex flex-column justify-between shadow">

@@ -9,7 +9,7 @@ $commit = $this->e(substr(getenv('VERSION'), 0, 8));
             <a href="/legal/terms">Terms &amp; Conditions</a>
             <a href="/legal/coc">Code of Conduct</a>
         </div>
-        <div class="flex flex-column justify-center">
+        <div class="flex flex-column justify-center white">
             <div>
                 <span class="nowrap text-shadow">&copy; <?= $this->e(date('Y')); ?></span> <span class="nowrap text-shadow">Cascadia PHP</span>
             </div>
