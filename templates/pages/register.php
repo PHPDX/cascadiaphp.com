@@ -18,33 +18,7 @@ $this->start('components'); ?>
 <?php $this->stop() ?>
 
 <?php $this->start('header') ?>
-<amp-analytics type="googleanalytics">
-    <script type="application/json">
-        {
-            "vars": {
-                "account": "UA-115467305-1"
-            },
-            "triggers": {
-                "formSubmitSuccess": {
-                    "on": "amp-form-submit-success",
-                    "request": "event",
-                    "vars": {
-                        "eventCategory": "subscribe",
-                        "eventAction": "subscribe-success"
-                    }
-                },
-                "formSubmitError": {
-                    "on": "amp-form-submit-error",
-                    "request": "event",
-                    "vars": {
-                        "eventCategory": "subscribe",
-                        "eventAction": "subscribe-error"
-                    }
-                }
-            }
-        }
-    </script>
-</amp-analytics>
+
 <?php $this->stop() ?>
 
 <div>

@@ -49,21 +49,6 @@ use CascadiaPHP\Site\SEO\SEOTools;
 <?= $this->section('header') ?>
 
 <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-K3ZSMBF&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
-<amp-analytics type="googleanalytics">
-    <script type="application/json">
-        {
-            "vars": {
-                "account": "<?= getenv('ENVIRONMENT') === 'live' ? 'UA-115467305-1' : '' ?>"
-            },
-            "triggers": {
-                "trackPageview": {
-                    "on": "visible",
-                    "request": "pageview"
-                }
-            }
-        }
-    </script>
-</amp-analytics>
 
 <?php
 $this->insert('structure/sidebar', [
