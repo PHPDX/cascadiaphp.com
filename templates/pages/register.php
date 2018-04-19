@@ -18,7 +18,7 @@ $this->start('components'); ?>
 <?php $this->stop() ?>
 
 <?php $this->start('header') ?>
-'
+
 <?php $this->stop() ?>
 
 <div>

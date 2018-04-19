@@ -22,7 +22,7 @@ $this->stop();
 <div class="flex justify-center">
     <div class="col-12 md-col-8 sm-col-10 lg-col-6 px3">
         <p>
-            If you're interested in speaking at Cascadia PHP 2018, checkout our
+            If you're interested in speaking at Cascadia PHP 2018, check out our
             <a href="https://cfp.cascadiaphp.com/">CFP talk submission site</a> and submit!
         </p>
         <p>
