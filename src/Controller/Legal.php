@@ -14,7 +14,7 @@ class Legal extends Controller
 
     public function codeOfConduct()
     {
-        return $this->render('pages/legal', '/legal/coc', ['content' => 'legal/coc']);
+        return $this->render('pages/legal', '/legal/coc', ['content' => 'legal/coc', 'title' => 'Code of Conduct']);
     }
 
 }
