@@ -18,11 +18,13 @@ $this->start('components'); ?>
 <?php $this->stop() ?>
 
 <?php $this->start('header') ?>
-
+'
 <?php $this->stop() ?>
 
 <div>
-    <h1 class="m0 px3">Cascadia PHP</h1>
+    <h1 class="my0 mb3 cubes pb2 pt3 border-bottom b2 b-gold bg-white px3 darkblue">
+        Registration
+    </h1>
     <p class="px3">
         September 14th - 15th 2018
         Portland Oregon

@@ -1,4 +1,4 @@
-## Code of Conduct
+# Code of Conduct
 
 *Cascadia PHP* is dedicated to providing a harassment-free conference experience for everyone,
 regardless of gender, gender identity and expression, sexual orientation, disability, physical

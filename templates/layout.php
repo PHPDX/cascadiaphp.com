@@ -41,42 +41,42 @@ use CascadiaPHP\Site\SEO\SEOTools;
 </head>
 <body class="cascadiaphp">
 
-<amp-install-serviceworker src="/serviceworker.js"
-                           data-iframe-src="<?= $this->formUri('/serviceworker') ?>"
-                           layout="nodisplay">
-</amp-install-serviceworker>
+    <amp-install-serviceworker src="/serviceworker.js"
+                               data-iframe-src="<?= $this->formUri('/serviceworker') ?>"
+                               layout="nodisplay">
+    </amp-install-serviceworker>
 
-<?= $this->section('header') ?>
+    <?= $this->section('header') ?>
 
-<amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-K3ZSMBF&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
+    <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-K3ZSMBF&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
 
-<?php
-$this->insert('structure/sidebar', [
-    'active' => $active ?? ''
-]);
-?>
-
-<div class="main-structure mx-auto relative flex flex-column justify-between shadow">
     <?php
-    if ($header ?? true) {
-        $this->insert('structure/header', [
-            'nologo' => $nologo ?? false,
-            'active' => $active ?? ''
-        ]);
-    }
+    $this->insert('structure/sidebar', [
+        'active' => $active ?? ''
+    ]);
     ?>
 
-    <section class="main-content container">
-        <?= $this->section('content') ?>
-    </section>
+    <div class="main-structure mx-auto relative flex flex-column justify-between shadow">
+        <?php
+        if ($header ?? true) {
+            $this->insert('structure/header', [
+                'nologo' => $nologo ?? false,
+                'active' => $active ?? ''
+            ]);
+        }
+        ?>
 
-    <?php
-    if ($footer ?? true) {
-        $this->insert('structure/footer');
-    }
-?>
-</div>
+        <section class="main-content container flex-auto">
+            <?= $this->section('content') ?>
+        </section>
 
-<?= $this->section('footer') ?>
+        <?php
+        if ($footer ?? true) {
+            $this->insert('structure/footer');
+        }
+    ?>
+    </div>
+
+    <?= $this->section('footer') ?>
 </body>
 </html>
