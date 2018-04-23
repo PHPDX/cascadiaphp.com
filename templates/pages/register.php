@@ -53,6 +53,12 @@ $this->start('components'); ?>
     </amp-iframe>
 </div>
 
+<div class="center mb3">
+    <sup class="gravel">
+        (Can't see the form above? <a href="https://www.picatic.com/CascadiaPHP2018">Click here</a> to purchase directly from our event page)
+    </sup>
+</div>
+
 <div class="flex-auto"></div>
 
 <div class="center mb3">
