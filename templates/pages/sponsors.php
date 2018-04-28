@@ -39,7 +39,7 @@ $this->stop();
     </div>
     <div class="gold">
         <h3 class="px3">🥇 Gold</h3>
-        <div class="mx2 flex flex-wrap">
+        <div class="mx2 flex flex-wrap rounded">
             <?php
             /**
             $this->insert('structure/sponsor', [
@@ -53,8 +53,14 @@ $this->stop();
     </div>
     <div class="silver">
         <h3 class="px3 sm-center">🥈 Silver</h3>
-        <div class="mx2 flex flex-wrap">
+        <div class="mx2 flex flex-wrap rounded">
             <?php
+            $this->insert('structure/sponsor', [
+                'logo' => '/images/sponsors/osmi.png',
+                'borderColor' => 'gravel',
+                'alt' => 'OSMI',
+                'link' => 'https://osmihelp.org/'
+            ]);
             /*
             $this->insert('structure/sponsor', [
                 'logo' => 'http://pigment.github.io/fake-logos/logos/vector/color/the-web-works.svg',
@@ -66,12 +72,11 @@ $this->stop();
             ]);
             */
             ?>
-            <h4 class="px2 center col-12">We don't have any <span class="gravel">Silver</span> level Sponsors yet!</h4>
         </div>
     </div>
     <div class="Bronze">
         <h3 class="px3 sm-center">🥉 Bronze</h3>
-        <div class="mx2 flex flex-wrap">
+        <div class="mx2 flex flex-wrap rounded">
             <?php
             /*
             $this->insert('structure/sponsor', [
@@ -93,19 +98,25 @@ $this->stop();
     </div>
     <div class="Bronze">
         <h3 class="px3 sm-center">💝 Special Mention</h3>
-        <div class="mx2 flex flex-wrap">
+        <div class="mx2 flex flex-wrap rounded">
             <?php
             $this->insert('structure/sponsor', [
                 'logo' => 'https://www.concrete5.org/packages/concrete5_theme/themes/concrete5/images/logo.png',
-                'borderColor' => 'slate'
+                'borderColor' => 'slate',
+                'alt' => 'concrete5 Open Source CMS',
+                'link' => 'https://www.concrete5.org/'
             ]);
             $this->insert('structure/sponsor', [
                 'logo' => 'https://cdn-images-1.medium.com/max/800/1*AnYF2aMcrnt7JqmPrXB65w.png',
-                'borderColor' => 'slate'
+                'borderColor' => 'slate',
+                'alt' => 'Treehouse',
+                'link' => 'https://teamtreehouse.com/'
             ]);
             $this->insert('structure/sponsor', [
                 'logo' => 'https://phpdx.org/images/logo.svg',
-                'borderColor' => 'slate'
+                'borderColor' => 'slate',
+                'alt' => 'PHPDX User Group',
+                'link' => 'https://phpdx.org/'
             ]);
             ?>
         </div>
