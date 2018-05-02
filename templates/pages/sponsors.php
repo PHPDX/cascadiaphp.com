@@ -78,6 +78,13 @@ $this->stop();
         <h3 class="px3 sm-center">🥉 Bronze</h3>
         <div class="mx2 flex flex-wrap rounded">
             <?php
+            $this->insert('structure/sponsor', [
+                'logo' => '/images/sponsors/api-city.jpg',
+                'borderColor' => 'bronze',
+                'alt' => 'API-City',
+                'link' => 'https://apicity.io/',
+                'margin' => false
+            ]);
             /*
             $this->insert('structure/sponsor', [
                 'logo' => 'http://pigment.github.io/fake-logos/logos/vector/color/crofts-accountants.svg',
@@ -93,7 +100,6 @@ $this->stop();
             ]);
             */
             ?>
-            <h4 class="px2 center col-12">We don't have any <span class="bronze">Bronze</span> level Sponsors yet!</h4>
         </div>
     </div>
     <div class="Bronze">
