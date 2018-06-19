@@ -15,7 +15,7 @@ $this->start('components') ?>
         layout="responsive"
         src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBZqgk6gElxAtdfPrINdYC4VMafGUvepVY
     &q=University+Place+Hotel+Portland,+Oregon">
-    <amp-img src="/images/pages/venue/map.png" width="1000" height="250" layout="responsive" class="bg-cover blur"
+    <amp-img src="/images/pages/venue/map.png" width="1000" height="250" layout="responsive" class="object-cover blur"
              placeholder></amp-img>
 </amp-iframe>
 
