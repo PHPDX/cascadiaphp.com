@@ -20,7 +20,7 @@ abstract class Controller implements ContainerAwareInterface
     /**
      * @var \League\Plates\Engine
      */
-    private $engine;
+    protected $engine;
 
     public function __construct(Engine $engine, ContainerInterface $container)
     {

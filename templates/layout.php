@@ -41,14 +41,18 @@ use CascadiaPHP\Site\SEO\SEOTools;
 </head>
 <body class="cascadiaphp">
 
-    <amp-install-serviceworker src="/serviceworker.js"
-                               data-iframe-src="<?= $this->formUri('/serviceworker') ?>"
-                               layout="nodisplay">
-    </amp-install-serviceworker>
+    <?php if (getenv('ENVIRONMENT') !== 'dev'): ?>
+        <amp-install-serviceworker src="/serviceworker.js"
+                                   data-iframe-src="<?= $this->formUri('/serviceworker') ?>"
+                                   layout="nodisplay">
+        </amp-install-serviceworker>
+    <?php endif ?>
 
     <?= $this->section('header') ?>
 
-    <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-K3ZSMBF&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
+    <?php if (getenv('ENVIRONMENT') === 'production'): ?>
+        <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-K3ZSMBF&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
+    <?php endif ?>
 
     <?php
     $this->insert('structure/sidebar', [
