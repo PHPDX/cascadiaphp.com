@@ -45,8 +45,10 @@ $this->start('components'); ?>
     </p>
     <amp-iframe
             sandbox="allow-scripts allow-forms allow-top-navigation-by-user-activation"
-            height="500px"
-            layout="fixed-height"
+            width="100px"
+            height="100px"
+            heights="(min-width:500px) 500px, (min-width:350px) 600px, 650px"
+            layout="responsive"
             src="https://www.picatic.com/events/widget/203031?width=std"
             frameborder="0">
         <amp-fit-text layout="responsive" width="5" height="1" class="lightblue center" max-font-size="50px" placeholder></amp-fit-text>
