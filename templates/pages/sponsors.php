@@ -23,7 +23,7 @@ $this->stop();
             <?php
             $this->insert('structure/sponsor', [
                 'logo' => 'https://www.concrete5.org/packages/concrete5_theme/themes/concrete5/images/logo.png',
-                'alt' => 'concrete5 Open Source CMS',
+                'alt' => 'concrete5',
                 'link' => 'https://www.concrete5.org/#cascadiaPHP',
                 'width' => 841,
                 'height' => 157
@@ -60,7 +60,7 @@ $this->stop();
             ?>
         </div>
     </div>
-    <div class="Bronze">
+    <div class="bronze">
         <h4 class="px3 sm-center center">Bronze</h4>
         <div class="mx2 flex flex-wrap justify-center">
             <?php
