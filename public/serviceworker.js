@@ -1,13 +1,8 @@
 var filesToCache = [
-    '/register',
-    '/schedule',
-    '/sponsors',
-    '/speakers',
-    '/venue',
-    '/'
+    '/venue'
 ];
 
-var staticCacheName = 'pages-cache-v1';
+var staticCacheName = 'pages-cache-v2';
 
 self.addEventListener('install', function(event) {
     console.log('Attempting to install service worker and cache static assets');
@@ -18,6 +13,7 @@ self.addEventListener('install', function(event) {
             })
     );
 });
+
 self.addEventListener('fetch', function(event) {
     event.respondWith(
         caches.open(staticCacheName).then(function(cache) {
