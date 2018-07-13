@@ -15,6 +15,33 @@ class SponsorsTest extends PageTestCase
             ->shouldContainSelector('.btn-cta');
     }
 
+    public function testThatSponsorsExist(): void
+    {
+        $sponsors = [
+            'platinum' => [
+                'concrete5',
+            ],
+            'gold' => [
+                'Twilio',
+            ],
+            'silver' => [
+                'OSMI',
+                'MySQL',
+            ],
+            'bronze' => [
+                'API-City',
+            ],
+        ];
+
+        $response = $this->getResponse();
+
+        foreach ($sponsors as $level => $bag) {
+            foreach ($bag as $sponsor) {
+                $response->shouldContainSelector(".{$level} [alt='{$sponsor}']", "Couldn't find sponsor '{$sponsor}' in level '{$level}'");
+            }
+        }
+    }
+
     public function testPageIsValidAmp(): void
     {
         $this->getResponse()
