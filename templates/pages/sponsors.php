@@ -17,112 +17,60 @@ $this->stop();
         Our sponsors help make this event possible! They are committed to building the Portland PHP community and would
         love to hear from you!
     </p>
-    <div class="diamond">
-        <h3 class="px3">💎 Diamond</h3>
-        <div class="mx2 flex flex-wrap">
-            <?php
-            /**
-            $this->insert('structure/sponsor', [
-                'logo' => 'http://pigment.github.io/fake-logos/logos/vector/color/yoga-baby.svg',
-                'width' => 283.46,
-                'height' => 78.29,
-                'borderColor' => 'lightblue'
-            ]);
-            */
-            ?>
-            <h4 class="px2 center col-12 mb1">We don't have any <span class="text-bold lightblue">Diamond</span> level Sponsors yet!</h4>
-            <div class="center px3 col-12">
-                Is your company interested in bringing PHP to the Pacific Northwest?<br>
-                Contact us via <a href="mailto:sponsorship@cascadiaphp.com">sponsorship@cascadiaphp.com</a>
-            </div>
-        </div>
-    </div>
-    <div class="gold">
-        <h3 class="px3">🥇 Gold</h3>
-        <div class="mx2 flex flex-wrap rounded">
-            <?php
-            /**
-            $this->insert('structure/sponsor', [
-                'logo' => 'http://pigment.github.io/fake-logos/logos/vector/color/baby-swim.svg',
-                'borderColor' => 'gold'
-            ]);
-             */
-            ?>
-            <h4 class="px2 center col-12">We don't have any <span class="gold">Gold</span> level Sponsors yet!</h4>
-        </div>
-    </div>
-    <div class="silver">
-        <h3 class="px3 sm-center">🥈 Silver</h3>
-        <div class="mx2 flex flex-wrap rounded">
-            <?php
-            $this->insert('structure/sponsor', [
-                'logo' => '/images/sponsors/osmi.png',
-                'borderColor' => 'gravel',
-                'alt' => 'OSMI',
-                'link' => 'https://osmihelp.org/'
-            ]);
-            /*
-            $this->insert('structure/sponsor', [
-                'logo' => 'http://pigment.github.io/fake-logos/logos/vector/color/the-web-works.svg',
-                'borderColor' => 'gravel'
-            ]);
-            $this->insert('structure/sponsor', [
-                'logo' => 'http://pigment.github.io/fake-logos/logos/vector/color/petes-blinds.svg',
-                'borderColor' => 'gravel'
-            ]);
-            */
-            ?>
-        </div>
-    </div>
-    <div class="Bronze">
-        <h3 class="px3 sm-center">🥉 Bronze</h3>
-        <div class="mx2 flex flex-wrap rounded">
-            <?php
-            $this->insert('structure/sponsor', [
-                'logo' => '/images/sponsors/api-city.jpg',
-                'borderColor' => 'bronze',
-                'alt' => 'API-City',
-                'link' => 'https://apicity.io/',
-                'margin' => false
-            ]);
-            /*
-            $this->insert('structure/sponsor', [
-                'logo' => 'http://pigment.github.io/fake-logos/logos/vector/color/crofts-accountants.svg',
-                'borderColor' => 'bronze'
-            ]);
-            $this->insert('structure/sponsor', [
-                'logo' => 'http://pigment.github.io/fake-logos/logos/vector/color/cheshire-county-hygiene-services.svg',
-                'borderColor' => 'bronze'
-            ]);
-            $this->insert('structure/sponsor', [
-                'logo' => 'http://pigment.github.io/fake-logos/logos/vector/color/auto-speed.svg',
-                'borderColor' => 'bronze'
-            ]);
-            */
-            ?>
-        </div>
-    </div>
-    <div class="Bronze">
-        <h3 class="px3 sm-center">💝 Special Mention</h3>
-        <div class="mx2 flex flex-wrap rounded">
+    <div class="platinum">
+        <h4 class="px3 mt1 mb0 bold-text center">Platinum</h4>
+        <div class="mx2 flex flex-wrap justify-center">
             <?php
             $this->insert('structure/sponsor', [
                 'logo' => 'https://www.concrete5.org/packages/concrete5_theme/themes/concrete5/images/logo.png',
-                'borderColor' => 'slate',
-                'alt' => 'concrete5 Open Source CMS',
-                'link' => 'https://www.concrete5.org/'
+                'alt' => 'concrete5',
+                'link' => 'https://www.concrete5.org/#cascadiaPHP',
+                'width' => 841,
+                'height' => 157
+            ]);
+            ?>
+        </div>
+    </div>
+    <div class="gold">
+        <h4 class="px3 sm-center center">Gold</h4>
+        <div class="mx2 flex flex-wrap justify-center">
+            <?php
+            $this->insert('structure/sponsor', [
+                'logo' => '/images/sponsors/twilio.svg',
+                'alt' => 'Twilio',
+                'link' => 'https://www.twilio.com/#cascadiaPHP',
+            ]);
+            ?>
+        </div>
+    </div>
+    <div class="silver">
+        <h4 class="px3 sm-center center">Silver</h4>
+        <div class="mx2 flex flex-wrap justify-center">
+            <?php
+            $this->insert('structure/sponsor', [
+                'logo' => '/images/sponsors/osmi.png',
+                'alt' => 'OSMI',
+                'link' => 'https://osmihelp.org/#cascadiaPHP'
             ]);
             $this->insert('structure/sponsor', [
-                'logo' => 'https://cdn-images-1.medium.com/max/800/1*AnYF2aMcrnt7JqmPrXB65w.png',
-                'borderColor' => 'slate',
-                'alt' => 'Treehouse',
-                'link' => 'https://teamtreehouse.com/'
+                'logo' => '/images/sponsors/mysql.svg',
+                'alt' => 'MySQL',
+                'link' => 'https://www.mysql.com/#cascadiaPHP'
             ]);
+            ?>
+        </div>
+    </div>
+    <div class="bronze">
+        <h4 class="px3 sm-center center">Bronze</h4>
+        <div class="mx2 flex flex-wrap justify-center">
+            <?php
             $this->insert('structure/sponsor', [
-                'logo' => 'https://phpdx.org/images/logo.svg',
-                'borderColor' => 'slate',
-                'alt' => 'PHPDX User Group',
-                'link' => 'https://phpdx.org/'
+                'logo' => '/images/sponsors/api-city.jpg',
+                'alt' => 'API-City',
+                'link' => 'https://apicity.io/#cascadiaPHP',
+                'margin' => false,
+                'width' => 500,
+                'height' => 390
             ]);
             ?>
         </div>
