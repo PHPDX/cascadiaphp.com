@@ -26,10 +26,10 @@ class SponsorsTest extends PageTestCase
             ],
             'silver' => [
                 'OSMI',
-                'MySQL',
             ],
             'bronze' => [
                 'API-City',
+                'MySQL',
             ],
         ];
 

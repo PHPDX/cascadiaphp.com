@@ -52,11 +52,6 @@ $this->stop();
                 'alt' => 'OSMI',
                 'link' => 'https://osmihelp.org/#cascadiaPHP'
             ]);
-            $this->insert('structure/sponsor', [
-                'logo' => '/images/sponsors/mysql.svg',
-                'alt' => 'MySQL',
-                'link' => 'https://www.mysql.com/#cascadiaPHP'
-            ]);
             ?>
         </div>
     </div>
@@ -71,6 +66,11 @@ $this->stop();
                 'margin' => false,
                 'width' => 500,
                 'height' => 390
+            ]);
+            $this->insert('structure/sponsor', [
+                'logo' => '/images/sponsors/mysql.svg',
+                'alt' => 'MySQL',
+                'link' => 'https://www.mysql.com/#cascadiaPHP'
             ]);
             ?>
         </div>
