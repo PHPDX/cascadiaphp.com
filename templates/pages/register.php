@@ -30,10 +30,7 @@ $this->start('components'); ?>
         Portland Oregon
     </p>
     <p class="px3">
-        Grab a blind bird ticket today and save <strong class="bold-text gold">$100</strong> <strong class="bold-text darkblue">off general admission!</strong>
-    </p>
-    <p class="px3">
-        PLEASE KEEP IN MIND: All attendees are subject to our <a href="/legal/coc">Code of Conduct</a> and our <a href="/legal/terms">Terms & Conditions</a>
+        If you plan to join us this year, please take a second to review our <a href="/legal/coc">Code of Conduct</a> and our <a href="/legal/terms">Terms & Conditions</a>
     </p>
     <p class="px3">
         <strong class="bold-text darkblue">
