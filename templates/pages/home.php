@@ -39,7 +39,7 @@
         <div class="flex flex-column md-col-6 lg-col-7 md-col lg-col">
             <amp-fit-text layout="fixed-height" class="mr3 sm-m0 xs-m0 center" max-font-size="40px" height="80px">
                 <strong class="gold bold-text text-shadow">2</strong> <span class="light-text">days &</span>
-                <span class="nowrap"><strong class="gold bold-text text-shadow">25+</strong> <span class="light-text">speakers</span></span>
+                <span class="nowrap"><strong class="gold bold-text text-shadow">35</strong> <span class="light-text">speakers</span></span>
             </amp-fit-text>
         </div>
         <div class="center md-col-6 lg-col-5 md-col-right lg-col-right center">
