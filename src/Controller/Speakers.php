@@ -7,7 +7,7 @@ use Psr\Http\Message\ResponseInterface;
 class Speakers extends Controller
 {
 
-    protected $cssPath = '/css/pages/brand.css';
+    protected $cssPath = '/css/pages/speakers.css';
 
     public function view(): ResponseInterface
     {
@@ -18,4 +18,5 @@ class Speakers extends Controller
 
         return $this->render('/pages/speakers', '/speakers');
     }
+
 }
