@@ -44,7 +44,7 @@ $this->start('components'); ?>
             sandbox="allow-scripts allow-forms allow-top-navigation-by-user-activation"
             width="100px"
             height="100px"
-            heights="(min-width:500px) 600px, (min-width:350px) 700px, 750px"
+            heights="(min-width:500px) 650px, (min-width:350px) 750px, 800px"
             layout="responsive"
             src="https://www.picatic.com/events/widget/203031?width=std"
             frameborder="0">
