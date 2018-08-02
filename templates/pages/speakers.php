@@ -24,7 +24,7 @@ $this->stop();
 <div class="speakers mb0">
     <div class="bg-gold caps px3 py2 white text-shadow">Keynotes</div>
     <amp-list layout="fixed-height"
-              height="1000px"
+              height="2000px"
               class="speaker-container relative"
               src="<?= $this->formUri('/data/speakers.json') ?>">
 
