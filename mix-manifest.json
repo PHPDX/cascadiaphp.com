@@ -3,5 +3,6 @@
     "/resources/css/pages/home.css": "/resources/css/pages/home.css",
     "/resources/css/pages/sponsors.css": "/resources/css/pages/sponsors.css",
     "/resources/css/pages/register.css": "/resources/css/pages/register.css",
-    "/resources/css/pages/legal.css": "/resources/css/pages/legal.css"
+    "/resources/css/pages/legal.css": "/resources/css/pages/legal.css",
+    "/resources/css/pages/speakers.css": "/resources/css/pages/speakers.css"
 }
