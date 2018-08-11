@@ -105,6 +105,7 @@ class AmpMiddleware implements MiddlewareInterface
             $allowedOrigins = [
                 '/.*\.cdn\.ampproject\.org/',
                 '/.+\.amp\.cloudflare\.com/',
+                '/.*\.twilio\.com/',
                 '/www\.cascadiaphp\.com/'
             ];
 
