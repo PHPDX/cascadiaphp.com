@@ -1,0 +1,35 @@
+@import "../elements/layout"
+@import "../util/_all"
+
+table.schedule
+  width: calc(100% - 2em)
+  margin-left: 1em
+
+  td
+    border-radius: 1em
+    padding: 1em 0
+    text-align: center
+    vertical-align: middle
+
+  .talks td
+    border-color: $gravel
+    border: solid 1px
+    text-align: center
+    margin-bottom: 1em
+
+  .keynote td
+    background-color: $light-blue
+    text-align: center
+
+  .title th
+    @extend .h4
+    font-color: $dark-blue
+    text-align: left
+    vertical-align: bottom
+    height: 2em
+
+    &:nth-child(2)
+      text-align: right
+
+  .header th
+    font-weight: bold

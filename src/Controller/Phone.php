@@ -46,6 +46,7 @@ class Phone extends Controller
     {
         // A Twilio number you own with SMS capabilities
         $twilio_number = getenv("TWILIO_NUMBER");
+
         // Staff on call
         $private_number = $this->getNumberToForwardTo();
 

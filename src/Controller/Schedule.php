@@ -7,7 +7,7 @@ use Psr\Http\Message\ResponseInterface;
 class Schedule extends Controller
 {
 
-    protected $cssPath = '/css/pages/brand.css';
+    protected $cssPath = '/css/pages/schedule.css';
 
     public function view(): ResponseInterface
     {
