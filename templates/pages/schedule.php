@@ -16,6 +16,16 @@
     </tr>
 
     <tr class="title">
+        <th>8:30am</th>
+        <th colspan="2">Friday</th>
+    </tr>
+    <tr class="break">
+        <td colspan="3">
+            Check-in
+        </td>
+    </tr>
+
+    <tr class="title">
         <th>9am</th>
         <th colspan="2">Friday</th>
     </tr>
@@ -174,6 +184,16 @@
         <th>Track 1</th>
         <th>Track 2</th>
         <th>Track 3</th>
+    </tr>
+
+    <tr class="title">
+        <th>8:30am</th>
+        <th colspan="2">Friday</th>
+    </tr>
+    <tr class="break">
+        <td colspan="3">
+            Check-in
+        </td>
     </tr>
 
     <tr class="title">
