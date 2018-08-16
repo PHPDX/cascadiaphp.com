@@ -16,7 +16,7 @@
     </tr>
 
     <tr class="title">
-        <th>8:30am</th>
+        <th>8:30am - All-Day</th>
         <th colspan="2">Friday</th>
     </tr>
     <tr class="break">
@@ -187,8 +187,8 @@
     </tr>
 
     <tr class="title">
-        <th>8:30am</th>
-        <th colspan="2">Friday</th>
+        <th>8:30am - All Day</th>
+        <th colspan="2">Saturday</th>
     </tr>
     <tr class="break">
         <td colspan="3">
