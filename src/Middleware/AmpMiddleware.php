@@ -74,6 +74,12 @@ class AmpMiddleware implements MiddlewareInterface
 
     private function validOrigin(ServerRequestInterface $request): bool
     {
+        // Allow all phone endpoints through
+        /** @TODO Register middleware against routes so that this middleware can only apply where needed */
+        if (substr($request->getRequestTarget(), 1, 5) === 'phone') {
+            return true;
+        }
+
         $origin = $this->getOrigin($request);
         $sourceOrigin = $this->getSourceOrigin($request);
         $sourceUri = getenv('URI');
@@ -105,7 +111,6 @@ class AmpMiddleware implements MiddlewareInterface
             $allowedOrigins = [
                 '/.*\.cdn\.ampproject\.org/',
                 '/.+\.amp\.cloudflare\.com/',
-                '/.*\.twilio\.com/',
                 '/www\.cascadiaphp\.com/'
             ];
 

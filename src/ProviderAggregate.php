@@ -12,7 +12,8 @@ class ProviderAggregate extends ServiceProviderAggregate
         Controller\ServiceProvider::class,
         Template\ServiceProvider::class,
         Router\ServiceProvider::class,
-        SEO\ServiceProvider::class
+        SEO\ServiceProvider::class,
+        Phone\ServiceProvider::class,
     ];
 
     protected $booted = false;
