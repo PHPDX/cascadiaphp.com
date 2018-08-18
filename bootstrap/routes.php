@@ -19,6 +19,10 @@ $r->get('/brand', function(\League\Plates\Engine $plates) {
     return $plates->make('pages/brand');
 });
 
+// Phone stuff
+$r->post('/phone/sms', '\CascadiaPHP\Site\Controller\Phone::sms');
+$r->post('/phone/voice', '\CascadiaPHP\Site\Controller\Phone::voice');
+
 // Legal
 $r->get('/legal/terms', '\CascadiaPHP\Site\Controller\Legal::terms');
 $r->get('/legal/coc', '\CascadiaPHP\Site\Controller\Legal::codeOfConduct');

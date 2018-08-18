@@ -63,9 +63,9 @@ event. We value your attendance.
 
 - Contact leadership: [leadership@cascadiaphp.com](leadership@cascadiaphp.com)
 
-- Contact Cascadia PHP Security: (Number not yet released)
+- Contact Cascadia PHP Security: [747-222-1988](tel:7472221988)
 
-- Contact Hotel Security: (Number not yet released)
+- Contact Hotel Security: [503-221-0140](tel:5032210140)
 
 - Local Law enforcement: [911](tel:911) (non-emergency [503-823-3333](tel:5038233333))
 

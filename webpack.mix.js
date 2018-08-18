@@ -13,7 +13,6 @@ let mix = require('laravel-mix'),
  |
  */
 
-
 mix
     .sass('resources/sass/pages/brand.sass', 'resources/css/pages')
     .sass('resources/sass/pages/home.sass', 'resources/css/pages')
@@ -21,6 +20,7 @@ mix
     .sass('resources/sass/pages/register.sass', 'resources/css/pages')
     .sass('resources/sass/pages/legal.sass', 'resources/css/pages')
     .sass('resources/sass/pages/speakers.sass', 'resources/css/pages')
+    .sass('resources/sass/pages/schedule.sass', 'resources/css/pages');
 
 
 // Post process css with replaceimportant
