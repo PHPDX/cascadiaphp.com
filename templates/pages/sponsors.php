@@ -60,6 +60,18 @@ $this->stop();
         <div class="mx2 flex flex-wrap justify-center">
             <?php
             $this->insert('structure/sponsor', [
+                'logo' => '/images/sponsors/mysql.svg',
+                'alt' => 'MySQL',
+                'link' => 'https://www.mysql.com/#cascadiaPHP'
+            ]);
+            ?>
+        </div>
+    </div>
+    <div class="copper">
+        <h4 class="px3 sm-center center">Copper</h4>
+        <div class="mx2 flex flex-wrap justify-center">
+            <?php
+            $this->insert('structure/sponsor', [
                 'logo' => '/images/sponsors/api-city.jpg',
                 'alt' => 'API-City',
                 'link' => 'https://apicity.io/#cascadiaPHP',
@@ -68,9 +80,38 @@ $this->stop();
                 'height' => 390
             ]);
             $this->insert('structure/sponsor', [
-                'logo' => '/images/sponsors/mysql.svg',
-                'alt' => 'MySQL',
-                'link' => 'https://www.mysql.com/#cascadiaPHP'
+                'logo' => '/images/sponsors/sunshinephp.png',
+                'alt' => 'SunshinePHP',
+                'link' => 'https://sunshinephp.com/#cascadiaPHP',
+                'margin' => false,
+            ]);
+            $this->insert('structure/sponsor', [
+                'logo' => '/images/sponsors/treehouse_square.png',
+                'alt' => 'Treehouse',
+                'link' => 'https://www.teamtreehouse.com/#cascadiaPHP'
+            ]);
+            ?>
+        </div>
+        <div class="mx2 flex flex-wrap justify-center">
+            <?php
+            $this->insert('structure/sponsor', [
+                'logo' => '/images/sponsors/glu.svg',
+                'alt' => 'Glu Mobile',
+                'link' => 'https://www.glu.com/#cascadiaPHP',
+                'width' => 200,
+                'height' => 100
+            ]);
+            $this->insert('structure/sponsor', [
+                'logo' => '/images/sponsors/nexcess_vert.gif',
+                'alt' => 'Nexcess',
+                'link' => 'https://www.nexcess.net/#cascadiaPHP'
+            ]);
+            $this->insert('structure/sponsor', [
+                'logo' => '/images/sponsors/phoneburner-vert.png',
+                'alt' => 'PhoneBurner',
+                'link' => 'https://www.phoneburner.com/#cascadiaPHP',
+                'width' => 200,
+                'height' => 100
             ]);
             ?>
         </div>
