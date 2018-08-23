@@ -21,7 +21,7 @@ class Phone extends Controller
         // Where to send a text message (your cell phone?)
         $to_number = $private_number;
 
-        $query = $request->getQueryParams();
+        $query = $request->getParsedBody();
         $from_number = $query['from'] ?? $query['From'] ?? '';
         $from_body = $query['body'] ?? $query['Body'] ?? '';
 
@@ -65,7 +65,7 @@ class Phone extends Controller
             throw new \RuntimeException('No staff available.');
         }
 
-        return array_shift($staff)['mobileNumber'] ?? null;
+        return array_shift($staff)[0]['mobileNumber'] ?? null;
     }
 
 }
