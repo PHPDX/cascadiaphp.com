@@ -291,9 +291,9 @@
       "avatar": "https://cfp.cascadiaphp.com/uploads/c96c076fb7eca99d8b95241edb2f94b55aca99b5f082a1b7fd.jpeg",
       "name": "Margaret Staples",
       "company": "Twilio",
-      "bio": "",
+      "bio": "Delighted Developer Evangelist @ Twilio. Proud keeper of best pupper ever, Lilith. Personally responsible sentient creature. Cybae. Consistent producer of code, philosophy, and attitude. Happy to help with all things Twilio. Let's make neat stuff.",
       "talk": "Simplified Continuous Integration with Jenkins",
-      "description": "#N/A",
+      "description": "Maybe you’re the only coder on a project. Maybe you’re on a small team and carrying the majority of the server knowledge. For one reason or another, there are times when if we don’t setup our own deploy process, there simply isn’t one.  No one wants the headaches that come from a my-machine[s] to production direct deploy process, so let’s go a step better with Jenkins and Github. This talk will walk you through setting up a jenkins server to deploy your staging changes and master merges with all the tests and checks you need to avoid those \"oops\" moments ever going live.",
       "type": "Talk",
       "keynote": false
     },
