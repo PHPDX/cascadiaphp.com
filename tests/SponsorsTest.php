@@ -28,9 +28,11 @@ class SponsorsTest extends PageTestCase
                 'OSMI',
             ],
             'bronze' => [
-                'API-City',
                 'MySQL',
             ],
+            'copper' => [
+                'API-City'
+            ]
         ];
 
         $response = $this->getResponse();
