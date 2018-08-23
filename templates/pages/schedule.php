@@ -269,7 +269,7 @@
     </tr>
 
     <tr class="title">
-        <th>2:30am</th>
+        <th>2:30pm</th>
         <th colspan="2">Saturday</th>
     </tr>
     <tr class="talks">

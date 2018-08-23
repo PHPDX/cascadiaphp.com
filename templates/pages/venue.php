@@ -9,7 +9,6 @@ $this->start('components') ?>
 <h1 class="my0 cubes pb2 pt3 border-bottom b2 b-gold bg-white px3 darkblue">Venue</h1>
 
 <amp-iframe
-        class="mb3"
         width="1000"
         height="250"
         sandbox="allow-scripts allow-same-origin"
@@ -19,6 +18,15 @@ $this->start('components') ?>
     <amp-img src="/images/pages/venue/map.png" width="1000" height="250" layout="responsive" class="object-cover blur"
              placeholder></amp-img>
 </amp-iframe>
+
+<div class="bg-gravel price h2 py1 px3 white text-shadow m0 flex flex-row mb3">
+    <amp-fit-text layout="flex-item" class="flex-item col-8 nowrap">
+        Rooms starting at <span class="bold-text">$80/night</span>
+    </amp-fit-text>
+    <amp-fit-text layout="flex-item" class="ml3 flex right-align col-4 nowrap">
+        1-866-845-4647
+    </amp-fit-text>
+</div>
 
 <section class="content px3 flex flex-column">
     <div>

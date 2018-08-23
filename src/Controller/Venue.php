@@ -9,7 +9,7 @@ use Spatie\SchemaOrg\Schema;
 class Venue extends Controller
 {
 
-    protected $cssPath = '/css/pages/brand.css';
+    protected $cssPath = '/css/pages/venue.css';
 
     public function view(): ResponseInterface
     {

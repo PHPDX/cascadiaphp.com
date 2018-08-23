@@ -1,35 +1,32 @@
 let mix = require('laravel-mix'),
     replaceImportant = require('replace-important'),
-    fs = require('fs')
+    fs = require('fs'),
+    pages = [];
 
-/*
- |--------------------------------------------------------------------------
- | Mix Asset Management
- |--------------------------------------------------------------------------
- |
- | Mix provides a clean, fluent API for defining some Webpack build steps
- | for your Laravel application. By default, we are compiling the Sass
- | file for the application as well as bundling up all the JS files.
- |
- */
+// Add a simple way to add pages
+mix.page = function(page) {
+    pages.push('resources/css/pages/' + page + '.css');
+    return this.sass('resources/sass/pages/' + page + '.sass', 'resources/css/pages');
+};
 
+// Build pages
 mix
-    .sass('resources/sass/pages/brand.sass', 'resources/css/pages')
-    .sass('resources/sass/pages/home.sass', 'resources/css/pages')
-    .sass('resources/sass/pages/sponsors.sass', 'resources/css/pages')
-    .sass('resources/sass/pages/register.sass', 'resources/css/pages')
-    .sass('resources/sass/pages/legal.sass', 'resources/css/pages')
-    .sass('resources/sass/pages/speakers.sass', 'resources/css/pages')
-    .sass('resources/sass/pages/schedule.sass', 'resources/css/pages');
+    .page('venue')
+    .page('brand')
+    .page('home')
+    .page('sponsors')
+    .page('register')
+    .page('legal')
+    .page('speakers')
+    .page('schedule');
 
-
-// Post process css with replaceimportant
+// Post process pages with replaceimportant
 mix.then(function() {
-    fs.readdir('resources/css/pages', function(error, pages) {
-        pages.forEach(function(page) {
-            fs.readFile('resources/css/pages/' + page, function(error, contents) {
-                fs.writeFile('resources/css/pages/' + page, replaceImportant(contents));
-            })
+    pages.forEach(function(page) {
+        fs.readFile(page, function(error, contents) {
+            fs.writeFile(page, replaceImportant(contents));
         })
     });
+
+    console.log('Replaced !important');
 });
