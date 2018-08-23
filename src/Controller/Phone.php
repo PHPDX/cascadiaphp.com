@@ -65,7 +65,7 @@ class Phone extends Controller
             throw new \RuntimeException('No staff available.');
         }
 
-        return array_shift($staff)[0]['mobileNumber'] ?? null;
+        return array_shift($staff['staff'])['mobileNumber'] ?? null;
     }
 
 }
