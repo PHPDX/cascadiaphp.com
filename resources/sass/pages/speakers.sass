@@ -1,7 +1,7 @@
 @import "../util/_all"
 @import "../elements/layout"
 
-.speaker-container > [role=list]
+.speaker-container
   display: flex
   flex-direction: row
   flex-wrap: wrap
@@ -14,10 +14,10 @@
   top: 50%
   left: 50%
   transform: translate(-50%, -50%)
-  width: 800px
+  max-width: 1600px
   max-height: 100%
-  max-width: 100%
-
+  width: 100%
+  font-size: 2rem
 
   .modal-content
     position: absolute
