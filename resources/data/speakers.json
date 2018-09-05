@@ -46,10 +46,10 @@
     },
     "5": {
       "id": 5,
-      "avatar": "https://cfp.cascadiaphp.com/uploads/49f4d2b15ca97d9a40352a25ffda28362dd62e8db029a3be3c.png",
-      "name": "Joe Ferguson",
+      "avatar": "/speaker_images/Samantha_Quiñones.jpeg",
+      "name": "Samantha Quiñones",
       "company": "",
-      "bio": "Joe Ferguson is a PHP developer and community organizer. He is involved with many different technology-related initiatives in Memphis including the Memphis PHP User group. He’s been married to his extremely supportive and amazing wife for a really long time, and she turned him into a crazy cat man. They live in the Memphis suburbs with their two cats.",
+      "bio": "Samantha Quiñones is a software engineer and amateur photographer from Brooklyn, New York.\nShe currently leads the Payments Engineering team at Etsy. Prior to joining Etsy, she was a Principal Software Engineer at AOL, Lead Engineer at Politico, and worked on numerous projects over a decade at Visa.\nSamantha is an internationally renowned public speaker and sits on the PHP-FIG Core Committee. She has been recognized by the Huffington Post as one of the top Latin Americans in Media and is a 2015 recipient of the DCFT Powerful Female Programmers Award.\nOutside of her professional life, Samantha is a mom to three rambunctious children, three dogs, three turtles, and a very loud Sun Conure named Franklin. She enjoys taking her bike out for very long rides and taking pictures.",
       "talk": "Mental Illness",
       "description": "",
       "type": "Keynote",
