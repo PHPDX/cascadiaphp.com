@@ -4,44 +4,60 @@
       "id": 1,
       "avatar": "/speaker_images/Nic_Hampton.jpg",
       "name": "Nic Hampton",
-      "company": "",
-      "bio": "",
+      "company": "Treehouse",
+      "bio": "Junior Developer at Treehouse, Javascript fanatic, brand new lover of Go, karaoke junkie, minor poet. Let's poke it til it does something cool!",
       "talk": "Learning",
       "description": "",
       "type": "Keynote",
+      "twitter": "@NicolasJHampton",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": true
     },
     "2": {
       "id": 2,
       "avatar": "https://cfp.cascadiaphp.com/uploads/611c216a4b906d365f264e40d5936e08f0f558125111919712.png",
       "name": "Craig Dennis",
-      "company": "",
+      "company": "Treehouse",
       "bio": "Craig is a senior teacher at Treehouse. A polyglot and lifelong learner, he’s constantly in search of ways to use his nerdery for good. He’s also proud father, hence #dadjokes.",
       "talk": "Ally Oops",
-      "description": "Being an ally is a clumsy process. It can be awkward, scary, and confusing. But don’t let that stop you.\nIn this talk, Craig will share his ongoing bumbling journey toward being a better ally for women in tech. He’ll uncover common pitfalls, mansplain misconceptions, and explore much needed self-realizations he’s reached through research and experience. He’s gonna make mistakes. And it’s going to be alright.",
+      "description": "Being an ally is a clumsy process. It can be awkward, scary, and confusing. But don’t let that stop you.\n\nIn this talk, Craig will share his ongoing bumbling journey toward being a better ally for women in tech. He’ll uncover common pitfalls, mansplain misconceptions, and explore much needed self-realizations he’s reached through research and experience. He’s gonna make mistakes. And it’s going to be alright.",
       "type": "Keynote",
+      "twitter": "@craigsdennis",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": true
     },
     "3": {
       "id": 3,
       "avatar": "https://cfp.cascadiaphp.com/uploads/900086acc5e144f722e8238d593480444bb1da181438798c65.jpeg",
       "name": "Clarissa Peterson",
-      "company": "",
+      "company": "Clarissa Peterson",
       "bio": "Clarissa Peterson is a UX designer & developer based in Calgary, Alberta, Canada. She frequently speaks at tech and design conferences and also teaches in the web developer fast-track program at the Southern Alberta Institute of Technology (SAIT). Clarissa is an instructor for Lynda.com/LinkedIn Learning and the author of Learning Responsive Web Design: A Beginner's Guide (O'Reilly Media).",
       "talk": "Code is Not Neutral: Ethics for Developers",
       "description": "Are you responsible for the code you write? Ask the Volkswagen engineer who's in prison for creating software that allowed their cars to “cheat” on emissions tests. Or think of the ethical issues if you're programming IoT devices that spy on users and report back to the company. What about social networks that allow users’ data to be stolen? Or self-driving cars that have to choose which lives to save in a crash? Developers make all of these things happen. It's easy to forget that the code you write affects real humans. We need to be aware of how much power we've been given and start taking responsibility for what we build.",
       "type": "Keynote",
+      "twitter": "@clarissa",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": true
     },
     "4": {
       "id": 4,
       "avatar": "https://cfp.cascadiaphp.com/uploads/12e6759d68efb97b1a04b6ac7c94cb39ec678884adbff0bcc7.png",
       "name": "VM (Vicky) Brasseur",
-      "company": "",
-      "bio": "",
+      "company": "Open Source Initiative",
+      "bio": "VM (aka Vicky) spent most of her 20 years in the tech industry leading software development departments and teams, and providing technical management and leadership consulting for small and medium businesses. Now she leverages nearly 30 years of free and open source software experience and a strong business background to advise companies about free/open source, technology, community, business, and the intersections between them.\n\nShe is the author of Forge Your Future with Open Source, the first book to detail how to contribute to free and open source software projects. Think of it as the missing manual of open source contributions and community participation. The book is published by The Pragmatic Programmers and is now available in an early release beta version. It's available at https://fossforge.com.\n\nVicky is the Vice President of the Open Source Initiative, a moderator and author for opensource.com, an author for Linux Journal, and a frequent and popular speaker at free/open source conferences and events. She's the proud winner of the Perl White Camel Award (2014) and the O’Reilly Open Source Award (2016). She blogs about free/open source, business, and technical management at {anonymous => 'hash'}.",
       "talk": "PHP: People Helping People",
-      "description": "2018 marks the 20th anniversary of the term \"open source\" and the Open Source Initiative. What most people don't realise is that PHP pre-dates this by three years and has had a profound and lasting effect on the internet as we know it. But what sort of effect can you, personally, have on PHP? \nIn this keynote, VM Brasseur will cover: \n• What is F/OSS, where does PHP fit in, and why does this matter? \n• How to locate a F/OSS project to contribute to. \n• How to get started with your contributions and what to expects. \n• Why this is worth the time and hassle.\n",
+      "description": "2018 marks the 20th anniversary of the term \"open source\" and the Open Source Initiative. What most people don't realise is that PHP pre-dates this by three years and has had a profound and lasting effect on the internet as we know it. But what sort of effect can you, personally, have on PHP? \n\nIn this keynote, VM Brasseur will cover: \n\n• What is F/OSS, where does PHP fit in, and why does this matter? \n\n• How to locate a F/OSS project to contribute to. \n\n• How to get started with your contributions and what to expects. \n\n• Why this is worth the time and hassle.\n\n",
       "type": "Keynote",
+      "twitter": "@vmbrasseur",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": true
     },
     "5": {
@@ -49,21 +65,29 @@
       "avatar": "/speaker_images/Samantha_Quiñones.jpeg",
       "name": "Samantha Quiñones",
       "company": "",
-      "bio": "Samantha Quiñones is a software engineer and amateur photographer from Brooklyn, New York.\nShe currently leads the Payments Engineering team at Etsy. Prior to joining Etsy, she was a Principal Software Engineer at AOL, Lead Engineer at Politico, and worked on numerous projects over a decade at Visa.\nSamantha is an internationally renowned public speaker and sits on the PHP-FIG Core Committee. She has been recognized by the Huffington Post as one of the top Latin Americans in Media and is a 2015 recipient of the DCFT Powerful Female Programmers Award.\nOutside of her professional life, Samantha is a mom to three rambunctious children, three dogs, three turtles, and a very loud Sun Conure named Franklin. She enjoys taking her bike out for very long rides and taking pictures.",
+      "bio": "Samantha Quiñones is a software engineer and amateur photographer from Brooklyn, New York.\n\nShe currently leads the Payments Engineering team at Etsy. Prior to joining Etsy, she was a Principal Software Engineer at AOL, Lead Engineer at Politico, and worked on numerous projects over a decade at Visa.\n\nSamantha is an internationally renowned public speaker and sits on the PHP-FIG Core Committee. She has been recognized by the Huffington Post as one of the top Latin Americans in Media and is a 2015 recipient of the DCFT Powerful Female Programmers Award.\n\nOutside of her professional life, Samantha is a mom to three rambunctious children, three dogs, three turtles, and a very loud Sun Conure named Franklin. She enjoys taking her bike out for very long rides and taking pictures.",
       "talk": "Mental Illness",
       "description": "",
       "type": "Keynote",
+      "twitter": "@ieatkillerbees",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": true
     },
     "6": {
       "id": 6,
       "avatar": "/speaker_images/Cal_Evans.jpg",
       "name": "Cal Evans",
-      "company": "",
-      "bio": "Many moons ago, at the tender age of 14, Cal touched his first computer. (We’re using the term “computer” loosely here, it was a TRS-80 Model 1) Since then his life has never been the same. He graduated from TRS-80s to Commodores and eventually to IBM PC’s.For the past 13 years Cal has worked with PHP and MySQL on Linux, OSX, and Windows. He has built a variety of projects ranging in size from simple web pages to multi-million dollar web applications.\nWhen not banging his head on his monitor, attempting a blood sacrifice to get a particular piece of code working, he enjoys building and managing development teams using his widely imitated but never patented management style of “management by wandering around”.\nThese days, when not working with PHP, Cal can be found working on a variety of projects like Nomad PHP. He gives motivational talks to developers around the world. If you happen to meet him at a conference, don’t be afraid to buy him a shot of Bourbon.\nCal is based in Jupiter, FL where he is happily married to wife 1.32, the lovely and talented Kathy. Together they have 2 wonderful kids who were both smart enough not to pursue a job in IT.",
+      "company": "E.I.C.C., Inc.",
+      "bio": "Many moons ago, at the tender age of 14, Cal touched his first computer. (We’re using the term “computer” loosely here, it was a TRS-80 Model 1) Since then his life has never been the same. He graduated from TRS-80s to Commodores and eventually to IBM PC’s.For the past 13 years Cal has worked with PHP and MySQL on Linux, OSX, and Windows. He has built a variety of projects ranging in size from simple web pages to multi-million dollar web applications.\n\nWhen not banging his head on his monitor, attempting a blood sacrifice to get a particular piece of code working, he enjoys building and managing development teams using his widely imitated but never patented management style of “management by wandering around”.\n\nThese days, when not working with PHP, Cal can be found working on a variety of projects like Nomad PHP. He gives motivational talks to developers around the world. If you happen to meet him at a conference, don’t be afraid to buy him a shot of Bourbon.\n\nCal is based in Jupiter, FL where he is happily married to wife 1.32, the lovely and talented Kathy. Together they have 2 wonderful kids who were both smart enough not to pursue a job in IT.",
       "talk": "Uncle Cal's Career Advice for Developers",
-      "description": "Kids, Uncle Cal has been around the career block a few times. Depending on how you define the term “job” I have held more than 15 jobs in my adult career. This doesn’t include side-hustles, moonlighting, or wild ideas. I’ve worked for the good, the bad, and the ugly; and trust me, there is a lot of ugly out there.\nIn this talk we’ll examine a few of the life-lessons I’ve learned the hard way. Some of them will be interesting, some of them insightful, some of them silly. Regardless, these lessons were generally learned by making big enough mistakes. Spend a little time with me, learn the lessons I’ve learned so that you don’t repeat my mistakes. You are then free to go make your own new mistakes.\n",
+      "description": "Kids, Uncle Cal has been around the career block a few times. Depending on how you define the term “job” I have held more than 15 jobs in my adult career. This doesn’t include side-hustles, moonlighting, or wild ideas. I’ve worked for the good, the bad, and the ugly; and trust me, there is a lot of ugly out there.\n\nIn this talk we’ll examine a few of the life-lessons I’ve learned the hard way. Some of them will be interesting, some of them insightful, some of them silly. Regardless, these lessons were generally learned by making big enough mistakes. Spend a little time with me, learn the lessons I’ve learned so that you don’t repeat my mistakes. You are then free to go make your own new mistakes.\n\n",
       "type": "Keynote",
+      "twitter": "@CalEvans",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": true
     },
     "7": {
@@ -72,9 +96,13 @@
       "name": "",
       "company": "",
       "bio": "",
-      "talk": "",
-      "description": "",
+      "talk": "concrete5 show-n-tell",
+      "description": "You've never heard of concrete5? That's awful. Come meet the core team and some active community members. See some of the things these folks have built with concrete5 over the last decade. Speakers will get approximately 5 minutes each with a goal of keeping things light and inspirational over deeply technical.",
       "type": "Talk",
+      "twitter": "@",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": false
     },
     "8": {
@@ -86,6 +114,10 @@
       "talk": "",
       "description": "",
       "type": "Talk",
+      "twitter": "@",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": false
     },
     "9": {
@@ -95,8 +127,12 @@
       "company": "SammyK Media",
       "bio": "Sammy Kaye Powers has been making things on the web for twenty years. Sammy spends the bulk of his time in coffee shops cranking out web apps. He dabbles in PHP internals and is the maintainer of the official Facebook PHP SDK. He loves sharing knowledge about Facebook development & PHP at SammyK.me. He hosts the PHP Roundtable podcast and travels all over the States competing in a dance called West Coast Swing.",
       "talk": "Going Bare - Writing The Web Without A Framework",
-      "description": "If you've only ever experienced web development through a web framework, you're missing out. Have you ever been tempted to rewrite a codebase in your favorite framework? That's a smell that you need to come to this talk.;;Being comfortable developing without a framework is a crucial skill to have for refactoring legacy applications. In this talk I show you how to harness the power of going \\\"frameworkless\\\" so you'll feel empowered to make better decisions in your next web project. Be set free from your web-framework ball and chain.",
+      "description": "If you've only ever experienced web development through a web framework, you're missing out. Have you ever been tempted to rewrite a codebase in your favorite framework? That's a smell that you need to come to this talk.\n\nBeing comfortable developing without a framework is a crucial skill to have for refactoring legacy applications. In this talk I show you how to harness the power of going \"frameworkless\" so you'll feel empowered to make better decisions in your next web project. Be set free from your web-framework ball and chain.",
       "type": "Talk",
+      "twitter": "@SammyK",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": false
     },
     "10": {
@@ -108,6 +144,10 @@
       "talk": "Going from Developer to Stakeholder",
       "description": "Technology is everything these days, and your skills as a developer are in high demand. How can you leverage your unique skill set and understanding of technology to climb the ranks in your company beyond “just a developer?” Ann will tell her story of going from underpaid full-time developer, to broke freelancer, to entrepreneur, and finally to partner and CTO. More importantly, she’ll tell you what she learned along the way about the art of persuasion, transparency as a trojan horse, indispensability, confidence, standing your ground, and ultimately how to be treated and respected as a leader and not an employee.",
       "type": "Talk",
+      "twitter": "@anngaff",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": false
     },
     "11": {
@@ -119,6 +159,10 @@
       "talk": "MySQL without the SQL",
       "description": "MySQL can be used as a NoSQL database.  Your can store JSON documents in a database without having to normalize data, set up schemas, or dig your DBA out of their cave to set things up.  And thanks to the new X DevAPI you do not need to use SQL!  No longer do you have to embed ugly strings of Structured Query Language in your pristine PHP code.  By using the X DevAPI PECL extension you can access MySQL as a SQL or NoSQL database using modern programming structures without needing an Object Relational Mapper.  So you get the best of both world on proven MySQL technology.",
       "type": "Talk",
+      "twitter": "@stoker",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": false
     },
     "12": {
@@ -130,6 +174,10 @@
       "talk": "Only Take What You Need GraphQl in PHP",
       "description": "Discuss the current GraphQl frameworks and what new one is shaping up to be the best GraphQl framework. General Introduction to GraphQl and what are the reasons to choose to develop your API using this format versus a more traditional REST API. Make the lives of your front end developers easier.",
       "type": "Talk",
+      "twitter": "@asheliahut",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": false
     },
     "13": {
@@ -139,19 +187,27 @@
       "company": "Rogue Wave",
       "bio": "Adam Culp (@AdamCulp) a Zend consultant at Rogue Wave Software, is passionate about developing with PHP and contributes to many open source projects. He organizes the SunshinePHP Developer Conference and the South Florida PHP Users Group (SoFloPHP) where he enjoys helping others write good code, implement standards, and refactor efficiently. He is a Zend Certified PHP engineer, is a voting member of the PHP-Fig, and holds a seat on the Zend Certification Advisory Board. You can also find him on his Run Geek Radio podcast and GeekyBoy technical blog. When he is not coding or contributing to various developer communities, he can be found hiking around the U.S. National Parks, teaching judo, or long distance (ultra) running.",
       "talk": "Release Your Refactoring Superpower",
-      "description": "Legacy applications are full of supervillains scheming to halt modernizing efforts. But deprecated versions of PHP, frameworks, libraries, and more drive a never-ending battle to keep applications up to date, supported, and secure. This can leave any would be superhero seeking how, what, when, and why.;;Join me as we consider real-life case studies of modernizations from various large legacy applications, and will share common evil-doers, ways to foil their plans, and how to eliminate vulnerabilities in the first place. See how to make refactoring your super power!",
+      "description": "Legacy applications are full of supervillains scheming to halt modernizing efforts. But deprecated versions of PHP, frameworks, libraries, and more drive a never-ending battle to keep applications up to date, supported, and secure. This can leave any would be superhero seeking how, what, when, and why.\n\nJoin me as we consider real-life case studies of modernizations from various large legacy applications, and will share common evil-doers, ways to foil their plans, and how to eliminate vulnerabilities in the first place. See how to make refactoring your super power!",
       "type": "Talk",
+      "twitter": "@adamculp",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": false
     },
     "14": {
       "id": 14,
       "avatar": "https://cfp.cascadiaphp.com/uploads/ab606888f6aa37542b1db8379bb975a54def7401e190b3d888.jpeg",
       "name": "Alan Storm",
-      "company": "Pulse Storm ",
+      "company": "Pulse Storm",
       "bio": "Software Engineer/Programmer, well known for demystifying Magento and other complex software systems. Author of No Frills Magento Layout, Creator of Commerce Bug, Voted Most Likely to be Last Homepager Standing, long suffering computer user.",
       "talk": "The Evolution of Magento Module Development",
-      "description": "In this talk, world renowned Magento developer Alan Storm returns to conference speaking and will teach you everything you ever wanted to know about Magento 2 module development, (or as much as he can cram in a 50 minute hour);;Alan will be live coding a Magento 2 module using code generation tools, and along the way will discuss changes made since Magento 1, how Magento's approach compares with other modern PHP full stack frameworks, and survival tips for dealing with real world Magento problems.  Beginners will leave with the basics they need to start making Magento 2 do things, while more experienced developers will leave with a better of understanding of **why** Magento does things the way they do and the trade-offs involved in long term development and legacy maintenance of a PHP framework.",
+      "description": "In this talk, world renowned Magento developer Alan Storm returns to conference speaking and will teach you everything you ever wanted to know about Magento 2 module development, (or as much as he can cram in a 50 minute hour)\n\nAlan will be live coding a Magento 2 module using code generation tools, and along the way will discuss changes made since Magento 1, how Magento's approach compares with other modern PHP full stack frameworks, and survival tips for dealing with real world Magento problems.  Beginners will leave with the basics they need to start making Magento 2 do things, while more experienced developers will leave with a better of understanding of **why** Magento does things the way they do and the trade-offs involved in long term development and legacy maintenance of a PHP framework.",
       "type": "Talk",
+      "twitter": "@alanstorm",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": false
     },
     "15": {
@@ -161,8 +217,12 @@
       "company": "Tebex",
       "bio": "Liam is a UK based Senior PHP Developer & Business Manager at Tebex, creators of Buycraft.net, the first e-commerce platform for Minecraft. In his nine years as a dev, he's tackled projects large and small, from multi-million pound eCommerce sites to the plumber down the road looking for 'mates' rates. These days Liam focuses on providing gCommerce platforms for multiplayer sandbox games, and in his spare time is trying to learn the secret to actually having some spare time.",
       "talk": "RegEx is Your Friend",
-      "description": "RegEx is scary. At least, if you ask Google, that's what you might think (257,000). And slow (441,000). In fact, regular expressions are neither of these, and indeed are a powerful tool in your utility belt.;;In \\\"RegEx Is Your Friend\\\", Liam aims to provide some real-world usable examples of how RegEx can be used in a way that's fast, explaining how the different parts of regular expressions work and execute to make it understandable for all.;;No matter if you don't know your '$' from your '^', you are not sure when to use RegEx (and when not to), or you just need to find a way to make your RegEx run faster, there will be useful help and tips for everyone.",
+      "description": "RegEx is scary. At least, if you ask Google, that's what you might think (257,000). And slow (441,000). In fact, regular expressions are neither of these, and indeed are a powerful tool in your utility belt.\n\nIn \"RegEx Is Your Friend\", Liam aims to provide some real-world usable examples of how RegEx can be used in a way that's fast, explaining how the different parts of regular expressions work and execute to make it understandable for all.\n\nNo matter if you don't know your '$' from your '^', you are not sure when to use RegEx (and when not to), or you just need to find a way to make your RegEx run faster, there will be useful help and tips for everyone.",
       "type": "Talk",
+      "twitter": "@l_wiltshire",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": false
     },
     "16": {
@@ -172,8 +232,12 @@
       "company": "Help Scout",
       "bio": "Jessica is a software engineer who has been working with PHP and related technologies for over a decade. She enjoys mentoring fellow engineers in automated testing, test driven development, and quality code design. She lives in McKinney Texas with her family and loves coffee, comedy and podcasts.",
       "talk": "Double Loop: TDD & BDD Done Right",
-      "description": "Do you TDD or BDD? Why not both? Come learn the \\\"Double Loop\\\" workflow and discover how you can use both Behavior Driven Development and Test Driven Development to write well designed, tested and documented code. Double Loop works for lone engineers, small teams or entire product departments. I'll cover the steps you'll take in the workflow in detail with best practices for behavior testing, integration testing and unit testing.",
+      "description": "Do you TDD or BDD? Why not both? Come learn the \"Double Loop\" workflow and discover how you can use both Behavior Driven Development and Test Driven Development to write well designed, tested and documented code. Double Loop works for lone engineers, small teams or entire product departments. I'll cover the steps you'll take in the workflow in detail with best practices for behavior testing, integration testing and unit testing.",
       "type": "Talk",
+      "twitter": "@JessicaMauerhan",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": false
     },
     "17": {
@@ -185,6 +249,10 @@
       "talk": "Serverless PHP applications",
       "description": "Serverless, aka Function as a Service or lambdas, is a new opportunity for deploying and running applications cheaply and at scale. But merging the mature PHP ecosystem and its frameworks with these new architectures and tools is not always a piece of cake! Can we run HTTP or CLI applications on lambdas? Does it work with Symfony? Laravel? PSR-15? This is how Bref started: let's have a look at how serverless architectures work and how to throw PHP and its frameworks into the mix.",
       "type": "Talk",
+      "twitter": "@matthieunapoli",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": false
     },
     "18": {
@@ -194,8 +262,12 @@
       "company": "Open Tech Strategies",
       "bio": "James Vasile has fifteen years experience as a user, developer, advocate and advisor in the free and open source software world. His expertise is in helping companies realize the benefits of their open source investments. He focuses on open source process With a background in software licensing and community-building, as well as non-profit and small business startup. His efforts usually concerns free software and open source production, although his work and interests often take him far beyond the world of software. Much of what James does involves teaching people how to build successful businesses around free software and ensuring licensing alignment in multisource FOSS stacks. James's technical experience also allows him to act as outsource CTO/Architect, due-diligence open source expert, new venture advisor, fiscal sponsorship facilitator, and more.",
       "talk": "Field Guide To Open Source Project Archetypes",
-      "description": "Open source is a broad term that encompasses many different types of projects. There is a wide range of open source approaches, and sometimes it helps to think through how your open source approach matches your goals, resources, and environment. In too many places we look, we see \\\"open source\\\" used as a catch-all term to refer to every project. We don’t have a common vocabulary to discuss open source in ways that take account of important differences.;;Open Tech Strategies and Mozilla prepared [a field guide to open source project archetypes](https://opentechstrategies.com/files/pub/MZ+OTS_OS_Archetypes_report_ext_scr.pdf).  It is a first step in filling in that missing vocabulary. The report catalogs a number of archetypes we observe around the community. Considering which archetypes apply to a project has proven very useful to OTS and Mozilla when crafting strategy, weighing tradeoffs, and committing support to open source endeavors.;;This talk is all about helping projects get better at thinking through their open source strategy.  We want to help projects make investments that are tailored to their environment and the type of open source benefits they seek.  We will frame the discussion around the need for terms more specific than \\\"open source\\\", contrast some archetypes, and detail how archetype categorization can drive strategic choices.;;The field guide is not a complete document.  We published version 1, but are actively seeking input so we can issue an improved update.  You can see the [document in progress on GitHub](https://github.com/OpenTechStrategies/open-source-archetypes).",
+      "description": "Open source is a broad term that encompasses many different types of projects. There is a wide range of open source approaches, and sometimes it helps to think through how your open source approach matches your goals, resources, and environment. In too many places we look, we see \"open source\" used as a catch-all term to refer to every project. We don’t have a common vocabulary to discuss open source in ways that take account of important differences.\n\nOpen Tech Strategies and Mozilla prepared a field guide to open source project archetypes: \n\nhttps://goo.gl/hGpnnE\n\nIt is a first step in filling in that missing vocabulary. The report catalogs a number of archetypes we observe around the community. Considering which archetypes apply to a project has proven very useful to OTS and Mozilla when crafting strategy, weighing tradeoffs, and committing support to open source endeavors.\n\nThis talk is all about helping projects get better at thinking through their open source strategy.  We want to help projects make investments that are tailored to their environment and the type of open source benefits they seek.  We will frame the discussion around the need for terms more specific than \"open source\", contrast some archetypes, and detail how archetype categorization can drive strategic choices.\n\nThe field guide is not a complete document.  We published version 1, but are actively seeking input so we can issue an improved update.  You can see the document in progress on GitHub: \n\nhttps://git.io/fAEcm",
       "type": "Talk",
+      "twitter": "@jamesvasile",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": false
     },
     "19": {
@@ -207,6 +279,10 @@
       "talk": "Machine Learning and Trend Analysis in PHP",
       "description": "The world we live in is one where data is one of the most valuable assets. There are many different pieces of data we can analyse on all kind of data from analytics of user behaviour of your platform, user generated content, monitoring of exception rates, or when your core business model is to provide some kind of analytics platform. In this talk we’ll dive into how you can, in your PHP applications, perform some simple trend analysis techniques to build models, analyse data to get useful information and spot anomalies using machine learning techniques; and how those machine learning techniques can be applied to other day-to-day scenarios too.",
       "type": "Talk",
+      "twitter": "@michaelcullumuk",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": false
     },
     "20": {
@@ -218,6 +294,10 @@
       "talk": "Building Secure Applications: Threat Modeling for Dummies ",
       "description": "No developer wants to be responsible for a major data breach. Unfortunately, when it comes to application security, most developers have more questions than answers. How do I get started? What should I be protecting against? How much security is enough? Is there a best practice to follow? In less than an hour, I will give you the tools you need to integrate threat modeling into your existing application lifecycle. We’ll even walk through the process step by step as we threat model a live application. Start building secure applications today.",
       "type": "Talk",
+      "twitter": "@adam_englander",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": false
     },
     "21": {
@@ -229,6 +309,10 @@
       "talk": "The Monster on the Project",
       "description": "Abusive behaviour can have profound effects on personal relationships but it can also make open source contributing and office life miserable. For those stuck in a team with co workers who exhibit toxic behavior, going to work every day can feel like going to a battlefield. Knowing how to identify and how to respond to unreasonable behavior is vital. In this talk we will look at the ways we can improve our office and FOSS communities by recognizing, managing and gracefully removing this toxic behavior.",
       "type": "Talk",
+      "twitter": "@WhataTiberius",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": false
     },
     "22": {
@@ -238,8 +322,12 @@
       "company": "Glu Mobile",
       "bio": "Demin is a staff engineer and technical lead on Glu Mobile’s Design Home team. He has been using PHP primarily since 2000, and has worked for a diverse group of companies throughout his career, from start-ups to some of the Bay Area’s largest international corporations, including eBay, Visa and Glu. For years, Demin has been focused on building high-performance, secure web applications and is always exploring ways to push the limit of PHP. Besides architecting and building backend services with PHP, he works with his teammates on open source projects at Glu to give back to the community.",
       "talk": "Massively Scaled High Performance Web Services with PHP",
-      "description": "Over the years, software teams have questioned if PHP is a good choice for building web services. In this talk, I will share how we use PHP on the backend for Glu Mobile’s flagship mobile game [Design Home](https://itunes.apple.com/us/app/design-home/id1010962391), enabling it to regularly rank amongst the top free mobile games - both in downloads and grossing - since its launch in the Apple App Store and the Google Play Store in Q4 2016. Design Home reaches over 1 million daily active users, serving over 100,000 requests per minute while maintaining a user base of over 30 million players. To date, over 1 billion designs have been made by players. We will deep dive into the thought processes, development, testing and deployment strategy, showcasing what we have achieved with PHP and why we love it and rely on it. My goal is to share with the community that, when done the right way, PHP can be used to build and maintain reliable, massively-scalable and high-performance backends using web services.",
+      "description": "Over the years, software teams have questioned if PHP is a good choice for building web services. In this talk, I will share how we use PHP on the backend for Glu Mobile’s flagship mobile game Design Home, enabling it to regularly rank amongst the top free mobile games - both in downloads and grossing - since its launch in the Apple App Store and the Google Play Store in Q4 2016. Design Home reaches over 1 million daily active users, serving over 100,000 requests per minute while maintaining a user base of over 30 million players. To date, over 1 billion designs have been made by players. We will deep dive into the thought processes, development, testing and deployment strategy, showcasing what we have achieved with PHP and why we love it and rely on it. My goal is to share with the community that, when done the right way, PHP can be used to build and maintain reliable, massively-scalable and high-performance backends using web services.",
       "type": "Talk",
+      "twitter": "@deminy",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": false
     },
     "23": {
@@ -247,10 +335,14 @@
       "avatar": "/speaker_images/Miro_Svrtan.jpeg",
       "name": "Miro Svrtan",
       "company": "Null Development",
-      "bio": "Veteran of PHP affairs, BDD practitioner, devops enthusiast\nI started using PHP as a student, back in 1999. At first I worked as a one man band web developer and from there I progressed, via focusing on PHP development in a team environment, to be a senior dev, tech lead & technical analyst.\nI found much more happiness doing backend stuff so I focus on scalable backends and devops tasks this days.",
+      "bio": "Veteran of PHP affairs, BDD practitioner, devops enthusiast\n\nI started using PHP as a student, back in 1999. At first I worked as a one man band web developer and from there I progressed, via focusing on PHP development in a team environment, to be a senior dev, tech lead & technical analyst.\n\nI found much more happiness doing backend stuff so I focus on scalable backends and devops tasks this days.",
       "talk": "Intro to EventSourcing and CQRS",
-      "description": "While web development is not simple content management systems and webshops any more, most of our prinicples and ideas have not changed that much. CRUD and MVC, while still good ideas, are not meant for handling complex bussiness requirements, logic and workflows.;;;Instead of fat controllers or services, complex dependencies injections, by separating our domain logic into simple \\\"units of work\\\" connected together by commands and events, number of files might increase but our complexity decreases considerably.;;;If you are looking for a different way, ES (eventsourcing) and CQRS (command query responsibility segregation) might be the solution. It's actually much harder to explain those concepts then to use them so I will start with simple examples from every day developer life and then combine all of it with real life examples from some of my projects.",
+      "description": "While web development is not simple content management systems and webshops any more, most of our prinicples and ideas have not changed that much. CRUD and MVC, while still good ideas, are not meant for handling complex bussiness requirements, logic and workflows.\n\nInstead of fat controllers or services, complex dependencies injections, by separating our domain logic into simple \"units of work\" connected together by commands and events, number of files might increase but our complexity decreases considerably.\n\nIf you are looking for a different way, ES (eventsourcing) and CQRS (command query responsibility segregation) might be the solution. It's actually much harder to explain those concepts then to use them so I will start with simple examples from every day developer life and then combine all of it with real life examples from some of my projects.",
       "type": "Talk",
+      "twitter": "@msvrtan",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": false
     },
     "24": {
@@ -260,8 +352,12 @@
       "company": "PhoneBurner",
       "bio": "Tim likes making things, is a lover of well built APIs, and hates the top reply. A former mercenary developer, he's built numerous applications specializing in API consumption and creation. Now he's working on things at PhoneBurner. He also tweets sporadically from @tjlytle.",
       "talk": "Yak Free API Tip & Tricks You Can Use Right Now",
-      "description": "API tools, services, and techniques abound, but in this 99% Yak-Shaving™ Free session, we'll focus on the ones that require little (or no) setup, and that you can be using before I stop talking. ;;Whether you're building or consuming APIs, there will be something for you. If you're new to APIs, you'll leave with a bunch of things you can use right now. If you've been doing this for a while, you'll probably see a new way to simplify something that's bugged you in the past.",
+      "description": "API tools, services, and techniques abound, but in this 99% Yak-Shaving™ Free session, we'll focus on the ones that require little (or no) setup, and that you can be using before I stop talking. \n\nWhether you're building or consuming APIs, there will be something for you. If you're new to APIs, you'll leave with a bunch of things you can use right now. If you've been doing this for a while, you'll probably see a new way to simplify something that's bugged you in the past.",
       "type": "Talk",
+      "twitter": "@tjlytle",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": false
     },
     "25": {
@@ -273,6 +369,10 @@
       "talk": "(Ab)using process control for powerful CLI applications",
       "description": "PHP's process control (pcntl) extension provides a set of highly underrated tools for scripts invoked at the command line, exposing behaviors that you might have thought only existed for compiled applications, such as forking and signal handling. We'll dive into these behaviors, including fun diversions like making a process zombie that rises from the dead when you hit Ctrl-C, and a parallel utility that uses multiple processes to get things done faster. We'll also take a look at Symfony's Process component that can be used to execute additional command lines safely and asynchronously, whether you need to run those commands from a web cotext or a CLI.",
       "type": "Talk",
+      "twitter": "@iansltx",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": false
     },
     "26": {
@@ -280,10 +380,14 @@
       "avatar": "https://cfp.cascadiaphp.com/uploads/b4de3bc87976c6f207818cd2bc6114aaedfb2e26533a13b2b5.jpeg",
       "name": "Heidi Roberts",
       "company": "Motion Therapy",
-      "bio": "Heidi Roberts received her Business & Technology Management Degree from Clarkson University and her Doctorate of Physical Therapy degree from Loma Linda University.\nAfter integrating her studies over 15 years of professional experience, Heidi recognized a tremendous lack of mind-body education, embodiment, and empowerment as an underlying cause of people’s pain.\nIn 2012, she founded Motion Therapy, which enabled her to bring pain relief, injury prevention, and performance optimization services to professionals and businesses in their everyday environments so that they could achieve immediate and lasting results.\nBy teaching clients how to preventatively manage their own aches and pains in their day-to-day environment, Heidi’s clients avoided costly and time-consuming injuries.\nMost recently, Heidi has published her book, The Sitting Disease, to share her knowledge, insights, and strategies so that more people can experience the transformative nature of small tweaks that can have a profound effect on how they work, live, and play.",
+      "bio": "Heidi Roberts received her Business & Technology Management Degree from Clarkson University and her Doctorate of Physical Therapy degree from Loma Linda University.\n\nAfter integrating her studies over 15 years of professional experience, Heidi recognized a tremendous lack of mind-body education, embodiment, and empowerment as an underlying cause of people’s pain.\n\nIn 2012, she founded Motion Therapy, which enabled her to bring pain relief, injury prevention, and performance optimization services to professionals and businesses in their everyday environments so that they could achieve immediate and lasting results.\n\nBy teaching clients how to preventatively manage their own aches and pains in their day-to-day environment, Heidi’s clients avoided costly and time-consuming injuries.\n\nMost recently, Heidi has published her book, The Sitting Disease, to share her knowledge, insights, and strategies so that more people can experience the transformative nature of small tweaks that can have a profound effect on how they work, live, and play.",
       "talk": "Is Your Chair Killing You? How To Reverse The Negative Effects Of The Sitting Disease",
-      "description": "There’s no escaping it. Chronic pain due to postural imbalance, repetitive-use injuries, and a sedentary lifestyle is one of the most costly and debilitating challenges facing society today.;;Why? ;;The human body didn’t evolve for the purpose of a sedentary lifestyle. Our bodies are designed to move. And yet our busy digital and technology-driven lives have created serious problems for ambitious workers, innovators, and entrepreneurs. ;;We spend hours a day sitting at our computers, at our desks, and in our cars. We live each day with minimal whole-body movement. We slump over our iPhones, workstations, and dinner tables.;;Extensive research shows that Sitting Disease—or the state of physical, mental, or emotional pain that results from being sedentary—is greatly to blame. You’re probably familiar with a number of the symptoms—everything from neck and back pain to depression, obesity, heart disease, and even cancer. ;;A growing and costly problem, Sitting Disease is one of the cornerstones of so many acute and chronic health-care conditions today. ;;Let me share the real-time application of the science and evidence-based research through experiential learning so that you to take action and lead your organization and our communities in optimizing their performance and lives!",
+      "description": "There’s no escaping it. Chronic pain due to postural imbalance, repetitive-use injuries, and a sedentary lifestyle is one of the most costly and debilitating challenges facing society today.\n\nWhy? \n\nThe human body didn’t evolve for the purpose of a sedentary lifestyle. Our bodies are designed to move. And yet our busy digital and technology-driven lives have created serious problems for ambitious workers, innovators, and entrepreneurs. \n\nWe spend hours a day sitting at our computers, at our desks, and in our cars. We live each day with minimal whole-body movement. We slump over our iPhones, workstations, and dinner tables.\n\nExtensive research shows that Sitting Disease—or the state of physical, mental, or emotional pain that results from being sedentary—is greatly to blame. You’re probably familiar with a number of the symptoms—everything from neck and back pain to depression, obesity, heart disease, and even cancer. \n\nA growing and costly problem, Sitting Disease is one of the cornerstones of so many acute and chronic health-care conditions today. \n\nLet me share the real-time application of the science and evidence-based research through experiential learning so that you to take action and lead your organization and our communities in optimizing their performance and lives!",
       "type": "Talk",
+      "twitter": "@MotionTherapyPT",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": false
     },
     "27": {
@@ -295,6 +399,10 @@
       "talk": "Simplified Continuous Integration with Jenkins",
       "description": "Maybe you’re the only coder on a project. Maybe you’re on a small team and carrying the majority of the server knowledge. For one reason or another, there are times when if we don’t setup our own deploy process, there simply isn’t one.  No one wants the headaches that come from a my-machine[s] to production direct deploy process, so let’s go a step better with Jenkins and Github. This talk will walk you through setting up a jenkins server to deploy your staging changes and master merges with all the tests and checks you need to avoid those \"oops\" moments ever going live.",
       "type": "Talk",
+      "twitter": "@dead_lugosi",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": false
     },
     "28": {
@@ -304,8 +412,12 @@
       "company": "Happyr",
       "bio": "Tobias is an open source enthusiast and has spent many years trying to bring something good to the community. He is a Symfony core team member, co-host of the Sound of Symfony podcast, organizer of Swedish PHP meetups. He maintains projects like httplug.io, guzzle, buzz, php-geocoder, KnpGithub API client, Maingun API client, LinkedIn API client, Neo4j bundle, Puli, Assert and many more. He is also involved with the PHP-FIG by writing a PSR for HTTP clients.",
       "talk": "Symfony 4 internals",
-      "description": "Symfony is a request and response framework. But what about all that magic that happens around your code? Why isn’t autowring slowing things down? And how is it that Symfony components can be so decoupled but sill play so well together?;;I will show you the Symfony internals and its architecture. ;;This talk will go over the architecture of Symfony. We will follow the request and the response paths throw the framework. We will do some stops at the components that are more awesome than others.;;This talk is perfect for you who been working with Symfony or Laravel before. But if you never touched a framework before, don't worry. You will still learn a lot from this talk.;",
+      "description": "Symfony is a request and response framework. But what about all that magic that happens around your code? Why isn’t autowring slowing things down? And how is it that Symfony components can be so decoupled but sill play so well together?\n\nI will show you the Symfony internals and its architecture. \n\nThis talk will go over the architecture of Symfony. We will follow the request and the response paths throw the framework. We will do some stops at the components that are more awesome than others.\n\nThis talk is perfect for you who been working with Symfony or Laravel before. But if you never touched a framework before, don't worry. You will still learn a lot from this talk.",
       "type": "Talk",
+      "twitter": "@TobiasNyholm",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": false
     },
     "29": {
@@ -317,6 +429,10 @@
       "talk": "So, you want to be an Open Source Hero?",
       "description": "You've done it! You've taken your personal programming project and placed it on GitHub as open source software. Until now, it's always been yours, and yours alone; but the moment you pushed that code, your baby left the nest. What comes next is up to you. You can choose to never touch this code again, but if you want to reach a wider audience you're going to need to cultivate a community around your project. It sounds daunting; it certainly did to us in 2008, when we open-sourced our in-house CMS as concrete5. But we were able to gain popularity in a crowded field, and you can too. In this session we'll explore how to take your app or library from just another GitHub repository to a thriving open source project.",
       "type": "Talk",
+      "twitter": "@aembler",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": false
     },
     "30": {
@@ -324,10 +440,14 @@
       "avatar": "https://cfp.cascadiaphp.com/uploads/b95545d3db83a56bba1b33da260c86ee26ec52fae9546eb001.png",
       "name": "Randall Bollig",
       "company": "Code Knights, Inc.",
-      "bio": "Randall’s interests center around privacy, security, data warehousing, cypherpunk, and disruptive technologies. Professionally, he uses PHP to interface with the physical world including blood pressure kiosks, laser cutters, 3D printers, and remote cameras.\nHe also enjoys hiking, photography, touring big science and industrial projects, and cooking with liquid nitrogen.\nHis PGP fingerprint is 9998 E019 9072 CC96 C4A6 B799 3405 AD70 E6BC 9AFA.",
+      "bio": "Randall’s interests center around privacy, security, data warehousing, cypherpunk, and disruptive technologies. Professionally, he uses PHP to interface with the physical world including blood pressure kiosks, laser cutters, 3D printers, and remote cameras.\n\nHe also enjoys hiking, photography, touring big science and industrial projects, and cooking with liquid nitrogen.\n\nHis PGP fingerprint is 9998 E019 9072 CC96 C4A6 B799 3405 AD70 E6BC 9AFA.",
       "talk": "Deep Dive into Let's Encrypt",
-      "description": "Let’s Encrypt is the phenomenal, automated, free SSL Certificate Authority that is quickly making HTTPS a no-brainer for even the smallest sites.;;In this talk, we quickly run through the basics, and then explore Let’s Encrypt beyond the usual tutorials. We’ll cover:;;• Technical details of the authentication and issuance;;;• Gotchas learned while securing over 100 hosts;;;• Alternative, PHP based clients;;;• Deploying in complex environments;;;• Alternative free CAs;;;• Cases where you might still pay money for certificates;;",
+      "description": "Let’s Encrypt is the phenomenal, automated, free SSL Certificate Authority that is quickly making HTTPS a no-brainer for even the smallest sites.\n\nIn this talk, we quickly run through the basics, and then explore Let’s Encrypt beyond the usual tutorials. We’ll cover:\n\n• Technical details of the authentication and issuance;\n\n• Gotchas learned while securing over 100 hosts;\n\n• Alternative, PHP based clients;\n\n• Deploying in complex environments;\n\n• Alternative free CAs;\n\n• Cases where you might still pay money for certificates\n\n",
       "type": "Talk",
+      "twitter": "@rabollig",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": false
     },
     "31": {
@@ -337,8 +457,12 @@
       "company": "MinistryBrands",
       "bio": "Joe Ferguson is a PHP developer and community organizer. He is involved with many different technology-related initiatives in Memphis including the Memphis PHP User group. He’s been married to his extremely supportive and amazing wife for a really long time, and she turned him into a crazy cat man. They live in the Memphis suburbs with their two cats.",
       "talk": "Maintaining Homestead",
-      "description": "Laravel's Homestead project is the second most downloaded public vagrant environment. Initially designed to be a full featured local development environment focused on making Laravel developer's experience easier Homestead has grown into a solid well rounded LAMP stack Vagrant environment for nearly any PHP project.;;Join us as we review the features and inner workings of Homestead, explore some features you may not be aware of, and even take a trip deep into the operations process of how we build and deliver the best vagrant environment for the PHP community. We'll also cover extending Homestead and making it work for your custom applications and how you can easily share the customized environment with your teammates, coworkers, or contributors.",
+      "description": "Laravel's Homestead project is the second most downloaded public vagrant environment. Initially designed to be a full featured local development environment focused on making Laravel developer's experience easier Homestead has grown into a solid well rounded LAMP stack Vagrant environment for nearly any PHP project.\n\nJoin us as we review the features and inner workings of Homestead, explore some features you may not be aware of, and even take a trip deep into the operations process of how we build and deliver the best vagrant environment for the PHP community. We'll also cover extending Homestead and making it work for your custom applications and how you can easily share the customized environment with your teammates, coworkers, or contributors.",
       "type": "Talk",
+      "twitter": "@JoePFerguson",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": false
     },
     "32": {
@@ -346,10 +470,14 @@
       "avatar": "https://cfp.cascadiaphp.com/uploads/79e2e4c9289554458f679f2feb6f17bdc34504ad0a0b6411cd.jpeg",
       "name": "Steve Grunwell",
       "company": "Liquid Web",
-      "bio": "Steve Grunwell is a Senior Software Engineer at Liquid Web. Specializing in WordPress and application development he has worked with brands and organizations including Microsoft, TED, Xylem, Elmer’s, and Experience Columbus.\nSteve has released numerous plugins in the WordPress.org repositories, including one from the grounds of The White House during the first annual National Day of Civic Hacking in 2013. When he’s not writing software he enjoys hiking, music, and writing about writing software on his blog.\nSteve holds a B.A. in Telecommunications from Bowling Green State University where he graduated Cum Laude with minors in General Business and Recording Technologies.\nMore information, including portfolio work and his development blog, can be found at https://stevegrunwell.com.",
+      "bio": "Steve Grunwell is a Senior Software Engineer at Liquid Web. Specializing in WordPress and application development he has worked with brands and organizations including Microsoft, TED, Xylem, Elmer’s, and Experience Columbus.\n\nSteve has released numerous plugins in the WordPress.org repositories, including one from the grounds of The White House during the first annual National Day of Civic Hacking in 2013. When he’s not writing software he enjoys hiking, music, and writing about writing software on his blog.\n\nSteve holds a B.A. in Telecommunications from Bowling Green State University where he graduated Cum Laude with minors in General Business and Recording Technologies.\n\nMore information, including portfolio work and his development blog, can be found at https://stevegrunwell.com.",
       "talk": "Code Review: For Me & You",
-      "description": "On the surface, the idea of code review is a no-brainer: why *wouldn't* we want a second set of eyes on our code, especially before deploying to production?;;As we peel back the layers, however, we find that the topic of code review is much more nuanced. How detailed should the review be? Who is qualified to perform the review (hint: it's not just senior developers)? Can we afford to take another developer away from their project to review this one? What steps can we take to ensure reviews are constructive, rather than demoralizing?;;Attendees will gain deeper insight into some of the arguments for and against systemic, peer code review, as well as pick up some useful tools to make code review a natural part of their teams' workflow.",
+      "description": "On the surface, the idea of code review is a no-brainer: why *wouldn't* we want a second set of eyes on our code, especially before deploying to production?\n\nAs we peel back the layers, however, we find that the topic of code review is much more nuanced. How detailed should the review be? Who is qualified to perform the review (hint: it's not just senior developers)? Can we afford to take another developer away from their project to review this one? What steps can we take to ensure reviews are constructive, rather than demoralizing?\n\nAttendees will gain deeper insight into some of the arguments for and against systemic, peer code review, as well as pick up some useful tools to make code review a natural part of their teams' workflow.",
       "type": "Talk",
+      "twitter": "@stevegrunwell",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": false
     },
     "33": {
@@ -359,8 +487,12 @@
       "company": "OpenSky",
       "bio": "Open source developer, cycling enthusiast and all around short looking ewok fellow. I mentor people, eat lots of hot chicken and enjoy the PHP community.",
       "talk": "Building to spec - the OpenAPI Spec and PHP",
-      "description": "The OpenAPI Specification has hit 3.0 and thats incredible! But what does that mean for developers? What tooling is available for PHP developers to develop against this spec? We will take a look at an API that will be pre-built and understand how it fits in with the OpenAPI Spec, how we can build our workflow around the OpenAPI Spec. ;;This talk will feature some *ugh* Javascript.",
+      "description": "The OpenAPI Specification has hit 3.0 and thats incredible! But what does that mean for developers? What tooling is available for PHP developers to develop against this spec? We will take a look at an API that will be pre-built and understand how it fits in with the OpenAPI Spec, how we can build our workflow around the OpenAPI Spec. \n\nThis talk will feature some *ugh* Javascript.",
       "type": "Talk",
+      "twitter": "@matthewtrask",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": false
     },
     "34": {
@@ -370,8 +502,12 @@
       "company": "Lucid Software",
       "bio": "Jerry Hargrove is a Cloud Evangelist, Architect, and Developer focused on guiding others on their journey to the cloud and enabling them to build secure, scalable and highly available solutions in the cloud. Jerry has an extensive background in software development and brings with him over 20 years of experience working as a software architect, developer and manager. When not at work, he enjoys spending time with his family and is an avid hiker, climber and back-country skier.",
       "talk": "Machine Learning on AWS (for Noobs) with PHP",
-      "description": "__Description__: Artificial Intelligence is taking the world by storm. Machine Learning (ML) powers some of the most widely recognized websites and brands on the internet. Cloud computing has delivered ML to the masses, where once it was available only to a select few. But, ML still remains a complex and difficult topic, and just knowing where to begin is often a huge challenge. Are you thinking about adding Machine Learning to your PHP application, but unsure of where to start? Come to this session! We’ll review ML concepts, discuss how to choose the right AWS services for you app, and demonstrate a real world PHP application that uses ML.;;__Abstract__: Artificial Intelligence is taking the world by storm, fueled largely by the introduction of the elastic compute resources in public cloud. If you’ve recently shopped online, searched the web, or streamed a video, you've almost certainly interacted with systems powered by AI. These systems are built on powerful Machine Learning (ML) algorithms, that until recently, required large time and financial commitments, as well as specialized knowledge and experience to properly develop, train and test. This is not so any more -- the power of cloud computing has brought ML to the masses. Every developer now has the ability to leverage powerful ML resources of the cloud and bring the benefits of AI to their customers and users. ;;But … where do you start? What services can you use? What services **should** you use? How do you integrate those services into you application? ;;During this session we’ll answer those questions, and more, while building an AI-enabled PHP application. We'll review ML, introducing common concepts, terms and language. Then, we'll look at what ML services AWS provides and talk about which of those services is the right match for your application and for your team & skill set. Finally, we'll walk through a real-world design and demo the resulting PHP application. You’ll walk away from this session with the confidence and knowledge necessary to make the right choices for your own application. ;;You don’t have to be an AI/ML expert to attend this session, nor do you need AWS experience. We’ll keep that at a fairly high level. But we will be walking through PHP code examples, so some familiarity with the language would be beneficial.;",
+      "description": "Artificial Intelligence is taking the world by storm, fueled largely by the introduction of the elastic compute resources in public cloud. If you’ve recently shopped online, searched the web, or streamed a video, you've almost certainly interacted with systems powered by AI. These systems are built on powerful Machine Learning (ML) algorithms, that until recently, required large time and financial commitments, as well as specialized knowledge and experience to properly develop, train and test. This is not so any more -- the power of cloud computing has brought ML to the masses. Every developer now has the ability to leverage powerful ML resources of the cloud and bring the benefits of AI to their customers and users. \n\nBut … where do you start? What services can you use? What services **should** you use? How do you integrate those services into you application? \n\nDuring this session we’ll answer those questions, and more, while building an AI-enabled PHP application. We'll review ML, introducing common concepts, terms and language. Then, we'll look at what ML services AWS provides and talk about which of those services is the right match for your application and for your team & skill set. Finally, we'll walk through a real-world design and demo the resulting PHP application. You’ll walk away from this session with the confidence and knowledge necessary to make the right choices for your own application. \n\nYou don’t have to be an AI/ML expert to attend this session, nor do you need AWS experience. We’ll keep that at a fairly high level. But we will be walking through PHP code examples, so some familiarity with the language would be beneficial.",
       "type": "Talk",
+      "twitter": "@awsgeek",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": false
     },
     "35": {
@@ -383,6 +519,10 @@
       "talk": "10 Things You Didn't Know You Could Do With Composer",
       "description": "Over the last five years, Composer has changed the way PHP developers work. It figures out which versions of our required libraries work together and installs everything for us, but if that's all you've ever used Composer for, you're missing out. Come learn how and when to use validation, autoload overrides, and other features you've never heard of.",
       "type": "Talk",
+      "twitter": "@PSchwisow",
+      "github": "",
+      "facebook": "",
+      "joindin": "",
       "keynote": false
     }
   }
