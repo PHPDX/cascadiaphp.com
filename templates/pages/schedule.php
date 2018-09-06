@@ -21,6 +21,12 @@ $this->stop();
     </script>
 </amp-state>
 
+<amp-state id="day">
+    <script type="application/json">
+      "friday"
+    </script>
+</amp-state>
+
 <h1 class="px3 my0 mb3 cubes pb2 pt3 border-bottom b2 b-gold bg-white darkblue">
     Schedule
 </h1>
