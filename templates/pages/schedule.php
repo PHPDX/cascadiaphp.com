@@ -88,7 +88,7 @@ $this->stop();
     </div>
 
     <!-- Saturday -->
-    <div class="schedule-day" [hidden]="day != 'saturday'">
+    <div class="schedule-day" [hidden]="day != 'saturday'" hidden>
 
         <h3 class="center">Registration</h3>
         <?= $renderer->render(['event:Registration Opens at 8:30am']) ?>
