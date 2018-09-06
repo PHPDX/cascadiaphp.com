@@ -76,7 +76,7 @@ $this->stop();
         <?php endforeach ?>
     </div>
 
-    <amp-lightbox id="talk-info" layout="nodisplay" on="lightboxOpen: AMP.setState({bioTab: 'talk'})">
+    <amp-lightbox id="talk-info" layout="nodisplay" on="lightboxOpen: AMP.setState({bioTab: 'talk'})" scrollable>
         <div class='modal-background' role="button" tabindex="-1" on="tap:talk-info.close"></div>
         <amp-layout
                 layout="intrinsic"
