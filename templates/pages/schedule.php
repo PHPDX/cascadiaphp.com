@@ -34,12 +34,16 @@ $this->stop();
 <div class="tab-header flex flex-row center">
     <div class='tab flex-item flex-auto selected border-top border-left border-right p2 col-6'
          [class]="'tab flex-item flex-auto border-top border-left border-right p2 col-6 ' + (day == 'friday' || !day ? 'selected' : '')"
-         on="tap:AMP.setState({day:'friday'})">
+         on="tap:AMP.setState({day:'friday'})"
+         role="tab"
+         tabindex="0">
         Friday the 14th
     </div>
     <div class='tab flex-item flex-auto border-top border-left border-right p2 col-6'
          [class]="'tab flex-item flex-auto border-top border-left border-right p2 col-6 ' + (day == 'saturday' ? 'selected' : '')"
-         on="tap:AMP.setState({day:'saturday'})">
+         on="tap:AMP.setState({day:'saturday'})"
+         role="tab"
+         tabindex="0">
         Saturday the 15th
     </div>
 </div>
