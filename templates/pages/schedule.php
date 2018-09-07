@@ -72,7 +72,7 @@ $this->stop();
         <?= $renderer->render(['title:friday:11am - 11:30am']) ?>
         <?= $renderer->render(['break:Morning Break']) ?>
 
-        <?= $renderer->render(['title:friday:11:30am - 12:30am']) ?>
+        <?= $renderer->render(['title:friday:11:30am - 12:30pm']) ?>
         <?= $renderer->render(['talk:regex', 'talk:cli', 'talk:CQRS']) ?>
 
         <?= $renderer->render(['title:friday:12:30pm - 1:30pm']) ?>
