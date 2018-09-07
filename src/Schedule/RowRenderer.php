@@ -55,7 +55,8 @@ class RowRenderer
 
         foreach ($slot as $items) {
             if (\is_array($items)) {
-                $result .= $this->renderComplexItem($items);
+                $result .= $this->renderComplexItem($items, $cellId);
+                $cellId++;
                 continue;
             }
 
@@ -178,7 +179,7 @@ class RowRenderer
             }
 
             // Otherwise use regex to match against the title
-            $result = $this->allTalks(function ($talk) use ($id) {
+            $result = $this->allTalks(function($talk) use ($id) {
                 return preg_match($id, $talk['talk']);
             })->current();
         }
