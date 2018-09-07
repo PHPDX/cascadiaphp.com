@@ -58,16 +58,16 @@ $this->stop();
 
         <h3 class="center">Friday</h3>
         <div class="row title center clearfix">
-            <div class="col col-4">Track 1</div>
-            <div class="col col-4">Track 2</div>
-            <div class="col col-4">Track 3</div>
+            <div class="col col-4">Track 1 - Multnomah Falls</div>
+            <div class="col col-4">Track 2 - Crater Lake</div>
+            <div class="col col-4">Track 3 - Willamette Falls</div>
         </div>
 
         <?= $renderer->render(['title:friday:9am - 10am']) ?>
         <?= $renderer->render(['keynote:Learning']) ?>
 
         <?= $renderer->render(['title:friday:10am - 11am']) ?>
-        <?= $renderer->render(['talk:composer', 'talk:secure', 'talk:bdd']) ?>
+        <?= $renderer->render(['talk:bdd', 'talk:secure', 'talk:composer']) ?>
 
         <?= $renderer->render(['title:friday:11am - 11:30am']) ?>
         <?= $renderer->render(['break:Morning Break']) ?>
@@ -105,9 +105,9 @@ $this->stop();
 
         <h3 class="center">Saturday</h3>
         <div class="row title center clearfix">
-            <div class="col col-4">Track 1</div>
-            <div class="col col-4">Track 2</div>
-            <div class="col col-4">Track 3</div>
+            <div class="col col-4">Track 1 - Multnomah Falls</div>
+            <div class="col col-4">Track 2 - Crater Lake</div>
+            <div class="col col-4">Track 3 - Willamette Falls</div>
         </div>
 
         <?= $renderer->render(['title:saturday:9am - 10am']) ?>
