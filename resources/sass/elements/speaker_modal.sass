@@ -1,0 +1,62 @@
+.modal-background
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  background-color: rgba(0,0,0,.5)
+
+.modal
+  position: fixed
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  max-width: 540px
+  max-height: 100%
+  width: 100%
+
+  .close-button
+    position: absolute
+    top: 0
+    right: 0
+    z-index: 1000
+
+  .flex-grow
+    flex-grow: 1
+
+  .talk-info p
+    white-space: pre-wrap
+
+  .modal-content
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+    /* let it scroll */
+    overflow: auto
+
+  .tab-headers
+    height: 58px
+
+    div
+      cursor: pointer
+      padding: 1rem .75rem
+      margin-right: .3rem
+
+      &.selected
+        @extend .bg-white, .dark
+
+  .speaker-bio
+    p
+      overflow: scroll
+
+    > amp-layout
+      max-width: 250px
+
+  .speaker
+    outline: none
+    cursor: pointer
+    section
+      min-height: 0px

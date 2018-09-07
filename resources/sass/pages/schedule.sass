@@ -1,5 +1,6 @@
 @import "../elements/layout"
 @import "../util/_all"
+@import "../elements/speaker_modal"
 
 table.schedule
   width: calc(100% - 2em)
@@ -33,3 +34,41 @@ table.schedule
 
   .header th
     font-weight: bold
+
+.schedule-row
+  .schedule-talk
+    &.keynote > div
+      background-color: $gold
+      border-color: $gold
+      color: $white
+    &.talk > div, &.short > div
+      border-color: $gravel
+
+  .event
+    &.break, &.event
+      @extend .bg-lightblue, .b-lightblue
+
+  .title
+    @extend .h4
+    text-transform: capitalize
+
+.tab-header
+  overflow: hidden
+  position: relative
+
+  .tab
+    border-color: white
+    background-color: lighten($gravel, 30%)
+    color: $gravel
+    z-index: 1
+    @extend .shadow-lg, .light-text
+    border-top-left-radius: 3px
+    border-top-right-radius: 3px
+
+    &.selected
+      @extend .normal-text
+      border-bottom-width: 0
+      border-color: $dark-blue
+      color: $dark-blue
+      background-color: $white
+      z-index: 2
