@@ -51,6 +51,7 @@ class RowRenderer
     {
         $result = '';
         $pending = [];
+        $cellId = 0;
 
         foreach ($slot as $items) {
             if (\is_array($items)) {
@@ -69,14 +70,19 @@ class RowRenderer
                 $pending[] = $items;
 
                 if (count($pending) === 2) {
-                    $result .= $this->renderComplexItem($pending);
+                    $result .= $this->renderComplexItem($pending, $cellId);
+                    $cellId++;
                     $pending = [];
                 }
                 continue;
             }
 
             // Render the item as normal
-            $result .= $this->renderItem($type, $data);
+            $result .= $this->renderItem($type, $data, $cellId);
+
+            if ($type === self::TYPE_TALK) {
+                $cellId++;
+            }
         }
 
         return $this->plates->render('fragment/schedule/row', [
@@ -94,13 +100,13 @@ class RowRenderer
         return explode(':', $item, 2);
     }
 
-    protected function renderItem(string $type, $data)
+    protected function renderItem(string $type, $data, $id)
     {
         switch ($type) {
             case self::TYPE_SHORT_TALK:
             case self::TYPE_TALK:
             case self::TYPE_KEYNOTE:
-                return $this->renderTalkItem($type, $data);
+                return $this->renderTalkItem($type, $data, $id);
 
             case self::TYPE_EVENT:
             case self::TYPE_BREAK:
@@ -113,27 +119,29 @@ class RowRenderer
         throw new \InvalidArgumentException('Unknown type ' . $type);
     }
 
-    protected function renderComplexItem(array $items)
+    protected function renderComplexItem(array $items, int $id)
     {
         $result = '';
         foreach ($items as $item) {
             [$type, $data] = $this->parseItem($item);
 
-            $result .= $this->renderItem($type, $data);
+            $result .= $this->renderItem($type, $data, $id);
         }
 
         return $this->plates->render('fragment/schedule/complex', [
-            'talks' => $result
+            'talks' => $result,
+            'id' => $id
         ]);
     }
 
-    protected function renderTalkItem(string $type, $id)
+    protected function renderTalkItem(string $type, string $id, int $rowId)
     {
         $talk = $this->fetchTalk($id);
 
         return $this->plates->render('fragment/schedule/talk', [
             'talk' => $talk,
-            'type' => $type
+            'type' => $type,
+            'id' => $rowId
         ]);
     }
 
