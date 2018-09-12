@@ -42,8 +42,8 @@ use CascadiaPHP\Site\SEO\SEOTools;
 <body class="cascadiaphp">
 
     <?php if (getenv('ENVIRONMENT') !== 'dev'): ?>
-        <amp-install-serviceworker src="/serviceworker.js"
-                                   data-iframe-src="<?= $this->formUri('/serviceworker') ?>"
+        <amp-install-serviceworker src="/sw.js"
+                                   data-iframe-src="<?= $this->formUri('/sw.js') ?>"
                                    layout="nodisplay">
         </amp-install-serviceworker>
     <?php endif ?>

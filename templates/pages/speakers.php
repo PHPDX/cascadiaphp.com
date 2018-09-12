@@ -62,6 +62,8 @@ $this->stop();
                         <amp-fit-text layout="fixed-height" height="20px" max-font-size="13px" class="light-text <?= $speaker['keynote'] ? 'bg-light black' : 'bg-blue white' ?> block nowrap rounded mx1 my1">
                             <?= $speaker['company'] ?>
                         </amp-fit-text>
+                    <?php else: ?>
+                        <div class="block nowrap rounded mx1 my1">&nbsp;</div>
                     <?php endif ?>
 
                     <span class="bold-text px1 <?= $speaker['keynote'] ? 'white text-shadow' : '' ?> block">
