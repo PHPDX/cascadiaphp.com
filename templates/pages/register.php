@@ -41,7 +41,7 @@ $this->start('components'); ?>
         <br>
     </p>
     <amp-iframe
-            sandbox="allow-scripts allow-forms allow-top-navigation-by-user-activation"
+            sandbox="allow-scripts allow-forms allow-top-navigation-by-user-activation allow-top-navigation"
             width="100px"
             height="100px"
             heights="(min-width:500px) 650px, (min-width:350px) 750px, 800px"
