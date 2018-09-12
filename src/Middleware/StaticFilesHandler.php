@@ -65,6 +65,10 @@ class StaticFilesHandler implements MiddlewareInterface
             $mimeType = 'image/svg+xml'; // People don't use <?xml.. anymore :(
         }
 
+        if ('js' === $file->getExtension()) {
+            $mimeType = 'application/javascript';
+        }
+
         return $mimeType;
     }
 
