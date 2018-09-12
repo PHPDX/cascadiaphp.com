@@ -36,13 +36,29 @@ table.schedule
     font-weight: bold
 
 .schedule-row
+
+  @media (min-width: 52em)
+    display: -ms-flexbox
+    display: flex
+
   .schedule-talk
+    min-width: 250px
+
     &.keynote > div
       background-color: $gold
       border-color: $gold
       color: $white
     &.talk > div, &.short > div
       border-color: $gravel
+    &.short
+      flex-grow: 1
+    &.talk, .schedule-complex
+      @media (min-width: 52em)
+        width: 33.333333%
+        -ms-flex: 1 1 auto
+        flex: 1 1 auto
+        min-width: 0
+        min-height: 0
 
   .event
     &.break, &.event
