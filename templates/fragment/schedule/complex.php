@@ -1,3 +1,3 @@
-<div class="col flex flex-column col-4">
+<div class="col flex flex-column schedule-complex">
     <?= $talks ?>
 </div>
