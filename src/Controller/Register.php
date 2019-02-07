@@ -20,7 +20,7 @@ class Register extends Controller
         $this->setSchema($this->schema($resolver));
 
         $this->seo()
-            ->setTitle('Register for Cascadia PHP 2018 in Portland Oregon')
+            ->setTitle('Register for Cascadia PHP 2019 in Portland Oregon')
             ->setDescription('Join us at Cascadia PHP for Developers by Developers. ' .
                 'Exceptional speakers. Actionable tactics. Learning for all. ' .
                 'Join us for a two-day, three-track conference full of forward-thinking, tactical sessions in PHP, ' .
@@ -30,7 +30,7 @@ class Register extends Controller
         $this->seo()->opengraph()
             ->setUrl($resolver->relativeSchemaTo('/register'))
             ->setType('website')
-            ->setSiteName('Cascadia PHP 2018 Conference Registration');
+            ->setSiteName('Cascadia PHP 2019 Conference Registration');
 
         return $this->render('pages/register', '/register');
     }

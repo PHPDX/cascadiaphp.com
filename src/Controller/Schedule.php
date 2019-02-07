@@ -13,7 +13,7 @@ class Schedule extends Controller
     public function view(RowRenderer $renderer): ResponseInterface
     {
         $this->seo()
-            ->setTitle('Speaker Schedule for Cascadia PHP 2018')
+            ->setTitle('Speaker Schedule for Cascadia PHP 2019')
             ->setDescription('Cascadia PHP is two full days of speakers. Here you\'ll find the schedule for each day ' .
                 'as well as information for any after parties.');
 
