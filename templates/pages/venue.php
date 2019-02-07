@@ -21,7 +21,7 @@ $this->start('components') ?>
 
 <div class="bg-gravel price h2 py1 px3 white text-shadow m0 flex flex-row mb3">
     <amp-fit-text layout="flex-item" class="flex-item col-8 nowrap">
-        Rooms starting at <span class="bold-text">$80/night</span>
+        Rooms rate to be announced
     </amp-fit-text>
     <amp-fit-text layout="flex-item" class="ml3 flex right-align col-4 nowrap">
         1-866-845-4647
@@ -57,12 +57,12 @@ $this->start('components') ?>
         <p>
             To help you to get the most out of your conference experience and eliminate the hassle of traffic, we are
             excited to offer attendees the best rate in Downtown Portland. Simply tell them you are with Cascadia PHP
-            and you will have access to rates starting at $80 (+hotel tax). You can also purchase your conference ticket
-            with a 2 night stay included. Join guests every morning for a complimentary breakfast— way beyond juice and
-            cold cereal. You’ll enjoy a delicious spread of eggs, potatoes, assorted pastries, make your own waffles,
-            cereals, juices, and <em>most importantly</em>> coffee. All rooms are equipped with Microwave, Mini Fridge,
-            and Coffee Maker. For those of you who may be traveling a lot, there is also an On-site Washer and Dryer.
-            And of course, there is FREE WIFI for all guest and conference attendees.
+            and you will have access to our promotional rate once it is announced. You can also purchase your conference
+            ticket with a 2 night stay included. Join guests every morning for a complimentary breakfast— way beyond
+            juice and cold cereal. You’ll enjoy a delicious spread of eggs, potatoes, assorted pastries, make your own
+            waffles, cereals, juices, and <em>most importantly</em>> coffee. All rooms are equipped with Microwave, Mini
+            Fridge, and Coffee Maker. For those of you who may be traveling a lot, there is also an On-site Washer and
+            Dryer. And of course, there is FREE WIFI for all guest and conference attendees.
         </p>
     </div>
     <div>

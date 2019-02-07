@@ -2,7 +2,7 @@
 <?php /** @var \CascadiaPHP\Site\Template\Template $this */ ?>
 <?php $this->start('components') ?>
 <?php $this->stop() ?>
-<section class="what flex flex-column mx2">
+<section class="what flex flex-column mx2 mb2">
     <div class="flex-auto hero relative flex content-center justify-center items-center">
         <div id="hero-images">
             <amp-img width="1000" height="667" layout="fill" class="object-cover"
@@ -23,7 +23,8 @@
                 <amp-img src="/images/scenes/what/oregon.svg" layout="fill" class="object-contain" width="276.02" height="191.15" alt="The shape of oregon, the top half is blue and the bottom half is white"></amp-img>
                 <amp-fit-text max-font-size="50px" layout="responsive" width="216.79" height="65.75" class="white center">
                     <div class="mx3 py2 px2">
-                        <span class="sm-col sm-col-12 text-shadow">September</span> <span class="bold lightblue py2 text-shadow">14th</span> - <span class="bold lightblue text-shadow">15th</span>
+                        <span class="sm-col sm-col-12 text-shadow">September</span> <span class="bold lightblue py2 text-shadow">19th</span> - <span class="bold lightblue text-shadow">21st</span>
+                        <span class="sm-col sm-col-12">2019</span>
                     </div>
                 </amp-fit-text>
                 <amp-fit-text max-font-size="50px" layout="responsive" width="216.79" height="65.75" class="center darkblue">
@@ -38,8 +39,8 @@
     <div class="fold-cta bg-darkblue white justify-between px3 py4 mt2 sm-m0 xs-m0 md-py1 sm-py1 xs-py1">
         <div class="flex flex-column md-col-6 lg-col-7 md-col lg-col">
             <amp-fit-text layout="fixed-height" class="mr3 sm-m0 xs-m0 center" max-font-size="40px" height="80px">
-                <strong class="gold bold-text text-shadow">2</strong> <span class="light-text">days &</span>
-                <span class="nowrap"><strong class="gold bold-text text-shadow">35</strong> <span class="light-text">speakers</span></span>
+                <strong class="gold bold-text text-shadow">3</strong> <span class="light-text">days &</span>
+                <span class="nowrap"><strong class="gold bold-text text-shadow">~35</strong> <span class="light-text">speakers</span></span>
             </amp-fit-text>
         </div>
         <div class="center md-col-6 lg-col-5 md-col-right lg-col-right center">
@@ -51,9 +52,9 @@
                     </amp-fit-text>
                 </a>
  */ ?>
-                <a href="/register" class="btn btn-cta large relative flex-auto rounded">
+                <a href="https://twitter.com/cascadiaphp" target="_blank" class="btn btn-cta large relative flex-auto rounded">
                     <amp-fit-text max-font-size="60px" min-font-size="20px" layout="fixed-height" height="50px">
-                        <strong class="light-text">register now</strong>
+                        <strong class="light-text">Follow us on Twitter for Announcements</strong>
                     </amp-fit-text>
                 </a>
             </div>
@@ -61,116 +62,3 @@
     </div>
 </section>
 
-<section class="where bg-slate white mt2 mb2 p3 relative mx2">
-    <amp-img src="/images/scenes/where/bridge-partial.svg" layout="fill" class="object-left object-contain bridge-partial" alt="A semitransparent logo image"></amp-img>
-    <amp-fit-text layout="fixed-height" height="160px" class="my3">
-        <span class="nowrap bold-text text-shadow">Cascadia PHP 2018</span><br>
-        <span class="nowrap light-text text-shadow">Portland, Oregon</span>
-    </amp-fit-text>
-    <div class="md-flex where-row">
-        <div class="md-col md-col-6 lg-col-4 col-12 flex flex-column image-grid ml3 xs-m0 sm-m0">
-            <amp-fit-text layout="fixed-height" height="50px" class="center" max-font-size="30px">
-                <span class="nowrap light-text center">keep portland <strike class="light-text">weird</strike> php<strong class="gold">*</strong></span>
-            </amp-fit-text>
-            <?php
-            $srcset = function($source, $suffix = '.jpg') {
-                $set = ['1x' => '@1x', '0.75x' => '@0,75x', '0.5x' => '@0,5x', '0.25x' => '@0,25x'];
-                $items = [];
-                foreach ($set as $size => $img) {
-                    $items[] = $source . $img . $suffix . ' ' . $size;
-                }
-                return implode(',', $items);
-            }
-            ?>
-            <div class="flex relative flex-auto">
-                <div class="flex-auto relative mr1">
-                    <amp-img class="object-center object-cover rounded bg-gravel" layout="fill" width="1000" height="668" srcset="<?= $srcset('/images/scenes/where/portland-sign') ?>"></amp-img>
-                </div>
-                <div class="flex-auto flex flex-column">
-                    <div class="flex-auto relative mb1">
-                        <amp-img class="object-center object-cover rounded bg-gravel" layout="fill" width="4" height="3" src="/images/scenes/where/pipes.gif"></amp-img>
-                    </div>
-                    <div class="flex-auto relative">
-                        <amp-img class="object-center object-cover rounded bg-gravel" layout="fill" width="4" height="3" srcset="<?= $srcset('/images/scenes/where/portland-ohsu') ?>"></amp-img>
-                    </div>
-                </div>
-            </div>
-            <div class="flex relative flex-auto mt1">
-                <div class="flex-auto flex flex-column">
-                    <div class="flex-auto relative mb1">
-                        <amp-img class="object-center object-cover rounded bg-gravel" layout="fill" width="4" height="3" srcset="<?= $srcset('/images/scenes/where/portland-convention-center') ?>"></amp-img>
-                    </div>
-                    <div class="flex-auto relative">
-                        <amp-img class="object-top object-cover rounded bg-gravel" layout="fill" width="4" height="3" srcset="<?= $srcset('/images/scenes/where/portland-mthood') ?>"></amp-img>
-                    </div>
-                </div>
-                <div class="flex-auto relative ml1">
-                    <amp-img class="object-center object-cover rounded bg-gravel" layout="fill" width="1" height="1" srcset="<?= $srcset('/images/scenes/where/portland-falls') ?>"></amp-img>
-                </div>
-            </div>
-        </div>
-
-        <div class="lg-col md-hide lg-col-4 col-12 pt3 ml3 xs-m0 sm-m0 z2">
-            <p>
-                The Pacific Northwest (also known as Cascadia) is a magical land covered in Rain Forests, Deserts, Coasts,
-                Mountains, Rivers, and People. It's expansive forests have traditionally powered the industries in this area,
-                but with the last century, more and more it has had a focus on Tech.
-            </p>
-            <p>
-                Businesses in this area embraced the web when it was in its infancy, and has a huge community of PHP users
-                because of it.
-            </p>
-        </div>
-        <div class="lg-col lg-col-4 md-col md-col-6 col-12 pt3 z2">
-            <p>
-                Join us at Cascadia PHP for Developers by Developers.
-                Exceptional speakers. Actionable tactics. Learning for all.
-                Join us for a two-day, three-track conference full of forward-thinking, tactical sessions in PHP,
-                Security, API’s, Dev Ops, web technologies, and more.
-            </p>
-            <p>
-                At Cascadia PHP you'll connect with our amazing
-                community of industry leaders, chat with the speakers and staff, and pick up some cool swag.
-            </p>
-            <div class="lg-hide">
-                <p>
-                    The Pacific Northwest (also known as Cascadia) is a magical land covered in Rain Forests, Deserts, Coasts,
-                    Mountains, Rivers, and People. It's expansive forests have traditionally powered the industries in this area,
-                    but with the last century, more and more it has had a focus on Tech.
-                </p>
-                <p>
-                    Businesses in this area embraced the web when it was in its infancy, and has a huge community of PHP users
-                    because of it.
-                </p>
-            </div>
-        </div>
-        <div class="clearfix"></div>
-    </div>
-</section>
-<section class="who bg-gravel shattered p3 my2 mx2 white">
-    <amp-fit-text layout="fixed-height" height="75px" class="text-shadow-md center white">Who is Cascadia PHP?</amp-fit-text>
-    <div class="contributors mx1 my1">
-        <?php $this->insert('structure/organizer', ['name' => 'Alena Holligan', 'role' => 'President', 'image' => 'alena.jpg', 'twitter' => '@sketchings']) ?>
-        <?php $this->insert('structure/organizer', ['name' => 'Kevin DeCapite', 'role' => 'Vice President', 'image' => 'kevin.jpg', 'twitter' => '@kevindecapite']) ?>
-        <?php $this->insert('structure/organizer', ['name' => 'Melinda Serven', 'role' => 'Treasurer', 'image' => 'melinda.jpg', 'twitter' => '@melindaserven']) ?>
-        <?php $this->insert('structure/organizer', ['name' => 'Korvin Szanto', 'role' => 'Secretary', 'image' => 'korvin.jpg', 'twitter' => '@korvinszanto']) ?>
-        <?php $this->insert('structure/organizer', ['name' => 'Danielle Grillenzoni', 'image' => 'daniele.jpg', 'twitter' => '@theMadness']) ?>
-        <?php $this->insert('structure/organizer', ['name' => 'Kurtis Holsapple', 'image' => 'kurtis.jpg', 'twitter' => '@lapubell']) ?>
-        <div class="clearfix"></div>
-    </div>
-    <div>
-        <div class="lg-col-4 lg-col pr2 lg-p0">
-            <amp-fit-text layout="fixed-height" class="bold-text center white text-shadow" height="40px">Non-Profit</amp-fit-text>
-            <?= $this->markdown('who/non-profit') ?>
-        </div>
-        <div class="lg-col-4 lg-col px1 lg-p0">
-            <amp-fit-text layout="fixed-height" class="bold-text center white text-shadow" height="40px">Our Mission Is To</amp-fit-text>
-            <?= $this->markdown('who/mission') ?>
-        </div>
-        <div class="lg-col-4 lg-col pl2 lg-p0">
-            <amp-fit-text layout="fixed-height" class="bold-text center white text-shadow" height="40px">History</amp-fit-text>
-            <?= $this->markdown('who/history') ?>
-        </div>
-        <div class="clearfix"></div>
-    </div>
-</section>

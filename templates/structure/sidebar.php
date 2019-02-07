@@ -6,18 +6,6 @@
         <amp-img class="logo" src="/images/logo.svg" height=263 width=705 layout="responsive"></amp-img>
     </div>
     <div class="sidebar-ul flex flex-column center m2">
-        <?php /*
-        <div class="m1">
-            <a href="/news" class="btn btn-darkblue inverted block <?= $active === '/news' ? 'active' : '' ?>">
-                News
-            </a>
-        </div>
-        */ ?>
-        <div class="m1">
-            <a href="/schedule" class="btn btn-darkblue inverted block <?= $active === '/schedule' ? 'active' : '' ?>">
-                Schedule
-            </a>
-        </div>
         <div class="m1">
             <a href="/speakers" class="btn btn-darkblue inverted block <?= $active === '/speakers' ? 'active' : '' ?>">
                 Speakers
@@ -40,18 +28,6 @@
 
     <nav toolbar="(min-width: 52em)" toolbar-target="nav_container" class="header-nav flex">
         <ul class="inner flex justify-end">
-            <?php /*
-            <li class="flex-auto md-hide flex flex-column justify-center">
-                <a href="/news" class="py1 px2 <?= $active === '/news' ? 'active' : '' ?>">
-                    News
-                </a>
-            </li>
-            */ ?>
-            <li class="flex flex-column justify-center">
-                <a href="/schedule" class="py1 px2 <?= $active === '/schedule' ? 'active' : '' ?>">
-                    Schedule
-                </a>
-            </li>
             <li class="flex flex-column justify-center">
                 <a href="/speakers" class="py1 px2 <?= $active === '/speakers' ? 'active' : '' ?>">
                     Speakers

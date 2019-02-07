@@ -11,7 +11,7 @@ echo $this->inline('/css/pages/sponsors.css');
 $this->stop();
 ?>
 
-<h1 class="my0 mb3 cubes pb2 pt3 border-bottom b2 b-gold bg-white px3 darkblue">Sponsors</h1>
+<h1 class="my0 mb3 cubes pb2 pt3 border-bottom b2 b-gold bg-white px3 darkblue">2018 Sponsors</h1>
 <div class="sponsors mb3">
     <p class="center">
         Our sponsors help make this event possible! They are committed to building the Portland PHP community and would

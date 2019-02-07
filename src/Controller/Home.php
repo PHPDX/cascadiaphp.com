@@ -28,8 +28,8 @@ class Home extends Controller
         // Set general SEO stuff
         $this->seo()
             ->addImages($uri->relativeSchemaTo('/images/opengraph/main-banner.png'))
-            ->setTitle('Cascadia PHP 2018 | Sept 14-15 in Portland, OR | Developers Event')
-            ->setDescription('Join us Sept 14-15 in Portland, OR. Cascadia PHP is conference for Developers by Developers');
+            ->setTitle('Cascadia PHP 2019 | Sept 19-21 in Portland, OR | Developers Event')
+            ->setDescription('Join us Sept 19-21 in Portland, OR. Cascadia PHP is conference for Developers by Developers');
 
         // Set opengraph specific stuff
         $this->seo()->opengraph()
@@ -44,8 +44,8 @@ class Home extends Controller
                 'portland or',
                 'portland usa',
                 'php conference',
-                'php 2018',
-                'php conference 2018',
+                'php 2019',
+                'php conference 2019',
                 'php developer',
                 'web developer',
                 'wordpress developer',
