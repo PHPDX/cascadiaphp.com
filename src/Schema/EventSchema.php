@@ -13,12 +13,12 @@ class EventSchema extends Offer
     public static function create(UriResolver $uri)
     {
         $timezone = new \DateTimeZone('PST');
-        $startDate = new \DateTime('September 14th 2018', $timezone);
-        $enddate = new \DateTime('September 15th 2018', $timezone);
+        $startDate = new \DateTime('September 19th 2019', $timezone);
+        $endDate = new \DateTime('September 21th 2019', $timezone);
 
-        $blindBirdStarts = new \DateTime('April 15th 2018', $timezone);
-        $earlyBirdStarts = new \DateTime('June 10th 2018', $timezone);
-        $generalAdmissionStarts = new \DateTime('August 1st 2018', $timezone);
+        //$blindBirdStarts = new \DateTime('April 15th 2018', $timezone);
+        //$earlyBirdStarts = new \DateTime('June 10th 2018', $timezone);
+        //$generalAdmissionStarts = new \DateTime('August 1st 2018', $timezone);
 
         /** The default site schema */
         return Schema::educationEvent()
@@ -28,7 +28,7 @@ class EventSchema extends Offer
                 'A PHP conference in the heart of Portland Oregon'
             )
             ->startDate($startDate)
-            ->endDate($enddate)
+            ->endDate($endDate)
             ->location(
                 Schema::place()
                     ->name('University Place Hotel')
@@ -74,7 +74,8 @@ class EventSchema extends Offer
                      ->name('Korvin Szanto')
                      ->image('https://avatars3.githubusercontent.com/u/1007419?s=460&v=4')
                 */
-            ])
+            ]);
+        /**
             ->offers([
                 Schema::offer()
                     ->name('Blind Bird')
@@ -100,6 +101,7 @@ class EventSchema extends Offer
                     ->availability('In stock')
                     ->url($uri->relativeSchemaTo('/register'))
             ]);
+         */
     }
 
 }
