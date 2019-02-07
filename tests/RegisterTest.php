@@ -12,8 +12,8 @@ class RegisterTest extends PageTestCase
         $this->getResponse()
             ->shouldSucceed()
             ->shouldContainSelector('.btn-cta')
-            ->shouldHaveCanonicalUrl('/register')
-            ->shouldContainSelector('form', 'The register page should have a form on it');
+            ->shouldHaveCanonicalUrl('/register');
+            //->shouldContainSelector('form', 'The register page should have a form on it');
     }
 
     public function testPageIsValidAmp(): void

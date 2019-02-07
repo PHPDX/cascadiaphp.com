@@ -9,6 +9,7 @@ class ScheduleTest extends PageTestCase
 {
     public function testPageRendersAsExpected(): void
     {
+        $this->markTestSkipped("Schedule has been disabled");
         $this->getResponse()
             ->shouldSucceed()
             ->shouldHaveCanonicalUrl('/schedule')
@@ -17,6 +18,7 @@ class ScheduleTest extends PageTestCase
 
     public function testPageIsValidAmp(): void
     {
+        $this->markTestSkipped("Schedule has been disabled");
         $this->getResponse()
             ->shouldBeAMP();
     }

@@ -12,15 +12,15 @@ class HomeTest extends PageTestCase
         $this->getResponse()
             ->shouldSucceed()
             ->shouldContainSelector('.btn-cta')
-            ->shouldContainSelector('section.what')
-            ->shouldContainSelector('section.where')
-            ->shouldContainSelector('section.who');
+            ->shouldContainSelector('section.what');
+            //->shouldContainSelector('section.where')
+            //->shouldContainSelector('section.who');
 
         // Make sure we're hitting the key points we're interested in
         $this->getResponse()
             ->shouldContain('non-profit')
-            ->shouldContain('history')
-            ->shouldContain('our mission')
+            //->shouldContain('history')
+            //->shouldContain('our mission')
             ->shouldHaveCanonicalUrl('/')
             ->shouldContain('&copy; ' . date('Y'), 'The site should have a copyright with the active year');
     }

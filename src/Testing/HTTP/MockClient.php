@@ -14,6 +14,7 @@ use Middlewares\FastRoute;
 use Middlewares\RequestHandler;
 use Psr\Container\ContainerInterface;
 use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
 class MockClient extends Client
@@ -36,7 +37,7 @@ class MockClient extends Client
     /** @var ContainerInterface */
     protected static $container;
 
-    public function sendRequest(RequestInterface $request, TestCase $testCase = null, $withMiddleware = true)
+    public function sendRequest(RequestInterface $request, TestCase $testCase = null, $withMiddleware = true): ResponseInterface
     {
         // Get a new middleware stack
         $stack = $this->getMiddlewareStack($withMiddleware);
