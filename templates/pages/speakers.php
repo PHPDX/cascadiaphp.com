@@ -23,6 +23,6 @@ $this->stop();
 
 <h3 class="center">CascadiaPHP's 2019 CFP is open now!</h3>
 <p class="center ">
-    <a href="https://cfp.cascadiaphp.com/" target="_blank" aria-label="Link to Cascadia PHP Twitter">Click here</a>
+    <a href="https://cfp.cascadiaphp.com/" target="_blank" aria-label="Click Here link for our call for papers">Click here</a>
     to submit a talk now!
 </p>
