@@ -21,8 +21,8 @@ $this->stop();
 
 <h1 class="my0 cubes pb2 pt3 border-bottom b2 b-gold bg-white px3 darkblue">Speakers</h1>
 
-<h3 class="center">CascadiaPHP's 2019 CFP will begin soon!</h3>
+<h3 class="center">CascadiaPHP's 2019 CFP is open now!</h3>
 <p class="center ">
-    <a href="https://twitter.com/cascadiaphp" target="_blank" aria-label="Link to Cascadia PHP Twitter">Follow us on Twitter</a>
-    to be the first to know!
+    <a href="https://cfp.cascadiaphp.com/" target="_blank" aria-label="Link to Cascadia PHP Twitter">Click here</a>
+    to submit a talk now!
 </p>
