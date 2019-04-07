@@ -17,7 +17,7 @@ class Controller extends BlockController
 
     public function view()
     {
-        $page = Page::getByPath('/register');
+        $page = Page::getByPath('/registration');
         $this->set('price', $this->determinePrice($page));
         $this->set('registerLink', $this->app->make(PageUrlResolver::class)->resolve([$page]));
     }

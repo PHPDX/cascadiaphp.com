@@ -37,7 +37,12 @@
         text-transform: uppercase
         margin: 0 5px
 
+
+        &.nav-path-selected
+          border-bottom: solid 1px white
+
         &:nth-child(6)
+          border-bottom: none
           a
             @include button-variant($color-orange, $color-orange)
 
@@ -47,9 +52,6 @@
           @include button-size(15px, 18px, 'auto', 10px, 3px)
           color: white !important
           letter-spacing: em(3)
-
-        &.nav-path-selected
-          border-bottom: solid 1px white
 
 
   .cp-separator
