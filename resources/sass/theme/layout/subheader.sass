@@ -4,11 +4,14 @@
 .cp-subheader
   background-color: $color-gray
   background-image: url("../../../resources/images/cubes.png")
+  @extend .shadow-inner
 
   img
     min-width: 100%
     height: auto
     align-self: center
+    filter: blur(.5em)
+    @extend .shadow-md
 
   .cp-striped-image
     display: flex

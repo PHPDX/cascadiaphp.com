@@ -9,7 +9,7 @@ build
 tmp
 mix-manifest.json
 hot
-
+public/images
 
 # Concrete5 stuff
 public/concrete/

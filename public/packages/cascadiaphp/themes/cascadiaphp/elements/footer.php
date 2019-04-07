@@ -2,7 +2,7 @@
 /** @var \Concrete\Core\View\View $view */
 $view = $view ?? null;
 ?>
-<div class="cp-footer-top cp-row">
+<div class="cp-footer-top cp-row shadow">
     <div class="cp-footer-top-container flex cp-column cp-padded">
         <div class="flex-auto cp-footer-top-left">
             <div class="cp-footer-top-top-content">

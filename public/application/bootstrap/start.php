@@ -1,6 +1,8 @@
 <?php
 
+use CascadiaPHP\Site\Asset\MixCssAsset;
 use Concrete\Core\Application\Application;
+use Concrete\Core\Asset\CssAsset;
 
 /*
  * ----------------------------------------------------------------------------
@@ -23,5 +25,8 @@ $app->detectEnvironment(
             'live.site',
         ),
     ));
+
+
+$app->bind(CssAsset::class, MixCssAsset::class);
 
 return $app;
