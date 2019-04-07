@@ -35,8 +35,8 @@ resources in `./resources`.
 Use `yarn watch` to recompile your stuff as you go. This combind with something like `liveedit` makes the dev process
 a lot nicer than it used to be
 
-[ico-travis]: https://img.shields.io/travis/PHPDX/cascadiaphp.com/develop.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/PHPDX/cascadiaphp.com/develop.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/PHPDX/cascadiaphp.com/2019.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/PHPDX/cascadiaphp.com/2019.svg?style=flat-square
 [ico-code-quality]: https://img.shields.io/scrutinizer/g/PHPDX/cascadiaphp.com.svg?style=flat-square
 
 [link-travis]: https://travis-ci.org/PHPDX/cascadiaphp.com
