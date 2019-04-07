@@ -1,4 +1,7 @@
-<?php defined('C5_EXECUTE') or die('Access Denied.') ?>
+<?php defined('C5_EXECUTE') or die('Access Denied.');
+/** @var \Concrete\Core\View\View $view */
+$view = $view ?? null;
+?>
 <div class="cp-footer-top cp-row">
     <div class="cp-footer-top-container flex cp-column cp-padded">
         <div class="flex-auto cp-footer-top-left">
@@ -41,4 +44,4 @@
 </div>
 </div>
 
-<?php $this->inc('elements/footer_bottom.php') ?>
+<?php $view->inc('elements/footer_bottom.php') ?>

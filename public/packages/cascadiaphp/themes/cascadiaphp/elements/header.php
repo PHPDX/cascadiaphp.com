@@ -1,5 +1,10 @@
-<?php defined('C5_EXECUTE') or die('Access Denied.') ?>
-<?php $this->inc('elements/header_top.php') ?>
+<?php defined('C5_EXECUTE') or die('Access Denied.');
+/** @var \Concrete\Core\View\View $view */
+$view = $view ?? null;
+/** @var \Concrete\Core\Page\Page $c */
+$c = $c ?? null;
+?>
+<?php $view->inc('elements/header_top.php') ?>
 
 <div class="main-wrapper <?= $c->getPageWrapperClass() ?>">
 

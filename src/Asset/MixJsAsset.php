@@ -9,41 +9,14 @@ use const DIR_BASE;
 
 class MixJsAsset extends JavascriptAsset
 {
-    /**
-     * @param Asset[] $assets
-     *
-     * @return \CascadiaPHP\Site\Asset\MixJsAsset[]
-     * @throws \Exception
-     */
-    public static function process($assets)
+    public function setAssetURL($url)
     {
-        $assets = parent::process($assets);
-
         $mix = new Mix();
-
-        foreach ($assets as &$asset) {
-            self::checkMix($mix, $asset);
+        $result = (string) $mix(ltrim($url, '/'), DIR_BASE);
+        if (substr($result, 0, 2) === '//') {
+            $url = $result;
         }
 
-        return $assets;
+        $this->assetURL = $url;
     }
-
-    /**
-     * Replace with mix version if one exists
-     *
-     * @param \CascadiaPHP\Site\Asset\Mix $mix
-     * @param \CascadiaPHP\Site\Asset\MixJsAsset $asset
-     *
-     * @throws \Exception
-     */
-    private static function checkMix(Mix $mix, MixJsAsset $asset)
-    {
-        $path = $asset->getAssetPath();
-        $mixPath = $mix($path, DIR_BASE);
-
-        if ($path !== $mixPath) {
-            $asset->setAssetPath();
-        }
-    }
-
 }

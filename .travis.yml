@@ -10,12 +10,11 @@ cache:
     - $HOME/.composer/cache
     - $HOME/.npm
 before_script:
-  - npm i -g yarn
-  - yarn install
-  - yarn prod
   - composer self-update
   - composer update
+  - composer global require phpstan/phpstan
 script:
   - ./vendor/bin/phpunit --coverage-clover=coverage.clover
+  - composer analyze
 after_script:
   - wget https://scrutinizer-ci.com/ocular.phar && php ocular.phar code-coverage:upload --format=php-clover coverage.clover

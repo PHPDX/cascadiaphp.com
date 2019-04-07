@@ -1,4 +1,9 @@
-<?php defined('C5_EXECUTE') or die('Access Denied.') ?>
+<?php defined('C5_EXECUTE') or die('Access Denied.');
+/** @var string $registerLink */
+$registerLink = $registerLink ?? null;
+/** @var int $price */
+$price = $price ?? null;
+?>
 
 <div class="flex pt4 pb4">
     <a class="cp-register-button" href="<?= $registerLink ?>">

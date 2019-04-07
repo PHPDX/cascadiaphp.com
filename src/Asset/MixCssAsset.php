@@ -12,7 +12,7 @@ class MixCssAsset extends CssAsset
     public function setAssetURL($url)
     {
         $mix = new Mix();
-        $result = $mix(ltrim($url, '/'), DIR_BASE);
+        $result = (string) $mix(ltrim($url, '/'), DIR_BASE);
         if (substr($result, 0, 2) === '//') {
             $url = $result;
         }

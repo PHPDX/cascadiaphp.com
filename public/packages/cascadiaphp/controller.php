@@ -44,7 +44,10 @@ class Controller extends Package
     public function upgrade()
     {
         parent::upgrade();
-        $this->alignState($this->getPackageEntity());
+
+        if ($entity = $this->getPackageEntity()) {
+            $this->alignState($entity);
+        }
     }
 
     private function alignState(PackageEntity $pkg)
@@ -53,11 +56,12 @@ class Controller extends Package
         $siteService = $this->app->make(Service::class);
         $defaultSite = $siteService->getDefault();
 
-
         // Install our theme
-        if (!Theme::getByHandle('cascadiaphp')) {
+        if (Theme::getByHandle('cascadiaphp') !== null) {
             // Set up our site name
-            $defaultSite->setSiteName('Cascadia PHP');
+            if ($defaultSite) {
+                $defaultSite->setSiteName('Cascadia PHP');
+            }
 
             // Install our theme
             $theme = Theme::add('cascadiaphp', $pkg);

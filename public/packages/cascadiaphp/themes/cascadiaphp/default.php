@@ -1,4 +1,9 @@
-<?php defined('C5_EXECUTE') or die('Access Denied.') ?>
+<?php defined('C5_EXECUTE') or die('Access Denied.');
+/** @var \Concrete\Core\View\View $view */
+$view = $view ?? null;
+/** @var \Concrete\Core\Page\Page $c */
+$c = $c ?? null;
+?>
 <?php $view->requireAsset('css', 'cp/inner') ?>
 <?php $view->inc('elements/header.php') ?>
 

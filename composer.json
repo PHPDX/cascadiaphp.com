@@ -52,5 +52,8 @@
         "type:concrete5-block"
       ]
     }
+  },
+  "scripts": {
+    "analyze": "phpstan --memory-limit=-1 analyse -n -l7 -a tests/phpstan-bootstrap.php  public/application public/packages src"
   }
 }
