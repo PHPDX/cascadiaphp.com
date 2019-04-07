@@ -5,8 +5,8 @@ $view = $view ?? null;
 $c = $c ?? null;
 ?>
 
-<div class="cp-fotter-bottom cp-row flex flex-column">
-    <div class="cp-fotter-bottom-container flex cp-column cp-padded">
+<div class="cp-footer-bottom cp-row flex flex-column">
+    <div class="cp-footer-bottom-container flex cp-column cp-padded">
         <div class="flex-1 flex flex-column">
             <div class="cp-short-container">
                 <div class="copyright">&copy; <?= date('Y') ?> Cascadia PHP Inc. All rights reserved.</div>

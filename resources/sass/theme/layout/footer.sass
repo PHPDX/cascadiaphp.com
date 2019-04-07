@@ -12,16 +12,19 @@
     .cp-footer-top-oregon
       flex: 1
       position: relative
+      display: flex
+      flex-direction: column
+      justify-content: center
 
       img
         position: absolute
-        top: 0
-        bottom: 0
+        max-width: 80%
         right: 0
-        height: calc(100% + #{em(70)})
+        transform: scale(1.1)
+        height: auto
         width: auto
-        margin-top: em(-50)
-        margin-bottom: em(-25)
+        margin-top: em(-10)
+        align-self: flex-end
 
     > .cp-footer-top-left
       flex: 1
@@ -45,10 +48,10 @@
           color: $color-blue-dark
           font-weight: bolder
 
-.cp-fotter-bottom
+.cp-footer-bottom
   background-color: $color-blue
 
-  .cp-fotter-bottom-container
+  .cp-footer-bottom-container
     margin-top: em(80)
 
     > div
@@ -70,10 +73,11 @@
   .cp-footer-logo a
     display: flex
     justify-content: center
+    @extend .m3
 
     img
       max-width: 100%
-      height: auto
+      object-fit: contain
 
 
   .cp-footer-social

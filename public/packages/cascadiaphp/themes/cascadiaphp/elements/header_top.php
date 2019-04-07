@@ -3,8 +3,9 @@
 $view = $view ?? null;
 ?>
 <!doctype html>
-<html>
+
+<html lang="<?= Concrete\Core\Localization\Localization::activeLanguage() ?>">
 <head>
-<?php $view->element('header_required') ?>
+    <?php $view->element('header_required') ?>
 </head>
 <body>
