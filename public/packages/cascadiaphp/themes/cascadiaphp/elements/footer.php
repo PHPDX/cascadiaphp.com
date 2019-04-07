@@ -1,24 +1,9 @@
 <?php defined('C5_EXECUTE') or die('Access Denied.');
 /** @var \Concrete\Core\View\View $view */
 $view = $view ?? null;
+/** @var \Concrete\Core\Page\Page $c */
+$c = $c ?? null;
 ?>
-<div class="cp-footer-top cp-row shadow">
-    <div class="cp-footer-top-container flex cp-column cp-padded">
-        <div class="flex-auto cp-footer-top-left">
-            <div class="cp-footer-top-top-content">
-                <span>THE OFFICIAL</span>
-                <span>2019 PHP Conference</span>
-            </div>
-            <div class="cp-footer-top-bottom-content">
-                <span>OF THE PACIFIC NORTHWEST</span>
-                <span>Portland, OR</span>
-            </div>
-        </div>
-        <div class="flex-auto cp-footer-top-oregon">
-            <?= (new GlobalArea('Footer Oregon'))->display() ?>
-        </div>
-    </div>
-</div>
 
 <div class="cp-fotter-bottom cp-row flex flex-column">
     <div class="cp-fotter-bottom-container flex cp-column cp-padded">
@@ -29,18 +14,19 @@ $view = $view ?? null;
             </div>
         </div>
         <div class="flex-1 flex flex-column cp-footer-logo">
-            <?= (new GlobalArea('Footer Logo'))->display() ?>
+            <?= globalArea('Footer Logo', $c) ?>
         </div>
         <div class="flex-1 flex flex-column cp-footer-pagelist">
             <div class="cp-short-container">
-                <?= (new GlobalArea('Footer PageList'))->display() ?>
+                <?= globalArea('Footer PageList', $c) ?>
             </div>
         </div>
     </div>
     <div class="cp-footer-social cp-column cp-padded">
-        <?= (new GlobalArea('Footer Social'))->display() ?>
+        <?= globalArea('Footer Social', $c)?>
     </div>
 </div>
+
 </div>
 </div>
 

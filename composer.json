@@ -3,7 +3,10 @@
   "autoload": {
     "psr-4": {
       "CascadiaPHP\\Site\\": "src"
-    }
+    },
+    "files": [
+      "src/functions.php"
+    ]
   },
   "require": {
     "php": "^7.2",
@@ -54,6 +57,6 @@
     }
   },
   "scripts": {
-    "analyze": "phpstan --memory-limit=-1 analyse -n -l7 -a tests/phpstan-bootstrap.php  public/application public/packages src"
+    "analyze": "phpstan --memory-limit=-1 analyse -c phpstan.neon -n"
   }
 }

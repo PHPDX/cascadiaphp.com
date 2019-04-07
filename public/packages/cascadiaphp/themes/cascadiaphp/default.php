@@ -8,10 +8,10 @@ $c = $c ?? null;
 <?php $view->inc('elements/header.php') ?>
 
 <div class="cp-subheader cp-row">
-    <div class="cp-column center">
+    <div class="cp-column cp-subheader-fixed-height center">
         <div class="cp-striped-image">
             <div class="cp-image-container">
-                <?php (new Area('Subheader'))->display($c) ?>
+                <?php area('Subheader', $c) ?>
             </div>
             <div class="cover"></div>
             <div class="cover-bottom"></div>
@@ -24,8 +24,9 @@ $c = $c ?? null;
 
 <div class="cp-content-section cp-row flex-grow">
     <div class="cp-column cp-padded">
-        <?php (new Area('Main'))->display($c) ?>
+        <?php area('Main', $c) ?>
     </div>
 </div>
 
+<?php $view->inc('elements/footer_top.php') ?>
 <?php $view->inc('elements/footer.php') ?>

@@ -11,3 +11,63 @@
   @import "layout/subheader"
   @import "components/striped-image"
   @import "components/register-button"
+
+  .cp-who-is-row
+    background-color: $color-blue-dark
+    padding: 0  0 5em 0
+    .cp-separator
+      margin-bottom: 4em
+
+    h2
+      color: white
+
+    p
+      color: white
+
+    .cp-layout
+      justify-content: center
+      > div
+        max-width: 550px
+        margin: 0 0 0 2.5em
+        &:first-child
+          float: right
+          margin: 0 2.5em 0 0
+
+  .cp-subheader-content
+    padding-top: em(75)
+    clear: both
+    z-index: 2
+
+    .cp-footer-top
+      background-color: rgba($color-orange, .65)
+
+    .cp-gravel-section
+      background-color: rgba($color-gravel, .65)
+      padding-top: 3em
+      padding-bottom: 6em
+      color: white
+      h2
+        color: white
+        font-size: em(48)
+
+  .cp-subheader
+    position: relative
+
+  .cp-background-cover
+    background: $color-white
+    top: em(75)
+    bottom: 0
+    left: 0
+    right: 0
+    position: absolute !important
+
+  .cp-hangover
+    > div
+      padding-top: 0
+      margin-top: em(-50)
+
+    .cp-register-button
+      z-index: 5
+
+  .cp-subheader-editmode .cp-subheader-content
+    margin-top: 30px

@@ -12,10 +12,10 @@ $c = $c ?? null;
         <div class="cp-header-content">
             <div class="cp-header-container">
                 <div class="cp-header-left">
-                    <?= (new GlobalArea('Header Left'))->display($c) ?>
+                    <?= globalArea('Header Left', $c) ?>
                 </div>
                 <div class="cp-header-right">
-                    <?= (new GlobalArea('Header Right'))->display($c) ?>
+                    <?= globalArea('Header Right', $c) ?>
                 </div>
             </div>
             <div class="cp-separator"></div>

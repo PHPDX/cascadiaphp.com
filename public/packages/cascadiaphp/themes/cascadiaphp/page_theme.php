@@ -26,10 +26,20 @@ class PageTheme extends Theme implements ThemeProviderInterface
             [
                 'handle' => 'two_columns',
                 'name' => 'Two Columns',
-                'container' => '<div class="flex"></div>',
+                'container' => '<div class="cp-layout flex"></div>',
                 'columns' => [
                     '<div class="mr2 flex-1"></div>',
                     '<div class="ml2 flex-1"></div>',
+                ],
+            ],
+            [
+                'handle' => 'three_columns',
+                'name' => 'Three Columns',
+                'container' => '<div class="cp-layout flex"></div>',
+                'columns' => [
+                    '<div class="mr3 flex-1"></div>',
+                    '<div class="mr1 mx3 flex-1"></div>',
+                    '<div class="ml3 flex-1"></div>',
                 ],
             ]
         ];

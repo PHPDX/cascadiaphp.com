@@ -1,0 +1,10 @@
+parameters:
+    bootstrap: tests/phpstan-bootstrap.php
+    level: 7
+    paths:
+        - public/application
+        - public/packages
+        - src
+    excludes_analyse:
+        - public/application/files
+        - public/application/config/doctrine
