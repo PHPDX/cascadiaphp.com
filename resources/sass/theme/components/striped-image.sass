@@ -1,0 +1,31 @@
+@import "../config"
+
+.cp-striped-image
+  position: relative
+  overflow: hidden
+  display: flex
+  align-items: center
+
+  .cp-image-container
+    display: flex
+    flex-grow: 1
+
+  .cover
+    position: absolute
+    width: 0
+    height: 0
+    top: 0
+    left: 0
+    border-top: calc(100vh) solid rgba(171,209,216,.5)
+    border-right: calc(#{$max-width} - 500px) solid transparent
+    pointer-events: none
+
+  .cover-bottom
+    position: absolute
+    width: 0
+    height: 0
+    bottom: 0
+    right: 0
+    border-bottom: calc(100vh) solid rgba(30,64,87,.5)
+    border-left: calc(#{$max-width} - 500px) solid transparent
+    pointer-events: none

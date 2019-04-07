@@ -8,8 +8,15 @@ yarn-error.log
 build
 tmp
 mix-manifest.json
+hot
 
 
 # Concrete5 stuff
 public/concrete/
 public/packages/*
+public/application/files/
+public/application/config/generated_overrides
+
+# Make sure we can still track our package
+!public/packages/cascadiaphp
+public/packages/cascadiaphp/themes/cascadiaphp/css/*

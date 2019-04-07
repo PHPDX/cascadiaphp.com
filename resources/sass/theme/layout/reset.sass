@@ -1,0 +1,22 @@
+@import "~bootstrap/scss/bootstrap-reboot"
+@import "~flex-object/lib/flex"
+@import "~flex-object/lib/sm-flex"
+@import "~flex-object/lib/md-flex"
+@import "~flex-object/lib/lg-flex"
+@import "~basscss-margin/index"
+@import "~basscss-padding/index"
+
+@import "../config"
+
+$browser-context: 16
+
+// A function to convert pixel values to rem values
+// This gives us the ability to simply scale font sizes accross the site
+@function em($pixels, $context: $browser-context)
+  @return #{$pixels/$context}rem
+
+body
+  font-family: $font-primary
+
+.flex-1
+  flex: 1

@@ -1296,12 +1296,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "546cd67495de87a7406cbdb4580730068c696cab"
+                "reference": "773275d18327bedfe4ca97a3c4878961e1856be1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/546cd67495de87a7406cbdb4580730068c696cab",
-                "reference": "546cd67495de87a7406cbdb4580730068c696cab",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/773275d18327bedfe4ca97a3c4878961e1856be1",
+                "reference": "773275d18327bedfe4ca97a3c4878961e1856be1",
                 "shasum": ""
             },
             "require": {
@@ -1327,7 +1327,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.9.x-dev",
+                    "dev-master": "2.10.x-dev",
                     "dev-develop": "3.0.x-dev"
                 }
             },
@@ -1370,7 +1370,7 @@
                 "php",
                 "queryobject"
             ],
-            "time": "2019-03-17T22:29:55+00:00"
+            "time": "2019-04-06T16:31:12+00:00"
         },
         {
             "name": "doctrine/event-manager",
@@ -2001,16 +2001,16 @@
         },
         {
             "name": "erusev/parsedown",
-            "version": "v1.8.0-beta-6",
+            "version": "1.8.0-beta-7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/erusev/parsedown.git",
-                "reference": "7d4c06cb520cca6d0c5a381eaa15bb5576593682"
+                "reference": "fe7a50eceb4a3c867cc9fa9c0aa906b1067d1955"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/erusev/parsedown/zipball/7d4c06cb520cca6d0c5a381eaa15bb5576593682",
-                "reference": "7d4c06cb520cca6d0c5a381eaa15bb5576593682",
+                "url": "https://api.github.com/repos/erusev/parsedown/zipball/fe7a50eceb4a3c867cc9fa9c0aa906b1067d1955",
+                "reference": "fe7a50eceb4a3c867cc9fa9c0aa906b1067d1955",
                 "shasum": ""
             },
             "require": {
@@ -2043,7 +2043,7 @@
                 "markdown",
                 "parser"
             ],
-            "time": "2019-03-17T17:19:07+00:00"
+            "time": "2019-03-17T18:47:21+00:00"
         },
         {
             "name": "filp/whoops",
@@ -2348,12 +2348,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "31ea59d632d3ac145300fffb2873a195172c0814"
+                "reference": "a346647434953deb5bd599d92922b2d225e25170"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/31ea59d632d3ac145300fffb2873a195172c0814",
-                "reference": "31ea59d632d3ac145300fffb2873a195172c0814",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/a346647434953deb5bd599d92922b2d225e25170",
+                "reference": "a346647434953deb5bd599d92922b2d225e25170",
                 "shasum": ""
             },
             "require": {
@@ -2411,7 +2411,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2019-02-20T09:29:56+00:00"
+            "time": "2019-04-01T06:40:32+00:00"
         },
         {
             "name": "hautelook/phpass",
@@ -4546,12 +4546,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/whiteoctober/Pagerfanta.git",
-                "reference": "8276a078563e719be16d12480dbd28e47ac094fa"
+                "reference": "45a85ad426316ae37f2d007022e5b4c95bc3aef4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/whiteoctober/Pagerfanta/zipball/8276a078563e719be16d12480dbd28e47ac094fa",
-                "reference": "8276a078563e719be16d12480dbd28e47ac094fa",
+                "url": "https://api.github.com/repos/whiteoctober/Pagerfanta/zipball/45a85ad426316ae37f2d007022e5b4c95bc3aef4",
+                "reference": "45a85ad426316ae37f2d007022e5b4c95bc3aef4",
                 "shasum": ""
             },
             "require": {
@@ -4607,7 +4607,7 @@
                 "paginator",
                 "paging"
             ],
-            "time": "2019-03-11T08:58:08+00:00"
+            "time": "2019-04-02T08:50:39+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -5640,12 +5640,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "9dc2299a016497f9ee620be94524e6c0af0280a9"
+                "reference": "10eedde0d3a83c632b1f519532c1d2ac1ec96a3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/9dc2299a016497f9ee620be94524e6c0af0280a9",
-                "reference": "9dc2299a016497f9ee620be94524e6c0af0280a9",
+                "url": "https://api.github.com/repos/symfony/console/zipball/10eedde0d3a83c632b1f519532c1d2ac1ec96a3a",
+                "reference": "10eedde0d3a83c632b1f519532c1d2ac1ec96a3a",
                 "shasum": ""
             },
             "require": {
@@ -5704,7 +5704,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2019-02-23T15:17:42+00:00"
+            "time": "2019-04-06T15:11:40+00:00"
         },
         {
             "name": "symfony/contracts",
@@ -5712,12 +5712,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/contracts.git",
-                "reference": "99c07379e2ad7b4df43acfe6c7bcd4b6a1ec9bea"
+                "reference": "a4b5e697e24544ddeaf9f9255cdda6e4c2c32659"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/contracts/zipball/99c07379e2ad7b4df43acfe6c7bcd4b6a1ec9bea",
-                "reference": "99c07379e2ad7b4df43acfe6c7bcd4b6a1ec9bea",
+                "url": "https://api.github.com/repos/symfony/contracts/zipball/a4b5e697e24544ddeaf9f9255cdda6e4c2c32659",
+                "reference": "a4b5e697e24544ddeaf9f9255cdda6e4c2c32659",
                 "shasum": ""
             },
             "require": {
@@ -5775,7 +5775,7 @@
                 "interoperability",
                 "standards"
             ],
-            "time": "2019-03-31T13:49:16+00:00"
+            "time": "2019-04-03T09:22:57+00:00"
         },
         {
             "name": "symfony/debug",
@@ -5839,12 +5839,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "61876bfb4193a9bf0b89190901bae81b67568a0c"
+                "reference": "a088aafcefb4eef2520a290ed82e4374092a6dff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/61876bfb4193a9bf0b89190901bae81b67568a0c",
-                "reference": "61876bfb4193a9bf0b89190901bae81b67568a0c",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/a088aafcefb4eef2520a290ed82e4374092a6dff",
+                "reference": "a088aafcefb4eef2520a290ed82e4374092a6dff",
                 "shasum": ""
             },
             "require": {
@@ -5894,7 +5894,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2019-03-29T19:18:37+00:00"
+            "time": "2019-04-02T08:51:52+00:00"
         },
         {
             "name": "symfony/filesystem",
@@ -6055,12 +6055,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "263e4f0e55577cb88784ec35d83a0c986fe4c9a7"
+                "reference": "fb41c5e2d03ccac43c1fb2285d7fef1612a04241"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/263e4f0e55577cb88784ec35d83a0c986fe4c9a7",
-                "reference": "263e4f0e55577cb88784ec35d83a0c986fe4c9a7",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/fb41c5e2d03ccac43c1fb2285d7fef1612a04241",
+                "reference": "fb41c5e2d03ccac43c1fb2285d7fef1612a04241",
                 "shasum": ""
             },
             "require": {
@@ -6136,7 +6136,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
-            "time": "2019-03-09T13:26:56+00:00"
+            "time": "2019-04-03T10:07:21+00:00"
         },
         {
             "name": "symfony/inflector",
@@ -6144,12 +6144,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/inflector.git",
-                "reference": "8ea7d9547410feb428227f6f1b24f52ff4c65e81"
+                "reference": "fc31c163077e75bb0b1055fe60a27f5c3cb9ae7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/inflector/zipball/8ea7d9547410feb428227f6f1b24f52ff4c65e81",
-                "reference": "8ea7d9547410feb428227f6f1b24f52ff4c65e81",
+                "url": "https://api.github.com/repos/symfony/inflector/zipball/fc31c163077e75bb0b1055fe60a27f5c3cb9ae7c",
+                "reference": "fc31c163077e75bb0b1055fe60a27f5c3cb9ae7c",
                 "shasum": ""
             },
             "require": {
@@ -6194,7 +6194,7 @@
                 "symfony",
                 "words"
             ],
-            "time": "2019-03-31T17:31:00+00:00"
+            "time": "2019-04-01T13:53:46+00:00"
         },
         {
             "name": "symfony/options-resolver",
@@ -6500,12 +6500,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/psr-http-message-bridge.git",
-                "reference": "9ab9d71f97d5c7d35a121a7fb69f74fee95cd0ad"
+                "reference": "81ae86d3394c994bbff10c6ebcade4fb3fba4e9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/psr-http-message-bridge/zipball/9ab9d71f97d5c7d35a121a7fb69f74fee95cd0ad",
-                "reference": "9ab9d71f97d5c7d35a121a7fb69f74fee95cd0ad",
+                "url": "https://api.github.com/repos/symfony/psr-http-message-bridge/zipball/81ae86d3394c994bbff10c6ebcade4fb3fba4e9d",
+                "reference": "81ae86d3394c994bbff10c6ebcade4fb3fba4e9d",
                 "shasum": ""
             },
             "require": {
@@ -6557,7 +6557,7 @@
                 "psr-17",
                 "psr-7"
             ],
-            "time": "2019-03-11T18:22:33+00:00"
+            "time": "2019-04-03T17:12:25+00:00"
         },
         {
             "name": "symfony/routing",
@@ -6720,12 +6720,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "629ac01240f6ebc253a621e19b84e329fe19a987"
+                "reference": "eb854c8150b8012ae941dce919ecb835b87b7cee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/629ac01240f6ebc253a621e19b84e329fe19a987",
-                "reference": "629ac01240f6ebc253a621e19b84e329fe19a987",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/eb854c8150b8012ae941dce919ecb835b87b7cee",
+                "reference": "eb854c8150b8012ae941dce919ecb835b87b7cee",
                 "shasum": ""
             },
             "require": {
@@ -6780,7 +6780,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-            "time": "2019-03-25T07:48:46+00:00"
+            "time": "2019-04-06T18:09:42+00:00"
         },
         {
             "name": "symfony/yaml",
@@ -10231,12 +10231,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dom-crawler.git",
-                "reference": "7bf22ea11b906fb3c293df35af2aabc8db5bfe9c"
+                "reference": "a3709b7b83616653dfb7b50af64d5e3f6342c2df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/7bf22ea11b906fb3c293df35af2aabc8db5bfe9c",
-                "reference": "7bf22ea11b906fb3c293df35af2aabc8db5bfe9c",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/a3709b7b83616653dfb7b50af64d5e3f6342c2df",
+                "reference": "a3709b7b83616653dfb7b50af64d5e3f6342c2df",
                 "shasum": ""
             },
             "require": {
@@ -10244,7 +10244,11 @@
                 "symfony/polyfill-ctype": "~1.8",
                 "symfony/polyfill-mbstring": "~1.0"
             },
+            "conflict": {
+                "masterminds/html5": "<2.6"
+            },
             "require-dev": {
+                "masterminds/html5": "^2.6",
                 "symfony/css-selector": "~3.4|~4.0"
             },
             "suggest": {
@@ -10280,20 +10284,20 @@
             ],
             "description": "Symfony DomCrawler Component",
             "homepage": "https://symfony.com",
-            "time": "2019-02-23T15:22:31+00:00"
+            "time": "2019-04-06T14:52:24+00:00"
         },
         {
             "name": "theseer/tokenizer",
-            "version": "1.1.0",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/theseer/tokenizer.git",
-                "reference": "cb2f008f3f05af2893a87208fe6a6c4985483f8b"
+                "reference": "1c42705be2b6c1de5904f8afacef5895cab44bf8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/theseer/tokenizer/zipball/cb2f008f3f05af2893a87208fe6a6c4985483f8b",
-                "reference": "cb2f008f3f05af2893a87208fe6a6c4985483f8b",
+                "url": "https://api.github.com/repos/theseer/tokenizer/zipball/1c42705be2b6c1de5904f8afacef5895cab44bf8",
+                "reference": "1c42705be2b6c1de5904f8afacef5895cab44bf8",
                 "shasum": ""
             },
             "require": {
@@ -10320,7 +10324,7 @@
                 }
             ],
             "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
-            "time": "2017-04-07T12:08:54+00:00"
+            "time": "2019-04-04T09:56:43+00:00"
         },
         {
             "name": "webmozart/assert",

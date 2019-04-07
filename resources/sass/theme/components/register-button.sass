@@ -1,0 +1,65 @@
+
+.cp-register-button
+  @extend .shadow-glow
+  @extend .btn
+  @include button-variant($color-white, $color-white, $color-white)
+  padding: 7px
+  border-radius: 3px
+  transition: box-shadow 0.25s ease
+  margin: 0 auto
+
+  .cp-price-cell
+    transition: background-color 0.25s ease
+    background-color: $color-blue-dark
+    color: white
+    border-top-left-radius: 3px
+    border-bottom-left-radius: 3px
+    padding: em(10) em(55)
+
+    .cp-price-from
+      color: $color-orange
+      text-align: left
+      font-size: em(16)
+      line-height: em(16)
+
+
+    .cp-price-price-container
+      position: relative
+
+    .cp-price-price
+      font-size: em(48)
+      line-height: em(48)
+      font-family: "Montserrat", $font-secondary
+      font-weight: bold
+
+      &:before
+        content: "$"
+        color: white
+        position: absolute
+        font-size: em(24)
+        margin-left: em(-17)
+        line-height: em(40)
+        font-weight: bold
+
+  .cp-register-cell
+    transition: background-color 0.25s ease
+    background-color: $color-orange
+    color: white
+    border-top-left-radius: 3px
+    border-bottom-left-radius: 3px
+    align-items: center
+
+    > span
+      font-size: em(48)
+      font-family: $font-secondary
+      margin: em(10) em(55)
+      font-weight: bold
+
+  &:hover
+    @extend .shadow-glow-md
+
+    .cp-price-cell
+      background-color: lighten($color-blue-dark, 10) !important
+
+    .cp-register-cell
+      background-color: lighten($color-orange, 10) !important

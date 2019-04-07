@@ -1,0 +1,60 @@
+@import "../helpers/overlay"
+@import "~bootstrap/scss/buttons"
+@import "~bootstrap/scss/mixins/buttons"
+
+.cp-header-content
+  background-color: $color-blue-dark
+  display: flex
+  flex-direction: column
+
+  .cp-header-container
+    max-height: 200px
+    display: flex
+    flex: 1
+    flex-direction: row
+    max-width: $max-width
+    width: 100%
+    align-self: center
+    align-items: center
+    padding: 0 $padding
+
+  .cp-header-left, .cp-header-right
+    display: flex
+    flex: 1
+
+  .cp-header-left img
+    margin: 30px 0
+
+  .cp-header-right
+    flex: 2
+    justify-content: flex-end
+    .nav
+      list-style-type: none
+      padding: 0
+      margin: 0
+      li
+        display: inline-block
+        text-transform: uppercase
+        margin: 0 5px
+
+        &:nth-child(6)
+          a
+            @include button-variant($color-orange, $color-orange)
+
+        a
+          @extend .btn
+          @include button-variant($color-blue-dark, $color-blue-dark, $color-blue, $color-blue)
+          @include button-size(15px, 18px, 'auto', 10px, 3px)
+          color: white !important
+          letter-spacing: em(3)
+
+        &.nav-path-selected
+          border-bottom: solid 1px white
+
+
+  .cp-separator
+    background-color: $color-orange
+    min-height: 10px
+
+
+

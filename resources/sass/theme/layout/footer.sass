@@ -1,0 +1,94 @@
+
+.cp-footer-top
+  background-color: $color-orange
+
+  .cp-footer-top-container
+
+    .cp-footer-top-bottom-content
+      margin-top: em(32)
+      float: right
+      text-align: right
+
+    .cp-footer-top-oregon
+      flex: 1
+      position: relative
+
+      img
+        position: absolute
+        top: 0
+        bottom: 0
+        right: 0
+        height: calc(100% + #{em(70)})
+        width: auto
+        margin-top: em(-50)
+        margin-bottom: em(-25)
+
+    > .cp-footer-top-left
+      flex: 1
+      padding-top: em(48)
+      padding-bottom: em(48)
+
+      span
+        display: block
+        font-family: 'Montserrat', $font-secondary
+
+        &:first-child
+          text-transform: uppercase
+          color: $color-white
+          font-size: em(18)
+          line-height: em(17)
+          letter-spacing: em(4)
+
+        &:last-child
+          font-size: em(48)
+          line-height: em(40)
+          color: $color-blue-dark
+          font-weight: bolder
+
+.cp-fotter-bottom
+  background-color: $color-blue
+
+  .cp-fotter-bottom-container
+    margin-top: em(80)
+
+    > div
+      justify-content: center
+      color: $color-white
+
+  .cp-short-container
+    height: em(19)
+
+  .cp-footer-pagelist
+    align-items: flex-end
+
+    a
+      float: right
+      color: $color-cyan
+
+  .cp-footer-logo a
+    display: flex
+    justify-content: center
+
+    img
+      max-width: 100%
+      height: auto
+
+
+  .cp-footer-social
+    text-align: center
+    margin-top: 40px
+    margin-bottom: 53px
+
+    a
+      display: flex
+      align-items: center
+      justify-content: center
+      color: white
+      width: em(30)
+      height: em(30)
+      background-color: rgba($color-white, .2)
+      transition: background-color .25s ease
+
+      &:hover
+        text-decoration: none
+        background-color: rgba($color-white, .4)

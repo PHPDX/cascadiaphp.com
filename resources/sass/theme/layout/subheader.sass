@@ -1,0 +1,42 @@
+@import "../config"
+@import "../helpers/shadow"
+
+.cp-subheader
+  background-color: $color-gray
+  background-image: url("../../../resources/images/cubes.png")
+
+  img
+    min-width: 100%
+    height: auto
+    align-self: center
+
+  .cp-striped-image
+    display: flex
+    width: 100%
+
+
+  > div
+    position: relative
+    overflow: hidden
+    height: 224px
+    display: flex
+
+  .cp-subheader-title
+    position: absolute
+    top: 20px
+    left: 20px
+    right: 20px
+    bottom: 20px
+    display: flex
+    align-items: center
+    pointer-events: none
+
+    span
+      flex: 1
+      text-align: center
+      color: $color-white
+      @extend .text-shadow-md
+      @extend h1
+
+
+
