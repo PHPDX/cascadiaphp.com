@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "00ed41d62a78862ca1f38ee7595fb481",
+    "content-hash": "f1d3ec739113c44de59d1ba37d1ac82d",
     "packages": [
         {
             "name": "anahkiasen/html-object",
@@ -50,28 +50,28 @@
         },
         {
             "name": "artesaos/seotools",
-            "version": "v0.11.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/artesaos/seotools.git",
-                "reference": "c6d22055be1f730cfaa589b9e71ddd92c397606e"
+                "reference": "d52b1a23221693ddcde7d1a1141d44cb23023067"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/artesaos/seotools/zipball/c6d22055be1f730cfaa589b9e71ddd92c397606e",
-                "reference": "c6d22055be1f730cfaa589b9e71ddd92c397606e",
+                "url": "https://api.github.com/repos/artesaos/seotools/zipball/d52b1a23221693ddcde7d1a1141d44cb23023067",
+                "reference": "d52b1a23221693ddcde7d1a1141d44cb23023067",
                 "shasum": ""
             },
             "require": {
-                "illuminate/config": "~5",
-                "illuminate/support": "~5",
+                "illuminate/config": "5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.* || 5.7.* || 5.8.*",
+                "illuminate/support": "5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.* || 5.7.* || 5.8.*",
                 "php": ">=7.0"
             },
             "require-dev": {
-                "mockery/mockery": "^0.9.4",
+                "mockery/mockery": "~1.0",
                 "orchestra/testbench": "~3.0",
-                "phpspec/phpspec": "2.1.x",
-                "phpunit/phpunit": "^4.0|^5.0"
+                "phpspec/phpspec": "~4.0",
+                "phpunit/phpunit": "~6.0"
             },
             "type": "library",
             "extra": {
@@ -112,7 +112,7 @@
                 "seotools",
                 "webmaster"
             ],
-            "time": "2017-09-25T15:00:31+00:00"
+            "time": "2019-03-08T15:39:06+00:00"
         },
         {
             "name": "beberlei/assert",
@@ -10384,6 +10384,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "roave/security-advisories": 20,
+        "artesaos/seotools": 20,
         "concrete5/core": 20
     },
     "prefer-stable": false,

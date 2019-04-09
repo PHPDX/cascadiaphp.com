@@ -5,7 +5,7 @@ $view = $view ?? null;
 $c = $c ?? null;
 ?>
 
-<div class="cp-footer-bottom cp-row flex flex-column">
+<div class="cp-footer-bottom cp-row flex flex-sm-column">
     <div class="cp-footer-bottom-container flex cp-column cp-padded">
         <div class="flex-1 flex flex-column">
             <div class="cp-short-container">

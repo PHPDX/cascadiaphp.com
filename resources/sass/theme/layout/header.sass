@@ -1,4 +1,5 @@
 @import "../helpers/overlay"
+@import "../components/hamburger"
 @import "~bootstrap/scss/buttons"
 @import "~bootstrap/scss/mixins/buttons"
 
@@ -24,6 +25,8 @@
 
   .cp-header-left img
     margin: 30px 0
+    max-width: 100%
+    height: auto
 
   .cp-header-right
     flex: 2
@@ -32,6 +35,8 @@
       list-style-type: none
       padding: 0
       margin: 0
+      text-align: right
+
       li
         display: inline-block
         text-transform: uppercase
@@ -40,7 +45,7 @@
         &.nav-path-selected
           border-bottom: solid 1px white
 
-        &:nth-child(6)
+        &:last-child
           border-bottom: none
           a
             @include button-variant($color-orange, $color-orange)
@@ -52,10 +57,36 @@
           color: white !important
           letter-spacing: em(3)
 
-
 .cp-separator
   background-color: $color-orange
   min-height: 10px
 
+.cp-hamburger
+  @extend .shadow-inner
+  background-color: mix($color-orange, $color-gravel)
+  transition: max-height 0.5s ease-in-out
+  max-height: 100vh
 
+  a
+    color: $color-white
+
+  ul
+    list-style-type: none
+    padding: 0
+
+    li > a
+      font-size: 1.125em
+      display: block
+      background-color: transparent
+      transition: background-color 0.25s ease
+      padding: .5em 1em
+      margin: .25em -1em
+      text-align: center
+      border-radius: 1em
+
+      &:hover
+        background-color: rgba(0,0,0,.5)
+
+  &.hidden
+    max-height: 0
 

@@ -17,5 +17,13 @@ html
 .cp-padded
   padding: 0 $padding
 
+@each $breakpoint in map-keys($grid-breakpoints)
+  @include media-breakpoint-up($breakpoint)
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints)
+
+    .cp-padded-#{$infix}
+      padding: 0 $padding
+
+
 .cp-content-section
   padding: em(40) 0

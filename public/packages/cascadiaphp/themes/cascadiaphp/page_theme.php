@@ -16,7 +16,6 @@ class PageTheme extends Theme implements ThemeProviderInterface
         $this->requireAsset('javascript', 'jquery');
     }
 
-
     /**
      * @return array
      */
@@ -35,7 +34,7 @@ class PageTheme extends Theme implements ThemeProviderInterface
             [
                 'handle' => 'three_columns',
                 'name' => 'Three Columns',
-                'container' => '<div class="cp-layout flex"></div>',
+                'container' => '<div class="cp-layout flex flex-column flex-lg-row"></div>',
                 'columns' => [
                     '<div class="mr3 flex-1"></div>',
                     '<div class="mr1 mx3 flex-1"></div>',

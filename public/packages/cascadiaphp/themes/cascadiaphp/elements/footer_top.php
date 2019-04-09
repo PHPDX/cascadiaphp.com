@@ -12,7 +12,7 @@ $c = $c ?? null;
                 <span>THE OFFICIAL</span>
                 <span>2019 PHP Conference</span>
             </div>
-            <div class="cp-footer-top-bottom-content">
+            <div class="cp-footer-top-bottom-content text-lg-right">
                 <span>OF THE PACIFIC NORTHWEST</span>
                 <span>Portland, OR</span>
             </div>

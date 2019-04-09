@@ -1,0 +1,24 @@
+.hamburger
+  position: relative
+  padding-left: 1.5em
+
+  &:hover
+    &:before
+      border-color: $color-cyan
+
+.hamburger:before
+  content: ""
+  position: absolute
+  top: 0.25em
+  left: 0
+  width: 1.5em
+  height: 0.125em
+  border-top: 0.5em double
+  border-bottom: 0.166666em solid
+  padding-bottom: 0.2em
+  transition: border-color 0.25s
+  border-color: $color-white
+
+  &:hover
+    border-color: $color-cyan
+

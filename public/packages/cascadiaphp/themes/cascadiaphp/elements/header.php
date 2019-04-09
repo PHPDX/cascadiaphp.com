@@ -15,9 +15,22 @@ $c = $c ?? null;
                     <?= globalArea('Header Left', $c) ?>
                 </div>
                 <div class="cp-header-right">
-                    <?= globalArea('Header Right', $c) ?>
+                    <nav class="d-lg-flex d-none">
+                        <?= globalArea('Header Right', $c) ?>
+                    </nav>
+                    <a href="javascript:void" class="hamburger d-lg-none d-inline-block"></a>
                 </div>
             </div>
             <div class="cp-separator"></div>
         </div>
+        <div class="cp-hamburger hidden d-lg-none cp-padded">
+            <?= globalArea('Header Mobile', $c) ?>
+        </div>
 
+        <script>
+            (function() {
+                $('.hamburger').on('click', function() {
+                    $('.cp-hamburger').toggleClass('hidden')
+                })
+            }());
+        </script>
