@@ -36,9 +36,9 @@ class PageTheme extends Theme implements ThemeProviderInterface
                 'name' => 'Three Columns',
                 'container' => '<div class="cp-layout flex flex-column flex-lg-row"></div>',
                 'columns' => [
-                    '<div class="mr3 flex-1"></div>',
-                    '<div class="mr1 mx3 flex-1"></div>',
-                    '<div class="ml3 flex-1"></div>',
+                    '<div class="mr3 mx0-md flex-1"></div>',
+                    '<div class="mr1 mx0-md mx3 flex-1"></div>',
+                    '<div class="ml3 mx0-md flex-1"></div>',
                 ],
             ]
         ];

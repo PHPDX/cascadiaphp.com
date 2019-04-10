@@ -42,7 +42,7 @@ $slickConfig = [
 
 <div class="cp-content-section cp-row flex-auto">
     <div class="cp-column cp-padded cp-slideshow cp-padded not-loaded" data-slick='<?= json_encode($slickConfig) ?>'>
-        <?php area('Slideshow', $c, '<div class="mx1">', '</div>') ?>
+        <?php area('Slideshow', $c, '<div class="mx1 mx0-md">', '</div>') ?>
     </div>
 </div>
 
