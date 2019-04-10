@@ -84,3 +84,59 @@
     .cover-bottom
       border-bottom: $max-width solid rgba(30,64,87,.5)
       border-left: calc(#{$max-width} - 200px) solid transparent
+
+.cp-slideshow
+  margin: 0 -1em
+  min-height: 200px
+  clear: both
+  position: relative
+
+  &.edit-mode
+    .ccm-block-edit
+      overflow: hidden
+      max-height: 300px
+
+  &.not-loaded
+    > div
+      display: none
+
+  .slick-track
+    height: 200px
+    .slick-slide
+      height: 100%
+
+  img
+    height: 100%
+    width: 100%
+    object-fit: cover
+
+  .cp-previous
+    left: 0
+    align-items: flex-start
+
+  .cp-next
+    right: 0
+    align-items: flex-end
+
+  .cp-previous, .cp-next
+    position: absolute
+    top: 0
+    height: 100%
+    display: flex !important
+    flex-direction: column
+    justify-content: center
+    width: $padding
+
+    i
+      background-color: $color-gray-light
+      color: $color-white
+      border-radius: 1em
+      font-size: 2.5em
+      text-align: center
+      cursor: pointer
+      transition: background-color 0.25s ease
+
+    &:hover
+      i
+        background-color: $color-gray
+        @extend .shadow
