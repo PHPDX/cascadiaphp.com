@@ -1,19 +1,23 @@
 <?php
 
-function area(string $name, \Concrete\Core\Page\Page $page, string $blockStart = null, string $blockEnd = null)
+function area(string $name, \Concrete\Core\Page\Page $page, callable $wrapper = null)
 {
     $a = new Concrete\Core\Area\Area($name);
-    $blockStart && $a->setBlockWrapperStart($blockStart);
-    $blockEnd && $a->setBlockWrapperEnd($blockEnd);
+
+    if ($wrapper) {
+        $wrapper($a);
+    }
 
     return $a->display($page);
 }
 
-function globalArea(string $name, \Concrete\Core\Page\Page $page, string $blockStart = null, string $blockEnd = null)
+function globalArea(string $name, \Concrete\Core\Page\Page $page, callable $wrapper = null)
 {
     $a = new Concrete\Core\Area\GlobalArea($name);
-    $blockStart && $a->setBlockWrapperStart($blockStart);
-    $blockEnd && $a->setBlockWrapperEnd($blockEnd);
+
+    if ($wrapper) {
+        $wrapper($a);
+    }
 
     return $a->display($page);
 }

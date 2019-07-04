@@ -1,5 +1,7 @@
 <?php
 
+use CascadiaPHP\Site\Console\ServiceProvider;
+
 return [
     'assets' => [
         'cp/home' => [
@@ -8,5 +10,8 @@ return [
         'cp/inner' => [
             ['mix-css', 'themes/cascadiaphp/css/inner.css', ['minify' => false], 'cascadiaphp'],
         ]
+    ],
+    'providers' => [
+        'foo' => ServiceProvider::class
     ]
 ];

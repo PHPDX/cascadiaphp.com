@@ -1,0 +1,32 @@
+.speaker .name
+  white-space: nowrap
+  font-size: .8em
+
+.speaker .twitter
+  white-space: nowrap
+
+.speaker .company
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+
+.speaker
+  @extend .text-center
+
+
+@include media-breakpoint-down(sm)
+  .speaker
+    max-width: calc(100% / 1 - 2em)
+    min-width: calc(100% / 1 - 2em)
+
+
+@include media-breakpoint-up(md)
+  .speaker
+    max-width: calc(100% / 3 - 2em)
+    min-width: calc(100% / 3 - 2em)
+
+
+@include media-breakpoint-up(lg)
+  .speaker
+    max-width: calc(100% / 6 - 2em)
+    min-width: calc(100% / 6 - 2em)
