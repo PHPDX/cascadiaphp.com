@@ -1,0 +1,106 @@
+//@import "../elements/layout"
+//@import "../util/_all"
+//@import "../elements/speaker_modal"
+
+@import "../config"
+
+.schedule-day
+  @extend .border-left, .border-right, .border-bottom
+  .talks-container
+    overflow: auto !important
+
+  &.invisible
+    display: none
+
+table.schedule
+  width: calc(100% - 2em)
+  margin-left: 1em
+
+  td
+    border-radius: 1em
+    padding: 1em 0
+    text-align: center
+    vertical-align: middle
+
+  .talks td
+    border-color: $color-gravel
+    border: solid 1px
+    text-align: center
+    margin-bottom: 1em
+
+  .keynote td
+    background-color: $color-gray-light
+    text-align: center
+
+  .title th
+    @extend h5
+    font-color: $color-blue-dark
+    text-align: left
+    vertical-align: bottom
+    height: 2em
+
+    &:nth-child(2)
+      text-align: right
+
+  .header th
+    font-weight: bold
+
+.schedule-row
+
+  @media (min-width: 52em)
+    display: -ms-flexbox
+    display: flex
+
+  .schedule-talk
+    min-width: 250px
+    line-height: 1.1em
+
+    &.keynote > div
+      background-color: $color-orange
+      border-color: $color-orange
+      color: $color-white
+    &.talk > div, &.short > div
+      border-color: $color-gravel
+    &.short
+      flex-grow: 1
+    &.talk, .schedule-complex
+      @media (min-width: 52em)
+        width: 33.333333%
+        -ms-flex: 1 1 auto
+        flex: 1 1 auto
+        min-width: 0
+        min-height: 0
+
+  .event
+    &.break, &.event
+      @extend  .b-blue-light, .c-blue-dark, .rounded, .mt3, .mb3
+      background-color: #abd1d8 !important
+
+  .title
+    @extend h5
+    text-transform: capitalize
+
+.tab-header
+  overflow: hidden
+  position: relative
+
+  .tab
+    background-color: #f6f7f7
+    color: $color-gravel
+    z-index: 1
+    font-weight: 300
+    @extend .shadow-lg, .c-gray-light
+    border-top-left-radius: 3px
+    border-top-right-radius: 3px
+    border-bottom: solid 1px
+    border-color: #dee2e6
+
+    &.selected
+      @extend .border-top, .border-left, .border-right
+
+      font-weight: normal
+      border-bottom-width: 0
+      color: $color-blue-dark
+      background-color: $color-white
+      z-index: 2
+      border-bottom: none

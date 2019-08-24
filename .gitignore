@@ -20,3 +20,4 @@ public/application/config/generated_overrides
 # Make sure we can still track our package
 !public/packages/cascadiaphp
 public/packages/cascadiaphp/themes/cascadiaphp/css/*
+public/packages/cascadiaphp/themes/cascadiaphp/js/*

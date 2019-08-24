@@ -1,5 +1,8 @@
 @import "layout/layout"
 
+.modal-backdrop
+  background-color: #000
+
 .cp-site
   min-height: 100vh
   display: flex
@@ -10,7 +13,15 @@
   @import "layout/typography"
   @import "layout/subheader"
   @import "layout/speaker"
+  @import "layout/schedule"
   @import "components/striped-image"
   @import "components/register-button"
+  @import "components/speaker-modal"
   @import "helpers/colors"
   @import "helpers/shapes"
+
+// Stuff only needed for inner pages
+@import "~bootstrap/scss/modal"
+@import "~bootstrap/scss/transitions"
+@import "~bootstrap/scss/nav"
+

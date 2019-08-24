@@ -13,6 +13,7 @@ class PageTheme extends Theme implements ThemeProviderInterface
     public function registerAssets()
     {
         $this->requireAsset('mix-css', 'cp/home');
+        $this->requireAsset('javascript', 'cp/home');
         $this->requireAsset('javascript', 'jquery');
     }
 
