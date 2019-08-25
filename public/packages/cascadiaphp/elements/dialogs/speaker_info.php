@@ -10,6 +10,7 @@ $thumb = $speaker->getAvatar();
 $type = strtolower(str_replace(' ', '-', $talk->getTalkType()));
 $company = $speaker->getCompany();
 $twitter = $speaker->getTwitterHandle();
+$fullName = $speaker->getFirstName() . ' ' . $speaker->getLastName();
 ?>
 
 <div class="modal fade speaker-modal talk-<?= $type ?>" id="talkModal<?= $talk->getID() ?>" tabindex="-1" role="dialog">
@@ -20,7 +21,7 @@ $twitter = $speaker->getTwitterHandle();
                 <img class="flex-1" src="<?= $thumb->getRelativePath() ?>"/>
                 <div class="flex-1 speaker-details flex justify-content-center">
                     <div class="text-center pt2 flex flex-column flex-grow align-self-center">
-                        <span class="light-text block nowrap"><?= $speaker->getFirstName() ?> <?= $speaker->getLastName() ?></span>
+                        <span class="light-text block nowrap"><?= $fullName ?></span>
                         <?php
                         if ($company) {
                             ?>
@@ -52,9 +53,11 @@ $twitter = $speaker->getTwitterHandle();
             </div>
             <div class="speaker-content tab-content p2">
                 <div role="tabpanel" class="tab-pane active speaker-description">
+                    <h5><?= $talk->getTalkTitle() ?></h5>
                     <?= trim(Markdown::defaultTransform($talk->getTalkDescription())) ?: 'Description coming soon.' ?>
                 </div>
                 <div role="tabpanel" class="tab-pane speaker-bio">
+                    <h5><?= $fullName ?></h5>
                     <?= trim(Markdown::defaultTransform($speaker->getBio())) ?: 'Speaker Bio coming soon.' ?>
                 </div>
             </div>
