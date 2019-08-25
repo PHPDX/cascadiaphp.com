@@ -24,7 +24,7 @@ $twitter = $speaker->getTwitterHandle();
                         <?php
                         if ($company) {
                             ?>
-                            <span class="light-text block nowrap rounded mx1 my1 overflow-hidden bg-blue white px2"><?= $company ?></span>
+                            <span class="company light-text block nowrap rounded mx1 my1 overflow-hidden bg-blue white px2"><?= $company ?></span>
                             <?php
                         }
 

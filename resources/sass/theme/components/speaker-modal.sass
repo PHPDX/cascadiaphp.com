@@ -10,9 +10,15 @@
     .speaker-header, .speaker-tabs
       @extend .bg-blue-dark, .c-white
 
-  &.talk-keynote, .speaker-tabs
-    .speaker-header
+  &.talk-keynote
+    .speaker-header, .speaker-tabs
       @extend .bg-orange, .c-white
+      a
+        color: white
+        &.active
+          color: #495057
+      .company
+        @extend .bg-white, .c-orange
 
   .speaker-header
     > img
