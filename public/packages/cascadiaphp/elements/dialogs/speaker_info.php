@@ -52,10 +52,10 @@ $twitter = $speaker->getTwitterHandle();
             </div>
             <div class="speaker-content tab-content p2">
                 <div role="tabpanel" class="tab-pane active speaker-description">
-                    <?= Markdown::defaultTransform($talk->getTalkDescription()) ?>
+                    <?= trim(Markdown::defaultTransform($talk->getTalkDescription())) ?: 'Description coming soon.' ?>
                 </div>
                 <div role="tabpanel" class="tab-pane speaker-bio">
-                    <?= Markdown::defaultTransform($speaker->getBio()) ?>
+                    <?= trim(Markdown::defaultTransform($speaker->getBio())) ?: 'Speaker Bio coming soon.' ?>
                 </div>
             </div>
         </div>
