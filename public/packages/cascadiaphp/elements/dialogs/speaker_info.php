@@ -13,7 +13,7 @@ $twitter = $speaker->getTwitterHandle();
 $fullName = $speaker->getFirstName() . ' ' . $speaker->getLastName();
 ?>
 
-<div class="modal fade speaker-modal talk-<?= $type ?>" id="talkModal<?= $talk->getID() ?>" tabindex="-1" role="dialog">
+<div class="modal fade speaker-modal talk-<?= $type ?>" id="talkModal<?= $talk->getID() ?>" tabindex="-1" role="dialog" style="display:none">
     <div class="modal-dialog shadow-lg">
         <div class="modal-content">
             <div class="modal-close close-button px2 py1 c-white text-shadow" data-dismiss="modal">x</div>
