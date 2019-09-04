@@ -9,6 +9,9 @@ $results = $result->getItemListObject()->getResults();
 ?>
 
 <div class="tab-header flex flex-row center">
+    <div class="tab text-center flex-item flex-auto p2" role="tab" tabindex="0" data-day="thursday">
+        Thursday the 19th
+    </div>
     <div class="tab text-center flex-item flex-auto p2" role="tab" tabindex="0" data-day="friday">
         Friday the 20th
     </div>
@@ -16,8 +19,20 @@ $results = $result->getItemListObject()->getResults();
         Saturday the 21st
     </div>
 </div>
-
 <div class="schedule mb2">
+    <div class="schedule-day invisible" data-day="thursday">
+        <h4 class="text-center mt3">Thursday</h4>
+        <div class="title col-12 mx1 mt3">
+            <span class="day float-right">Thursday</span>
+            <span class="time">10am - 10pm</span>
+        </div>
+        <div class="schedule-row row clearfix flex flex-1 mx1 overflow-auto">
+            <div class="event event py3 center col-12 mx1 dark shadow-md flex-1 text-center">
+                Twilio Sponsored PHP for Good Hackathon <br><a class="btn btn-secondary" href="https://cascadiaphp2019.devpost.com/">Reserve your spot</a>
+            </div>
+        </div>
+    </div>
+
     <?php
     if (count($results)) {
         $currentDay = null;
