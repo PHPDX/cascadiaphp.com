@@ -21,7 +21,7 @@ $results = $result->getItemListObject()->getResults();
 </div>
 <div class="schedule mb2">
     <div class="schedule-day invisible" data-day="thursday">
-        <h4 class="text-center mt3">Thursday</h4>
+        <h4 class="text-center pt3">Thursday</h4>
         <div class="title col-12 mx1 mt3">
             <span class="day float-right">Thursday</span>
             <span class="time">10am - 10pm</span>
@@ -73,7 +73,7 @@ $results = $result->getItemListObject()->getResults();
                 }
                 ?>
                 <div class="schedule-day invisible" data-day="<?= strtolower($day) ?>">
-                    <h4 class="text-center mt3">Registration</h4>
+                    <h4 class="text-center pt3"><?= $day ?> Registration</h4>
                     <div class="schedule-row row clearfix flex flex-1 mx1 overflow-auto">
                         <div class="event event py3 center col-12 mx1 dark shadow-md flex-1 text-center">
                             Registration Opens at 8:30am</div>
@@ -89,7 +89,7 @@ $results = $result->getItemListObject()->getResults();
             $currentDay = $day;
             ?>
             <div class="schedule-row row clearfix flex mx1 overflow-auto flex-column">
-                <div class="title col-12 mx1 mt3">
+                <div class="title col-12 mx1 pt3">
                     <span class="day float-right"><?= $day ?></span>
                     <span class="time"><?= $startString ?> - <?= $endString ?></span>
                 </div>
