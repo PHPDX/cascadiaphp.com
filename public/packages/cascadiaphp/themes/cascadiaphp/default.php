@@ -23,7 +23,7 @@ $c = $c ?? null;
 </div>
 
 <div class="cp-content-section cp-row flex-auto">
-    <div class="cp-column cp-padded">
+    <div class="cp-column cp-padded--md">
         <?php area('Main', $c) ?>
     </div>
 </div>

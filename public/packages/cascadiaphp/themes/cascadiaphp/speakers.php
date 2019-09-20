@@ -24,7 +24,7 @@ $c = $c ?? null;
 
 
 <div class="cp-content-section cp-row flex-auto bg-orange">
-    <div class="cp-column cp-padded">
+    <div class="cp-column cp-padded--md">
         <?php area('Keynotes', $c, function($a) {
             $a->setCustomTemplate('express_entry_list', 'cascadia_keynotes');
         }) ?>
@@ -32,7 +32,7 @@ $c = $c ?? null;
 </div>
 
 <div class="cp-content-section cp-row flex-auto">
-    <div class="cp-column cp-padded">
+    <div class="cp-column cp-padded--md">
         <?php area('Regular Talks', $c, function($a) {
             $a->setCustomTemplate('express_entry_list', 'cascadia_keynotes');
         }) ?>

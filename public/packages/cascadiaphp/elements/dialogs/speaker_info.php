@@ -11,6 +11,13 @@ $type = strtolower(str_replace(' ', '-', $talk->getTalkType()));
 $company = $speaker->getCompany();
 $twitter = $speaker->getTwitterHandle();
 $fullName = $speaker->getFirstName() . ' ' . $speaker->getLastName();
+$rooms = ['Crater Lake', 'Multnomah Falls', 'Willamette Falls'];
+
+if ($type === 'keynote') {
+    $room = $rooms[1];
+} elseif ($type === '50-minute') {
+    $room = $rooms[array_search($talk, $talk->getSlot()->getTalks(), true)] ?? null;
+}
 ?>
 
 <div class="modal fade speaker-modal talk-<?= $type ?>" id="talkModal<?= $talk->getID() ?>" tabindex="-1" role="dialog" style="display:none">
@@ -54,6 +61,13 @@ $fullName = $speaker->getFirstName() . ' ' . $speaker->getLastName();
             <div class="speaker-content tab-content p2">
                 <div role="tabpanel" class="tab-pane active speaker-description">
                     <h5><?= $talk->getTalkTitle() ?></h5>
+                    <?php
+                    if ($room) {
+                        ?>
+                        <h6>Room: <?= $room ?></h6>
+                        <?php
+                    }
+                    ?>
                     <?= trim(Markdown::defaultTransform($talk->getTalkDescription())) ?: 'Description coming soon.' ?>
                 </div>
                 <div role="tabpanel" class="tab-pane speaker-bio">

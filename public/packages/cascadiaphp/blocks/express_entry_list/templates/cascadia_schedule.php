@@ -80,9 +80,9 @@ $results = $result->getItemListObject()->getResults();
                     </div>
                     <h4 class="text-center"><?= $day ?></h4>
                     <div class="flex title text-center clearfix">
-                        <div class="flex-1">Track 1</div>
-                        <div class="flex-1">Track 2</div>
-                        <div class="flex-1">Track 3</div>
+                        <div class="flex-1">Crater Lake</div>
+                        <div class="flex-1">Multnomah Falls</div>
+                        <div class="flex-1">Willamette Falls</div>
                     </div>
                 <?php
             }
