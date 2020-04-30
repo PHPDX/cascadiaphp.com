@@ -16,7 +16,7 @@
     "cross-env": "^5.2.0",
     "css-loader": "^2.1.1",
     "flex-object": "^2.0.5",
-    "jquery": "^1.9.1",
+    "jquery": "^3.5.0",
     "laravel-mix": "^4.1.2",
     "lodash": "^4.17.11",
     "nunito-fontface": "^0.7.3",
